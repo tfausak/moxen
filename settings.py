@@ -28,4 +28,5 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.admin',
     'magic',
+    'liberator',
 )
