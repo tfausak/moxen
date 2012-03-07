@@ -1,4 +1,3 @@
-# pylint: disable=C0111,R0904
 from django.contrib import admin
 import magic.models
 

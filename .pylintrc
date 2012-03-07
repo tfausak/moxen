@@ -1,6 +1,0 @@
-[MASTER]
-persistent=yes
-
-[REPORTS]
-output-format=colorized
-include-ids=yes
