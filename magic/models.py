@@ -3,7 +3,7 @@ from django.db import models
 
 class SuperType(models.Model):
     name = models.CharField(max_length=9, unique=True)
-    slug = models.SlugField(max_length=9)
+    slug = models.SlugField(max_length=9, unique=True)
 
     def __unicode__(self):
         return self.name
@@ -14,7 +14,7 @@ class SuperType(models.Model):
 
 class CardType(models.Model):
     name = models.CharField(max_length=12, unique=True)
-    slug = models.SlugField(max_length=12)
+    slug = models.SlugField(max_length=12, unique=True)
 
     def __unicode__(self):
         return self.name
@@ -25,7 +25,7 @@ class CardType(models.Model):
 
 class SubType(models.Model):
     name = models.CharField(max_length=24, unique=True)
-    slug = models.SlugField(max_length=24)
+    slug = models.SlugField(max_length=24, unique=True)
 
     def __unicode__(self):
         return self.name
@@ -36,7 +36,7 @@ class SubType(models.Model):
 
 class Set(models.Model):
     name = models.CharField(max_length=39, unique=True)
-    slug = models.SlugField(max_length=3)
+    slug = models.SlugField(max_length=3, unique=True)
 
     def __unicode__(self):
         return self.name
@@ -47,7 +47,7 @@ class Set(models.Model):
 
 class Rarity(models.Model):
     name = models.CharField(max_length=11, unique=True)
-    slug = models.SlugField(max_length=1)
+    slug = models.SlugField(max_length=1, unique=True)
 
     def __unicode__(self):
         return self.name
