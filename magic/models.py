@@ -32,3 +32,26 @@ class SubType(models.Model):
 
     class Meta:
         ordering = ['name']
+
+
+class Set(models.Model):
+    name = models.CharField(max_length=39, unique=True)
+    slug = models.SlugField(max_length=3)
+
+    def __unicode__(self):
+        return self.name
+
+    class Meta:
+        ordering = ['name']
+
+
+class Rarity(models.Model):
+    name = models.CharField(max_length=11, unique=True)
+    slug = models.SlugField(max_length=1)
+
+    def __unicode__(self):
+        return self.name
+
+    class Meta:
+        ordering = ['name']
+        verbose_name_plural = 'rarities'
