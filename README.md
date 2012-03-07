@@ -23,6 +23,6 @@ Running the server is just like everything else Django.
 Want to help out? Awesome. Make sure that everything you do passes
 pylint with flying colors.
 
-    find . -name '*.py' | xargs pylint --include-ids=yes
+    find . -name '*.py' | xargs pylint --rcfile=.pylintrc
 
 [1]: http://en.wikipedia.org/wiki/Magic:_The_Gathering
