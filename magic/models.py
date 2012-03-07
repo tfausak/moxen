@@ -84,3 +84,51 @@ class Color(models.Model):
 
     class Meta:
         ordering = ['name']
+
+
+class ProtoCard(models.Model):
+    """Card (200.1).
+    """
+    name = models.CharField(max_length=255, unique=True)
+    slug = models.SlugField(max_length=255, unique=True)
+
+    mana_cost = models.CharField(max_length=255)
+    power = models.CharField(max_length=255)
+    toughness = models.CharField(max_length=255)
+    rules_text = models.TextField(blank=True)
+
+    super_types = models.ManyToManyField(SuperType)
+    card_types = models.ManyToManyField(CardType)
+    sub_types = models.ManyToManyField(SubType)
+    colors = models.ManyToManyField(Color)
+
+    converted_mana_cost = models.PositiveIntegerField()
+    converted_power = models.PositiveIntegerField()
+    converted_toughness = models.PositiveIntegerField()
+    loyalty = models.PositiveIntegerField()
+    hand_modifier = models.IntegerField()
+    life_modifier = models.IntegerField()
+
+    def __unicode__(self):
+        return self.name
+
+    class Meta:
+        ordering = ['name']
+
+
+class Card(models.Model):
+    """A Card is one or more ProtoCards printed in a set with a rarity.
+
+    Essentially, this is exactly what you think of when you hear
+    the word "card". It's the digital representation of a physical
+    card.
+    """
+    cards = models.ManyToManyField(ProtoCard)
+    set = models.ForeignKey(Set)
+    rarity = models.ForeignKey(Rarity)
+
+    def __unicode__(self):
+        return u' // '.join(card.name for card in self.cards)
+
+    class Meta:
+        ordering = ['cards__name']

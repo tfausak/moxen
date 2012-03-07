@@ -34,3 +34,14 @@ admin.site.register(magic.models.Rarity, RarityAdmin)
 class ColorAdmin(admin.ModelAdmin):
     search_fields = ['name']
 admin.site.register(magic.models.Color, ColorAdmin)
+
+
+class ProtoCardAdmin(admin.ModelAdmin):
+    prepopulated_fields = {'slug': ('name',)}
+    search_fields = ['name']
+admin.site.register(magic.models.ProtoCard, ProtoCardAdmin)
+
+
+class CardAdmin(admin.ModelAdmin):
+    pass
+admin.site.register(magic.models.Card, CardAdmin)
