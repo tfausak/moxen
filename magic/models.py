@@ -55,3 +55,14 @@ class Rarity(models.Model):
     class Meta:
         ordering = ['name']
         verbose_name_plural = 'rarities'
+
+
+class Color(models.Model):
+    name = models.CharField(max_length=5, unique=True)
+    slug = models.SlugField(max_length=1, unique=True)
+
+    def __unicode__(self):
+        return self.name
+
+    class Meta:
+        ordering = ['name']

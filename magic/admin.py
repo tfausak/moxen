@@ -28,3 +28,8 @@ admin.site.register(magic.models.Set, SetAdmin)
 class RarityAdmin(admin.ModelAdmin):
     search_fields = ['name']
 admin.site.register(magic.models.Rarity, RarityAdmin)
+
+
+class ColorAdmin(admin.ModelAdmin):
+    search_fields = ['name']
+admin.site.register(magic.models.Color, ColorAdmin)
