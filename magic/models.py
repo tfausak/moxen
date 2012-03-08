@@ -135,6 +135,8 @@ class Card(models.Model):
 
 
 class Block(models.Model):
+    """A group of sets, usually three.
+    """
     name = models.CharField(max_length=255, unique=True)
     slug = models.SlugField(max_length=255, unique=True)
     sets = models.ManyToManyField(Set)
@@ -147,6 +149,8 @@ class Block(models.Model):
 
 
 class Format(models.Model):
+    """A DCI-sanctioned tournament format.
+    """
     name = models.CharField(max_length=255, unique=True)
     slug = models.SlugField(max_length=255, unique=True)
     sets = models.ManyToManyField(Set)
@@ -160,7 +164,12 @@ class Format(models.Model):
 
 
 class Legality(models.Model):
+    """The legality of a card within a format.
+    """
     card = models.ForeignKey(Card)
     format = models.ForeignKey(Format)
     status = models.CharField(choices=magic.constants.LEGALITY_STATUS_CHOICES,
         max_length=1)
+
+    class Meta:
+        verbose_name_plural = 'legalities'
