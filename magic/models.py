@@ -4,6 +4,7 @@ Cryptic numbers and letters probably refer to the comprehensive rules:
 http://www.wizards.com/magic/comprules/MagicCompRules_20120201.txt
 """
 from django.db import models
+import magic.constants
 
 
 class SuperType(models.Model):
