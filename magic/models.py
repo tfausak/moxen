@@ -123,15 +123,16 @@ class Card(models.Model):
     the word "card". It's the digital representation of a physical
     card.
     """
-    cards = models.ManyToManyField(ProtoCard)
+    proto_cards = models.ManyToManyField(ProtoCard)
     set = models.ForeignKey(Set)
     rarity = models.ForeignKey(Rarity)
 
     def __unicode__(self):
-        return u' // '.join(card.name for card in self.cards)
+        return u' // '.join(proto_card.name
+            for proto_card in self.proto_cards.all())
 
     class Meta:
-        ordering = ['cards__name']
+        ordering = ['proto_cards__name']
 
 
 class Block(models.Model):
@@ -154,7 +155,7 @@ class Format(models.Model):
     name = models.CharField(max_length=255, unique=True)
     slug = models.SlugField(max_length=255, unique=True)
     sets = models.ManyToManyField(Set)
-    cards = models.ManyToManyField(Card, through='Legality')
+    proto_cards = models.ManyToManyField(ProtoCard, through='Legality')
 
     def __unicode__(self):
         return self.name
@@ -166,7 +167,7 @@ class Format(models.Model):
 class Legality(models.Model):
     """The legality of a card within a format.
     """
-    card = models.ForeignKey(Card)
+    proto_card = models.ForeignKey(ProtoCard)
     format = models.ForeignKey(Format)
     status = models.CharField(choices=magic.constants.LEGALITY_STATUS_CHOICES,
         max_length=1)

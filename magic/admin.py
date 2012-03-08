@@ -59,7 +59,7 @@ admin.site.register(magic.models.Format, FormatAdmin)
 
 
 class LegalityAdmin(admin.ModelAdmin):
-    list_display = ['card', 'format', 'status']
+    list_display = ['proto_card', 'format', 'status']
     list_filter = ['format', 'status']
-    search_fields = ['card__name']
+    search_fields = ['proto_card__name']
 admin.site.register(magic.models.Legality, LegalityAdmin)
