@@ -1,5 +1,6 @@
 """Functions to parse web pages.
 """
+from BeautifulSoup import BeautifulSoup
 import liberator.constants
 import re
 
@@ -65,7 +66,35 @@ def _parse_gatherer_visual(response):
 def _parse_gatherer_text(response):
     """Parse a listing of cards from the Gatherer in the text format.
     """
-    raise NotImplementedError
+    dom = BeautifulSoup(response)
+
+    # Split the page into sections that describe cards.
+    tags = dom.find('div', 'textspoiler').findAll('tr')
+    cards = [tags[index:index + 6] for index in range(0, len(tags), 7)]
+
+    for index, card in enumerate(cards):
+        # Extract data from the DOM into a dictionary.
+        card = {
+            'name': card[0].contents[3].contents[1],
+            'mana_cost': card[1].contents[3],
+            'type': card[2].contents[3],
+            'misc': card[3].contents[3],
+            'rules_text': card[4].contents[3],
+            'set_rarity': card[5].contents[3],
+        }
+
+        # Normalize fields.
+        for key in ('name', 'mana_cost', 'type', 'misc', 'set_rarity'):
+            card[key] = card[key].string.lower().strip()
+            card[key] = re.sub(r'\s\+', ' ', card[key])
+            card[key] = re.sub(u'\u2019', '\'', card[key])
+        card['rules_text'] = ''.join(card['rules_text'].findAll(text=True))
+        card['rules_text'] = card['rules_text'].strip()
+        card['rules_text'] = re.sub(r'\s\+', ' ', card['rules_text'])
+
+        cards[index] = card
+
+    return cards
 
 
 def _parse_gatherer_card(response):
