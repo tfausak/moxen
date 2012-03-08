@@ -149,6 +149,7 @@ class Block(models.Model):
 class Format(models.Model):
     name = models.CharField(max_length=255, unique=True)
     slug = models.SlugField(max_length=255, unique=True)
+    sets = models.ManyToManyField(Set)
     cards = models.ManyToManyField(Card, through='Legality')
 
     def __unicode__(self):
