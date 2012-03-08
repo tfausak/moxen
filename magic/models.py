@@ -131,3 +131,34 @@ class Card(models.Model):
 
     class Meta:
         ordering = ['cards__name']
+
+
+class Block(models.Model):
+    name = models.CharField(max_length=255, unique=True)
+    slug = models.SlugField(max_length=255, unique=True)
+    sets = models.ManyToManyField(Set)
+
+    def __unicode__(self):
+        return self.name
+
+    class Meta:
+        ordering = ['name']
+
+
+class Format(models.Model):
+    name = models.CharField(max_length=255, unique=True)
+    slug = models.SlugField(max_length=255, unique=True)
+    cards = models.ManyToManyField(Card, through='Legality')
+
+    def __unicode__(self):
+        return self.name
+
+    class Meta:
+        ordering = ['name']
+
+
+class Legality(models.Model):
+    card = models.ForeignKey(Card)
+    format = models.ForeignKey(Format)
+    status = models.CharField(choices=magic.constants.LEGALITY_STATUS_CHOICES,
+        max_length=1)
