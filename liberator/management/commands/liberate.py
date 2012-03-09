@@ -5,7 +5,7 @@ from liberator.shortcuts import liberate
 
 
 class Command(BaseCommand):
-    args = 'url url ...'
+    args = 'url ...'
     help = 'Liberate the given URLs.'
 
     def handle(self, *args, **options):
