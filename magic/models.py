@@ -86,7 +86,7 @@ class Color(models.Model):
         ordering = ['name']
 
 
-class ProtoCard(models.Model):
+class CardAtom(models.Model):
     """Card (200.1).
     """
     name = models.CharField(max_length=255, unique=True)
@@ -117,22 +117,22 @@ class ProtoCard(models.Model):
 
 
 class Card(models.Model):
-    """A Card is one or more ProtoCards printed in a set with a rarity.
+    """A Card is one or more CardAtoms printed in a set with a rarity.
 
     Essentially, this is exactly what you think of when you hear
     the word "card". It's the digital representation of a physical
     card.
     """
-    proto_cards = models.ManyToManyField(ProtoCard)
+    card_atoms = models.ManyToManyField(CardAtom)
     set = models.ForeignKey(Set)
     rarity = models.ForeignKey(Rarity)
 
     def __unicode__(self):
-        return u' // '.join(proto_card.name
-            for proto_card in self.proto_cards.all())
+        return u' // '.join(card_atom.name
+            for card_atom in self.card_atoms.all())
 
     class Meta:
-        ordering = ['proto_cards__name']
+        ordering = ['card_atoms__name']
 
 
 class Block(models.Model):
@@ -155,7 +155,7 @@ class Format(models.Model):
     name = models.CharField(max_length=255, unique=True)
     slug = models.SlugField(max_length=255, unique=True)
     sets = models.ManyToManyField(Set)
-    proto_cards = models.ManyToManyField(ProtoCard, through='Legality')
+    card_atoms = models.ManyToManyField(CardAtom, through='Legality')
 
     def __unicode__(self):
         return self.name
@@ -167,7 +167,7 @@ class Format(models.Model):
 class Legality(models.Model):
     """The legality of a card within a format.
     """
-    proto_card = models.ForeignKey(ProtoCard)
+    card_atom = models.ForeignKey(CardAtom)
     format = models.ForeignKey(Format)
     status = models.CharField(choices=magic.constants.LEGALITY_STATUS_CHOICES,
         max_length=1)

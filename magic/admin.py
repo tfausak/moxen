@@ -35,15 +35,15 @@ class ColorAdmin(admin.ModelAdmin):
 admin.site.register(magic.models.Color, ColorAdmin)
 
 
-class ProtoCardAdmin(admin.ModelAdmin):
+class CardAtomAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('name',)}
     search_fields = ['name']
-admin.site.register(magic.models.ProtoCard, ProtoCardAdmin)
+admin.site.register(magic.models.CardAtom, CardAtomAdmin)
 
 
 class CardAdmin(admin.ModelAdmin):
     list_filter = ['rarity', 'set']
-    search_fields = ['proto_cards__name']
+    search_fields = ['card_atoms__name']
 admin.site.register(magic.models.Card, CardAdmin)
 
 
@@ -60,7 +60,7 @@ admin.site.register(magic.models.Format, FormatAdmin)
 
 
 class LegalityAdmin(admin.ModelAdmin):
-    list_display = ['proto_card', 'format', 'status']
+    list_display = ['card_atom', 'format', 'status']
     list_filter = ['format', 'status']
-    search_fields = ['proto_card__name']
+    search_fields = ['card_atom__name']
 admin.site.register(magic.models.Legality, LegalityAdmin)
