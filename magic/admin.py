@@ -42,7 +42,8 @@ admin.site.register(magic.models.ProtoCard, ProtoCardAdmin)
 
 
 class CardAdmin(admin.ModelAdmin):
-    pass
+    list_filter = ['rarity', 'set']
+    search_fields = ['proto_cards__name']
 admin.site.register(magic.models.Card, CardAdmin)
 
 

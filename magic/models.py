@@ -92,22 +92,22 @@ class ProtoCard(models.Model):
     name = models.CharField(max_length=255, unique=True)
     slug = models.SlugField(max_length=255, unique=True)
 
-    mana_cost = models.CharField(max_length=255)
-    power = models.CharField(max_length=255)
-    toughness = models.CharField(max_length=255)
+    mana_cost = models.CharField(blank=True, max_length=255)
+    power = models.CharField(blank=True, max_length=255)
+    toughness = models.CharField(blank=True, max_length=255)
     rules_text = models.TextField(blank=True)
 
-    super_types = models.ManyToManyField(SuperType)
+    super_types = models.ManyToManyField(SuperType, blank=True)
     card_types = models.ManyToManyField(CardType)
-    sub_types = models.ManyToManyField(SubType)
-    colors = models.ManyToManyField(Color)
+    sub_types = models.ManyToManyField(SubType, blank=True)
+    colors = models.ManyToManyField(Color, blank=True)
 
-    converted_mana_cost = models.PositiveIntegerField()
-    converted_power = models.PositiveIntegerField()
-    converted_toughness = models.PositiveIntegerField()
-    loyalty = models.PositiveIntegerField()
-    hand_modifier = models.IntegerField()
-    life_modifier = models.IntegerField()
+    converted_mana_cost = models.PositiveIntegerField(default=0)
+    converted_power = models.PositiveIntegerField(default=0)
+    converted_toughness = models.PositiveIntegerField(default=0)
+    loyalty = models.PositiveIntegerField(default=0)
+    hand_modifier = models.IntegerField(default=0)
+    life_modifier = models.IntegerField(default=0)
 
     def __unicode__(self):
         return self.name
