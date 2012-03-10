@@ -44,18 +44,18 @@ def _normalize_card(card):
         in liberator.constants.SUB_TYPES if re.search(pattern, card['type'])]
 
     # Power, toughness, loyalty, and hand and life modifiers
-    card['power'] = card['toughness'] = card['loyalty'] = \
-        card['hand_modifier'] = card['life_modifier'] = ''
+    card['power'] = card['toughness'] = ''
+    card['loyalty'] = card['hand_modifier'] = card['life_modifier'] = 0
     if 'creature' in card['type']:
         match = re.search(r'\((.*)/(.*)\)', card['misc'])
         card['power'] = match.group(1)
         card['toughness'] = match.group(2)
     if 'planeswalker' in card['type']:
-        match = re.search(r'\((.*)\)', card['misc'])
-        card['loyalty'] = match.group(1)
+        match = re.search(r'\((\d+)\)', card['misc'])
+        card['loyalty'] = int(match.group(1))
     if 'vanguard' in card['type']:
-        matches = re.findall('([-+]\d+)', card['misc'])
-        card['hand_modifier'] = matches[0]
-        card['life_modifier'] = matches[1]
+        matches = re.findall(r'([-+]\d+)', card['misc'])
+        card['hand_modifier'] = int(matches[0])
+        card['life_modifier'] = int(matches[1])
 
     return card

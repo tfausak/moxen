@@ -65,11 +65,11 @@ class Card(models.Model):
     # Creatures have power and toughness (208.1), planeswalkers
     # have loyalty (209.1), and vangaurds have modifiers (210.1,
     # 211.1).
-    power = models.CharField(blank=True, max_length=255)
-    toughness = models.CharField(blank=True, max_length=255)
-    loyalty = models.CharField(blank=True, max_length=255)
-    hand_modifier = models.CharField(blank=True, max_length=255)
-    life_modifier = models.CharField(blank=True, max_length=255)
+    power = models.CharField(blank=True, max_length=3)
+    toughness = models.CharField(blank=True, max_length=3)
+    loyalty = models.PositiveIntegerField(blank=True, default=0)
+    hand_modifier = models.IntegerField(blank=True, default=0)
+    life_modifier = models.IntegerField(blank=True, default=0)
 
     class Meta:
         ordering = ['name']
