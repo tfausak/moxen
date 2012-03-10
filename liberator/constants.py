@@ -6,10 +6,12 @@ import re
 GATHERER_URL = re.compile('^http://gatherer[.]wizards[.]com/')
 GATHERER_TEXT_URL = re.compile(r'\bmethod=text\b')
 
-#
+# Every mana cost is made up of zero or more mana symbol.
 MANA_SYMBOL = re.compile(
     r'({0})|\((({0})/({0}))\)'.format(r'\d+|[wubrgxyzpstq]'))
 
+# Each mana symbol has an associated value. It's easier to get these
+# from a dictionary than calling `int()` on everything.
 MANA_COST = defaultdict(lambda: 0, {
     'w': 1, 'u': 1, 'b': 1, 'r': 1, 'g': 1,
     '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9,
