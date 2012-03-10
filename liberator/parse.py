@@ -34,11 +34,20 @@ def _parse_gatherer_text(response):
     for tag in tags:
         tag = tag.parent.parent
         card = [tag] + tag.findNextSiblings('tr', limit=5)
-        cards.append({
-            'name': card[0].contents[3].contents[1].string,
-            'rules_text': card[4].contents[3].findAll(text=True),
-            'mana_cost': card[1].contents[3].string,
-            'type': card[2].contents[3].string,
-            'misc': card[3].contents[3].string,
-        })
+        if card[1].contents[3].string.lower().strip() == 'vanguard':
+            cards.append({
+                'name': card[0].contents[3].contents[1].string,
+                'rules_text': card[3].contents[3].findAll(text=True),
+                'mana_cost': '',
+                'type': card[1].contents[3].string,
+                'misc': card[2].contents[3].string,
+            })
+        else:
+            cards.append({
+                'name': card[0].contents[3].contents[1].string,
+                'rules_text': card[4].contents[3].findAll(text=True),
+                'mana_cost': card[1].contents[3].string,
+                'type': card[2].contents[3].string,
+                'misc': card[3].contents[3].string,
+            })
     return cards
