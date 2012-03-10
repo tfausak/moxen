@@ -28,6 +28,9 @@ def _normalize_card(card):
     card['mana_cost'] = re.findall(
         r'({0})|\(({0})/({0})\)'.format(liberator.constants.MANA_SYMBOL),
         card['mana_cost'].lower().strip())
+    card['converted_mana_cost'] = sum(max(
+            liberator.constants.MANA_COST[symbol] for symbol in symbols)
+        for symbols in card['mana_cost'])
     card['mana_cost'] = '}{'.join('/'.join((x,) if x else (y, z))
         for x, y, z in card['mana_cost'])
     if card['mana_cost']:
@@ -56,5 +59,17 @@ def _normalize_card(card):
         matches = re.findall(r'([-+]\d+)', card['misc'])
         card['hand_modifier'] = int(matches[0])
         card['life_modifier'] = int(matches[1])
+
+    # Derived fields.
+    card['colors'] = [color for pattern, color
+        in liberator.constants.COLORS if re.search(pattern, card['mana_cost'])]
+    try:
+        card['converted_power'] = int(card['power'])
+    except ValueError:
+        card['converted_power'] = 0
+    try:
+        card['converted_toughness'] = int(card['toughness'])
+    except ValueError:
+        card['converted_toughness'] = 0
 
     return card
