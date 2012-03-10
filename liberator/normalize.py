@@ -1,5 +1,4 @@
 from django.template.defaultfilters import slugify
-from magic.models import CardType, SubType, SuperType
 import liberator.constants
 import re
 
