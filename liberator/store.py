@@ -1,15 +1,19 @@
 """Functions to store cards from a web page into the database.
 """
+from django.template.defaultfilters import slugify
+from magic.models import CardAtom
+import magic.constants
 
 
-def store(cards):
+def store(data):
     """Save a bunch of cards.
     """
-    for card in cards:
-        _store_card(card)
+    card_atoms = []
 
+    for datum in data:
+        card_atom, _ = CardAtom.objects.get_or_create(name=datum['name'],
+            slug=slugify(datum['name'].translate(
+                magic.constants.CARD_SLUG_TRANSLATION_TABLE)))
 
-def _store_card(card):
-    """Save a single card.
-    """
-    raise NotImplementedError
+        card_atoms.append(card_atom)
+    return card_atoms
