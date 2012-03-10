@@ -39,5 +39,6 @@ def _parse_gatherer_text(response):
         cards[index] = {
             'name': card[0].contents[3].contents[1].string,
             'rules_text': card[4].contents[3].findAll(text=True),
+            'mana_cost': card[1].contents[3].string,
         }
     return cards

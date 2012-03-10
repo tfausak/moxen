@@ -1,4 +1,5 @@
 from django.template.defaultfilters import slugify
+import liberator.constants
 import re
 
 
@@ -22,5 +23,14 @@ def _normalize_card(card):
 
     # Rules text
     card['rules_text'] = '\n'.join(line.strip() for line in card['rules_text'])
+
+    # Mana cost
+    card['mana_cost'] = re.findall(
+        r'({0})|\(({0})/({0})\)'.format(liberator.constants.MANA_SYMBOL),
+        card['mana_cost'].lower().strip())
+    card['mana_cost'] = '}{'.join('/'.join((x,) if x else (y, z))
+        for x, y, z in card['mana_cost'])
+    if card['mana_cost']:
+        card['mana_cost'] = '{' + card['mana_cost'] + '}'
 
     return card

@@ -12,5 +12,6 @@ def _store_card(card):
     """
     card_, _ = Card.objects.get_or_create(name=card['name'], slug=card['slug'])
     card_.rules_text = card['rules_text']
+    card_.mana_cost = card['mana_cost']
     card_.save()
     return card_
