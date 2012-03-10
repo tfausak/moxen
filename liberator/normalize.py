@@ -12,13 +12,21 @@ def normalize(cards):
 def _normalize_card(card):
     """Normalize a single card's fields.
     """
-    # Name
-    card['name'] = re.sub('\s+', ' ', card['name'].lower().strip())
+    # Basic cleanup of string fields.
+    card['name'] = card['name'].lower().strip()
+    card['mana_cost'] = card['mana_cost'].lower().strip()
+    card['type'] = card['type'].lower().strip()
+
+    # Set default values.
+    card['power'] = card['toughness'] = ''
+    card['loyalty'] = card['hand_modifier'] = card['life_modifier'] = 0
+    card['converted_mana_cost'] = 0
+    card['converted_power'] = card['converted_toughness'] = 0
+
+    # Name and slug
     match = re.search(r'\((.*)\)$', card['name'])
     if match:
         card['name'] = match.group(1)
-
-    # Slug
     card['slug'] = slugify(card['name'])
 
     # Rules text
@@ -26,18 +34,13 @@ def _normalize_card(card):
 
     # Mana cost
     card['mana_cost'] = re.findall(
-        r'({0})|\(({0})/({0})\)'.format(liberator.constants.MANA_SYMBOL),
-        card['mana_cost'].lower().strip())
-    card['converted_mana_cost'] = sum(max(
-            liberator.constants.MANA_COST[symbol] for symbol in symbols)
-        for symbols in card['mana_cost'])
-    card['mana_cost'] = '}{'.join('/'.join((x,) if x else (y, z))
-        for x, y, z in card['mana_cost'])
-    if card['mana_cost']:
-        card['mana_cost'] = '{' + card['mana_cost'] + '}'
+        liberator.constants.MANA_SYMBOL, card['mana_cost'])
+    card['mana_cost'] = ['/'.join(symbol[0] or symbol[1:])
+        for symbol in card['mana_cost']]
+    card['mana_cost'] = ('{' + '}{'.join(card['mana_cost']) + '}'
+        if card['mana_cost'] else '')
 
     # Super, card, and sub types
-    card['type'] = card['type'].lower().strip()
     card['super_types'] = [super_type for super_type
         in liberator.constants.SUPER_TYPES
         if re.search(super_type.pattern, card['type'])]
@@ -49,8 +52,6 @@ def _normalize_card(card):
         if re.search(sub_type.pattern, card['type'])]
 
     # Power, toughness, loyalty, and hand and life modifiers
-    card['power'] = card['toughness'] = ''
-    card['loyalty'] = card['hand_modifier'] = card['life_modifier'] = 0
     if liberator.constants.CREATURE_CARD_TYPE in card['card_types']:
         card['power'], card['toughness'] = re.search(
             r'\((.+)/(.+)\)', card['misc']).groups()
@@ -67,10 +68,10 @@ def _normalize_card(card):
     try:
         card['converted_power'] = int(card['power'])
     except ValueError:
-        card['converted_power'] = 0
+        pass
     try:
         card['converted_toughness'] = int(card['toughness'])
     except ValueError:
-        card['converted_toughness'] = 0
+        pass
 
     return card
