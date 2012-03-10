@@ -40,6 +40,33 @@ class SubType(models.Model):
         ordering = ['name']
 
 
+class Set(models.Model):
+    """Set (206.1).
+    """
+    name = models.CharField(max_length=39, unique=True)
+    slug = models.SlugField(max_length=3, unique=True)
+
+    def __unicode__(self):
+        return self.name
+
+    class Meta:
+        ordering = ['name']
+
+
+class Rarity(models.Model):
+    """Rarity (206.2).
+    """
+    name = models.CharField(max_length=11, unique=True)
+    slug = models.SlugField(max_length=1, unique=True)
+
+    def __unicode__(self):
+        return self.name
+
+    class Meta:
+        ordering = ['name']
+        verbose_name_plural = 'rarities'
+
+
 class Card(models.Model):
     """A Magic: The Gathering card.
     """

@@ -20,6 +20,16 @@ class SubTypeAdmin(admin.ModelAdmin):
 admin.site.register(magic.models.SubType, SubTypeAdmin)
 
 
+class SetAdmin(admin.ModelAdmin):
+    search_fields = ['name']
+admin.site.register(magic.models.Set, SetAdmin)
+
+
+class RarityAdmin(admin.ModelAdmin):
+    search_fields = ['name']
+admin.site.register(magic.models.Rarity, RarityAdmin)
+
+
 class CardAdmin(admin.ModelAdmin):
     list_filter = ('super_types', 'card_types')
     prepopulated_fields = {'slug': ('name',)}
