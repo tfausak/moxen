@@ -145,3 +145,21 @@ class Card(models.Model):
                 self.other.other = self
                 self.other.kind = self.kind
                 self.other.save()
+
+
+class PrintedCard(models.Model):
+    """A printed card.
+
+    One card can (and often is) printed in multiple sets. Within
+    each set, its rarity might be different than any other.
+    """
+    card = models.ForeignKey(Card)
+    set = models.ForeignKey(Set)
+    rarity = models.ForeignKey(Rarity)
+
+    class Meta:
+        ordering = ['card__name']
+        unique_together = ['card', 'set', 'rarity']
+
+    def __unicode__(self):
+        return self.card.name

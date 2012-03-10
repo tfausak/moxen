@@ -40,3 +40,10 @@ class CardAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('name',)}
     search_fields = ['name']
 admin.site.register(magic.models.Card, CardAdmin)
+
+
+class PrintedCardAdmin(admin.ModelAdmin):
+    list_display = ('card', 'set', 'rarity')
+    list_filter = ('rarity', 'set')
+    search_fields = ['card__name']
+admin.site.register(magic.models.PrintedCard, PrintedCardAdmin)
