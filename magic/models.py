@@ -83,6 +83,13 @@ class Color(models.Model):
 class Card(models.Model):
     """A Magic: The Gathering card.
     """
+    KIND_CHOICES = (
+        ('n', 'normal'),
+        ('d', 'double-faced'),
+        ('f', 'flip'),
+        ('s', 'split'),
+    )
+
     # Every Magic card has a unique name (201.2). An elemental from
     # Unhinged has the longest name at 141 characters.
     name = models.CharField(max_length=141, unique=True)
@@ -110,6 +117,12 @@ class Card(models.Model):
     loyalty = models.PositiveIntegerField(blank=True, default=0)
     hand_modifier = models.IntegerField(blank=True, default=0)
     life_modifier = models.IntegerField(blank=True, default=0)
+
+    # Some cards are comprised of more than one (conceptual) card
+    # printed on one (actual) card.
+    other = models.OneToOneField('self', blank=True, null=True)
+    kind = models.CharField(blank=True, choices=KIND_CHOICES,
+        default=KIND_CHOICES[0][0], max_length=1)
 
     # These fields are derived from other fields.
     colors = models.ManyToManyField(Color, blank=True)
