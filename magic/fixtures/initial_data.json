@@ -1,0 +1,2386 @@
+[
+    {
+        "fields": {
+            "name": "basic",
+            "slug": "basic"
+        },
+        "model": "magic.supertype",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "name": "legendary",
+            "slug": "legendary"
+        },
+        "model": "magic.supertype",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "name": "ongoing",
+            "slug": "ongoing"
+        },
+        "model": "magic.supertype",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "name": "snow",
+            "slug": "snow"
+        },
+        "model": "magic.supertype",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "name": "world",
+            "slug": "world"
+        },
+        "model": "magic.supertype",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "name": "artifact",
+            "slug": "artifact"
+        },
+        "model": "magic.cardtype",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "name": "creature",
+            "slug": "creature"
+        },
+        "model": "magic.cardtype",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "name": "enchantment",
+            "slug": "enchantment"
+        },
+        "model": "magic.cardtype",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "name": "instant",
+            "slug": "instant"
+        },
+        "model": "magic.cardtype",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "name": "land",
+            "slug": "land"
+        },
+        "model": "magic.cardtype",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "name": "plane",
+            "slug": "plane"
+        },
+        "model": "magic.cardtype",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "name": "planeswalker",
+            "slug": "planeswalker"
+        },
+        "model": "magic.cardtype",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "name": "scheme",
+            "slug": "scheme"
+        },
+        "model": "magic.cardtype",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "name": "sorcery",
+            "slug": "sorcery"
+        },
+        "model": "magic.cardtype",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "name": "tribal",
+            "slug": "tribal"
+        },
+        "model": "magic.cardtype",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "name": "vanguard",
+            "slug": "vanguard"
+        },
+        "model": "magic.cardtype",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "name": "advisor",
+            "slug": "advisor"
+        },
+        "model": "magic.subtype",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "name": "ajani",
+            "slug": "ajani"
+        },
+        "model": "magic.subtype",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "name": "alara",
+            "slug": "alara"
+        },
+        "model": "magic.subtype",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "name": "ally",
+            "slug": "ally"
+        },
+        "model": "magic.subtype",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "name": "angel",
+            "slug": "angel"
+        },
+        "model": "magic.subtype",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "name": "anteater",
+            "slug": "anteater"
+        },
+        "model": "magic.subtype",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "name": "antelope",
+            "slug": "antelope"
+        },
+        "model": "magic.subtype",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "name": "ape",
+            "slug": "ape"
+        },
+        "model": "magic.subtype",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "name": "arcance",
+            "slug": "arcance"
+        },
+        "model": "magic.subtype",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "name": "archer",
+            "slug": "archer"
+        },
+        "model": "magic.subtype",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "name": "archon",
+            "slug": "archon"
+        },
+        "model": "magic.subtype",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "name": "arkhos",
+            "slug": "arkhos"
+        },
+        "model": "magic.subtype",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "name": "artificer",
+            "slug": "artificer"
+        },
+        "model": "magic.subtype",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "name": "assassin",
+            "slug": "assassin"
+        },
+        "model": "magic.subtype",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "name": "assembly-worker",
+            "slug": "assembly-worker"
+        },
+        "model": "magic.subtype",
+        "pk": 15
+    },
+    {
+        "fields": {
+            "name": "atog",
+            "slug": "atog"
+        },
+        "model": "magic.subtype",
+        "pk": 16
+    },
+    {
+        "fields": {
+            "name": "aura",
+            "slug": "aura"
+        },
+        "model": "magic.subtype",
+        "pk": 17
+    },
+    {
+        "fields": {
+            "name": "aurochs",
+            "slug": "aurochs"
+        },
+        "model": "magic.subtype",
+        "pk": 18
+    },
+    {
+        "fields": {
+            "name": "avatar",
+            "slug": "avatar"
+        },
+        "model": "magic.subtype",
+        "pk": 19
+    },
+    {
+        "fields": {
+            "name": "badger",
+            "slug": "badger"
+        },
+        "model": "magic.subtype",
+        "pk": 20
+    },
+    {
+        "fields": {
+            "name": "barbarian",
+            "slug": "barbarian"
+        },
+        "model": "magic.subtype",
+        "pk": 21
+    },
+    {
+        "fields": {
+            "name": "basilisk",
+            "slug": "basilisk"
+        },
+        "model": "magic.subtype",
+        "pk": 22
+    },
+    {
+        "fields": {
+            "name": "bat",
+            "slug": "bat"
+        },
+        "model": "magic.subtype",
+        "pk": 23
+    },
+    {
+        "fields": {
+            "name": "bear",
+            "slug": "bear"
+        },
+        "model": "magic.subtype",
+        "pk": 24
+    },
+    {
+        "fields": {
+            "name": "beast",
+            "slug": "beast"
+        },
+        "model": "magic.subtype",
+        "pk": 25
+    },
+    {
+        "fields": {
+            "name": "beeble",
+            "slug": "beeble"
+        },
+        "model": "magic.subtype",
+        "pk": 26
+    },
+    {
+        "fields": {
+            "name": "berserker",
+            "slug": "berserker"
+        },
+        "model": "magic.subtype",
+        "pk": 27
+    },
+    {
+        "fields": {
+            "name": "bird",
+            "slug": "bird"
+        },
+        "model": "magic.subtype",
+        "pk": 28
+    },
+    {
+        "fields": {
+            "name": "blinkmoth",
+            "slug": "blinkmoth"
+        },
+        "model": "magic.subtype",
+        "pk": 29
+    },
+    {
+        "fields": {
+            "name": "boar",
+            "slug": "boar"
+        },
+        "model": "magic.subtype",
+        "pk": 30
+    },
+    {
+        "fields": {
+            "name": "bolas",
+            "slug": "bolas"
+        },
+        "model": "magic.subtype",
+        "pk": 31
+    },
+    {
+        "fields": {
+            "name": "bolas's meditation realm",
+            "slug": "bolass-meditation-realm"
+        },
+        "model": "magic.subtype",
+        "pk": 32
+    },
+    {
+        "fields": {
+            "name": "bringer",
+            "slug": "bringer"
+        },
+        "model": "magic.subtype",
+        "pk": 33
+    },
+    {
+        "fields": {
+            "name": "brushwagg",
+            "slug": "brushwagg"
+        },
+        "model": "magic.subtype",
+        "pk": 34
+    },
+    {
+        "fields": {
+            "name": "camarid",
+            "slug": "camarid"
+        },
+        "model": "magic.subtype",
+        "pk": 35
+    },
+    {
+        "fields": {
+            "name": "camel",
+            "slug": "camel"
+        },
+        "model": "magic.subtype",
+        "pk": 36
+    },
+    {
+        "fields": {
+            "name": "caribou",
+            "slug": "caribou"
+        },
+        "model": "magic.subtype",
+        "pk": 37
+    },
+    {
+        "fields": {
+            "name": "carrier",
+            "slug": "carrier"
+        },
+        "model": "magic.subtype",
+        "pk": 38
+    },
+    {
+        "fields": {
+            "name": "cat",
+            "slug": "cat"
+        },
+        "model": "magic.subtype",
+        "pk": 39
+    },
+    {
+        "fields": {
+            "name": "centaur",
+            "slug": "centaur"
+        },
+        "model": "magic.subtype",
+        "pk": 40
+    },
+    {
+        "fields": {
+            "name": "cephalid",
+            "slug": "cephalid"
+        },
+        "model": "magic.subtype",
+        "pk": 41
+    },
+    {
+        "fields": {
+            "name": "chandra",
+            "slug": "chandra"
+        },
+        "model": "magic.subtype",
+        "pk": 42
+    },
+    {
+        "fields": {
+            "name": "chimera",
+            "slug": "chimera"
+        },
+        "model": "magic.subtype",
+        "pk": 43
+    },
+    {
+        "fields": {
+            "name": "citizen",
+            "slug": "citizen"
+        },
+        "model": "magic.subtype",
+        "pk": 44
+    },
+    {
+        "fields": {
+            "name": "cleric",
+            "slug": "cleric"
+        },
+        "model": "magic.subtype",
+        "pk": 45
+    },
+    {
+        "fields": {
+            "name": "cockatrice",
+            "slug": "cockatrice"
+        },
+        "model": "magic.subtype",
+        "pk": 46
+    },
+    {
+        "fields": {
+            "name": "construct",
+            "slug": "construct"
+        },
+        "model": "magic.subtype",
+        "pk": 47
+    },
+    {
+        "fields": {
+            "name": "contraption",
+            "slug": "contraption"
+        },
+        "model": "magic.subtype",
+        "pk": 48
+    },
+    {
+        "fields": {
+            "name": "coward",
+            "slug": "coward"
+        },
+        "model": "magic.subtype",
+        "pk": 49
+    },
+    {
+        "fields": {
+            "name": "crab",
+            "slug": "crab"
+        },
+        "model": "magic.subtype",
+        "pk": 50
+    },
+    {
+        "fields": {
+            "name": "crocodile",
+            "slug": "crocodile"
+        },
+        "model": "magic.subtype",
+        "pk": 51
+    },
+    {
+        "fields": {
+            "name": "cyclops",
+            "slug": "cyclops"
+        },
+        "model": "magic.subtype",
+        "pk": 52
+    },
+    {
+        "fields": {
+            "name": "dauthi",
+            "slug": "dauthi"
+        },
+        "model": "magic.subtype",
+        "pk": 53
+    },
+    {
+        "fields": {
+            "name": "demon",
+            "slug": "demon"
+        },
+        "model": "magic.subtype",
+        "pk": 54
+    },
+    {
+        "fields": {
+            "name": "desert",
+            "slug": "desert"
+        },
+        "model": "magic.subtype",
+        "pk": 55
+    },
+    {
+        "fields": {
+            "name": "deserter",
+            "slug": "deserter"
+        },
+        "model": "magic.subtype",
+        "pk": 56
+    },
+    {
+        "fields": {
+            "name": "devil",
+            "slug": "devil"
+        },
+        "model": "magic.subtype",
+        "pk": 57
+    },
+    {
+        "fields": {
+            "name": "djinn",
+            "slug": "djinn"
+        },
+        "model": "magic.subtype",
+        "pk": 58
+    },
+    {
+        "fields": {
+            "name": "dominaria",
+            "slug": "dominaria"
+        },
+        "model": "magic.subtype",
+        "pk": 59
+    },
+    {
+        "fields": {
+            "name": "dragon",
+            "slug": "dragon"
+        },
+        "model": "magic.subtype",
+        "pk": 60
+    },
+    {
+        "fields": {
+            "name": "drake",
+            "slug": "drake"
+        },
+        "model": "magic.subtype",
+        "pk": 61
+    },
+    {
+        "fields": {
+            "name": "dreadnought",
+            "slug": "dreadnought"
+        },
+        "model": "magic.subtype",
+        "pk": 62
+    },
+    {
+        "fields": {
+            "name": "drone",
+            "slug": "drone"
+        },
+        "model": "magic.subtype",
+        "pk": 63
+    },
+    {
+        "fields": {
+            "name": "druid",
+            "slug": "druid"
+        },
+        "model": "magic.subtype",
+        "pk": 64
+    },
+    {
+        "fields": {
+            "name": "dryad",
+            "slug": "dryad"
+        },
+        "model": "magic.subtype",
+        "pk": 65
+    },
+    {
+        "fields": {
+            "name": "dwarf",
+            "slug": "dwarf"
+        },
+        "model": "magic.subtype",
+        "pk": 66
+    },
+    {
+        "fields": {
+            "name": "efreet",
+            "slug": "efreet"
+        },
+        "model": "magic.subtype",
+        "pk": 67
+    },
+    {
+        "fields": {
+            "name": "elder",
+            "slug": "elder"
+        },
+        "model": "magic.subtype",
+        "pk": 68
+    },
+    {
+        "fields": {
+            "name": "eldrazi",
+            "slug": "eldrazi"
+        },
+        "model": "magic.subtype",
+        "pk": 69
+    },
+    {
+        "fields": {
+            "name": "elemental",
+            "slug": "elemental"
+        },
+        "model": "magic.subtype",
+        "pk": 70
+    },
+    {
+        "fields": {
+            "name": "elephant",
+            "slug": "elephant"
+        },
+        "model": "magic.subtype",
+        "pk": 71
+    },
+    {
+        "fields": {
+            "name": "elf",
+            "slug": "elf"
+        },
+        "model": "magic.subtype",
+        "pk": 72
+    },
+    {
+        "fields": {
+            "name": "elk",
+            "slug": "elk"
+        },
+        "model": "magic.subtype",
+        "pk": 73
+    },
+    {
+        "fields": {
+            "name": "elspeth",
+            "slug": "elspeth"
+        },
+        "model": "magic.subtype",
+        "pk": 74
+    },
+    {
+        "fields": {
+            "name": "equilor",
+            "slug": "equilor"
+        },
+        "model": "magic.subtype",
+        "pk": 75
+    },
+    {
+        "fields": {
+            "name": "equipment",
+            "slug": "equipment"
+        },
+        "model": "magic.subtype",
+        "pk": 76
+    },
+    {
+        "fields": {
+            "name": "eye",
+            "slug": "eye"
+        },
+        "model": "magic.subtype",
+        "pk": 77
+    },
+    {
+        "fields": {
+            "name": "faerie",
+            "slug": "faerie"
+        },
+        "model": "magic.subtype",
+        "pk": 78
+    },
+    {
+        "fields": {
+            "name": "ferret",
+            "slug": "ferret"
+        },
+        "model": "magic.subtype",
+        "pk": 79
+    },
+    {
+        "fields": {
+            "name": "fish",
+            "slug": "fish"
+        },
+        "model": "magic.subtype",
+        "pk": 80
+    },
+    {
+        "fields": {
+            "name": "flagbearer",
+            "slug": "flagbearer"
+        },
+        "model": "magic.subtype",
+        "pk": 81
+    },
+    {
+        "fields": {
+            "name": "forest",
+            "slug": "forest"
+        },
+        "model": "magic.subtype",
+        "pk": 82
+    },
+    {
+        "fields": {
+            "name": "fortification",
+            "slug": "fortification"
+        },
+        "model": "magic.subtype",
+        "pk": 83
+    },
+    {
+        "fields": {
+            "name": "fox",
+            "slug": "fox"
+        },
+        "model": "magic.subtype",
+        "pk": 84
+    },
+    {
+        "fields": {
+            "name": "frog",
+            "slug": "frog"
+        },
+        "model": "magic.subtype",
+        "pk": 85
+    },
+    {
+        "fields": {
+            "name": "fungus",
+            "slug": "fungus"
+        },
+        "model": "magic.subtype",
+        "pk": 86
+    },
+    {
+        "fields": {
+            "name": "gargoyle",
+            "slug": "gargoyle"
+        },
+        "model": "magic.subtype",
+        "pk": 87
+    },
+    {
+        "fields": {
+            "name": "garruk",
+            "slug": "garruk"
+        },
+        "model": "magic.subtype",
+        "pk": 88
+    },
+    {
+        "fields": {
+            "name": "giant",
+            "slug": "giant"
+        },
+        "model": "magic.subtype",
+        "pk": 89
+    },
+    {
+        "fields": {
+            "name": "gideon",
+            "slug": "gideon"
+        },
+        "model": "magic.subtype",
+        "pk": 90
+    },
+    {
+        "fields": {
+            "name": "gnome",
+            "slug": "gnome"
+        },
+        "model": "magic.subtype",
+        "pk": 91
+    },
+    {
+        "fields": {
+            "name": "goat",
+            "slug": "goat"
+        },
+        "model": "magic.subtype",
+        "pk": 92
+    },
+    {
+        "fields": {
+            "name": "goblin",
+            "slug": "goblin"
+        },
+        "model": "magic.subtype",
+        "pk": 93
+    },
+    {
+        "fields": {
+            "name": "golem",
+            "slug": "golem"
+        },
+        "model": "magic.subtype",
+        "pk": 94
+    },
+    {
+        "fields": {
+            "name": "gorgon",
+            "slug": "gorgon"
+        },
+        "model": "magic.subtype",
+        "pk": 95
+    },
+    {
+        "fields": {
+            "name": "graveborn",
+            "slug": "graveborn"
+        },
+        "model": "magic.subtype",
+        "pk": 96
+    },
+    {
+        "fields": {
+            "name": "griffin",
+            "slug": "griffin"
+        },
+        "model": "magic.subtype",
+        "pk": 97
+    },
+    {
+        "fields": {
+            "name": "hag",
+            "slug": "hag"
+        },
+        "model": "magic.subtype",
+        "pk": 98
+    },
+    {
+        "fields": {
+            "name": "harpy",
+            "slug": "harpy"
+        },
+        "model": "magic.subtype",
+        "pk": 99
+    },
+    {
+        "fields": {
+            "name": "hellion",
+            "slug": "hellion"
+        },
+        "model": "magic.subtype",
+        "pk": 100
+    },
+    {
+        "fields": {
+            "name": "hippo",
+            "slug": "hippo"
+        },
+        "model": "magic.subtype",
+        "pk": 101
+    },
+    {
+        "fields": {
+            "name": "hippogriff",
+            "slug": "hippogriff"
+        },
+        "model": "magic.subtype",
+        "pk": 102
+    },
+    {
+        "fields": {
+            "name": "homarid",
+            "slug": "homarid"
+        },
+        "model": "magic.subtype",
+        "pk": 103
+    },
+    {
+        "fields": {
+            "name": "homunculus",
+            "slug": "homunculus"
+        },
+        "model": "magic.subtype",
+        "pk": 104
+    },
+    {
+        "fields": {
+            "name": "horror",
+            "slug": "horror"
+        },
+        "model": "magic.subtype",
+        "pk": 105
+    },
+    {
+        "fields": {
+            "name": "horse",
+            "slug": "horse"
+        },
+        "model": "magic.subtype",
+        "pk": 106
+    },
+    {
+        "fields": {
+            "name": "hound",
+            "slug": "hound"
+        },
+        "model": "magic.subtype",
+        "pk": 107
+    },
+    {
+        "fields": {
+            "name": "human",
+            "slug": "human"
+        },
+        "model": "magic.subtype",
+        "pk": 108
+    },
+    {
+        "fields": {
+            "name": "hydra",
+            "slug": "hydra"
+        },
+        "model": "magic.subtype",
+        "pk": 109
+    },
+    {
+        "fields": {
+            "name": "hyena",
+            "slug": "hyena"
+        },
+        "model": "magic.subtype",
+        "pk": 110
+    },
+    {
+        "fields": {
+            "name": "illusion",
+            "slug": "illusion"
+        },
+        "model": "magic.subtype",
+        "pk": 111
+    },
+    {
+        "fields": {
+            "name": "imp",
+            "slug": "imp"
+        },
+        "model": "magic.subtype",
+        "pk": 112
+    },
+    {
+        "fields": {
+            "name": "incarnation",
+            "slug": "incarnation"
+        },
+        "model": "magic.subtype",
+        "pk": 113
+    },
+    {
+        "fields": {
+            "name": "insect",
+            "slug": "insect"
+        },
+        "model": "magic.subtype",
+        "pk": 114
+    },
+    {
+        "fields": {
+            "name": "iquatana",
+            "slug": "iquatana"
+        },
+        "model": "magic.subtype",
+        "pk": 115
+    },
+    {
+        "fields": {
+            "name": "ir",
+            "slug": "ir"
+        },
+        "model": "magic.subtype",
+        "pk": 116
+    },
+    {
+        "fields": {
+            "name": "island",
+            "slug": "island"
+        },
+        "model": "magic.subtype",
+        "pk": 117
+    },
+    {
+        "fields": {
+            "name": "jace",
+            "slug": "jace"
+        },
+        "model": "magic.subtype",
+        "pk": 118
+    },
+    {
+        "fields": {
+            "name": "jellyfish",
+            "slug": "jellyfish"
+        },
+        "model": "magic.subtype",
+        "pk": 119
+    },
+    {
+        "fields": {
+            "name": "juggernaut",
+            "slug": "juggernaut"
+        },
+        "model": "magic.subtype",
+        "pk": 120
+    },
+    {
+        "fields": {
+            "name": "kaldheim",
+            "slug": "kaldheim"
+        },
+        "model": "magic.subtype",
+        "pk": 121
+    },
+    {
+        "fields": {
+            "name": "kamigawa",
+            "slug": "kamigawa"
+        },
+        "model": "magic.subtype",
+        "pk": 122
+    },
+    {
+        "fields": {
+            "name": "karsus",
+            "slug": "karsus"
+        },
+        "model": "magic.subtype",
+        "pk": 123
+    },
+    {
+        "fields": {
+            "name": "kavu",
+            "slug": "kavu"
+        },
+        "model": "magic.subtype",
+        "pk": 124
+    },
+    {
+        "fields": {
+            "name": "kirin",
+            "slug": "kirin"
+        },
+        "model": "magic.subtype",
+        "pk": 125
+    },
+    {
+        "fields": {
+            "name": "kithkin",
+            "slug": "kithkin"
+        },
+        "model": "magic.subtype",
+        "pk": 126
+    },
+    {
+        "fields": {
+            "name": "knight",
+            "slug": "knight"
+        },
+        "model": "magic.subtype",
+        "pk": 127
+    },
+    {
+        "fields": {
+            "name": "kobold",
+            "slug": "kobold"
+        },
+        "model": "magic.subtype",
+        "pk": 128
+    },
+    {
+        "fields": {
+            "name": "kor",
+            "slug": "kor"
+        },
+        "model": "magic.subtype",
+        "pk": 129
+    },
+    {
+        "fields": {
+            "name": "koth",
+            "slug": "koth"
+        },
+        "model": "magic.subtype",
+        "pk": 130
+    },
+    {
+        "fields": {
+            "name": "kraken",
+            "slug": "kraken"
+        },
+        "model": "magic.subtype",
+        "pk": 131
+    },
+    {
+        "fields": {
+            "name": "lair",
+            "slug": "lair"
+        },
+        "model": "magic.subtype",
+        "pk": 132
+    },
+    {
+        "fields": {
+            "name": "lammasu",
+            "slug": "lammasu"
+        },
+        "model": "magic.subtype",
+        "pk": 133
+    },
+    {
+        "fields": {
+            "name": "leech",
+            "slug": "leech"
+        },
+        "model": "magic.subtype",
+        "pk": 134
+    },
+    {
+        "fields": {
+            "name": "leviathan",
+            "slug": "leviathan"
+        },
+        "model": "magic.subtype",
+        "pk": 135
+    },
+    {
+        "fields": {
+            "name": "lhurgoyf",
+            "slug": "lhurgoyf"
+        },
+        "model": "magic.subtype",
+        "pk": 136
+    },
+    {
+        "fields": {
+            "name": "licid",
+            "slug": "licid"
+        },
+        "model": "magic.subtype",
+        "pk": 137
+    },
+    {
+        "fields": {
+            "name": "liliana",
+            "slug": "liliana"
+        },
+        "model": "magic.subtype",
+        "pk": 138
+    },
+    {
+        "fields": {
+            "name": "lizard",
+            "slug": "lizard"
+        },
+        "model": "magic.subtype",
+        "pk": 139
+    },
+    {
+        "fields": {
+            "name": "locus",
+            "slug": "locus"
+        },
+        "model": "magic.subtype",
+        "pk": 140
+    },
+    {
+        "fields": {
+            "name": "lorwyn",
+            "slug": "lorwyn"
+        },
+        "model": "magic.subtype",
+        "pk": 141
+    },
+    {
+        "fields": {
+            "name": "luvion",
+            "slug": "luvion"
+        },
+        "model": "magic.subtype",
+        "pk": 142
+    },
+    {
+        "fields": {
+            "name": "manticore",
+            "slug": "manticore"
+        },
+        "model": "magic.subtype",
+        "pk": 143
+    },
+    {
+        "fields": {
+            "name": "masticore",
+            "slug": "masticore"
+        },
+        "model": "magic.subtype",
+        "pk": 144
+    },
+    {
+        "fields": {
+            "name": "mercadia",
+            "slug": "mercadia"
+        },
+        "model": "magic.subtype",
+        "pk": 145
+    },
+    {
+        "fields": {
+            "name": "mercenary",
+            "slug": "mercenary"
+        },
+        "model": "magic.subtype",
+        "pk": 146
+    },
+    {
+        "fields": {
+            "name": "merfolk",
+            "slug": "merfolk"
+        },
+        "model": "magic.subtype",
+        "pk": 147
+    },
+    {
+        "fields": {
+            "name": "metathran",
+            "slug": "metathran"
+        },
+        "model": "magic.subtype",
+        "pk": 148
+    },
+    {
+        "fields": {
+            "name": "mine",
+            "slug": "mine"
+        },
+        "model": "magic.subtype",
+        "pk": 149
+    },
+    {
+        "fields": {
+            "name": "minion",
+            "slug": "minion"
+        },
+        "model": "magic.subtype",
+        "pk": 150
+    },
+    {
+        "fields": {
+            "name": "minotaur",
+            "slug": "minotaur"
+        },
+        "model": "magic.subtype",
+        "pk": 151
+    },
+    {
+        "fields": {
+            "name": "mirrodin",
+            "slug": "mirrodin"
+        },
+        "model": "magic.subtype",
+        "pk": 152
+    },
+    {
+        "fields": {
+            "name": "moag",
+            "slug": "moag"
+        },
+        "model": "magic.subtype",
+        "pk": 153
+    },
+    {
+        "fields": {
+            "name": "monger",
+            "slug": "monger"
+        },
+        "model": "magic.subtype",
+        "pk": 154
+    },
+    {
+        "fields": {
+            "name": "mongoose",
+            "slug": "mongoose"
+        },
+        "model": "magic.subtype",
+        "pk": 155
+    },
+    {
+        "fields": {
+            "name": "monk",
+            "slug": "monk"
+        },
+        "model": "magic.subtype",
+        "pk": 156
+    },
+    {
+        "fields": {
+            "name": "moonfolk",
+            "slug": "moonfolk"
+        },
+        "model": "magic.subtype",
+        "pk": 157
+    },
+    {
+        "fields": {
+            "name": "mountain",
+            "slug": "mountain"
+        },
+        "model": "magic.subtype",
+        "pk": 158
+    },
+    {
+        "fields": {
+            "name": "muraganda",
+            "slug": "muraganda"
+        },
+        "model": "magic.subtype",
+        "pk": 159
+    },
+    {
+        "fields": {
+            "name": "mutant",
+            "slug": "mutant"
+        },
+        "model": "magic.subtype",
+        "pk": 160
+    },
+    {
+        "fields": {
+            "name": "myr",
+            "slug": "myr"
+        },
+        "model": "magic.subtype",
+        "pk": 161
+    },
+    {
+        "fields": {
+            "name": "mystic",
+            "slug": "mystic"
+        },
+        "model": "magic.subtype",
+        "pk": 162
+    },
+    {
+        "fields": {
+            "name": "nautilus",
+            "slug": "nautilus"
+        },
+        "model": "magic.subtype",
+        "pk": 163
+    },
+    {
+        "fields": {
+            "name": "nephilim",
+            "slug": "nephilim"
+        },
+        "model": "magic.subtype",
+        "pk": 164
+    },
+    {
+        "fields": {
+            "name": "nightmare",
+            "slug": "nightmare"
+        },
+        "model": "magic.subtype",
+        "pk": 165
+    },
+    {
+        "fields": {
+            "name": "nightstalker",
+            "slug": "nightstalker"
+        },
+        "model": "magic.subtype",
+        "pk": 166
+    },
+    {
+        "fields": {
+            "name": "ninja",
+            "slug": "ninja"
+        },
+        "model": "magic.subtype",
+        "pk": 167
+    },
+    {
+        "fields": {
+            "name": "nissa",
+            "slug": "nissa"
+        },
+        "model": "magic.subtype",
+        "pk": 168
+    },
+    {
+        "fields": {
+            "name": "noggle",
+            "slug": "noggle"
+        },
+        "model": "magic.subtype",
+        "pk": 169
+    },
+    {
+        "fields": {
+            "name": "nomad",
+            "slug": "nomad"
+        },
+        "model": "magic.subtype",
+        "pk": 170
+    },
+    {
+        "fields": {
+            "name": "octopus",
+            "slug": "octopus"
+        },
+        "model": "magic.subtype",
+        "pk": 171
+    },
+    {
+        "fields": {
+            "name": "ogre",
+            "slug": "ogre"
+        },
+        "model": "magic.subtype",
+        "pk": 172
+    },
+    {
+        "fields": {
+            "name": "ooze",
+            "slug": "ooze"
+        },
+        "model": "magic.subtype",
+        "pk": 173
+    },
+    {
+        "fields": {
+            "name": "orb",
+            "slug": "orb"
+        },
+        "model": "magic.subtype",
+        "pk": 174
+    },
+    {
+        "fields": {
+            "name": "orc",
+            "slug": "orc"
+        },
+        "model": "magic.subtype",
+        "pk": 175
+    },
+    {
+        "fields": {
+            "name": "orgg",
+            "slug": "orgg"
+        },
+        "model": "magic.subtype",
+        "pk": 176
+    },
+    {
+        "fields": {
+            "name": "ouphe",
+            "slug": "ouphe"
+        },
+        "model": "magic.subtype",
+        "pk": 177
+    },
+    {
+        "fields": {
+            "name": "ox",
+            "slug": "ox"
+        },
+        "model": "magic.subtype",
+        "pk": 178
+    },
+    {
+        "fields": {
+            "name": "oyster",
+            "slug": "oyster"
+        },
+        "model": "magic.subtype",
+        "pk": 179
+    },
+    {
+        "fields": {
+            "name": "pegasus",
+            "slug": "pegasus"
+        },
+        "model": "magic.subtype",
+        "pk": 180
+    },
+    {
+        "fields": {
+            "name": "pentavite",
+            "slug": "pentavite"
+        },
+        "model": "magic.subtype",
+        "pk": 181
+    },
+    {
+        "fields": {
+            "name": "pest",
+            "slug": "pest"
+        },
+        "model": "magic.subtype",
+        "pk": 182
+    },
+    {
+        "fields": {
+            "name": "phelddagrif",
+            "slug": "phelddagrif"
+        },
+        "model": "magic.subtype",
+        "pk": 183
+    },
+    {
+        "fields": {
+            "name": "phoenix",
+            "slug": "phoenix"
+        },
+        "model": "magic.subtype",
+        "pk": 184
+    },
+    {
+        "fields": {
+            "name": "phyrexia",
+            "slug": "phyrexia"
+        },
+        "model": "magic.subtype",
+        "pk": 185
+    },
+    {
+        "fields": {
+            "name": "pincher",
+            "slug": "pincher"
+        },
+        "model": "magic.subtype",
+        "pk": 186
+    },
+    {
+        "fields": {
+            "name": "pirate",
+            "slug": "pirate"
+        },
+        "model": "magic.subtype",
+        "pk": 187
+    },
+    {
+        "fields": {
+            "name": "plains",
+            "slug": "plains"
+        },
+        "model": "magic.subtype",
+        "pk": 188
+    },
+    {
+        "fields": {
+            "name": "plant",
+            "slug": "plant"
+        },
+        "model": "magic.subtype",
+        "pk": 189
+    },
+    {
+        "fields": {
+            "name": "power-plant",
+            "slug": "power-plant"
+        },
+        "model": "magic.subtype",
+        "pk": 190
+    },
+    {
+        "fields": {
+            "name": "prism",
+            "slug": "prism"
+        },
+        "model": "magic.subtype",
+        "pk": 191
+    },
+    {
+        "fields": {
+            "name": "pyrulea",
+            "slug": "pyrulea"
+        },
+        "model": "magic.subtype",
+        "pk": 192
+    },
+    {
+        "fields": {
+            "name": "rabbit",
+            "slug": "rabbit"
+        },
+        "model": "magic.subtype",
+        "pk": 193
+    },
+    {
+        "fields": {
+            "name": "rabiah",
+            "slug": "rabiah"
+        },
+        "model": "magic.subtype",
+        "pk": 194
+    },
+    {
+        "fields": {
+            "name": "rat",
+            "slug": "rat"
+        },
+        "model": "magic.subtype",
+        "pk": 195
+    },
+    {
+        "fields": {
+            "name": "rath",
+            "slug": "rath"
+        },
+        "model": "magic.subtype",
+        "pk": 196
+    },
+    {
+        "fields": {
+            "name": "ravnica",
+            "slug": "ravnica"
+        },
+        "model": "magic.subtype",
+        "pk": 197
+    },
+    {
+        "fields": {
+            "name": "rebel",
+            "slug": "rebel"
+        },
+        "model": "magic.subtype",
+        "pk": 198
+    },
+    {
+        "fields": {
+            "name": "reflection",
+            "slug": "reflection"
+        },
+        "model": "magic.subtype",
+        "pk": 199
+    },
+    {
+        "fields": {
+            "name": "rhino",
+            "slug": "rhino"
+        },
+        "model": "magic.subtype",
+        "pk": 200
+    },
+    {
+        "fields": {
+            "name": "rigger",
+            "slug": "rigger"
+        },
+        "model": "magic.subtype",
+        "pk": 201
+    },
+    {
+        "fields": {
+            "name": "rogue",
+            "slug": "rogue"
+        },
+        "model": "magic.subtype",
+        "pk": 202
+    },
+    {
+        "fields": {
+            "name": "salamander",
+            "slug": "salamander"
+        },
+        "model": "magic.subtype",
+        "pk": 203
+    },
+    {
+        "fields": {
+            "name": "samurai",
+            "slug": "samurai"
+        },
+        "model": "magic.subtype",
+        "pk": 204
+    },
+    {
+        "fields": {
+            "name": "sand",
+            "slug": "sand"
+        },
+        "model": "magic.subtype",
+        "pk": 205
+    },
+    {
+        "fields": {
+            "name": "saproling",
+            "slug": "saproling"
+        },
+        "model": "magic.subtype",
+        "pk": 206
+    },
+    {
+        "fields": {
+            "name": "sarkhan",
+            "slug": "sarkhan"
+        },
+        "model": "magic.subtype",
+        "pk": 207
+    },
+    {
+        "fields": {
+            "name": "satyr",
+            "slug": "satyr"
+        },
+        "model": "magic.subtype",
+        "pk": 208
+    },
+    {
+        "fields": {
+            "name": "scarecrow",
+            "slug": "scarecrow"
+        },
+        "model": "magic.subtype",
+        "pk": 209
+    },
+    {
+        "fields": {
+            "name": "scorpion",
+            "slug": "scorpion"
+        },
+        "model": "magic.subtype",
+        "pk": 210
+    },
+    {
+        "fields": {
+            "name": "scout",
+            "slug": "scout"
+        },
+        "model": "magic.subtype",
+        "pk": 211
+    },
+    {
+        "fields": {
+            "name": "segovia",
+            "slug": "segovia"
+        },
+        "model": "magic.subtype",
+        "pk": 212
+    },
+    {
+        "fields": {
+            "name": "serf",
+            "slug": "serf"
+        },
+        "model": "magic.subtype",
+        "pk": 213
+    },
+    {
+        "fields": {
+            "name": "serpent",
+            "slug": "serpent"
+        },
+        "model": "magic.subtype",
+        "pk": 214
+    },
+    {
+        "fields": {
+            "name": "serra's realm",
+            "slug": "serras-realm"
+        },
+        "model": "magic.subtype",
+        "pk": 215
+    },
+    {
+        "fields": {
+            "name": "shade",
+            "slug": "shade"
+        },
+        "model": "magic.subtype",
+        "pk": 216
+    },
+    {
+        "fields": {
+            "name": "shadowmoor",
+            "slug": "shadowmoor"
+        },
+        "model": "magic.subtype",
+        "pk": 217
+    },
+    {
+        "fields": {
+            "name": "shaman",
+            "slug": "shaman"
+        },
+        "model": "magic.subtype",
+        "pk": 218
+    },
+    {
+        "fields": {
+            "name": "shandalar",
+            "slug": "shandalar"
+        },
+        "model": "magic.subtype",
+        "pk": 219
+    },
+    {
+        "fields": {
+            "name": "shapeshifter",
+            "slug": "shapeshifter"
+        },
+        "model": "magic.subtype",
+        "pk": 220
+    },
+    {
+        "fields": {
+            "name": "sheep",
+            "slug": "sheep"
+        },
+        "model": "magic.subtype",
+        "pk": 221
+    },
+    {
+        "fields": {
+            "name": "shrine",
+            "slug": "shrine"
+        },
+        "model": "magic.subtype",
+        "pk": 222
+    },
+    {
+        "fields": {
+            "name": "siren",
+            "slug": "siren"
+        },
+        "model": "magic.subtype",
+        "pk": 223
+    },
+    {
+        "fields": {
+            "name": "skeleton",
+            "slug": "skeleton"
+        },
+        "model": "magic.subtype",
+        "pk": 224
+    },
+    {
+        "fields": {
+            "name": "slith",
+            "slug": "slith"
+        },
+        "model": "magic.subtype",
+        "pk": 225
+    },
+    {
+        "fields": {
+            "name": "sliver",
+            "slug": "sliver"
+        },
+        "model": "magic.subtype",
+        "pk": 226
+    },
+    {
+        "fields": {
+            "name": "slug",
+            "slug": "slug"
+        },
+        "model": "magic.subtype",
+        "pk": 227
+    },
+    {
+        "fields": {
+            "name": "snake",
+            "slug": "snake"
+        },
+        "model": "magic.subtype",
+        "pk": 228
+    },
+    {
+        "fields": {
+            "name": "soldier",
+            "slug": "soldier"
+        },
+        "model": "magic.subtype",
+        "pk": 229
+    },
+    {
+        "fields": {
+            "name": "soltari",
+            "slug": "soltari"
+        },
+        "model": "magic.subtype",
+        "pk": 230
+    },
+    {
+        "fields": {
+            "name": "sorin",
+            "slug": "sorin"
+        },
+        "model": "magic.subtype",
+        "pk": 231
+    },
+    {
+        "fields": {
+            "name": "spawn",
+            "slug": "spawn"
+        },
+        "model": "magic.subtype",
+        "pk": 232
+    },
+    {
+        "fields": {
+            "name": "specter",
+            "slug": "specter"
+        },
+        "model": "magic.subtype",
+        "pk": 233
+    },
+    {
+        "fields": {
+            "name": "spellshaper",
+            "slug": "spellshaper"
+        },
+        "model": "magic.subtype",
+        "pk": 234
+    },
+    {
+        "fields": {
+            "name": "sphinx",
+            "slug": "sphinx"
+        },
+        "model": "magic.subtype",
+        "pk": 235
+    },
+    {
+        "fields": {
+            "name": "spider",
+            "slug": "spider"
+        },
+        "model": "magic.subtype",
+        "pk": 236
+    },
+    {
+        "fields": {
+            "name": "spike",
+            "slug": "spike"
+        },
+        "model": "magic.subtype",
+        "pk": 237
+    },
+    {
+        "fields": {
+            "name": "spirit",
+            "slug": "spirit"
+        },
+        "model": "magic.subtype",
+        "pk": 238
+    },
+    {
+        "fields": {
+            "name": "splinter",
+            "slug": "splinter"
+        },
+        "model": "magic.subtype",
+        "pk": 239
+    },
+    {
+        "fields": {
+            "name": "sponge",
+            "slug": "sponge"
+        },
+        "model": "magic.subtype",
+        "pk": 240
+    },
+    {
+        "fields": {
+            "name": "squid",
+            "slug": "squid"
+        },
+        "model": "magic.subtype",
+        "pk": 241
+    },
+    {
+        "fields": {
+            "name": "squirrel",
+            "slug": "squirrel"
+        },
+        "model": "magic.subtype",
+        "pk": 242
+    },
+    {
+        "fields": {
+            "name": "starfish",
+            "slug": "starfish"
+        },
+        "model": "magic.subtype",
+        "pk": 243
+    },
+    {
+        "fields": {
+            "name": "surrakar",
+            "slug": "surrakar"
+        },
+        "model": "magic.subtype",
+        "pk": 244
+    },
+    {
+        "fields": {
+            "name": "survivor",
+            "slug": "survivor"
+        },
+        "model": "magic.subtype",
+        "pk": 245
+    },
+    {
+        "fields": {
+            "name": "swamp",
+            "slug": "swamp"
+        },
+        "model": "magic.subtype",
+        "pk": 246
+    },
+    {
+        "fields": {
+            "name": "tetravite",
+            "slug": "tetravite"
+        },
+        "model": "magic.subtype",
+        "pk": 247
+    },
+    {
+        "fields": {
+            "name": "tezzeret",
+            "slug": "tezzeret"
+        },
+        "model": "magic.subtype",
+        "pk": 248
+    },
+    {
+        "fields": {
+            "name": "thalakos",
+            "slug": "thalakos"
+        },
+        "model": "magic.subtype",
+        "pk": 249
+    },
+    {
+        "fields": {
+            "name": "thopter",
+            "slug": "thopter"
+        },
+        "model": "magic.subtype",
+        "pk": 250
+    },
+    {
+        "fields": {
+            "name": "thrull",
+            "slug": "thrull"
+        },
+        "model": "magic.subtype",
+        "pk": 251
+    },
+    {
+        "fields": {
+            "name": "tower",
+            "slug": "tower"
+        },
+        "model": "magic.subtype",
+        "pk": 252
+    },
+    {
+        "fields": {
+            "name": "trap",
+            "slug": "trap"
+        },
+        "model": "magic.subtype",
+        "pk": 253
+    },
+    {
+        "fields": {
+            "name": "treefolk",
+            "slug": "treefolk"
+        },
+        "model": "magic.subtype",
+        "pk": 254
+    },
+    {
+        "fields": {
+            "name": "triskelavite",
+            "slug": "triskelavite"
+        },
+        "model": "magic.subtype",
+        "pk": 255
+    },
+    {
+        "fields": {
+            "name": "troll",
+            "slug": "troll"
+        },
+        "model": "magic.subtype",
+        "pk": 256
+    },
+    {
+        "fields": {
+            "name": "turtle",
+            "slug": "turtle"
+        },
+        "model": "magic.subtype",
+        "pk": 257
+    },
+    {
+        "fields": {
+            "name": "ulgrotha",
+            "slug": "ulgrotha"
+        },
+        "model": "magic.subtype",
+        "pk": 258
+    },
+    {
+        "fields": {
+            "name": "unicorn",
+            "slug": "unicorn"
+        },
+        "model": "magic.subtype",
+        "pk": 259
+    },
+    {
+        "fields": {
+            "name": "urza's",
+            "slug": "urzas"
+        },
+        "model": "magic.subtype",
+        "pk": 260
+    },
+    {
+        "fields": {
+            "name": "valla",
+            "slug": "valla"
+        },
+        "model": "magic.subtype",
+        "pk": 261
+    },
+    {
+        "fields": {
+            "name": "vampire",
+            "slug": "vampire"
+        },
+        "model": "magic.subtype",
+        "pk": 262
+    },
+    {
+        "fields": {
+            "name": "vedalken",
+            "slug": "vedalken"
+        },
+        "model": "magic.subtype",
+        "pk": 263
+    },
+    {
+        "fields": {
+            "name": "venser",
+            "slug": "venser"
+        },
+        "model": "magic.subtype",
+        "pk": 264
+    },
+    {
+        "fields": {
+            "name": "viashino",
+            "slug": "viashino"
+        },
+        "model": "magic.subtype",
+        "pk": 265
+    },
+    {
+        "fields": {
+            "name": "volver",
+            "slug": "volver"
+        },
+        "model": "magic.subtype",
+        "pk": 266
+    },
+    {
+        "fields": {
+            "name": "wall",
+            "slug": "wall"
+        },
+        "model": "magic.subtype",
+        "pk": 267
+    },
+    {
+        "fields": {
+            "name": "warrior",
+            "slug": "warrior"
+        },
+        "model": "magic.subtype",
+        "pk": 268
+    },
+    {
+        "fields": {
+            "name": "weird",
+            "slug": "weird"
+        },
+        "model": "magic.subtype",
+        "pk": 269
+    },
+    {
+        "fields": {
+            "name": "whale",
+            "slug": "whale"
+        },
+        "model": "magic.subtype",
+        "pk": 270
+    },
+    {
+        "fields": {
+            "name": "wildfire",
+            "slug": "wildfire"
+        },
+        "model": "magic.subtype",
+        "pk": 271
+    },
+    {
+        "fields": {
+            "name": "wizard",
+            "slug": "wizard"
+        },
+        "model": "magic.subtype",
+        "pk": 272
+    },
+    {
+        "fields": {
+            "name": "wolf",
+            "slug": "wolf"
+        },
+        "model": "magic.subtype",
+        "pk": 273
+    },
+    {
+        "fields": {
+            "name": "wolverine",
+            "slug": "wolverine"
+        },
+        "model": "magic.subtype",
+        "pk": 274
+    },
+    {
+        "fields": {
+            "name": "wombat",
+            "slug": "wombat"
+        },
+        "model": "magic.subtype",
+        "pk": 275
+    },
+    {
+        "fields": {
+            "name": "worm",
+            "slug": "worm"
+        },
+        "model": "magic.subtype",
+        "pk": 276
+    },
+    {
+        "fields": {
+            "name": "wraith",
+            "slug": "wraith"
+        },
+        "model": "magic.subtype",
+        "pk": 277
+    },
+    {
+        "fields": {
+            "name": "wurm",
+            "slug": "wurm"
+        },
+        "model": "magic.subtype",
+        "pk": 278
+    },
+    {
+        "fields": {
+            "name": "yeti",
+            "slug": "yeti"
+        },
+        "model": "magic.subtype",
+        "pk": 279
+    },
+    {
+        "fields": {
+            "name": "zendikar",
+            "slug": "zendikar"
+        },
+        "model": "magic.subtype",
+        "pk": 280
+    },
+    {
+        "fields": {
+            "name": "zombie",
+            "slug": "zombie"
+        },
+        "model": "magic.subtype",
+        "pk": 281
+    },
+    {
+        "fields": {
+            "name": "zubera",
+            "slug": "zubera"
+        },
+        "model": "magic.subtype",
+        "pk": 282
+    }
+]
