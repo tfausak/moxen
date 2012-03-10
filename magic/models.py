@@ -135,3 +135,13 @@ class Card(models.Model):
 
     def __unicode__(self):
         return self.name
+
+    def save(self, *args, **kwargs):
+        super(Card, self).save(*args, **kwargs)
+
+        # Make the other relationship symmetric.
+        if self.other is not None:
+            if self.other.other != self or self.other.kind != self.kind:
+                self.other.other = self
+                self.other.kind = self.kind
+                self.other.save()
