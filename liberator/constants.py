@@ -8,7 +8,7 @@ GATHERER_TEXT_URL = re.compile(r'\bmethod=text\b')
 
 # Every mana cost is made up of zero or more mana symbol.
 MANA_SYMBOL = re.compile(
-    r'({0})|\((({0})/({0}))\)'.format(r'\d+|[wubrgxyzpstq]'))
+    r'({0})|\(({0})/({0})\)'.format(r'\d+|[wubrgxyzpstq]'))
 
 # Each mana symbol has an associated value. It's easier to get these
 # from a dictionary than calling `int()` on everything.
