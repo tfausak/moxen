@@ -51,17 +51,14 @@ def _normalize_card(card):
     # Power, toughness, loyalty, and hand and life modifiers
     card['power'] = card['toughness'] = ''
     card['loyalty'] = card['hand_modifier'] = card['life_modifier'] = 0
-    if 'creature' in card['type']:
-        match = re.search(r'\((.*)/(.*)\)', card['misc'])
-        card['power'] = match.group(1)
-        card['toughness'] = match.group(2)
-    if 'planeswalker' in card['type']:
-        match = re.search(r'\((\d+)\)', card['misc'])
-        card['loyalty'] = int(match.group(1))
-    if 'vanguard' in card['type']:
-        matches = re.findall(r'([-+]\d+)', card['misc'])
-        card['hand_modifier'] = int(matches[0])
-        card['life_modifier'] = int(matches[1])
+    if liberator.constants.CREATURE_CARD_TYPE in card['card_types']:
+        card['power'], card['toughness'] = re.search(
+            r'\((.+)/(.+)\)', card['misc']).groups()
+    elif liberator.constants.PLANESWALKER_CARD_TYPE in card['card_types']:
+        card['loyalty'] = re.search(r'\((.+)\)', card['misc']).group(1)
+    elif liberator.constants.VANGUARD_CARD_TYPE in card['card_types']:
+        card['hand_modifier'], card['life_modifier'] = re.findall(
+            r'([-+]?\d+)', card['misc'])
 
     # Derived fields.
     card['colors'] = [color for color

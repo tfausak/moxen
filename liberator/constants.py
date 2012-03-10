@@ -13,6 +13,11 @@ MANA_COST = defaultdict(lambda: 0, {
     '10': 10, '11': 11, '12': 12, '13': 13, '14': 14, '15': 15, '16': 16,
 })
 
+# Card normalization depends on knowing which type the card is.
+CREATURE_CARD_TYPE = CardType.objects.get(name='creature')
+PLANESWALKER_CARD_TYPE = CardType.objects.get(name='planeswalker')
+VANGUARD_CARD_TYPE = CardType.objects.get(name='vanguard')
+
 # Every super type in the database with a pre-computed regex for
 # matching against the type line.
 SUPER_TYPES = []
