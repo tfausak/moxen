@@ -67,6 +67,19 @@ class Rarity(models.Model):
         verbose_name_plural = 'rarities'
 
 
+class Color(models.Model):
+    """Color (105.1).
+    """
+    name = models.CharField(max_length=5, unique=True)
+    slug = models.SlugField(max_length=1, unique=True)
+
+    def __unicode__(self):
+        return self.name
+
+    class Meta:
+        ordering = ['name']
+
+
 class Card(models.Model):
     """A Magic: The Gathering card.
     """

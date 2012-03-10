@@ -30,6 +30,11 @@ class RarityAdmin(admin.ModelAdmin):
 admin.site.register(magic.models.Rarity, RarityAdmin)
 
 
+class ColorAdmin(admin.ModelAdmin):
+    search_fields = ['name']
+admin.site.register(magic.models.Color, ColorAdmin)
+
+
 class CardAdmin(admin.ModelAdmin):
     list_filter = ('super_types', 'card_types')
     prepopulated_fields = {'slug': ('name',)}

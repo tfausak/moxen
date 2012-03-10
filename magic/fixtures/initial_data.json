@@ -3214,5 +3214,45 @@
         },
         "model": "magic.rarity",
         "pk": 7
+    },
+    {
+        "fields": {
+            "name": "white",
+            "slug": "w"
+        },
+        "model": "magic.color",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "name": "blue",
+            "slug": "u"
+        },
+        "model": "magic.color",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "name": "black",
+            "slug": "b"
+        },
+        "model": "magic.color",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "name": "red",
+            "slug": "r"
+        },
+        "model": "magic.color",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "name": "green",
+            "slug": "g"
+        },
+        "model": "magic.color",
+        "pk": 5
     }
 ]
