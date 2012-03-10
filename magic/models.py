@@ -86,28 +86,11 @@ class Color(models.Model):
         ordering = ['name']
 
 
-class Card(models.Model):
-    """What you think of when you hear the word "card".
-    """
-    name = models.CharField(max_length=255, unique=True)
-    slug = models.SlugField(max_length=255, unique=True)
-    kind = models.CharField(choices=magic.constants.CARD_KIND_CHOICES,
-        default=magic.constants.CARD_KIND_CHOICES[0][0], max_length=1)
-
-    def __unicode__(self):
-        return self.name
-
-    class Meta:
-        ordering = ['name']
-
-
 class CardAtom(models.Model):
     """Card (200.1).
     """
     name = models.CharField(max_length=255, unique=True)
     slug = models.SlugField(max_length=255, unique=True)
-    card = models.ForeignKey(Card, blank=True, null=True,
-        related_name='card_atoms')
 
     mana_cost = models.CharField(blank=True, max_length=255)
     power = models.CharField(blank=True, max_length=255)
