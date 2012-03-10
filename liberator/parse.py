@@ -38,5 +38,6 @@ def _parse_gatherer_text(response):
     for index, card in enumerate(cards):
         cards[index] = {
             'name': card[0].contents[3].contents[1].string,
+            'rules_text': card[4].contents[3].findAll(text=True),
         }
     return cards

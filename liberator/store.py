@@ -10,5 +10,7 @@ def store(cards):
 def _store_card(card):
     """Store a single card.
     """
-    card, _ = Card.objects.get_or_create(**card)
-    return card
+    card_, _ = Card.objects.get_or_create(name=card['name'], slug=card['slug'])
+    card_.rules_text = card['rules_text']
+    card_.save()
+    return card_

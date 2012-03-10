@@ -20,4 +20,7 @@ def _normalize_card(card):
     # Slug
     card['slug'] = slugify(card['name'])
 
+    # Rules text
+    card['rules_text'] = '\n'.join(line.strip() for line in card['rules_text'])
+
     return card

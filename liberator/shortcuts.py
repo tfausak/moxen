@@ -7,4 +7,8 @@ from liberator.store import store
 def liberate(url):
     """A shortcut for liberating a card's web page.
     """
-    return store(normalize(parse(fetch(url))))
+    result = fetch(url)
+    result = parse(result)
+    result = normalize(result)
+    result = store(result)
+    return result

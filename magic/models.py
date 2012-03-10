@@ -9,6 +9,9 @@ class Card(models.Model):
     name = models.CharField(max_length=141, unique=True)
     slug = models.SlugField(max_length=141, unique=True)
 
+    # The rules text can be found in the text box (207.1).
+    rules_text = models.TextField(blank=True)
+
     class Meta:
         ordering = ['name']
 
