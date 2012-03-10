@@ -35,15 +35,15 @@ class ColorAdmin(admin.ModelAdmin):
 admin.site.register(magic.models.Color, ColorAdmin)
 
 
+class CardAdmin(admin.ModelAdmin):
+    search_fields = ['card_atoms__name']
+admin.site.register(magic.models.Card, CardAdmin)
+
+
 class CardAtomAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('name',)}
     search_fields = ['name']
 admin.site.register(magic.models.CardAtom, CardAtomAdmin)
-
-
-class CardAdmin(admin.ModelAdmin):
-    search_fields = ['card_atoms__name']
-admin.site.register(magic.models.Card, CardAdmin)
 
 
 class BlockAdmin(admin.ModelAdmin):

@@ -1,6 +1,6 @@
 # For cards comprised of more than one card atom, this explains the
 # manner in which they should be combined.
-CARD_TYPE_CHOICES = (
+CARD_KIND_CHOICES = (
     ('n', 'normal'),
     ('d', 'double-faced'),
     ('f', 'flip'),
