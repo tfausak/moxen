@@ -89,12 +89,16 @@ class Color(models.Model):
 class Card(models.Model):
     """What you think of when you hear the word "card".
     """
+    name = models.CharField(max_length=255, unique=True)
+    slug = models.SlugField(max_length=255, unique=True)
     kind = models.CharField(choices=magic.constants.CARD_KIND_CHOICES,
         default=magic.constants.CARD_KIND_CHOICES[0][0], max_length=1)
 
     def __unicode__(self):
-        return u' // '.join(card_atom.name
-            for card_atom in self.card_atoms.all())
+        return self.name
+
+    class Meta:
+        ordering = ['name']
 
 
 class CardAtom(models.Model):
