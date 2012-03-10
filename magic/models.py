@@ -117,15 +117,11 @@ class CardAtom(models.Model):
 
 
 class Card(models.Model):
-    """A Card is one or more CardAtoms printed in a set with a rarity.
-
-    Essentially, this is exactly what you think of when you hear
-    the word "card". It's the digital representation of a physical
-    card.
+    """What you think of when you hear the word "card".
     """
     card_atoms = models.ManyToManyField(CardAtom)
-    set = models.ForeignKey(Set)
-    rarity = models.ForeignKey(Rarity)
+    type = models.CharField(choices=magic.constants.CARD_TYPE_CHOICES,
+        default=magic.constants.CARD_TYPE_CHOICES[0][0], max_length=1)
 
     def __unicode__(self):
         return u' // '.join(card_atom.name
@@ -155,7 +151,7 @@ class Format(models.Model):
     name = models.CharField(max_length=255, unique=True)
     slug = models.SlugField(max_length=255, unique=True)
     sets = models.ManyToManyField(Set)
-    card_atoms = models.ManyToManyField(CardAtom, through='Legality')
+    cards = models.ManyToManyField(Card, through='Legality')
 
     def __unicode__(self):
         return self.name
@@ -167,7 +163,7 @@ class Format(models.Model):
 class Legality(models.Model):
     """The legality of a card within a format.
     """
-    card_atom = models.ForeignKey(CardAtom)
+    card = models.ForeignKey(Card)
     format = models.ForeignKey(Format)
     status = models.CharField(choices=magic.constants.LEGALITY_STATUS_CHOICES,
         max_length=1)
