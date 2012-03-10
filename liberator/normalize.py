@@ -36,25 +36,26 @@ def _normalize_card(card):
 
     # Type
     card['type'] = card['type'].lower().strip()
-    card['super_types'] = [super_type for super_type in SuperType.objects.all()
-        if super_type.name in card['type']]
-    card['card_types'] = [card_type for card_type in CardType.objects.all()
-        if card_type.name in card['type']]
-    card['sub_types'] = [sub_type for sub_type in SubType.objects.all()
-        if sub_type.name in card['type']]
+    card['super_types'] = [super_type for pattern, super_type
+        in liberator.constants.SUPER_TYPES if re.search(pattern, card['type'])]
+    card['card_types'] = [card_type for pattern, card_type
+        in liberator.constants.CARD_TYPES if re.search(pattern, card['type'])]
+    card['sub_types'] = [sub_type for pattern, sub_type
+        in liberator.constants.SUB_TYPES if re.search(pattern, card['type'])]
 
     # Power, toughness, loyalty, and hand and life modifiers
     card['power'] = card['toughness'] = card['loyalty'] = \
         card['hand_modifier'] = card['life_modifier'] = ''
     if 'creature' in card['type']:
-        match = re.findall(r'\((.*)/(.*)\)', card['misc'])
-        card['power'] = match[0][0]
-        card['toughness'] = match[0][1]
+        match = re.search(r'\((.*)/(.*)\)', card['misc'])
+        card['power'] = match.group(1)
+        card['toughness'] = match.group(2)
     if 'planeswalker' in card['type']:
-        card['loyalty'] = card['misc']
+        match = re.search(r'\((.*)\)', card['misc'])
+        card['loyalty'] = match.group(1)
     if 'vanguard' in card['type']:
-        match = re.findall(r'\((.*)/(.*)\)', card['misc'])
-        card['hand_modifier'] = match[0][0]
-        card['life_modifier'] = match[0][1]
+        matches = re.findall('([-+]\d+)', card['misc'])
+        card['hand_modifier'] = matches[0]
+        card['life_modifier'] = matches[1]
 
     return card
