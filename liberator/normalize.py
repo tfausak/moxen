@@ -16,6 +16,7 @@ def _normalize_card(card):
     card['name'] = card['name'].lower().strip()
     card['mana_cost'] = card['mana_cost'].lower().strip()
     card['type'] = card['type'].lower().strip()
+    card['sets_rarities'] = card['sets_rarities'].lower().strip()
 
     # Set default values.
     card['power'] = card['toughness'] = ''
@@ -60,6 +61,22 @@ def _normalize_card(card):
     elif liberator.constants.VANGUARD_CARD_TYPE in card['card_types']:
         card['hand_modifier'], card['life_modifier'] = re.findall(
             r'([-+]?\d+)', card['misc'])
+
+    # Sets and rarities
+    print card['sets_rarities']
+    sets = []
+    rarities = []
+    for set_rarity in card['sets_rarities'].split(', '):
+        for set_ in liberator.constants.SETS:
+            if re.search(set_.pattern, set_rarity):
+                sets.append(set_)
+                break
+        for rarity in liberator.constants.RARITIES:
+            if re.search(rarity.pattern, set_rarity):
+                rarities.append(rarity)
+                break
+    card['sets_rarities'] = zip(sets, rarities)
+    print card['sets_rarities']
 
     # Color
     card['colors'] = [color for color

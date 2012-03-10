@@ -41,6 +41,7 @@ def _parse_gatherer_text(response):
                 'mana_cost': '',
                 'type': card[1].contents[3].string,
                 'misc': card[2].contents[3].string,
+                'sets_rarities': card[4].contents[3].string,
             })
         else:
             cards.append({
@@ -49,5 +50,6 @@ def _parse_gatherer_text(response):
                 'mana_cost': card[1].contents[3].string,
                 'type': card[2].contents[3].string,
                 'misc': card[3].contents[3].string,
+                'sets_rarities': card[5].contents[3].string,
             })
     return cards

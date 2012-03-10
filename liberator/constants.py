@@ -1,5 +1,5 @@
 from collections import defaultdict
-from magic.models import CardType, Color, SubType, SuperType
+from magic.models import CardType, Color, Rarity, Set, SubType, SuperType
 import re
 
 
@@ -53,3 +53,19 @@ COLORS = []
 for color in Color.objects.all():
     color.pattern = re.compile(r'\b{0}\b'.format(re.escape(color.slug)))
     COLORS.append(color)
+
+# Every set in the database with a pre-computed regex for matching
+# against a set-rarity pair.
+SETS = []
+for set_ in Set.objects.all():
+    set_.pattern = re.compile(r'^{0}\b'.format(re.escape(set_.name)))
+    SETS.append(set_)
+SETS.sort(key=lambda set_: len(set_.name), reverse=True)
+
+# Every rarity in the database with a pre-computed regex for matching
+# against a set-rarity pair.
+RARITIES = []
+for rarity in Rarity.objects.all():
+    rarity.pattern = re.compile(r'\b{0}$'.format(re.escape(rarity.name)))
+    RARITIES.append(rarity)
+RARITIES.sort(key=lambda rarity: len(rarity.name), reverse=True)
