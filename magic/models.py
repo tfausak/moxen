@@ -111,6 +111,12 @@ class Card(models.Model):
     hand_modifier = models.IntegerField(blank=True, default=0)
     life_modifier = models.IntegerField(blank=True, default=0)
 
+    # These fields are derived from other fields.
+    colors = models.ManyToManyField(Color, blank=True)
+    converted_mana_cost = models.PositiveIntegerField(blank=True, default=0)
+    converted_power = models.PositiveIntegerField(blank=True, default=0)
+    converted_toughness = models.PositiveIntegerField(blank=True, default=0)
+
     class Meta:
         ordering = ['name']
 
