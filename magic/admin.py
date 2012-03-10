@@ -21,6 +21,7 @@ admin.site.register(magic.models.SubType, SubTypeAdmin)
 
 
 class CardAdmin(admin.ModelAdmin):
+    list_filter = ('super_types', 'card_types')
     prepopulated_fields = {'slug': ('name',)}
     search_fields = ['name']
 admin.site.register(magic.models.Card, CardAdmin)
