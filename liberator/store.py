@@ -15,5 +15,8 @@ def store(data):
             slug=slugify(datum['name'].translate(
                 magic.constants.CARD_SLUG_TRANSLATION_TABLE)))
 
+        card_atom.rules_text = datum['rules_text']
+        card_atom.save()
+
         card_atoms.append(card_atom)
     return card_atoms

@@ -76,11 +76,14 @@ def _parse_gatherer_text(response):
         # Extract card information from the DOM.
         card = {
             'name': card[0].contents[3].contents[1],
+            'rules_text': card[4].contents[3],
         }
 
         # Normalize card information.
         for key in ('name',):
             card[key] = card[key].string.lower()
+        card['rules_text'] = '\n'.join(string.strip()
+            for string in card['rules_text'].findAll(text=True))
 
         # Get the card's canonical name.
         match = re.match('^(.*) \((.*)\)$', card['name'])
