@@ -62,6 +62,15 @@ class Card(models.Model):
     card_types = models.ManyToManyField(CardType)
     sub_types = models.ManyToManyField(SubType, blank=True)
 
+    # Creatures have power and toughness (208.1), planeswalkers
+    # have loyalty (209.1), and vangaurds have modifiers (210.1,
+    # 211.1).
+    power = models.CharField(blank=True, max_length=255)
+    toughness = models.CharField(blank=True, max_length=255)
+    loyalty = models.CharField(blank=True, max_length=255)
+    hand_modifier = models.CharField(blank=True, max_length=255)
+    life_modifier = models.CharField(blank=True, max_length=255)
+
     class Meta:
         ordering = ['name']
 

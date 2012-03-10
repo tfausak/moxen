@@ -42,6 +42,19 @@ def _normalize_card(card):
         if card_type.name in card['type']]
     card['sub_types'] = [sub_type for sub_type in SubType.objects.all()
         if sub_type.name in card['type']]
-    del(card['type'])
+
+    # Power, toughness, loyalty, and hand and life modifiers
+    card['power'] = card['toughness'] = card['loyalty'] = \
+        card['hand_modifier'] = card['life_modifier'] = ''
+    if 'creature' in card['type']:
+        match = re.findall(r'\((.*)/(.*)\)', card['misc'])
+        card['power'] = match[0][0]
+        card['toughness'] = match[0][1]
+    if 'planeswalker' in card['type']:
+        card['loyalty'] = card['misc']
+    if 'vanguard' in card['type']:
+        match = re.findall(r'\((.*)/(.*)\)', card['misc'])
+        card['hand_modifier'] = match[0][0]
+        card['life_modifier'] = match[0][1]
 
     return card

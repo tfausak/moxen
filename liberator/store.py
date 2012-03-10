@@ -11,10 +11,9 @@ def _store_card(card):
     """Store a single card.
     """
     card_, _ = Card.objects.get_or_create(name=card['name'], slug=card['slug'])
-    card_.rules_text = card['rules_text']
-    card_.mana_cost = card['mana_cost']
-    card_.super_types = card['super_types']
-    card_.card_types = card['card_types']
-    card_.sub_types = card['sub_types']
+    for key in ('rules_text', 'mana_cost', 'super_types', 'card_types',
+            'sub_types', 'power', 'toughness', 'loyalty', 'hand_modifier',
+            'life_modifier'):
+        setattr(card_, key, card[key])
     card_.save()
     return card_
