@@ -13,11 +13,33 @@ MANA_COST = defaultdict(lambda: 0, {
     '10': 10, '11': 11, '12': 12, '13': 13, '14': 14, '15': 15, '16': 16,
 })
 
-SUPER_TYPES = [(re.compile(r'\b{0}\b'.format(super_type.name)), super_type)
-    for super_type in SuperType.objects.all()]
-CARD_TYPES = [(re.compile(r'\b{0}\b'.format(card_type.name)), card_type)
-    for card_type in CardType.objects.all()]
-SUB_TYPES = [(re.compile(r'\b{0}\b'.format(sub_type.name)), sub_type)
-    for sub_type in SubType.objects.all()]
-COLORS = [(re.compile(r'\b{0}\b'.format(color.slug)), color)
-    for color in Color.objects.all()]
+# Every super type in the database with a pre-computed regex for
+# matching against the type line.
+SUPER_TYPES = []
+for super_type in SuperType.objects.all():
+    super_type.pattern = re.compile(
+        r'\b{0}\b'.format(re.escape(super_type.name)))
+    SUPER_TYPES.append(super_type)
+
+# Every card type in the database with a pre-computed regex for matching
+# against the type line.
+CARD_TYPES = []
+for card_type in CardType.objects.all():
+    card_type.pattern = re.compile(
+        r'\b{0}\b'.format(re.escape(card_type.name)))
+    CARD_TYPES.append(card_type)
+
+# Every sub type in the database with a pre-computed regex for matching
+# against the type line.
+SUB_TYPES = []
+for sub_type in SubType.objects.all():
+    sub_type.pattern = re.compile(
+        r'\b{0}\b'.format(re.escape(sub_type.name)))
+    SUB_TYPES.append(sub_type)
+
+# Every color in the database with a pre-computed regex for matching
+# against the mana cost.
+COLORS = []
+for color in Color.objects.all():
+    color.pattern = re.compile(r'\b{0}\b'.format(re.escape(color.slug)))
+    COLORS.append(color)

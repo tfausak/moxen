@@ -36,14 +36,17 @@ def _normalize_card(card):
     if card['mana_cost']:
         card['mana_cost'] = '{' + card['mana_cost'] + '}'
 
-    # Type
+    # Super, card, and sub types
     card['type'] = card['type'].lower().strip()
-    card['super_types'] = [super_type for pattern, super_type
-        in liberator.constants.SUPER_TYPES if re.search(pattern, card['type'])]
-    card['card_types'] = [card_type for pattern, card_type
-        in liberator.constants.CARD_TYPES if re.search(pattern, card['type'])]
-    card['sub_types'] = [sub_type for pattern, sub_type
-        in liberator.constants.SUB_TYPES if re.search(pattern, card['type'])]
+    card['super_types'] = [super_type for super_type
+        in liberator.constants.SUPER_TYPES
+        if re.search(super_type.pattern, card['type'])]
+    card['card_types'] = [card_type for card_type
+        in liberator.constants.CARD_TYPES
+        if re.search(card_type.pattern, card['type'])]
+    card['sub_types'] = [sub_type for sub_type
+        in liberator.constants.SUB_TYPES
+        if re.search(sub_type.pattern, card['type'])]
 
     # Power, toughness, loyalty, and hand and life modifiers
     card['power'] = card['toughness'] = ''
@@ -61,8 +64,9 @@ def _normalize_card(card):
         card['life_modifier'] = int(matches[1])
 
     # Derived fields.
-    card['colors'] = [color for pattern, color
-        in liberator.constants.COLORS if re.search(pattern, card['mana_cost'])]
+    card['colors'] = [color for color
+        in liberator.constants.COLORS
+        if re.search(color.pattern, card['mana_cost'])]
     try:
         card['converted_power'] = int(card['power'])
     except ValueError:
