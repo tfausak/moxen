@@ -33,4 +33,11 @@ def _normalize_card(card):
     if card['mana_cost']:
         card['mana_cost'] = '{' + card['mana_cost'] + '}'
 
+    # Type
+    card['type'] = card['type'].lower().strip()
+    card['super_types'] = []
+    card['card_types'] = []
+    card['sub_types'] = []
+    del(card['type'])
+
     return card
