@@ -2,8 +2,6 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ROOT_URLCONF = 'bauble.urls'
-SECRET_KEY = '5#3jbt&jnppec_6z(!pr9k0yk7$h3opac&d+mv5)hpgo24^z-8'
-SITE_ID = 1
 
 DATABASES = {
     'default': {
@@ -21,12 +19,11 @@ MIDDLEWARE_CLASSES = (
 )
 
 INSTALLED_APPS = (
+    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.sites',
     'django.contrib.messages',
-    'django.contrib.admin',
+    'django.contrib.sessions',
     'liberator',
     'magic',
 )
