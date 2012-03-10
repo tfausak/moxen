@@ -75,20 +75,28 @@ def _parse_gatherer_text(response):
     for index, card in enumerate(cards):
         # Extract card information from the DOM.
         card = {
+            'mana_cost': card[1].contents[3],
             'name': card[0].contents[3].contents[1],
             'rules_text': card[4].contents[3],
         }
 
         # Normalize card information.
-        for key in ('name',):
-            card[key] = card[key].string.lower()
-        card['rules_text'] = '\n'.join(string.strip()
-            for string in card['rules_text'].findAll(text=True))
+        for key in ('mana_cost', 'name'):
+            card[key] = card[key].string.lower().strip()
 
         # Get the card's canonical name.
         match = re.match('^(.*) \((.*)\)$', card['name'])
         if match:
             card['name'] = match.group(2)
+
+        # Compile rules text.
+        card['rules_text'] = '\n'.join(string.strip()
+            for string in card['rules_text'].findAll(text=True))
+
+        # Split mana cost into tokens.
+        card['mana_cost'] = re.findall(r'\d+|[wubrgxyz]',
+            re.sub(r'\((.+?)/(.+?)\)', '', card['mana_cost'])) + re.findall(
+                r'\((.+?)/(.+?)\)', card['mana_cost'])
 
         cards[index] = card
 

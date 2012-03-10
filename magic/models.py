@@ -91,7 +91,7 @@ class CardAtom(models.Model):
     name = models.CharField(max_length=255, unique=True)
     slug = models.SlugField(max_length=255, unique=True)
 
-    mana_cost = models.CharField(blank=True, max_length=255)
+    mana_cost = models.CharField(blank=True, max_length=25)
     power = models.CharField(blank=True, max_length=255)
     toughness = models.CharField(blank=True, max_length=255)
     rules_text = models.TextField(blank=True)

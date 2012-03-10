@@ -16,6 +16,10 @@ def store(data):
                 magic.constants.CARD_SLUG_TRANSLATION_TABLE)))
 
         card_atom.rules_text = datum['rules_text']
+        card_atom.mana_cost = ''.join(datum['mana_cost'])
+        card_atom.converted_mana_cost = sum(max(
+            magic.constants.CONVERTED_MANA_COST[symbol]
+            for symbol in token.split('/')) for token in datum['mana_cost'])
         card_atom.save()
 
         card_atoms.append(card_atom)
