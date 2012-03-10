@@ -29,18 +29,16 @@ def _parse_gatherer_text(response):
     """Parse a page of text spoilers from the Gatherer.
     """
     dom = BeautifulSoup(response)
-
-    # Split the page into sections that describe cards.
-    tags = dom.find('div', 'textspoiler').findAll('tr')
-    cards = [tags[index:index + 6] for index in range(0, len(tags), 7)]
-
-    # Extract card information from the DOM.
-    for index, card in enumerate(cards):
-        cards[index] = {
+    tags = dom.findAll('a', 'nameLink')
+    cards = []
+    for tag in tags:
+        tag = tag.parent.parent
+        card = [tag] + tag.findNextSiblings('tr', limit=5)
+        cards.append({
             'name': card[0].contents[3].contents[1].string,
             'rules_text': card[4].contents[3].findAll(text=True),
             'mana_cost': card[1].contents[3].string,
             'type': card[2].contents[3].string,
             'misc': card[3].contents[3].string,
-        }
+        })
     return cards
