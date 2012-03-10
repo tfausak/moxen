@@ -1,10 +1,13 @@
+from django.db.transaction import commit_on_success
 from magic.models import Card
 
 
 def store(cards):
     """Store a bunch of cards.
     """
-    return [_store_card(card) for card in cards]
+    with commit_on_success():
+        cards = [_store_card(card) for card in cards]
+    return cards
 
 
 def _store_card(card):
