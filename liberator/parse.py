@@ -33,23 +33,37 @@ def _parse_gatherer_text(response):
     cards = []
     for tag in tags:
         tag = tag.parent.parent
-        card = [tag] + tag.findNextSiblings('tr', limit=5)
+        card = [tag] + tag.findNextSiblings('tr', limit=6)
         if card[1].contents[3].string.lower().strip() == 'vanguard':
+            # Vanguard cards are missing the "Cost:" line.
             cards.append({
+                'color': '',
+                'mana_cost': '',
+                'misc': card[2].contents[3].string,
                 'name': card[0].contents[3].contents[1].string,
                 'rules_text': card[3].contents[3].findAll(text=True),
-                'mana_cost': '',
-                'type': card[1].contents[3].string,
-                'misc': card[2].contents[3].string,
                 'sets_rarities': card[4].contents[3].string,
+                'type': card[1].contents[3].string,
+            })
+        elif card[2].contents[1].string.lower().strip() == 'color:':
+            # Cards without a mana cost have a "Color:" line.
+            cards.append({
+                'color': card[2].contents[3].string,
+                'mana_cost': card[1].contents[3].string,
+                'misc': card[4].contents[3].string,
+                'name': card[0].contents[3].contents[1].string,
+                'rules_text': card[5].contents[3].findAll(text=True),
+                'sets_rarities': card[6].contents[3].string,
+                'type': card[3].contents[3].string,
             })
         else:
             cards.append({
+                'color': '',
+                'mana_cost': card[1].contents[3].string,
+                'misc': card[3].contents[3].string,
                 'name': card[0].contents[3].contents[1].string,
                 'rules_text': card[4].contents[3].findAll(text=True),
-                'mana_cost': card[1].contents[3].string,
-                'type': card[2].contents[3].string,
-                'misc': card[3].contents[3].string,
                 'sets_rarities': card[5].contents[3].string,
+                'type': card[2].contents[3].string,
             })
     return cards

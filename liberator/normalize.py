@@ -16,6 +16,7 @@ def _normalize_card(card):
     card['name'] = card['name'].lower().strip()
     card['mana_cost'] = card['mana_cost'].lower().strip()
     card['type'] = card['type'].lower().strip()
+    card['misc'] = card['misc'].lower().strip()
     card['sets_rarities'] = card['sets_rarities'].lower().strip()
 
     # Set default values.
@@ -53,17 +54,17 @@ def _normalize_card(card):
         if re.search(sub_type.pattern, card['type'])]
 
     # Power, toughness, loyalty, and hand and life modifiers
-    if liberator.constants.CREATURE_CARD_TYPE in card['card_types']:
-        card['power'], card['toughness'] = re.search(
-            r'\((.+)/(.+)\)', card['misc']).groups()
-    elif liberator.constants.PLANESWALKER_CARD_TYPE in card['card_types']:
-        card['loyalty'] = re.search(r'\((.+)\)', card['misc']).group(1)
-    elif liberator.constants.VANGUARD_CARD_TYPE in card['card_types']:
-        card['hand_modifier'], card['life_modifier'] = re.findall(
-            r'([-+]?\d+)', card['misc'])
+    if card['misc']:
+        if liberator.constants.CREATURE_CARD_TYPE in card['card_types']:
+            card['power'], card['toughness'] = re.search(
+                r'\((.+)/(.+)\)', card['misc']).groups()
+        elif liberator.constants.PLANESWALKER_CARD_TYPE in card['card_types']:
+            card['loyalty'] = re.search(r'\((.+)\)', card['misc']).group(1)
+        elif liberator.constants.VANGUARD_CARD_TYPE in card['card_types']:
+            card['hand_modifier'], card['life_modifier'] = re.findall(
+                r'([-+]?\d+)', card['misc'])
 
     # Sets and rarities
-    print card['sets_rarities']
     sets = []
     rarities = []
     for set_rarity in card['sets_rarities'].split(', '):
@@ -76,7 +77,6 @@ def _normalize_card(card):
                 rarities.append(rarity)
                 break
     card['sets_rarities'] = zip(sets, rarities)
-    print card['sets_rarities']
 
     # Color
     card['colors'] = [color for color
