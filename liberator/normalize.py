@@ -1,4 +1,5 @@
 from django.template.defaultfilters import slugify
+from magic.models import CardType, SubType, SuperType
 import liberator.constants
 import re
 
@@ -35,9 +36,12 @@ def _normalize_card(card):
 
     # Type
     card['type'] = card['type'].lower().strip()
-    card['super_types'] = []
-    card['card_types'] = []
-    card['sub_types'] = []
+    card['super_types'] = [super_type for super_type in SuperType.objects.all()
+        if super_type.name in card['type']]
+    card['card_types'] = [card_type for card_type in CardType.objects.all()
+        if card_type.name in card['type']]
+    card['sub_types'] = [sub_type for sub_type in SubType.objects.all()
+        if sub_type.name in card['type']]
     del(card['type'])
 
     return card
