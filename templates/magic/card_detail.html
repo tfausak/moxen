@@ -1,8 +1,22 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <ul class="breadcrumb">
+        <li>
+            <a href="{% url index %}">Home</a>
+            <span class="divider">/</span>
+        </li>
+        <li>
+            <a href="{% url card_list %}">Cards</a>
+            <span class="divider">/</span>
+        </li>
+        <li class="active">
+            <a href="{% url card_detail card.slug %}">{{ card|title }}</a>
+        </li>
+    </ul>
+
     <div class="page-header">
-        <h2>{{ object|title }}</h2>
+        <h1>{{ object|title }}</h1>
     </div>
 
     <dl>

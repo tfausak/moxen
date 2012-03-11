@@ -1,3 +1,4 @@
+{% spaceless %}
 <!doctype html>
 
 <html>
@@ -15,9 +16,23 @@
         <div class="navbar navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <i class="icon-bar"></i>
+                        <i class="icon-bar"></i>
+                        <i class="icon-bar"></i>
+                    </a>
+
                     <h1>
-                        <a class="brand" href="/">Bauble</a>
+                        <a class="brand" href="{% url index %}">Bauble</a>
                     </h1>
+
+                    <div class="nav-collapse">
+                        <ul class="nav">
+                            <li>
+                                <a href="{% url card_list %}">Cards</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -38,3 +53,4 @@
         <script async src="/static/js/bauble.js"></script>
     </body>
 </html>
+{% endspaceless %}
