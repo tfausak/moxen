@@ -31,24 +31,7 @@
     </div>
 
     {% if is_paginated %}
-        <ul class="pager">
-            {% if page_obj.has_previous %}
-                <li class="previous">
-                    <a href="?page={{ page_obj.previous_page_number }}">&#x2190; Previous</a>
-                </li>
-            {% endif %}
-
-            <li>
-                <a href="?page={{ page_obj.number }}">
-                    Page {{ page_obj.number }} of {{ paginator.num_pages }}
-                </a>
-            </li>
-
-            {% if page_obj.has_next %}
-                <li class="next">
-                    <a href="?page={{ page_obj.next_page_number }}">Next &#x2192;</a>
-                </li>
-            {% endif %}
-        </ul>
+        {% load paginator %}
+        {% paginator %}
     {% endif %}
 {% endblock %}
