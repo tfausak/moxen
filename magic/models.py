@@ -1,8 +1,18 @@
+"""Models for describing Magic: The Gathering cards.
+
+Also includes models for describing associated metadata, like
+printings and tournament restrictions.
+
+References to the Magic: The Gathering comprehensive rules are
+included where appropriate. <http://wizards.com/magic/rules>
+"""
 from django.db import models
 
 
 class SuperType(models.Model):
-    """Super type (205.4a).
+    """A card's super type.
+
+    Super types are defined in 205.4 and enumerated in 205.4a.
     """
     name = models.CharField(max_length=9, unique=True)
     slug = models.SlugField(max_length=9, unique=True)
@@ -15,7 +25,9 @@ class SuperType(models.Model):
 
 
 class CardType(models.Model):
-    """Card type (205.2a).
+    """A card's card type.
+
+    Card types are defined in 205.2 and enumerated in 205.2a.
     """
     name = models.CharField(max_length=12, unique=True)
     slug = models.SlugField(max_length=12, unique=True)
@@ -28,7 +40,9 @@ class CardType(models.Model):
 
 
 class SubType(models.Model):
-    """Sub type (205.3g-p).
+    """A card's sub type.
+
+    Sub types are defined in 205.3 and enumerated in 205.3g-p.
     """
     name = models.CharField(max_length=24, unique=True)
     slug = models.SlugField(max_length=24, unique=True)
@@ -41,7 +55,9 @@ class SubType(models.Model):
 
 
 class Set(models.Model):
-    """Set (206.1).
+    """A card's set, or expansion.
+
+    Sets are defined in 206.1.
     """
     name = models.CharField(max_length=39, unique=True)
     slug = models.SlugField(max_length=3, unique=True)
@@ -54,7 +70,9 @@ class Set(models.Model):
 
 
 class Rarity(models.Model):
-    """Rarity (206.2).
+    """A card's rarity.
+
+    Rarities are defined and enumerated in 206.2.
     """
     name = models.CharField(max_length=11, unique=True)
     slug = models.SlugField(max_length=1, unique=True)
@@ -68,7 +86,9 @@ class Rarity(models.Model):
 
 
 class Color(models.Model):
-    """Color (105.1).
+    """A card's color.
+
+    The colors are defined and enumerated in 105.1.
     """
     name = models.CharField(max_length=5, unique=True)
     slug = models.SlugField(max_length=1, unique=True)
@@ -82,6 +102,10 @@ class Color(models.Model):
 
 class Card(models.Model):
     """A Magic: The Gathering card.
+
+    The parts of a card are given in 200.1. Multi-card cards
+    (double-faced, flip, and split) are explained in 711, 708, and
+    709.
     """
     KIND_CHOICES = (
         ('n', 'normal'),
