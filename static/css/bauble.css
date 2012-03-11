@@ -1,6 +1,9 @@
 .navbar-fixed-top .navbar-inner {
     padding: 5px;
 }
+#user-button {
+    margin-left: 18px;
+}
 .footer {
     border-top: 1px solid #e5e5e5;
     margin-top: 45px;

@@ -11,3 +11,9 @@ urlpatterns = patterns('magic.views',
         name='card_detail'),
     url('^search/$', SearchView.as_view(), name='search'),
 )
+
+
+urlpatterns += patterns('django.contrib.auth.views',
+    url('^accounts/login/$', 'login', name='login'),
+    url('^accounts/logout/$', 'logout', name='logout'),
+)

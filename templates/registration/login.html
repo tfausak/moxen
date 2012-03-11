@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="page-header">
+        <h1>Log In</h1>
+    </div>
+
+    {% if form.errors %}
+        <div class="alert alert-block">
+            <a class="close" data-dismiss="alert">×</a>
+            <h4 class="alert-heading">Error</h4>
+            <p>Invalid username/password combination.</p>
+        </div>
+    {% endif %}
+
+    <form action="{% url login %}" class="form-horizontal" method="post">
+        {% csrf_token %}
+        <input name="next" type="hidden" value="{{ next }}">
+
+        <div class="control-group">
+            <label class="control-label" for="username">Username</label>
+            <div class="controls">
+                <input {% if not form.username.value %}autofocus{% endif %} name="username" id="username" type="text" value="{{ form.username.value|default_if_none:"" }}">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="password">Password</label>
+            <div class="controls">
+                <input {% if form.username.value %}autofocus{% endif %} name="password" id="password" type="password">
+            </div>
+        </div>
+
+        <div class="form-actions">
+            <input class="btn" type="submit" value="Log In">
+        </div>
+    </form>
+{% endblock %}
