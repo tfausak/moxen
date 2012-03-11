@@ -7,13 +7,13 @@ from magic.models import Card
 
 
 def index(request):
-    """TODO
+    """Display the home page.
     """
     return render(request, 'magic/index.html')
 
 
 class CardListView(ListView):
-    """TODO
+    """Display a list of all the cards.
     """
     model = Card
     paginate_by = 60
@@ -25,7 +25,7 @@ class CardListView(ListView):
 
 
 class CardDetailView(DetailView):
-    """TODO
+    """Display a single card's details.
     """
     model = Card
 
