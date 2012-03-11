@@ -4,4 +4,62 @@
     <div class="page-header">
         <h2>{{ object|title }}</h2>
     </div>
+
+    <dl>
+        <dt>Mana cost</dt>
+        <dd>{{ card.mana_cost|upper }}</dd>
+
+        <dt>Converted mana cost</dt>
+        <dd>{{ card.converted_mana_cost }}</dd>
+
+        <dt>Color{{ card.colors.all|pluralize }}</dt>
+        <dd>
+            {% for color in card.colors.all %}
+                {% if forloop.last and card.colors.all|length > 1 %}and{% endif %}
+                {{ color }}{% if not forloop.last and card.colors.all|length > 2 %},{% endif %}
+            {% endfor %}
+        </dd>
+
+        <dt>Type</dt>
+        <dd>{{ card.type|title }}</dd>
+
+        <dt>Rules text</dt>
+        <dd style="white-space:pre-wrap">{{ card.rules_text }}</dd>
+
+        {% if card.power and card.toughness %}
+            <dt>Power</dt>
+            <dd>{{ card.power }}</dd>
+
+            <dt>Converted power</dt>
+            <dd>{{ card.converted_power }}</dd>
+
+            <dt>Toughness</dt>
+            <dd>{{ card.toughness }}</dd>
+
+            <dt>Converted toughness</dt>
+            <dd>{{ card.converted_toughness }}</dd>
+        {% endif %}
+
+        {% if card.loyalty %}
+            <dt>Loyalty</dt>
+            <dd>{{ card.loyalty }}</dd>
+        {% endif %}
+
+        {% if card.hand_modifier and card.life_modifier %}
+            <dt>Hand modifier</dt>
+            <dd>{{ card.hand_modifier }}</dd>
+
+            <dt>Life modifier</dt>
+            <dd>{{ card.life_modifier }}</dd>
+        {% endif %}
+
+        <dt>Printings</dt>
+        <dd>
+            <ul>
+                {% for printed_card in card.printedcard_set.all %}
+                    <li>{{ printed_card|title }}</li>
+                {% endfor %}
+            </ul>
+        </dd>
+    </dl>
 {% endblock %}
