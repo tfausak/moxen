@@ -144,7 +144,7 @@ class Card(models.Model):
 
     # Some cards are comprised of more than one (conceptual) card
     # printed on one (actual) card.
-    other = models.OneToOneField('self', blank=True, null=True)
+    other_card = models.OneToOneField('self', blank=True, null=True)
     kind = models.CharField(blank=True, choices=KIND_CHOICES,
         default=KIND_CHOICES[0][0], max_length=1)
 
@@ -164,11 +164,11 @@ class Card(models.Model):
         super(Card, self).save(*args, **kwargs)
 
         # Make the other relationship symmetric.
-        if self.other is not None:
-            if self.other.other != self or self.other.kind != self.kind:
-                self.other.other = self
-                self.other.kind = self.kind
-                self.other.save()
+        if self.other_card is not None and (self.other_card.other_card != self
+                or self.other_card.kind != self.kind):
+            self.other_card.other_card = self
+            self.other_card.kind = self.kind
+            self.other_card.save()
 
     @models.permalink
     def get_absolute_url(self):
