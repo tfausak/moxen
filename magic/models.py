@@ -17,11 +17,11 @@ class SuperType(models.Model):
     name = models.CharField(max_length=9, unique=True)
     slug = models.SlugField(max_length=9, unique=True)
 
-    def __unicode__(self):
-        return self.name
-
     class Meta:
         ordering = ['name']
+
+    def __unicode__(self):
+        return self.name
 
 
 class CardType(models.Model):
@@ -32,11 +32,11 @@ class CardType(models.Model):
     name = models.CharField(max_length=12, unique=True)
     slug = models.SlugField(max_length=12, unique=True)
 
-    def __unicode__(self):
-        return self.name
-
     class Meta:
         ordering = ['name']
+
+    def __unicode__(self):
+        return self.name
 
 
 class SubType(models.Model):
@@ -47,11 +47,11 @@ class SubType(models.Model):
     name = models.CharField(max_length=24, unique=True)
     slug = models.SlugField(max_length=24, unique=True)
 
-    def __unicode__(self):
-        return self.name
-
     class Meta:
         ordering = ['name']
+
+    def __unicode__(self):
+        return self.name
 
 
 class Set(models.Model):
@@ -62,11 +62,11 @@ class Set(models.Model):
     name = models.CharField(max_length=39, unique=True)
     slug = models.SlugField(max_length=3, unique=True)
 
-    def __unicode__(self):
-        return self.name
-
     class Meta:
         ordering = ['name']
+
+    def __unicode__(self):
+        return self.name
 
 
 class Rarity(models.Model):
@@ -77,12 +77,12 @@ class Rarity(models.Model):
     name = models.CharField(max_length=11, unique=True)
     slug = models.SlugField(max_length=1, unique=True)
 
-    def __unicode__(self):
-        return self.name
-
     class Meta:
         ordering = ['name']
         verbose_name_plural = 'rarities'
+
+    def __unicode__(self):
+        return self.name
 
 
 class Color(models.Model):
@@ -93,11 +93,11 @@ class Color(models.Model):
     name = models.CharField(max_length=5, unique=True)
     slug = models.SlugField(max_length=1, unique=True)
 
-    def __unicode__(self):
-        return self.name
-
     class Meta:
         ordering = ['name']
+
+    def __unicode__(self):
+        return self.name
 
 
 class Card(models.Model):
