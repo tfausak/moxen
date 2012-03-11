@@ -28,6 +28,9 @@
             <label class="control-label" for="password">Password</label>
             <div class="controls">
                 <input {% if form.username.value %}autofocus{% endif %} name="password" id="password" type="password">
+                <p class="help-block">
+                    <a href="{% url password_reset %}">Forgot your password?</a>
+                </p>
             </div>
         </div>
 
