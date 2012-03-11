@@ -275,4 +275,4 @@ class Legality(models.Model):
 
     def __unicode__(self):
         return u'{0} ({1} in {2})'.format(self.card,
-            dict(STATUS_CHOICES)[self.status], self.format)
+            dict(self.STATUS_CHOICES)[self.status], self.format)
