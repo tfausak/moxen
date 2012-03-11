@@ -1,9 +1,9 @@
 ADMINS = (
-    # ('First Last', 'first.last@example.com'),
+    #('Taylor Fausak', 'taylor@fausak.me'),
 )
 DEBUG = True
 INTERNAL_IPS = (
-    # '192.168.1.1',
+    #'127.0.0.1',
 )
 SECRET_KEY = ''
 
