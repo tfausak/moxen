@@ -2,18 +2,24 @@
     padding: 5px;
 }
 .card {
+    border-radius: 3px;
     margin-bottom: 18px;
 }
-.card .link {
+.card.white { background: #fffbd5; }
+.card.blue  { background: #aae0fa; }
+.card.black { background: #cbc2bf; }
+.card.red   { background: #f9aa8f; }
+.card.green { background: #9bd3ae; }
+.card.white.blue, .card.white.black, .card.white.red, .card.white.green,
+.card.blue.black, .card.blue.red, .card.blue.green, .card.black.red,
+.card.black.green, .card.red.green {
     background: #eee;
-    border-radius: 3px;
+}
+.card .link {
     color: inherit;
     display: block;
     padding: 9px;
     text-decoration: none;
-}
-.card .link:hover {
-    background: #ddd;
 }
 .card .name {
     font-weight: bold;
@@ -22,9 +28,15 @@
     white-space: nowrap;
 }
 .card .type {
+    font-style: italic;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+.card .rules_text {
+    height: 36px;
+    overflow: hidden;
+    white-space: pre-wrap;
 }
 
 @media (min-width: 980px) {

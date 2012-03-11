@@ -12,13 +12,10 @@
         <dt>Converted mana cost</dt>
         <dd>{{ card.converted_mana_cost }}</dd>
 
-        <dt>Color{{ card.colors.all|pluralize }}</dt>
-        <dd>
-            {% for color in card.colors.all %}
-                {% if forloop.last and card.colors.all|length > 1 %}and{% endif %}
-                {{ color }}{% if not forloop.last and card.colors.all|length > 2 %},{% endif %}
-            {% endfor %}
-        </dd>
+        {% if card.colors.all %}
+            <dt>Color{{ card.colors.all|pluralize }}</dt>
+            <dd>{{ card.colors.all|join:", " }}</dd>
+        {% endif %}
 
         <dt>Type</dt>
         <dd>{{ card.type|title }}</dd>
