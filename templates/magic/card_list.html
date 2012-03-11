@@ -7,7 +7,9 @@
 
     <ul>
         {% for card in object_list %}
-            <li>{{ card|title }}</li>
+            <li>
+                <a href="{{ card.get_absolute_url }}">{{ card|title }}</a>
+            </li>
         {% endfor %}
     </ul>
 

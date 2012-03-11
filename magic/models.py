@@ -170,6 +170,10 @@ class Card(models.Model):
                 self.other.kind = self.kind
                 self.other.save()
 
+    @models.permalink
+    def get_absolute_url(self):
+        return ('card_detail', (), {'slug': self.slug})
+
 
 class PrintedCard(models.Model):
     """A printed card.
