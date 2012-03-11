@@ -12,9 +12,10 @@ A [Magic: The Gathering][1] card database.
 ## Setup
 
 By default, this project uses an SQLite database. It's in the source
-tree, but it needs to be removed from the index.
+tree, but it needs to be removed from the index. The settings file
+should also probably be removed from the index.
 
-    git update-index --assume-unchanged db.sq3
+    git update-index --assume-unchanged db.sq3 settings.py
 
 The database is empty to start with. At the very least, it needs a
 superuser and the included fixtures.
