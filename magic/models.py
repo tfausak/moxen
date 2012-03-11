@@ -200,7 +200,7 @@ class Card(models.Model):
         return super_types + card_types + sub_types
 
 
-class PrintedCard(models.Model):
+class Printing(models.Model):
     """A printed card.
 
     One card can (and often is) printed in multiple sets. Within

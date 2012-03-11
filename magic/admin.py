@@ -42,11 +42,11 @@ class CardAdmin(admin.ModelAdmin):
 admin.site.register(magic.models.Card, CardAdmin)
 
 
-class PrintedCardAdmin(admin.ModelAdmin):
+class PrintingAdmin(admin.ModelAdmin):
     list_display = ('card', 'set', 'rarity')
     list_filter = ('rarity', 'set')
     search_fields = ['card__name']
-admin.site.register(magic.models.PrintedCard, PrintedCardAdmin)
+admin.site.register(magic.models.Printing, PrintingAdmin)
 
 
 class BlockAdmin(admin.ModelAdmin):

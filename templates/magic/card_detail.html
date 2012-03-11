@@ -67,8 +67,8 @@
         <dt>Printings</dt>
         <dd>
             <ul>
-                {% for printed_card in card.printedcard_set.all %}
-                    <li>{{ printed_card|title }}</li>
+                {% for printing in card.printing_set.all %}
+                    <li>{{ printing|title }}</li>
                 {% endfor %}
             </ul>
         </dd>

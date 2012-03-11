@@ -1,5 +1,5 @@
 from django.db.transaction import commit_on_success
-from magic.models import Card, PrintedCard
+from magic.models import Card, Printing
 
 
 def store(data):
@@ -11,11 +11,11 @@ def store(data):
             cards.append(_store_card(datum))
 
     with commit_on_success():
-        printed_cards = []
+        printings = []
         for index, card in enumerate(cards):
-            _store_printed_cards(card, data[index]['sets_rarities'])
+            _store_printings(card, data[index]['sets_rarities'])
 
-    return printed_cards
+    return printings
 
 
 def _store_card(data):
@@ -31,18 +31,18 @@ def _store_card(data):
     return card
 
 
-def _store_printed_cards(card, data):
-    """Store a bunch of printed cards.
+def _store_printings(card, data):
+    """Store a bunch of printing.
     """
-    printed_cards = []
+    printings = []
     for set_, rarity in data:
-        printed_cards.append(_store_printed_card(card, set_, rarity))
-    return printed_cards
+        printings.append(_store_printing(card, set_, rarity))
+    return printings
 
 
-def _store_printed_card(card, set_, rarity):
-    """Store a single printed card.
+def _store_printing(card, set_, rarity):
+    """Store a single printing.
     """
-    printed_card, _ = PrintedCard.objects.get_or_create(card=card,
+    printing, _ = Printing.objects.get_or_create(card=card,
         set=set_, rarity=rarity)
-    return printed_card
+    return printing
