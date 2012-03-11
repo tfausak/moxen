@@ -2,7 +2,6 @@
 """
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
-from django.template.defaultfilters import title
 from django.views.generic import DetailView, ListView
 from magic.models import Card
 
@@ -19,21 +18,11 @@ class CardListView(ListView):
     model = Card
     paginate_by = 60
 
-    def get_context_data(self, **kwargs):
-        context = super(CardListView, self).get_context_data(**kwargs)
-        context['title'] = 'Cards'
-        return context
-
 
 class CardDetailView(DetailView):
     """Display a single card's details.
     """
     model = Card
-
-    def get_context_data(self, **kwargs):
-        context = super(CardDetailView, self).get_context_data(**kwargs)
-        context['title'] = title(self.object)
-        return context
 
 
 class SearchView(CardListView):
@@ -43,17 +32,9 @@ class SearchView(CardListView):
         self.query = self.request.GET.get('query')
         return Card.objects.filter(name__icontains=self.query)
 
-    def get_context_data(self, **kwargs):
-        context = super(SearchView, self).get_context_data(**kwargs)
-        context['title'] = 'Search'
-        context['query'] = self.query
-        return context
-
 
 @login_required
 def profile(request):
     """Display a user's profile.
     """
-    return render(request, 'magic/profile.html', {
-        'title': 'Profile',
-    })
+    return render(request, 'magic/profile.html')
