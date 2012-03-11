@@ -1,7 +1,7 @@
 """Django settings.
 """
 ADMINS = (
-    # ('Taylor Fausak', 'taylor@fausak.me'),
+    # ('First Last', 'first.last@example.com'),
 )
 DEBUG = True
 INTERNAL_IPS = (
@@ -29,6 +29,7 @@ INSTALLED_APPS = (
 )
 MANAGERS = ADMINS
 MIDDLEWARE_CLASSES = (
+    'django.middleware.gzip.GZipMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
