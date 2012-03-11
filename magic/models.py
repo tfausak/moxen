@@ -174,6 +174,21 @@ class Card(models.Model):
     def get_absolute_url(self):
         return ('card_detail', (), {'slug': self.slug})
 
+    def type(self):
+        """Combine this card's super, card, and sub types.
+        """
+        super_types =  u' '.join(unicode(super_type)
+            for super_type in self.super_types.all())
+        card_types =  u' '.join(unicode(card_type)
+            for card_type in self.card_types.all())
+        sub_types =  u' '.join(unicode(sub_type)
+            for sub_type in self.sub_types.all())
+
+        super_types += u' ' if super_types else u''
+        card_types += u' -- ' if sub_types else u''
+
+        return super_types + card_types + sub_types
+
 
 class PrintedCard(models.Model):
     """A printed card.
