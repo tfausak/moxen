@@ -9,7 +9,7 @@
         <link href="/static/css/bootstrap.css" rel="stylesheet">
         <link href="/static/css/bauble.css" rel="stylesheet">
 
-        <title>{% block title %}Bauble{% endblock %}</title>
+        <title>{% block title %}{{ site.name }}{% endblock %}</title>
     </head>
 
     <body>
@@ -23,7 +23,7 @@
                     </a>
 
                     <h1>
-                        <a class="brand" href="{% url index %}">Bauble</a>
+                        <a class="brand" href="{% url index %}">{{ site.name }}</a>
                     </h1>
 
                     <div class="pull-right" id="user-button">
@@ -60,7 +60,7 @@
 
             {% block header %}
                 <div class="page-header">
-                    <h1>Bauble</h1>
+                    <h1>{{ site.name }}</h1>
                 </div>
             {% endblock %}
 
