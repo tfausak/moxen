@@ -1,5 +1,6 @@
 """Functions for viewing cards.
 """
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from django.template.defaultfilters import title
 from django.views.generic import DetailView, ListView
@@ -47,3 +48,12 @@ class SearchView(CardListView):
         context['title'] = 'Search'
         context['query'] = self.query
         return context
+
+
+@login_required
+def profile(request):
+    """Display a user's profile.
+    """
+    return render(request, 'magic/profile.html', {
+        'title': 'Profile',
+    })

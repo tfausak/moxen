@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="page-header">
+        <h1>{{ title }}</h1>
+    </div>
+
+    <p>Logged in as {{ user.username }}.</p>
+
+    <p>
+        <a class="btn" href="{% url logout %}">Log Out</a>
+    </p>
+{% endblock %}
