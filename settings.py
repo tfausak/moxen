@@ -18,7 +18,6 @@ DATABASES = {
 }
 INSTALLED_APPS = (
     'django.contrib.admin',
-    'django.contrib.admindocs',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.messages',
@@ -26,6 +25,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'liberator',
     'magic',
+    'django.contrib.admindocs', # Must be last.
 )
 MANAGERS = ADMINS
 MIDDLEWARE_CLASSES = (
