@@ -1,3 +1,5 @@
+"""Constants for liberating web pages.
+"""
 from collections import defaultdict
 from magic.models import CardType, Color, Rarity, Set, SubType, SuperType
 import re

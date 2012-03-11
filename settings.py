@@ -1,9 +1,11 @@
+"""Django settings.
+"""
 ADMINS = (
-    #('Taylor Fausak', 'taylor@fausak.me'),
+    # ('Taylor Fausak', 'taylor@fausak.me'),
 )
 DEBUG = True
 INTERNAL_IPS = (
-    #'127.0.0.1',
+    # '127.0.0.1',
 )
 SECRET_KEY = ''
 

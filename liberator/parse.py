@@ -1,3 +1,5 @@
+"""Functions for extracting card information from web pages.
+"""
 from BeautifulSoup import BeautifulSoup
 import liberator.constants
 import re

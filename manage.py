@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+"""Script for interacting with Django from the command line.
+"""
 from django.core.management import execute_manager
 import imp
 

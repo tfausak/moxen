@@ -1,3 +1,5 @@
+"""Django URL configuration.
+"""
 from django.conf.urls.defaults import patterns, url
 from magic.views import CardDetailView, CardListView
 

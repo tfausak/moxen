@@ -1,3 +1,5 @@
+"""Functions for viewing cards.
+"""
 from django.shortcuts import render
 from django.template.defaultfilters import title
 from django.views.generic import DetailView, ListView

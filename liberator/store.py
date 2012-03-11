@@ -1,3 +1,5 @@
+"""Functions for storing card information in the database.
+"""
 from django.db.transaction import commit_on_success
 from magic.models import Card, Printing
 

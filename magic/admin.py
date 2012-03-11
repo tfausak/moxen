@@ -1,3 +1,5 @@
+"""Django admin configuration.
+"""
 from django.contrib import admin
 import magic.models
 
