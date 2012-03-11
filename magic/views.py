@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from django.views.generic import ListView
+from django.template.defaultfilters import title
+from django.views.generic import DetailView, ListView
 from magic.models import Card
 
 
@@ -18,4 +19,15 @@ class CardListView(ListView):
     def get_context_data(self, **kwargs):
         context = super(CardListView, self).get_context_data(**kwargs)
         context['title'] = 'Cards'
+        return context
+
+
+class CardDetailView(DetailView):
+    """TODO
+    """
+    model = Card
+
+    def get_context_data(self, **kwargs):
+        context = super(CardDetailView, self).get_context_data(**kwargs)
+        context['title'] = title(self.object)
         return context
