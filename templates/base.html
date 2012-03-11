@@ -32,6 +32,10 @@
                                 <a href="{% url card_list %}">Cards</a>
                             </li>
                         </ul>
+
+                        <form action="{% url search %}" class="navbar-search pull-right" method="get">
+                            <input class="search-query" name="query" placeholder="Search" type="text" value="{{ query }}">
+                        </form>
                     </div>
                 </div>
             </div>

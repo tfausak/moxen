@@ -33,3 +33,17 @@ class CardDetailView(DetailView):
         context = super(CardDetailView, self).get_context_data(**kwargs)
         context['title'] = title(self.object)
         return context
+
+
+class SearchView(CardListView):
+    """Search for cards by name.
+    """
+    def get_queryset(self):
+        self.query = self.request.GET.get('query')
+        return Card.objects.filter(name__icontains=self.query)
+
+    def get_context_data(self, **kwargs):
+        context = super(SearchView, self).get_context_data(**kwargs)
+        context['title'] = 'Search'
+        context['query'] = self.query
+        return context
