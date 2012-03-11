@@ -16,15 +16,19 @@
     </ul>
 
     <div class="page-header">
-        <h1>{{ title }}</h1>
+        <h1>
+            <a href="http://gatherer.wizards.com/Pages/Search/?name=[{{ card.name }}]">{{ title }}</a>
+        </h1>
     </div>
 
     <dl>
-        <dt>Mana cost</dt>
-        <dd>{{ card.mana_cost|upper }}</dd>
+        {% if card.mana_cost %}
+            <dt>Mana cost</dt>
+            <dd>{{ card.mana_cost|upper }}</dd>
 
-        <dt>Converted mana cost</dt>
-        <dd>{{ card.converted_mana_cost }}</dd>
+            <dt>Converted mana cost</dt>
+            <dd>{{ card.converted_mana_cost }}</dd>
+        {% endif %}
 
         {% if card.colors.all %}
             <dt>Color{{ card.colors.all|pluralize }}</dt>
