@@ -11,6 +11,7 @@ urlpatterns = patterns('magic.views',
         name='card_detail'),
     url('^search/$', SearchView.as_view(), name='search'),
     url('^accounts/profile/$', 'profile', name='profile'),
+    url('^accounts/register/$', 'register', name='register'),
 )
 
 
