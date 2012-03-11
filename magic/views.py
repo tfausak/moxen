@@ -38,9 +38,3 @@ def profile(request):
     """Display a user's profile.
     """
     return render(request, 'magic/profile.html')
-
-
-def register(request):
-    """Register a new user.
-    """
-    return render(request, 'registration/register.html')
