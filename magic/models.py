@@ -187,3 +187,63 @@ class PrintedCard(models.Model):
 
     def __unicode__(self):
         return u'{0} ({1} {2})'.format(self.card, self.set, self.rarity)
+
+
+class Block(models.Model):
+    """A collection of sets.
+
+    Each block is usually comprised of three sets, one significantly
+    larger than the other two.
+    """
+    name = models.CharField(max_length=255, unique=True)
+    slug = models.SlugField(max_length=255, unique=True)
+    sets = models.ManyToManyField(Set)
+
+    class Meta:
+        ordering = ['name']
+
+    def __unicode__(self):
+        return self.name
+
+
+class Format(models.Model):
+    """A way to play Magic, with card restrictions.
+
+    Formats define a way to play Magic. They limit the available
+    sets and cards. They also enforce rules for deck construction
+    and gameplay.
+    """
+    name = models.CharField(max_length=255, unique=True)
+    slug = models.SlugField(blank=True, max_length=255, unique=True)
+    sets = models.ManyToManyField(Set)
+    cards = models.ManyToManyField(Card, blank=True, through='Legality')
+
+    class Meta:
+        ordering = ['name']
+
+    def __unicode__(self):
+        return self.name
+
+
+class Legality(models.Model):
+    """A card's legality status within a format.
+
+    A card can be banned (not allowed at all) or restricted (only
+    one copy allowed).
+    """
+    STATUS_CHOICES = (
+        ('b', 'banned'),
+        ('r', 'restricted'),
+    )
+
+    card = models.ForeignKey(Card)
+    format = models.ForeignKey(Format)
+    status = models.CharField(choices=STATUS_CHOICES, max_length=1)
+
+    class Meta:
+        ordering = ['card__name']
+        verbose_name_plural = 'legalities'
+
+    def __unicode__(self):
+        return u'{0} ({1} in {2})'.format(self.card,
+            dict(STATUS_CHOICES)[self.status], self.format)
