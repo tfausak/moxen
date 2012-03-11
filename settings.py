@@ -2,6 +2,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ROOT_URLCONF = 'bauble.urls'
+SITE_ID = 1
 
 DATABASES = {
     'default': {
@@ -29,6 +30,7 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.messages',
     'django.contrib.sessions',
+    'django.contrib.sites',
     'liberator',
     'magic',
 )
