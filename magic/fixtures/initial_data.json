@@ -201,6 +201,14 @@
     },
     {
         "fields": {
+            "name": "arcane",
+            "slug": "arcane"
+        },
+        "model": "magic.subtype",
+        "pk": 285
+    },
+    {
+        "fields": {
             "name": "archer",
             "slug": "archer"
         },
@@ -537,6 +545,14 @@
     },
     {
         "fields": {
+            "name": "curse",
+            "slug": "curse"
+        },
+        "model": "magic.subtype",
+        "pk": 283
+    },
+    {
+        "fields": {
             "name": "cyclops",
             "slug": "cyclops"
         },
@@ -833,6 +849,14 @@
     },
     {
         "fields": {
+            "name": "germ",
+            "slug": "germ"
+        },
+        "model": "magic.subtype",
+        "pk": 286
+    },
+    {
+        "fields": {
             "name": "giant",
             "slug": "giant"
         },
@@ -894,6 +918,14 @@
         },
         "model": "magic.subtype",
         "pk": 96
+    },
+    {
+        "fields": {
+            "name": "gremlin",
+            "slug": "gremlin"
+        },
+        "model": "magic.subtype",
+        "pk": 287
     },
     {
         "fields": {
@@ -1105,6 +1137,14 @@
     },
     {
         "fields": {
+            "name": "karn",
+            "slug": "karn"
+        },
+        "model": "magic.subtype",
+        "pk": 284
+    },
+    {
+        "fields": {
             "name": "karsus",
             "slug": "karsus"
         },
@@ -1118,6 +1158,14 @@
         },
         "model": "magic.subtype",
         "pk": 124
+    },
+    {
+        "fields": {
+            "name": "kinshala",
+            "slug": "kinshala"
+        },
+        "model": "magic.subtype",
+        "pk": 290
     },
     {
         "fields": {
@@ -1646,6 +1694,14 @@
         },
         "model": "magic.subtype",
         "pk": 190
+    },
+    {
+        "fields": {
+            "name": "praetor",
+            "slug": "praetor"
+        },
+        "model": "magic.subtype",
+        "pk": 288
     },
     {
         "fields": {
@@ -2281,6 +2337,14 @@
     },
     {
         "fields": {
+            "name": "werewolf",
+            "slug": "werewolf"
+        },
+        "model": "magic.subtype",
+        "pk": 289
+    },
+    {
+        "fields": {
             "name": "whale",
             "slug": "whale"
         },
@@ -2497,6 +2561,14 @@
     },
     {
         "fields": {
+            "name": "dark ascension",
+            "slug": "dka"
+        },
+        "model": "magic.set",
+        "pk": 101
+    },
+    {
+        "fields": {
             "name": "darksteel",
             "slug": "dst"
         },
@@ -2510,6 +2582,14 @@
         },
         "model": "magic.set",
         "pk": 16
+    },
+    {
+        "fields": {
+            "name": "duel decks: ajani vs. nicol bolas",
+            "slug": "ddh"
+        },
+        "model": "magic.set",
+        "pk": 102
     },
     {
         "fields": {
@@ -2550,6 +2630,14 @@
         },
         "model": "magic.set",
         "pk": 21
+    },
+    {
+        "fields": {
+            "name": "duel decks: knights vs. dragons",
+            "slug": "ddg"
+        },
+        "model": "magic.set",
+        "pk": 103
     },
     {
         "fields": {
@@ -2633,6 +2721,14 @@
     },
     {
         "fields": {
+            "name": "from the vault: legends",
+            "slug": "v11"
+        },
+        "model": "magic.set",
+        "pk": 104
+    },
+    {
+        "fields": {
             "name": "from the vault: relics",
             "slug": "v10"
         },
@@ -2670,6 +2766,14 @@
         },
         "model": "magic.set",
         "pk": 36
+    },
+    {
+        "fields": {
+            "name": "innistrad",
+            "slug": "isd"
+        },
+        "model": "magic.set",
+        "pk": 100
     },
     {
         "fields": {
@@ -2742,6 +2846,22 @@
         },
         "model": "magic.set",
         "pk": 45
+    },
+    {
+        "fields": {
+            "name": "magic 2012",
+            "slug": "m12"
+        },
+        "model": "magic.set",
+        "pk": 99
+    },
+    {
+        "fields": {
+            "name": "magic: the gathering-commander",
+            "slug": "cmd"
+        },
+        "model": "magic.set",
+        "pk": 105
     },
     {
         "fields": {
@@ -2825,6 +2945,14 @@
     },
     {
         "fields": {
+            "name": "new phyrexia",
+            "slug": "nph"
+        },
+        "model": "magic.set",
+        "pk": 98
+    },
+    {
+        "fields": {
             "name": "ninth edition",
             "slug": "9ed"
         },
@@ -2902,6 +3030,14 @@
         },
         "model": "magic.set",
         "pk": 65
+    },
+    {
+        "fields": {
+            "name": "premium deck series: graveborn",
+            "slug": "pd3"
+        },
+        "model": "magic.set",
+        "pk": 106
     },
     {
         "fields": {
@@ -3161,14 +3297,6 @@
     },
     {
         "fields": {
-            "name": "land",
-            "slug": "l"
-        },
-        "model": "magic.rarity",
-        "pk": 1
-    },
-    {
-        "fields": {
             "name": "common",
             "slug": "c"
         },
@@ -3177,19 +3305,11 @@
     },
     {
         "fields": {
-            "name": "uncommon",
-            "slug": "u"
+            "name": "land",
+            "slug": "l"
         },
         "model": "magic.rarity",
-        "pk": 3
-    },
-    {
-        "fields": {
-            "name": "rare",
-            "slug": "r"
-        },
-        "model": "magic.rarity",
-        "pk": 4
+        "pk": 1
     },
     {
         "fields": {
@@ -3201,14 +3321,6 @@
     },
     {
         "fields": {
-            "name": "special",
-            "slug": "s"
-        },
-        "model": "magic.rarity",
-        "pk": 6
-    },
-    {
-        "fields": {
             "name": "promo",
             "slug": "p"
         },
@@ -3217,19 +3329,27 @@
     },
     {
         "fields": {
-            "name": "white",
-            "slug": "w"
+            "name": "rare",
+            "slug": "r"
         },
-        "model": "magic.color",
-        "pk": 1
+        "model": "magic.rarity",
+        "pk": 4
     },
     {
         "fields": {
-            "name": "blue",
+            "name": "special",
+            "slug": "s"
+        },
+        "model": "magic.rarity",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "name": "uncommon",
             "slug": "u"
         },
-        "model": "magic.color",
-        "pk": 2
+        "model": "magic.rarity",
+        "pk": 3
     },
     {
         "fields": {
@@ -3241,11 +3361,11 @@
     },
     {
         "fields": {
-            "name": "red",
-            "slug": "r"
+            "name": "blue",
+            "slug": "u"
         },
         "model": "magic.color",
-        "pk": 4
+        "pk": 2
     },
     {
         "fields": {
@@ -3254,5 +3374,21 @@
         },
         "model": "magic.color",
         "pk": 5
+    },
+    {
+        "fields": {
+            "name": "red",
+            "slug": "r"
+        },
+        "model": "magic.color",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "name": "white",
+            "slug": "w"
+        },
+        "model": "magic.color",
+        "pk": 1
     }
 ]
