@@ -31,7 +31,7 @@
     </div>
 
     {% if is_paginated %}
-        {% load paginator %}
+        {% load paginator from paginator %}
         {% paginator %}
     {% endif %}
 {% endblock %}

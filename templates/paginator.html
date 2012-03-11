@@ -1,14 +1,16 @@
+{% load page from paginator %}
+
 <div class="pagination pagination-centered">
     <ul>
         {% if page_obj.has_previous %}
             <li>
-                <a href="?page={{ page_obj.previous_page_number }}">&#x2190;</a>
+                <a href="{% page page_obj.previous_page_number %}">&#x2190;</a>
             </li>
         {% endif %}
 
         {% if show_first_page %}
             <li>
-                <a href="?page=1">1</a>
+                <a href="{% page 1 %}">1</a>
             </li>
             <li class="disabled">
                 <a href="#">&#x2026;</a>
@@ -17,7 +19,7 @@
 
         {% for page in pages %}
             <li {% if page == page_obj.number %}class="active"{% endif %}>
-                <a href="?page={{ page }}">{{ page }}</a>
+                <a href="{% page page %}">{{ page }}</a>
             </li>
         {% endfor %}
 
@@ -26,13 +28,13 @@
                 <a href="#">&#x2026;</a>
             </li>
             <li>
-                <a href="?page={{ paginator.num_pages }}">{{ paginator.num_pages }}</a>
+                <a href="{% page paginator.num_pages %}">{{ paginator.num_pages }}</a>
             </li>
         {% endif %}
 
         {% if page_obj.has_next %}
             <li>
-                <a href="?page={{ page_obj.next_page_number }}">&#x2192;</a>
+                <a href="{% page page_obj.next_page_number %}">&#x2192;</a>
             </li>
         {% endif %}
     </ul>

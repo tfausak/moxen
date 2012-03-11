@@ -1,13 +1,14 @@
 """Custom Django template tags.
 """
 from django import template
+from urllib import urlencode
 
 
 register = template.Library()
 
 
 @register.inclusion_tag('paginator.html', takes_context=True)
-def paginator(context, adjacent_pages=1):
+def paginator(context, adjacent_pages=2):
     """Add useful pagination variables.
     """
     context['pages'] = [page for page in range(
@@ -19,3 +20,15 @@ def paginator(context, adjacent_pages=1):
         context['pages']
 
     return context
+
+
+@register.simple_tag(takes_context=True)
+def page(context, page):
+    """Create a page link.
+
+    This is necessary to prevent page links from clobbering other GET
+    variables.
+    """
+    get = context['request'].GET.copy()
+    get['page'] = page
+    return '?' + urlencode(get)
