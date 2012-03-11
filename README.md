@@ -2,6 +2,12 @@
 
 A [Magic: The Gathering][1] card database.
 
+## Requirements
+
+-   [Python 2.7.1][2]
+-   [Django 1.3.1][3]
+-   [BeautifulSoup 3.2.1][4]
+
 ## Setup
 
 By default, this project uses an SQLite database. It's in the source
@@ -16,7 +22,7 @@ superuser and the included fixtures.
 
 You could manually enter all the card data, but with more than
 12,000 cards you'd be at it for a while. Use the built-in `liberate`
-command to get card information from the [Gatherer][2].
+command to get card information from the [Gatherer][5].
 
     python manage.py liberate 'http://gatherer.wizards.com/Pages/Search/' \
         '?output=spoiler&method=text&special=true&format=+![%22Un-Sets%22]'
@@ -33,4 +39,7 @@ relation; the other will be set automatically. For instance, settings
 Assault's other to Battery automatically set's Battery's to Assault.
 
 [1]: http://en.wikipedia.org/wiki/Magic:_The_Gathering
-[2]: http://gatherer.wizards.com/
+[2]: http://python.org/
+[3]: https://www.djangoproject.com/
+[4]: http://www.crummy.com/software/BeautifulSoup/
+[5]: http://gatherer.wizards.com/
