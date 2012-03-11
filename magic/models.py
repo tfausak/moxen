@@ -162,4 +162,4 @@ class PrintedCard(models.Model):
         unique_together = ['card', 'set', 'rarity']
 
     def __unicode__(self):
-        return self.card.name
+        return u'{0} ({1} {2})'.format(self.card, self.set, self.rarity)
