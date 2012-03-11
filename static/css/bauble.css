@@ -1,6 +1,12 @@
 .navbar-fixed-top .navbar-inner {
     padding: 5px;
 }
+.footer {
+    border-top: 1px solid #e5e5e5;
+    margin-top: 45px;
+    padding: 35px 0 36px;
+}
+
 .card {
     border-radius: 3px;
     margin-bottom: 18px;
