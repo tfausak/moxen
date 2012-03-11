@@ -11,16 +11,13 @@
     border-radius: 3px;
     margin-bottom: 18px;
 }
-.card.white { background: #fffbd5; }
-.card.blue  { background: #aae0fa; }
-.card.black { background: #cbc2bf; }
-.card.red   { background: #f9aa8f; }
-.card.green { background: #9bd3ae; }
-.card.white.blue, .card.white.black, .card.white.red, .card.white.green,
-.card.blue.black, .card.blue.red, .card.blue.green, .card.black.red,
-.card.black.green, .card.red.green {
-    background: #eee;
-}
+.card.colorless         { background: transparent; }
+.card.monocolored.white { background: #fffbd5; }
+.card.monocolored.blue  { background: #aae0fa; }
+.card.monocolored.black { background: #cbc2bf; }
+.card.monocolored.red   { background: #f9aa8f; }
+.card.monocolored.green { background: #9bd3ae; }
+.card.multicolored      { background: #eee; }
 .card .link {
     color: inherit;
     display: block;

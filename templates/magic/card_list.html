@@ -18,7 +18,7 @@
     <div class="row">
         {% for card in object_list %}
             <div class="span3">
-                <div class="card {{ card.colors.all|join:" " }}">
+                <div class="card {{ card.color }}">
                     <a class="link" href="{{ card.get_absolute_url }}">
                         <div class="mana_cost pull-right">{{ card.mana_cost|upper }}</div>
                         <div class="name">{{ card|title }}</div>

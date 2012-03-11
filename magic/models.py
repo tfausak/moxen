@@ -174,6 +174,16 @@ class Card(models.Model):
     def get_absolute_url(self):
         return ('card_detail', (), {'slug': self.slug})
 
+    def color(self):
+        """Combine this card's colors.
+        """
+        colors = u' '.join(unicode(color) for color in self.colors.all())
+        if self.colors.count() > 1:
+            return u'multicolored ' + colors
+        if self.colors.count():
+            return u'monocolored ' + colors
+        return u'colorless'
+
     def type(self):
         """Combine this card's super, card, and sub types.
         """
