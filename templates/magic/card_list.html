@@ -5,13 +5,19 @@
         <h2>Cards</h2>
     </div>
 
-    <ul>
+    <div class="row">
         {% for card in object_list %}
-            <li>
-                <a href="{{ card.get_absolute_url }}">{{ card|title }}</a>
-            </li>
+            <div class="span3">
+                <div class="card">
+                    <a class="link" href="{{ card.get_absolute_url }}">
+                        <div class="mana_cost pull-right">{{ card.mana_cost|upper }}</div>
+                        <div class="name">{{ card|title }}</div>
+                        <div class="type">{{ card.type|title }}</div>
+                    </a>
+                </div>
+            </div>
         {% endfor %}
-    </ul>
+    </div>
 
     <ul class="pager">
         {% if page_obj.has_previous %}

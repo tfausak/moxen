@@ -14,7 +14,7 @@ class CardListView(ListView):
     """TODO
     """
     model = Card
-    paginate_by = 100
+    paginate_by = 120
 
     def get_context_data(self, **kwargs):
         context = super(CardListView, self).get_context_data(**kwargs)

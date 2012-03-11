@@ -1,6 +1,31 @@
 .navbar-fixed-top .navbar-inner {
     padding: 5px;
 }
+.card {
+    margin-bottom: 18px;
+}
+.card .link {
+    background: #eee;
+    border-radius: 3px;
+    color: inherit;
+    display: block;
+    padding: 9px;
+    text-decoration: none;
+}
+.card .link:hover {
+    background: #ddd;
+}
+.card .name {
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.card .type {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
 @media (min-width: 980px) {
     body {

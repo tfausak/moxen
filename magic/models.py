@@ -185,7 +185,7 @@ class Card(models.Model):
             for sub_type in self.sub_types.all())
 
         super_types += u' ' if super_types else u''
-        card_types += u' -- ' if sub_types else u''
+        card_types += u' \u2014 ' if sub_types else u''
 
         return super_types + card_types + sub_types
 
