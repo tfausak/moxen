@@ -9,7 +9,7 @@
         <link href="/static/css/bootstrap.css" rel="stylesheet">
         <link href="/static/css/bauble.css" rel="stylesheet">
 
-        <title>{% if title %}{{ title }} &#xb7; {% endif %}Bauble</title>
+        <title>{% block title %}Bauble{% endblock %}</title>
     </head>
 
     <body>
@@ -50,6 +50,20 @@
         </div>
 
         <div class="container">
+            {% block breadcrumbs %}
+                <ul class="breadcrumb">
+                    <li class="active">
+                        <a href="{% url index %}">Home</a>
+                    </li>
+                </ul>
+            {% endblock %}
+
+            {% block header %}
+                <div class="page-header">
+                    <h1>Bauble</h1>
+                </div>
+            {% endblock %}
+
             {% block content %}
             {% endblock %}
 

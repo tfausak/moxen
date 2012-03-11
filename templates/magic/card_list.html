@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 
-{% block content %}
+{% block title %}Cards &#xb7; Bauble{% endblock %}
+
+{% block breadcrumbs %}
     <ul class="breadcrumb">
         <li>
             <a href="{% url index %}">Home</a>
@@ -10,11 +12,15 @@
             <a href="{% url card_list %}">Cards</a>
         </li>
     </ul>
+{% endblock %}
 
+{% block header %}
     <div class="page-header">
         <h1>{{ title }}</h1>
     </div>
+{% endblock %}
 
+{% block content %}
     <div class="row">
         {% for card in object_list %}
             <div class="span3">

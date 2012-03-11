@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 
-{% block content %}
+{% block title %}{{ card|title }} &#xb7; Bauble{% endblock %}
+
+{% block breadcrumbs %}
     <ul class="breadcrumb">
         <li>
             <a href="{% url index %}">Home</a>
@@ -14,13 +16,17 @@
             <a href="{% url card_detail card.slug %}">{{ card|title }}</a>
         </li>
     </ul>
+{% endblock %}
 
+{% block header %}
     <div class="page-header">
         <h1>
             <a href="http://gatherer.wizards.com/Pages/Search/?name=[{{ card.name }}]">{{ title }}</a>
         </h1>
     </div>
+{% endblock %}
 
+{% block content %}
     <dl>
         {% if card.mana_cost %}
             <dt>Mana cost</dt>

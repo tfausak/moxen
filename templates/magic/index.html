@@ -1,15 +1,11 @@
 {% extends "base.html" %}
 
-{% block content %}
-    <ul class="breadcrumb">
-        <li class="active">
-            <a href="{% url index %}">Home</a>
-        </li>
-    </ul>
-
+{% block header %}
     <div class="page-header">
         <h1>Bauble <small>A Magic: The Gathering card database</small></h1>
     </div>
+{% endblock %}
 
+{% block content %}
     <p>This project is still in its infancy. We don't really have anything to show for ourselves. Check back later.</p>
 {% endblock %}
