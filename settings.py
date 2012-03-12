@@ -3,6 +3,12 @@
 ADMINS = (
     # ('First Last', 'first.last@example.com'),
 )
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'db.sq3',
+    }
+}
 DEBUG = True
 INTERNAL_IPS = (
     # '127.0.0.1',
@@ -12,12 +18,6 @@ SECRET_KEY = ''
 # You probably don't need to edit below this line.
 ACCOUNT_ACTIVATION_DAYS = 7
 AUTH_PROFILE_MODULE = 'magic.UserProfile'
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'db.sq3',
-    }
-}
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
