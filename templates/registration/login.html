@@ -38,7 +38,7 @@
         <div class="control-group {% if form.username.errors %}error{% endif %}">
             <label class="control-label" for="username">Username</label>
             <div class="controls">
-                <input {% if not form.username.value %}autofocus{% endif %} name="username" id="username" type="text" value="{{ form.username.value|default_if_none:"" }}">
+                <input {% if not form.username.value %}autofocus{% endif %} name="username" id="username" tabindex="0" type="text" value="{{ form.username.value|default_if_none:"" }}">
                 <span class="help-inline">
                     {% for error in form.username.errors %}
                         <div>{{ error }}</div>
@@ -53,7 +53,7 @@
         <div class="control-group {% if form.password.errors %}error{% endif %}">
             <label class="control-label" for="password">Password</label>
             <div class="controls">
-                <input {% if form.username.value %}autofocus{% endif %} name="password" id="password" type="password">
+                <input {% if form.username.value %}autofocus{% endif %} name="password" id="password" tabindex="1" type="password">
                 <span class="help-inline">
                     {% for error in form.password.errors %}
                         <div>{{ error }}</div>
