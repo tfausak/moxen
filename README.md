@@ -36,7 +36,7 @@ to `localhost:8000/admin`. You only need to set one side of the
 relation; the other will be set automatically. For instance, settings
 Assault's other to Battery automatically set's Battery's to Assault.
 
-[1]: https://secure.travis-ci.org/tfausak/bauble.png?branch=master
+[1]: https://secure.travis-ci.org/tfausak/bauble.png
 [2]: http://travis-ci.org/tfausak/bauble
 [3]: http://en.wikipedia.org/wiki/Magic:_The_Gathering
 [4]: http://python.org/
