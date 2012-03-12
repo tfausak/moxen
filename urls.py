@@ -5,7 +5,7 @@ from django.conf.urls.defaults import patterns, include
 from django.contrib import admin
 from django.contrib.sitemaps import GenericSitemap
 from magic.forms import UserProfileForm
-from magic.models import Card
+from magic.models import Card, UserProfile
 from registration.forms import RegistrationFormUniqueEmail
 
 
@@ -34,6 +34,7 @@ urlpatterns = patterns('',
     # Django's built-in sitemap
     ('^sitemap[.]xml', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': {
             'cards': GenericSitemap({'queryset': Card.objects.all()}),
+            'users': GenericSitemap({'queryset': UserProfile.objects.all()}),
         }}, 'sitemap'),
 )
 

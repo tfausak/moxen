@@ -39,6 +39,9 @@
                             <li>
                                 <a href="{% url card_list as card_list_url %}{{ card_list_url }}">Cards</a>
                             </li>
+                            <li>
+                                <a href="{% url profiles_profile_list as profiles_profile_list_url %}{{ profiles_profile_list_url }}">Users</a>
+                            </li>
                         </ul>
 
                         <form action="{% url search as search_url %}{{ search_url }}" class="navbar-search pull-right" method="get">
