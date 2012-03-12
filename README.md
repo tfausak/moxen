@@ -13,17 +13,17 @@ A [Magic: The Gathering][1] card database.
 
 ## Setup
 
-The database is empty to start with. At the very least, it needs a
-superuser and the included fixtures.
+Before getting any card information, the database needs to be populated
+with types, expansions, etc.
 
     python manage.py syncdb
+    python manage.py loaddata supertype cardtype subtype set rarity color block format
 
 You could manually enter all the card data, but with more than
 12,000 cards you'd be at it for a while. Use the built-in `liberate`
 command to get card information from the [Gatherer][8].
 
-    python manage.py liberate 'http://gatherer.wizards.com/Pages/Search/' \
-        '?output=spoiler&method=text&special=true&format=+![%22Un-Sets%22]'
+    python manage.py liberate 'http://gatherer.wizards.com/Pages/Search/?output=spoiler&method=text&special=true&format=+![%22Un-Sets%22]'
 
 (Getting all the cards at once, as the command above does, takes a
 long time. It depends on a lot of things, but you can expect it to
