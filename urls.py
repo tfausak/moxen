@@ -18,11 +18,9 @@ urlpatterns = patterns('',
     ('^admin/', include(admin.site.urls)),
 
     # django-registration
-    ('^users/register/$', 'registration.views.register', {
-            'backend': 'registration.backends.default.DefaultBackend',
-            'form_class': RegistrationFormUniqueEmail,
-        }, 'registration_register'),
-    ('^users/', include('registration.backends.default.urls')),
+    ('^users/register/$', 'registration.views.register',
+        {'form_class': RegistrationFormUniqueEmail}, 'registration_register'),
+    ('^users/', include('registration.urls')),
 
     # django-profiles
     ('^users/create/', 'profiles.views.create_profile',

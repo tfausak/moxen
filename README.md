@@ -5,9 +5,9 @@ A [Magic: The Gathering][1] card database.
 ## Requirements
 
 -   [Python 2.7.1][2]
--   [Django 1.3.1][3]
--   [BeautifulSoup 3.2.1][4]
--   [Docutils 0.8.1][5]
+-   [Django 1.3][3]
+-   [BeautifulSoup 3.2][4]
+-   [Docutils 0.8][5]
 -   [django-registration 0.7][6]
 -   [django-profiles 0.2][7]
 
