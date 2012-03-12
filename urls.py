@@ -11,22 +11,30 @@ from registration.forms import RegistrationFormUniqueEmail
 
 admin.autodiscover()
 urlpatterns = patterns('',
+    ('', include('magic.urls')),
+
+    # Django's built-in admin
     ('^admin/doc/', include('django.contrib.admindocs.urls')),
     ('^admin/', include(admin.site.urls)),
-    ('^accounts/register/$', 'registration.views.register', {
+
+    # django-registration
+    ('^users/register/$', 'registration.views.register', {
             'backend': 'registration.backends.default.DefaultBackend',
             'form_class': RegistrationFormUniqueEmail,
         }, 'registration_register'),
-    ('^accounts/', include('registration.backends.default.urls')),
-    ('^profiles/create/', 'profiles.views.create_profile',
+    ('^users/', include('registration.backends.default.urls')),
+
+    # django-profiles
+    ('^users/create/', 'profiles.views.create_profile',
         {'form_class': UserProfileForm}, 'profiles_profile_create'),
-    ('^profiles/edit/', 'profiles.views.edit_profile',
+    ('^users/edit/', 'profiles.views.edit_profile',
         {'form_class': UserProfileForm}, 'profiles_profile_edit'),
-    ('^profiles/', include('profiles.urls')),
+    ('^users/', include('profiles.urls')),
+
+    # Django's built-in sitemap
     ('^sitemap[.]xml', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': {
             'cards': GenericSitemap({'queryset': Card.objects.all()}),
         }}, 'sitemap'),
-    ('', include('magic.urls')),
 )
 
 if settings.DEBUG:

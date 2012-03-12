@@ -32,6 +32,9 @@ INSTALLED_APPS = (
     'registration',
     'django.contrib.admindocs', # Must be last.
 )
+LOGIN_REDIRECT_URL = '/users/settings/'
+LOGIN_URL = '/users/login/'
+LOGOUT_URL = '/users/logout/'
 MANAGERS = ADMINS
 MIDDLEWARE_CLASSES = (
     'django.middleware.gzip.GZipMiddleware',

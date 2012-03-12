@@ -10,5 +10,5 @@ urlpatterns = patterns('magic.views',
     url('^card/(?P<slug>[-\w]+)/$', CardDetailView.as_view(),
         name='card_detail'),
     url('^search/$', SearchView.as_view(), name='search'),
-    url('^accounts/profile/$', 'profile', name='profile'),
+    url('^users/settings/$', 'profile', name='profile'),
 )
