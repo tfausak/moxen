@@ -10,6 +10,7 @@ INTERNAL_IPS = (
 SECRET_KEY = ''
 
 # You probably don't need to edit below this line.
+ACCOUNT_ACTIVATION_DAYS = 7
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -25,6 +26,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'liberator',
     'magic',
+    'registration',
     'django.contrib.admindocs', # Must be last.
 )
 MANAGERS = ADMINS

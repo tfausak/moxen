@@ -9,7 +9,7 @@
             <span class="divider">/</span>
         </li>
         <li class="active">
-            <a href="{% url login %}">Log In</a>
+            <a href="{% url auth_login %}">Log In</a>
         </li>
     </ul>
 {% endblock %}
@@ -45,7 +45,7 @@
                     {% endfor %}
                 </span>
                 <p class="help-block">
-                    <a href="#">Don't have an account?</a>
+                    <a href="{% url registration_register %}">Don't have an account?</a>
                 </p>
             </div>
         </div>
@@ -60,7 +60,7 @@
                     {% endfor %}
                 </span>
                 <p class="help-block">
-                    <a href="{% url password_reset %}">Forgot your password?</a>
+                    <a href="{% url auth_password_reset %}">Forgot your password?</a>
                 </p>
             </div>
         </div>
