@@ -50,7 +50,7 @@
         display: none;
     }
     .pagination .previous, .pagination .active, .pagination .next {
-        display: inherit;
+        display: inline;
     }
 }
 @media (min-width: 980px) {
