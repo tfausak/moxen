@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title %}Register &#xb7; {{ site.name }}{% endblock %}
+
+{% block breadcrumbs %}
+    <ul class="breadcrumb">
+        <li>
+            <a href="{% url index %}">Home</a>
+            <span class="divider">/</span>
+        </li>
+        <li class="active">
+            <a href="{% url registration_register %}">Register</a>
+        </li>
+    </ul>
+{% endblock %}
+
+{% block header %}
+    <div class="page-header">
+        <h1>Register</h1>
+    </div>
+{% endblock %}
+
+{% block content %}
+    {% if form.non_field_errors %}
+        <div class="alert alert-block">
+            <a class="close" data-dismiss="alert">×</a>
+            <h4 class="alert-heading">Error</h4>
+            {% for error in form.non_field_errors %}
+                <p>{{ error }}</p>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <form class="form-horizontal" method="post">
+        {% csrf_token %}
+
+        {% for field in form.visible_fields %}
+            <div class="control-group {% if field.errors %}error{% endif %}">
+                <label class="control-label" for="{{ field.html_name }}">{{ field.label }}</label>
+                <div class="controls">
+                    {% if field.html_name == 'username' %}
+                        <input autofocus id="{{ field.html_name }}" name="{{ field.html_name }}" type="text" value="{{ field.value|default_if_none:"" }}">
+                    {% else %}
+                        {% if field.html_name == 'email' %}
+                        <input id="{{ field.html_name }}" name="{{ field.html_name }}" type="email" value="{{ field.value|default_if_none:"" }}">
+                        {% else %}
+                            <input id="{{ field.html_name }}" name="{{ field.html_name }}" type="password">
+                        {% endif %}
+                    {% endif %}
+
+                    <span class="help-inline">
+                        {% for error in field.errors %}
+                            <div>{{ error }}</div>
+                        {% endfor %}
+                    </span>
+                </div>
+            </div>
+        {% endfor %}
+
+        <div class="form-actions">
+            <input class="btn" type="submit" value="Register">
+        </div>
+    </form>
+{% endblock %}

@@ -1,0 +1,9 @@
+You're receiving this e-mail because you registered an account on Bauble.
+
+Please go to the following page in the next {{ expiration_days }} day{{ expiration_days|pluralize }} and activate your account:
+
+http://{{ site.domain }}{% url registration_activate activation_key %}
+
+Thanks for using our site!
+
+The {{ site.name }} team

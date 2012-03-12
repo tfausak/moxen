@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Password Reset &#xb7; {{ site.name }}{% endblock %}
+{% block title %}Register &#xb7; {{ site.name }}{% endblock %}
 
 {% block breadcrumbs %}
     <ul class="breadcrumb">
@@ -9,21 +9,21 @@
             <span class="divider">/</span>
         </li>
         <li>
-            <a href="{% url auth_password_reset %}">Password Reset</a>
+            <a href="{% url registration_register %}">Register</a>
             <span class="divider">/</span>
         </li>
         <li class="active">
-            <a href="#">Success</a>
+            <a href="#">Sent</a>
         </li>
     </ul>
 {% endblock %}
 
 {% block header %}
     <div class="page-header">
-        <h1>Password Reset</h1>
+        <h1>Register</h1>
     </div>
 {% endblock %}
 
 {% block content %}
-    <p>Your password has been set. You may go ahead and <a href="{% url auth_login %}">log in</a> now.</p>
+    <p>We've e-mailed you instructions for activating your account to the e-mail address you submitted. You should be receiving it shortly.</p>
 {% endblock %}
