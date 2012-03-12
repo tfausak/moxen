@@ -42,7 +42,7 @@
                         </ul>
 
                         <form action="{% url search as search_url %}{{ search_url }}" class="navbar-search pull-right" method="get">
-                            <input class="search-query" name="query" placeholder="Search" type="text" value="{{ query }}">
+                            <input class="search-query" name="query" placeholder="Search" type="text" value="{{ request.GET.query }}">
                         </form>
                     </div>
                 </div>
