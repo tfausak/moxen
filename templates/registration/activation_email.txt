@@ -1,4 +1,4 @@
-You're receiving this e-mail because you registered an account on Bauble.
+You're receiving this e-mail because you registered an account on {{ site.name }}.
 
 Please go to the following page in the next {{ expiration_days }} day{{ expiration_days|pluralize }} and activate your account:
 
