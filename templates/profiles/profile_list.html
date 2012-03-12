@@ -9,4 +9,11 @@
 {% endblock %}
 
 {% block content %}
+    <ul>
+        {% for profile in object_list %}
+            <li>
+                <a href="{% url profiles_profile_detail username=profile.user.username %}">{{ profile }}</a>
+            </li>
+        {% endfor %}
+    </ul>
 {% endblock %}

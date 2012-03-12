@@ -1,18 +1,26 @@
 {% extends "base.html" %}
 
-{% block title %}Profile &#xb7; {{ site.name }}{% endblock %}
+{% block title %}Account &#xb7; {{ site.name }}{% endblock %}
 
 {% block header %}
     <div class="page-header">
-        <h1>Profile</h1>
+        <h1>Account <small>{{ user }}</small></h1>
     </div>
 {% endblock %}
 
 {% block content %}
-    <p>Logged in as {{ user.username }}.</p>
-
-    <p>
-        <a class="btn" href="{% url auth_logout %}">Log Out</a>
-        <a class="btn" href="{% url auth_password_change %}">Change Password</a>
-    </p>
+    <ul>
+        <li>
+            <a href="{% url profiles_profile_detail username=user.username %}">View Profile</a>
+        </li>
+        <li>
+            <a href="{% url profiles_profile_edit %}">Edit Profile</a>
+        </li>
+        <li>
+            <a href="{% url auth_password_change %}">Change Password</a>
+        </li>
+        <li>
+            <a href="{% url auth_logout %}">Log Out</a>
+        </li>
+    </ul>
 {% endblock %}

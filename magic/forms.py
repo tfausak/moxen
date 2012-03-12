@@ -7,8 +7,8 @@ from magic.models import UserProfile
 class UserProfileForm(forms.ModelForm):
     """Form for editing a user's profile.
     """
-    first_name = forms.CharField()
-    last_name = forms.CharField()
+    first_name = forms.CharField(required=False)
+    last_name = forms.CharField(required=False)
 
     class Meta:
         exclude = ('user',)
@@ -23,4 +23,5 @@ class UserProfileForm(forms.ModelForm):
         user = self.instance.user
         user.first_name = self.cleaned_data['first_name']
         user.last_name = self.cleaned_data['last_name']
+        user.save()
         return super(UserProfileForm, self).save(*args, **kwargs)

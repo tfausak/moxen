@@ -4,9 +4,20 @@
 
 {% block header %}
     <div class="page-header">
-        <h1>Profile</h1>
+        <h1>Profile <small>{{ profile }}</small></h1>
     </div>
 {% endblock %}
 
 {% block content %}
+    <dl>
+        <dt>First name</dt>
+        <dd>{{ profile.user.first_name }}</dd>
+
+        <dt>Last name</dt>
+        <dd>{{ profile.user.last_name }}</dd>
+    </dl>
+
+    {% if profile.user == user %}
+        <a class="btn" href="{% url profiles_edit_profile %}"><i class="icon-pencil"></i> Edit Your Profile</a>
+    {% endif %}
 {% endblock %}
