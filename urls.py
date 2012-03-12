@@ -3,6 +3,7 @@
 from django.conf import settings
 from django.conf.urls.defaults import patterns, include
 from django.contrib import admin
+from magic.forms import UserProfileForm
 from registration.forms import RegistrationFormUniqueEmail
 
 
@@ -15,6 +16,12 @@ urlpatterns = patterns('',
             'form_class': RegistrationFormUniqueEmail,
         }, 'registration_register'),
     ('^accounts/', include('registration.backends.default.urls')),
+    ('^profiles/create/', 'profiles.views.create_profile', {
+            'form_class': UserProfileForm,
+        }, 'profiles_profile_create'),
+    ('^profiles/edit/', 'profiles.views.edit_profile', {
+            'form_class': UserProfileForm,
+        }, 'profiles_profile_edit'),
     ('^profiles/', include('profiles.urls')),
     ('', include('magic.urls')),
 )
