@@ -1,6 +1,5 @@
-# Bauble
+# Bauble [![][1]][2]
 
-[![Build Status][1]][2]
 A [Magic: The Gathering][3] card database.
 
 ## Requirements
