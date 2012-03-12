@@ -70,3 +70,8 @@ class LegalityAdmin(admin.ModelAdmin):
     list_filter = ['status', 'format']
     search_fields = ['card__name']
 admin.site.register(magic.models.Legality, LegalityAdmin)
+
+
+class UserProfileAdmin(admin.ModelAdmin):
+    search_fields = ['user__username']
+admin.site.register(magic.models.UserProfile, UserProfileAdmin)

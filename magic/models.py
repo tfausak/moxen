@@ -6,6 +6,7 @@ printings and tournament restrictions.
 References to the Magic: The Gathering comprehensive rules are
 included where appropriate. <http://wizards.com/magic/rules>
 """
+from django.contrib.auth.models import User
 from django.db import models
 
 
@@ -276,3 +277,17 @@ class Legality(models.Model):
     def __unicode__(self):
         return u'{0} ({1} in {2})'.format(self.card,
             dict(self.STATUS_CHOICES)[self.status], self.format)
+
+
+class UserProfile(models.Model):
+    """Extra information about a user.
+    """
+    user = models.OneToOneField(User)
+
+    def __unicode__(self):
+        return unicode(self.user)
+
+    @models.permalink
+    def get_absolute_url(self):
+        return ('profiles_profile_detail', (),
+            {'username': self.user.username})

@@ -15,6 +15,7 @@ urlpatterns = patterns('',
             'form_class': RegistrationFormUniqueEmail,
         }, 'registration_register'),
     ('^accounts/', include('registration.backends.default.urls')),
+    ('^profiles/', include('profiles.urls')),
     ('', include('magic.urls')),
 )
 
