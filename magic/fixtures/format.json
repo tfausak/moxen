@@ -1,0 +1,460 @@
+[
+    {
+        "fields": {
+            "name": "extended",
+            "sets": [
+                1,
+                14,
+                24,
+                43,
+                44,
+                45,
+                53,
+                54,
+                71,
+                73,
+                76,
+                77,
+                96,
+                97
+            ],
+            "slug": "extended"
+        },
+        "model": "magic.format",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "name": "ice age block",
+            "sets": [
+                2,
+                13,
+                36
+            ],
+            "slug": "ice-age-block"
+        },
+        "model": "magic.format",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "name": "invasion block",
+            "sets": [
+                4,
+                37,
+                61
+            ],
+            "slug": "invasion-block"
+        },
+        "model": "magic.format",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "name": "kamigawa block",
+            "sets": [
+                9,
+                10,
+                72
+            ],
+            "slug": "kamigawa-block"
+        },
+        "model": "magic.format",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "name": "legacy",
+            "sets": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75,
+                76,
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97
+            ],
+            "slug": "legacy"
+        },
+        "model": "magic.format",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "name": "lorwyn-shadowmoor block",
+            "sets": [
+                24,
+                43,
+                54,
+                76
+            ],
+            "slug": "lorwyn-shadowmoor-block"
+        },
+        "model": "magic.format",
+        "pk": 17
+    },
+    {
+        "fields": {
+            "name": "masques block",
+            "sets": [
+                50,
+                55,
+                68
+            ],
+            "slug": "masques-block"
+        },
+        "model": "magic.format",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "name": "mirage block",
+            "sets": [
+                51,
+                94,
+                95
+            ],
+            "slug": "mirage-block"
+        },
+        "model": "magic.format",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "name": "mirrodin block",
+            "sets": [
+                15,
+                27,
+                52
+            ],
+            "slug": "mirrodin-block"
+        },
+        "model": "magic.format",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "name": "odyssey block",
+            "sets": [
+                38,
+                57,
+                86
+            ],
+            "slug": "odyssey-block"
+        },
+        "model": "magic.format",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "name": "onslaught block",
+            "sets": [
+                40,
+                58,
+                74
+            ],
+            "slug": "onslaught-block"
+        },
+        "model": "magic.format",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "name": "ravnica block",
+            "sets": [
+                16,
+                34,
+                69
+            ],
+            "slug": "ravnica-block"
+        },
+        "model": "magic.format",
+        "pk": 15
+    },
+    {
+        "fields": {
+            "name": "scars of mirrodin block",
+            "sets": [
+                53,
+                73
+            ],
+            "slug": "scars-of-mirrodin-block"
+        },
+        "model": "magic.format",
+        "pk": 20
+    },
+    {
+        "fields": {
+            "name": "shards of alara block",
+            "sets": [
+                1,
+                14,
+                77
+            ],
+            "slug": "shards-of-alara-block"
+        },
+        "model": "magic.format",
+        "pk": 18
+    },
+    {
+        "fields": {
+            "name": "standard",
+            "sets": [
+                45,
+                53,
+                71,
+                73,
+                96,
+                97
+            ],
+            "slug": "standard"
+        },
+        "model": "magic.format",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "name": "tempest block",
+            "sets": [
+                80,
+                81,
+                95
+            ],
+            "slug": "tempest-block"
+        },
+        "model": "magic.format",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "name": "time spiral block",
+            "sets": [
+                33,
+                59,
+                84
+            ],
+            "slug": "time-spiral-block"
+        },
+        "model": "magic.format",
+        "pk": 16
+    },
+    {
+        "fields": {
+            "name": "urza block",
+            "sets": [
+                90,
+                91,
+                92
+            ],
+            "slug": "urza-block"
+        },
+        "model": "magic.format",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "name": "vintage",
+            "sets": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75,
+                76,
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97
+            ],
+            "slug": "vintage"
+        },
+        "model": "magic.format",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "name": "zendikar block",
+            "sets": [
+                71,
+                96,
+                97
+            ],
+            "slug": "zendikar-block"
+        },
+        "model": "magic.format",
+        "pk": 19
+    }
+]

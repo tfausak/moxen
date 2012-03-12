@@ -1,0 +1,850 @@
+[
+    {
+        "fields": {
+            "name": "alara reborn",
+            "slug": "arb"
+        },
+        "model": "magic.set",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "name": "alliances",
+            "slug": "al"
+        },
+        "model": "magic.set",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "name": "antiquities",
+            "slug": "aq"
+        },
+        "model": "magic.set",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "name": "apocalypse",
+            "slug": "ap"
+        },
+        "model": "magic.set",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "name": "arabian nights",
+            "slug": "an"
+        },
+        "model": "magic.set",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "name": "archenemy",
+            "slug": "arc"
+        },
+        "model": "magic.set",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "name": "battle royale box set",
+            "slug": "br"
+        },
+        "model": "magic.set",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "name": "beatdown box set",
+            "slug": "bd"
+        },
+        "model": "magic.set",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "name": "betrayers of kamigawa",
+            "slug": "bok"
+        },
+        "model": "magic.set",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "name": "champions of kamigawa",
+            "slug": "chk"
+        },
+        "model": "magic.set",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "name": "chronicles",
+            "slug": "ch"
+        },
+        "model": "magic.set",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "name": "classic sixth edition",
+            "slug": "6e"
+        },
+        "model": "magic.set",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "name": "coldsnap",
+            "slug": "csp"
+        },
+        "model": "magic.set",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "name": "conflux",
+            "slug": "con"
+        },
+        "model": "magic.set",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "name": "dark ascension",
+            "slug": "dka"
+        },
+        "model": "magic.set",
+        "pk": 101
+    },
+    {
+        "fields": {
+            "name": "darksteel",
+            "slug": "dst"
+        },
+        "model": "magic.set",
+        "pk": 15
+    },
+    {
+        "fields": {
+            "name": "dissension",
+            "slug": "dis"
+        },
+        "model": "magic.set",
+        "pk": 16
+    },
+    {
+        "fields": {
+            "name": "duel decks: ajani vs. nicol bolas",
+            "slug": "ddh"
+        },
+        "model": "magic.set",
+        "pk": 102
+    },
+    {
+        "fields": {
+            "name": "duel decks: divine vs. demonic",
+            "slug": "ddc"
+        },
+        "model": "magic.set",
+        "pk": 17
+    },
+    {
+        "fields": {
+            "name": "duel decks: elspeth vs. tezzeret",
+            "slug": "ddf"
+        },
+        "model": "magic.set",
+        "pk": 18
+    },
+    {
+        "fields": {
+            "name": "duel decks: elves vs. goblins",
+            "slug": "evg"
+        },
+        "model": "magic.set",
+        "pk": 19
+    },
+    {
+        "fields": {
+            "name": "duel decks: garruk vs. liliana",
+            "slug": "ddd"
+        },
+        "model": "magic.set",
+        "pk": 20
+    },
+    {
+        "fields": {
+            "name": "duel decks: jace vs. chandra",
+            "slug": "dd2"
+        },
+        "model": "magic.set",
+        "pk": 21
+    },
+    {
+        "fields": {
+            "name": "duel decks: knights vs. dragons",
+            "slug": "ddg"
+        },
+        "model": "magic.set",
+        "pk": 103
+    },
+    {
+        "fields": {
+            "name": "duel decks: phyrexia vs. the coalition",
+            "slug": "dde"
+        },
+        "model": "magic.set",
+        "pk": 22
+    },
+    {
+        "fields": {
+            "name": "eighth edition",
+            "slug": "8ed"
+        },
+        "model": "magic.set",
+        "pk": 23
+    },
+    {
+        "fields": {
+            "name": "eventide",
+            "slug": "eve"
+        },
+        "model": "magic.set",
+        "pk": 24
+    },
+    {
+        "fields": {
+            "name": "exodus",
+            "slug": "ex"
+        },
+        "model": "magic.set",
+        "pk": 25
+    },
+    {
+        "fields": {
+            "name": "fallen empires",
+            "slug": "fe"
+        },
+        "model": "magic.set",
+        "pk": 26
+    },
+    {
+        "fields": {
+            "name": "fifth dawn",
+            "slug": "5dn"
+        },
+        "model": "magic.set",
+        "pk": 27
+    },
+    {
+        "fields": {
+            "name": "fifth edition",
+            "slug": "5e"
+        },
+        "model": "magic.set",
+        "pk": 28
+    },
+    {
+        "fields": {
+            "name": "fourth edition",
+            "slug": "4e"
+        },
+        "model": "magic.set",
+        "pk": 29
+    },
+    {
+        "fields": {
+            "name": "from the vault: dragons",
+            "slug": "drb"
+        },
+        "model": "magic.set",
+        "pk": 30
+    },
+    {
+        "fields": {
+            "name": "from the vault: exiled",
+            "slug": "v09"
+        },
+        "model": "magic.set",
+        "pk": 31
+    },
+    {
+        "fields": {
+            "name": "from the vault: legends",
+            "slug": "v11"
+        },
+        "model": "magic.set",
+        "pk": 104
+    },
+    {
+        "fields": {
+            "name": "from the vault: relics",
+            "slug": "v10"
+        },
+        "model": "magic.set",
+        "pk": 32
+    },
+    {
+        "fields": {
+            "name": "future sight",
+            "slug": "fut"
+        },
+        "model": "magic.set",
+        "pk": 33
+    },
+    {
+        "fields": {
+            "name": "guildpact",
+            "slug": "gpt"
+        },
+        "model": "magic.set",
+        "pk": 34
+    },
+    {
+        "fields": {
+            "name": "homelands",
+            "slug": "hm"
+        },
+        "model": "magic.set",
+        "pk": 35
+    },
+    {
+        "fields": {
+            "name": "ice age",
+            "slug": "ia"
+        },
+        "model": "magic.set",
+        "pk": 36
+    },
+    {
+        "fields": {
+            "name": "innistrad",
+            "slug": "isd"
+        },
+        "model": "magic.set",
+        "pk": 100
+    },
+    {
+        "fields": {
+            "name": "invasion",
+            "slug": "in"
+        },
+        "model": "magic.set",
+        "pk": 37
+    },
+    {
+        "fields": {
+            "name": "judgment",
+            "slug": "jud"
+        },
+        "model": "magic.set",
+        "pk": 38
+    },
+    {
+        "fields": {
+            "name": "legends",
+            "slug": "le"
+        },
+        "model": "magic.set",
+        "pk": 39
+    },
+    {
+        "fields": {
+            "name": "legions",
+            "slug": "lgn"
+        },
+        "model": "magic.set",
+        "pk": 40
+    },
+    {
+        "fields": {
+            "name": "limited edition alpha",
+            "slug": "1e"
+        },
+        "model": "magic.set",
+        "pk": 41
+    },
+    {
+        "fields": {
+            "name": "limited edition beta",
+            "slug": "2e"
+        },
+        "model": "magic.set",
+        "pk": 42
+    },
+    {
+        "fields": {
+            "name": "lorwyn",
+            "slug": "lrw"
+        },
+        "model": "magic.set",
+        "pk": 43
+    },
+    {
+        "fields": {
+            "name": "magic 2010",
+            "slug": "m10"
+        },
+        "model": "magic.set",
+        "pk": 44
+    },
+    {
+        "fields": {
+            "name": "magic 2011",
+            "slug": "m11"
+        },
+        "model": "magic.set",
+        "pk": 45
+    },
+    {
+        "fields": {
+            "name": "magic 2012",
+            "slug": "m12"
+        },
+        "model": "magic.set",
+        "pk": 99
+    },
+    {
+        "fields": {
+            "name": "magic: the gathering-commander",
+            "slug": "cmd"
+        },
+        "model": "magic.set",
+        "pk": 105
+    },
+    {
+        "fields": {
+            "name": "masters edition",
+            "slug": "med"
+        },
+        "model": "magic.set",
+        "pk": 46
+    },
+    {
+        "fields": {
+            "name": "masters edition ii",
+            "slug": "me2"
+        },
+        "model": "magic.set",
+        "pk": 47
+    },
+    {
+        "fields": {
+            "name": "masters edition iii",
+            "slug": "me3"
+        },
+        "model": "magic.set",
+        "pk": 48
+    },
+    {
+        "fields": {
+            "name": "masters edition iv",
+            "slug": "me4"
+        },
+        "model": "magic.set",
+        "pk": 49
+    },
+    {
+        "fields": {
+            "name": "mercadian masques",
+            "slug": "mm"
+        },
+        "model": "magic.set",
+        "pk": 50
+    },
+    {
+        "fields": {
+            "name": "mirage",
+            "slug": "mi"
+        },
+        "model": "magic.set",
+        "pk": 51
+    },
+    {
+        "fields": {
+            "name": "mirrodin",
+            "slug": "mrd"
+        },
+        "model": "magic.set",
+        "pk": 52
+    },
+    {
+        "fields": {
+            "name": "mirrodin besieged",
+            "slug": "mbs"
+        },
+        "model": "magic.set",
+        "pk": 53
+    },
+    {
+        "fields": {
+            "name": "morningtide",
+            "slug": "mor"
+        },
+        "model": "magic.set",
+        "pk": 54
+    },
+    {
+        "fields": {
+            "name": "nemesis",
+            "slug": "ne"
+        },
+        "model": "magic.set",
+        "pk": 55
+    },
+    {
+        "fields": {
+            "name": "new phyrexia",
+            "slug": "nph"
+        },
+        "model": "magic.set",
+        "pk": 98
+    },
+    {
+        "fields": {
+            "name": "ninth edition",
+            "slug": "9ed"
+        },
+        "model": "magic.set",
+        "pk": 56
+    },
+    {
+        "fields": {
+            "name": "odyssey",
+            "slug": "od"
+        },
+        "model": "magic.set",
+        "pk": 57
+    },
+    {
+        "fields": {
+            "name": "onslaught",
+            "slug": "ons"
+        },
+        "model": "magic.set",
+        "pk": 58
+    },
+    {
+        "fields": {
+            "name": "planar chaos",
+            "slug": "plc"
+        },
+        "model": "magic.set",
+        "pk": 59
+    },
+    {
+        "fields": {
+            "name": "planechase",
+            "slug": "hop"
+        },
+        "model": "magic.set",
+        "pk": 60
+    },
+    {
+        "fields": {
+            "name": "planeshift",
+            "slug": "ps"
+        },
+        "model": "magic.set",
+        "pk": 61
+    },
+    {
+        "fields": {
+            "name": "portal",
+            "slug": "po"
+        },
+        "model": "magic.set",
+        "pk": 62
+    },
+    {
+        "fields": {
+            "name": "portal second age",
+            "slug": "p2"
+        },
+        "model": "magic.set",
+        "pk": 63
+    },
+    {
+        "fields": {
+            "name": "portal three kingdoms",
+            "slug": "pk"
+        },
+        "model": "magic.set",
+        "pk": 64
+    },
+    {
+        "fields": {
+            "name": "premium deck series: fire and lightning",
+            "slug": "pd2"
+        },
+        "model": "magic.set",
+        "pk": 65
+    },
+    {
+        "fields": {
+            "name": "premium deck series: graveborn",
+            "slug": "pd3"
+        },
+        "model": "magic.set",
+        "pk": 106
+    },
+    {
+        "fields": {
+            "name": "premium deck series: slivers",
+            "slug": "h09"
+        },
+        "model": "magic.set",
+        "pk": 66
+    },
+    {
+        "fields": {
+            "name": "promo set for gatherer",
+            "slug": "ppr"
+        },
+        "model": "magic.set",
+        "pk": 67
+    },
+    {
+        "fields": {
+            "name": "prophecy",
+            "slug": "pr"
+        },
+        "model": "magic.set",
+        "pk": 68
+    },
+    {
+        "fields": {
+            "name": "ravnica: city of guilds",
+            "slug": "rav"
+        },
+        "model": "magic.set",
+        "pk": 69
+    },
+    {
+        "fields": {
+            "name": "revised edition",
+            "slug": "3e"
+        },
+        "model": "magic.set",
+        "pk": 70
+    },
+    {
+        "fields": {
+            "name": "rise of the eldrazi",
+            "slug": "roe"
+        },
+        "model": "magic.set",
+        "pk": 71
+    },
+    {
+        "fields": {
+            "name": "saviors of kamigawa",
+            "slug": "sok"
+        },
+        "model": "magic.set",
+        "pk": 72
+    },
+    {
+        "fields": {
+            "name": "scars of mirrodin",
+            "slug": "som"
+        },
+        "model": "magic.set",
+        "pk": 73
+    },
+    {
+        "fields": {
+            "name": "scourge",
+            "slug": "scg"
+        },
+        "model": "magic.set",
+        "pk": 74
+    },
+    {
+        "fields": {
+            "name": "seventh edition",
+            "slug": "7e"
+        },
+        "model": "magic.set",
+        "pk": 75
+    },
+    {
+        "fields": {
+            "name": "shadowmoor",
+            "slug": "shm"
+        },
+        "model": "magic.set",
+        "pk": 76
+    },
+    {
+        "fields": {
+            "name": "shards of alara",
+            "slug": "ala"
+        },
+        "model": "magic.set",
+        "pk": 77
+    },
+    {
+        "fields": {
+            "name": "starter 1999",
+            "slug": "p3"
+        },
+        "model": "magic.set",
+        "pk": 78
+    },
+    {
+        "fields": {
+            "name": "starter 2000",
+            "slug": "p4"
+        },
+        "model": "magic.set",
+        "pk": 79
+    },
+    {
+        "fields": {
+            "name": "stronghold",
+            "slug": "st"
+        },
+        "model": "magic.set",
+        "pk": 80
+    },
+    {
+        "fields": {
+            "name": "tempest",
+            "slug": "te"
+        },
+        "model": "magic.set",
+        "pk": 81
+    },
+    {
+        "fields": {
+            "name": "tenth edition",
+            "slug": "10e"
+        },
+        "model": "magic.set",
+        "pk": 82
+    },
+    {
+        "fields": {
+            "name": "the dark",
+            "slug": "dk"
+        },
+        "model": "magic.set",
+        "pk": 83
+    },
+    {
+        "fields": {
+            "name": "time spiral",
+            "slug": "tsp"
+        },
+        "model": "magic.set",
+        "pk": 84
+    },
+    {
+        "fields": {
+            "name": "time spiral \"timeshifted\"",
+            "slug": "tsb"
+        },
+        "model": "magic.set",
+        "pk": 85
+    },
+    {
+        "fields": {
+            "name": "torment",
+            "slug": "tor"
+        },
+        "model": "magic.set",
+        "pk": 86
+    },
+    {
+        "fields": {
+            "name": "unglued",
+            "slug": "ug"
+        },
+        "model": "magic.set",
+        "pk": 87
+    },
+    {
+        "fields": {
+            "name": "unhinged",
+            "slug": "unh"
+        },
+        "model": "magic.set",
+        "pk": 88
+    },
+    {
+        "fields": {
+            "name": "unlimited edition",
+            "slug": "2u"
+        },
+        "model": "magic.set",
+        "pk": 89
+    },
+    {
+        "fields": {
+            "name": "urza's destiny",
+            "slug": "cg"
+        },
+        "model": "magic.set",
+        "pk": 90
+    },
+    {
+        "fields": {
+            "name": "urza's legacy",
+            "slug": "gu"
+        },
+        "model": "magic.set",
+        "pk": 91
+    },
+    {
+        "fields": {
+            "name": "urza's saga",
+            "slug": "uz"
+        },
+        "model": "magic.set",
+        "pk": 92
+    },
+    {
+        "fields": {
+            "name": "vanguard",
+            "slug": "van"
+        },
+        "model": "magic.set",
+        "pk": 93
+    },
+    {
+        "fields": {
+            "name": "visions",
+            "slug": "vi"
+        },
+        "model": "magic.set",
+        "pk": 94
+    },
+    {
+        "fields": {
+            "name": "weatherlight",
+            "slug": "wl"
+        },
+        "model": "magic.set",
+        "pk": 95
+    },
+    {
+        "fields": {
+            "name": "worldwake",
+            "slug": "wwk"
+        },
+        "model": "magic.set",
+        "pk": 96
+    },
+    {
+        "fields": {
+            "name": "zendikar",
+            "slug": "zen"
+        },
+        "model": "magic.set",
+        "pk": 97
+    }
+]

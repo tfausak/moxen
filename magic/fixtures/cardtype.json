@@ -1,0 +1,90 @@
+[
+    {
+        "fields": {
+            "name": "artifact",
+            "slug": "artifact"
+        },
+        "model": "magic.cardtype",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "name": "creature",
+            "slug": "creature"
+        },
+        "model": "magic.cardtype",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "name": "enchantment",
+            "slug": "enchantment"
+        },
+        "model": "magic.cardtype",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "name": "instant",
+            "slug": "instant"
+        },
+        "model": "magic.cardtype",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "name": "land",
+            "slug": "land"
+        },
+        "model": "magic.cardtype",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "name": "plane",
+            "slug": "plane"
+        },
+        "model": "magic.cardtype",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "name": "planeswalker",
+            "slug": "planeswalker"
+        },
+        "model": "magic.cardtype",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "name": "scheme",
+            "slug": "scheme"
+        },
+        "model": "magic.cardtype",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "name": "sorcery",
+            "slug": "sorcery"
+        },
+        "model": "magic.cardtype",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "name": "tribal",
+            "slug": "tribal"
+        },
+        "model": "magic.cardtype",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "name": "vanguard",
+            "slug": "vanguard"
+        },
+        "model": "magic.cardtype",
+        "pk": 11
+    }
+]

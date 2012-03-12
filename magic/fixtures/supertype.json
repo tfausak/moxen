@@ -1,0 +1,42 @@
+[
+    {
+        "fields": {
+            "name": "basic",
+            "slug": "basic"
+        },
+        "model": "magic.supertype",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "name": "legendary",
+            "slug": "legendary"
+        },
+        "model": "magic.supertype",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "name": "ongoing",
+            "slug": "ongoing"
+        },
+        "model": "magic.supertype",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "name": "snow",
+            "slug": "snow"
+        },
+        "model": "magic.supertype",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "name": "world",
+            "slug": "world"
+        },
+        "model": "magic.supertype",
+        "pk": 5
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "fields": {
+            "name": "common",
+            "slug": "c"
+        },
+        "model": "magic.rarity",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "name": "land",
+            "slug": "l"
+        },
+        "model": "magic.rarity",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "name": "mythic rare",
+            "slug": "m"
+        },
+        "model": "magic.rarity",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "name": "promo",
+            "slug": "p"
+        },
+        "model": "magic.rarity",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "name": "rare",
+            "slug": "r"
+        },
+        "model": "magic.rarity",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "name": "special",
+            "slug": "s"
+        },
+        "model": "magic.rarity",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "name": "uncommon",
+            "slug": "u"
+        },
+        "model": "magic.rarity",
+        "pk": 3
+    }
+]
