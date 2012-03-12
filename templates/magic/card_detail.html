@@ -2,22 +2,6 @@
 
 {% block title %}{{ card|title }} &#xb7; {{ site.name }}{% endblock %}
 
-{% block breadcrumbs %}
-    <ul class="breadcrumb">
-        <li>
-            <a href="{% url index %}">Home</a>
-            <span class="divider">/</span>
-        </li>
-        <li>
-            <a href="{% url card_list %}">Cards</a>
-            <span class="divider">/</span>
-        </li>
-        <li class="active">
-            <a href="{% url card_detail card.slug %}">{{ card|title }}</a>
-        </li>
-    </ul>
-{% endblock %}
-
 {% block header %}
     <div class="page-header">
         <h1>
