@@ -45,6 +45,14 @@
     white-space: pre-wrap;
 }
 
+@media (max-width: 767px) {
+    .pagination li {
+        display: none;
+    }
+    .pagination .previous, .pagination .active, .pagination .next {
+        display: inherit;
+    }
+}
 @media (min-width: 980px) {
     body {
         padding-top: 60px;
