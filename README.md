@@ -10,7 +10,8 @@ A [Magic: The Gathering][3] card database.
 -   [Docutils][7] 0.8 -- generates admin documentation
 -   [django-profiles][8] 0.2
 -   [django-registration][9] 0.7
--   [pep8][10] 0.6 -- checks Python formatting
+-   [pep8][10] 0.6 -- checks code formatting
+-   [pylint][11] 0.25 -- checks code quality
 
 ## Installation
 
@@ -55,3 +56,4 @@ know what you're doing.
 [8]: https://bitbucket.org/ubernostrum/django-profiles/
 [9]: https://bitbucket.org/ubernostrum/django-registration/
 [10]: https://github.com/jcrocholl/pep8
+[11]: http://www.logilab.org/project/pylint
