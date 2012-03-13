@@ -49,7 +49,6 @@ class SubType(models.Model):
     """
     name = models.CharField(max_length=24, unique=True)
     slug = models.SlugField(max_length=24, unique=True)
-    card_type = models.ForeignKey(CardType)
 
     class Meta:
         ordering = ['name']
