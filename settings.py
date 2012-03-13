@@ -1,7 +1,3 @@
-"""Django settings.
-"""
-
-
 DEBUG = True
 SECRET_KEY = ''
 STATIC_URL = '/static/'
@@ -45,7 +41,7 @@ INSTALLED_APPS = (
     'magic',
     'profiles',
     'registration',
-    'django.contrib.admindocs', # Must be last.
+    'django.contrib.admindocs',  # Must be last.
 )
 
 MIDDLEWARE_CLASSES = (
