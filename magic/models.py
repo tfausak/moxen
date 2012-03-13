@@ -161,6 +161,8 @@ class Card(models.Model):
         ordering = ['name']
 
     def __unicode__(self):
+        if self.other_card:
+            return u'{0} // {1} ({0})'.format(self.name, self.other_card.name)
         return self.name
 
     def save(self, *args, **kwargs):
