@@ -6,15 +6,15 @@
         <meta charset="utf-8">
         <meta content="maximum-scale=1,minimum-scale=1,width=device-width" name="viewport">
 
-        <link href="/static/css/bootstrap.css" rel="stylesheet">
-        <link href="/static/css/font-awesome.css" rel="stylesheet">
-        <link href="/static/css/main.css" rel="stylesheet">
+        <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet">
+        <link href="{{ STATIC_URL }}css/font-awesome.css" rel="stylesheet">
+        <link href="{{ STATIC_URL }}css/main.css" rel="stylesheet">
 
-        <link href="/static/img/favicon.ico" rel="shortcut icon">
-        <link href="/static/img/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
-        <link href="/static/img/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
-        <link href="/static/img/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
-        <link href="/static/img/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+        <link href="{{ STATIC_URL }}img/favicon.ico" rel="shortcut icon">
+        <link href="{{ STATIC_URL }}img/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+        <link href="{{ STATIC_URL }}img/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+        <link href="{{ STATIC_URL }}img/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+        <link href="{{ STATIC_URL }}img/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
 
         <title>{% block title %}{{ site.name }}{% endblock %}</title>
     </head>
@@ -95,7 +95,7 @@
             <div class="footer">
                 <p class="pull-right">
                     {% if debug %}
-                        <a href="/admin/">Admin</a>
+                        <a href="{% url admin:index %}">Admin</a>
                         <span> &#xb7; </span>
                     {% endif %}
 
@@ -108,9 +108,9 @@
             </div>
         </div>
 
-        <script src="/static/js/jquery.js"></script>
-        <script src="/static/js/bootstrap.js"></script>
-        <script src="/static/js/main.js"></script>
+        <script src="{{ STATIC_URL }}js/jquery.js"></script>
+        <script src="{{ STATIC_URL }}js/bootstrap.js"></script>
+        <script src="{{ STATIC_URL }}js/main.js"></script>
     </body>
 </html>
 {% endspaceless %}

@@ -14,6 +14,7 @@ INTERNAL_IPS = (
     # '127.0.0.1',
 )
 SECRET_KEY = ''
+STATIC_URL = '/static/'
 
 # You probably don't need to edit below this line.
 ACCOUNT_ACTIVATION_DAYS = 7
