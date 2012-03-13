@@ -1,24 +1,38 @@
 """Django settings.
 """
+
+
+DEBUG = True
+SECRET_KEY = ''
+STATIC_URL = '/static/'
+
 ADMINS = (
     # ('First Last', 'first.last@example.com'),
 )
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'db.sq3',
     }
 }
-DEBUG = True
+
 INTERNAL_IPS = (
     # '127.0.0.1',
 )
-SECRET_KEY = ''
-STATIC_URL = '/static/'
 
-# You probably don't need to edit below this line.
+
+# Here be dragons!
 ACCOUNT_ACTIVATION_DAYS = 7
 AUTH_PROFILE_MODULE = 'magic.UserProfile'
+LOGIN_REDIRECT_URL = '/users/settings/'
+LOGIN_URL = '/users/login/'
+LOGOUT_URL = '/users/logout/'
+MANAGERS = ADMINS
+ROOT_URLCONF = 'urls'
+SITE_ID = 1
+TEMPLATE_DEBUG = DEBUG
+
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
@@ -33,10 +47,7 @@ INSTALLED_APPS = (
     'registration',
     'django.contrib.admindocs', # Must be last.
 )
-LOGIN_REDIRECT_URL = '/users/settings/'
-LOGIN_URL = '/users/login/'
-LOGOUT_URL = '/users/logout/'
-MANAGERS = ADMINS
+
 MIDDLEWARE_CLASSES = (
     'django.middleware.gzip.GZipMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -45,8 +56,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
 )
-ROOT_URLCONF = 'urls'
-SITE_ID = 1
+
 TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth',
     'django.contrib.messages.context_processors.messages',
@@ -57,7 +67,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.static',
     'context_processors.site',
 )
-TEMPLATE_DEBUG = DEBUG
+
 TEMPLATE_DIRS = (
     './templates/',
 )
