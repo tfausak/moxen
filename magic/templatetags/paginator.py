@@ -8,7 +8,7 @@ register = template.Library()
 
 
 @register.inclusion_tag('paginator.html', takes_context=True)
-def paginator(context, adjacent_pages=2):
+def paginator(context, adjacent_pages=5):
     """Add useful pagination variables.
     """
     context['pages'] = [page_ for page_ in range(
