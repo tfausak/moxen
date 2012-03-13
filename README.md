@@ -33,6 +33,9 @@ A [Magic: The Gathering][3] card database.
 
 ## Configuration
 
+You should go to the admin page (usually `localhost:8000/admin`)
+to change the site name and domain. "example.com" isn't very catchy.
+
 Django's `settings.py` is split into two sections. In the top
 section, you'll find things you'll probably want to change. Use a
 different database, change the administrator, turn off debug mode,
