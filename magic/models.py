@@ -192,11 +192,11 @@ class Card(models.Model):
     def type(self):
         """Combine this card's super, card, and sub types.
         """
-        super_types =  u' '.join(unicode(super_type)
+        super_types = u' '.join(unicode(super_type)
             for super_type in self.super_types.all())
-        card_types =  u' '.join(unicode(card_type)
+        card_types = u' '.join(unicode(card_type)
             for card_type in self.card_types.all())
-        sub_types =  u' '.join(unicode(sub_type)
+        sub_types = u' '.join(unicode(sub_type)
             for sub_type in self.sub_types.all())
 
         super_types += u' ' if super_types else u''
