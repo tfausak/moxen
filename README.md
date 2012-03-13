@@ -26,7 +26,7 @@ A [Magic: The Gathering][3] card database.
     # Fill the database with data.
     python manage.py syncdb
     python manage.py loaddata color supertype cardtype subtype set rarity block format
-    python manage.py loaddata cards # This takes a while.
+    python manage.py loaddata card # This takes a while.
 
     # Fire up the server.
     python manage.py runserver
