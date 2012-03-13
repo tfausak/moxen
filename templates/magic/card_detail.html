@@ -10,6 +10,13 @@
 
 {% block content %}
     <dl>
+        {% if card.other_card %}
+            <dt>Other card</dt>
+            <dd>
+                <a href="{{ card.other_card.get_absolute_url }}">{{ card.other_card|title }}</a>
+            </dd>
+        {% endif %}
+
         {% if card.mana_cost %}
             <dt>Mana cost</dt>
             <dd>{{ card.mana_cost|upper }}</dd>
