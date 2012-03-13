@@ -8,10 +8,10 @@ register = template.Library()  # pylint: disable=C0103
 def paginator(context, adjacent_pages=5):
     """Add useful pagination variables.
     """
-    context['pages'] = [page_ for page_ in range(
+    context['pages'] = [page for page in range(
         context['page_obj'].number - adjacent_pages,
         context['page_obj'].number + adjacent_pages + 1
-    ) if page_ > 0 and page_ <= context['paginator'].num_pages]
+    ) if page > 0 and page <= context['paginator'].num_pages]
     context['show_first_page'] = 1 not in context['pages']
     context['show_last_page'] = context['paginator'].num_pages not in \
         context['pages']
@@ -20,12 +20,11 @@ def paginator(context, adjacent_pages=5):
 
 
 @register.simple_tag(takes_context=True)
-def page(context, page_):
-    """Create a page link.
+def link(context, key, value):
+    """Create a link by appending to the query string.
 
-    This is necessary to prevent page links from clobbering other GET
-    variables.
+    If the key already exists in the query string, it will be updated.
     """
     get = context['request'].GET.copy()
-    get['page'] = page_
+    get[key] = value
     return '?' + urlencode(get)
