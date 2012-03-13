@@ -35,6 +35,7 @@ def _normalize_card(card):
 
     # Rules text
     card['rules_text'] = '\n'.join(line.strip() for line in card['rules_text'])
+    card['rules_text'] = card['rules_text'].strip()
 
     # Mana cost
     card['mana_cost'] = re.findall(
