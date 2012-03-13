@@ -4,45 +4,50 @@ A [Magic: The Gathering][3] card database.
 
 ## Requirements
 
--   [Python 2.7.1][4]
--   [Django 1.3][5]
--   [BeautifulSoup 3.2][6]
--   [Docutils 0.8][7]
--   [django-registration 0.7][8]
--   [django-profiles 0.2][9]
+-   [Python][4] 2.7
+-   [Django][5] 1.3
+-   [BeautifulSoup][6] 3.2
+-   [Docutils][7] 0.8
+-   [django-profiles][8] 0.2
+-   [django-registration][9] 0.7
 
-## Setup
+## Installation
 
-Before getting any card information, the database needs to be populated
-with types, expansions, etc.
+    # Get the source.
+    git clone https://github.com/tfausak/bauble.git
+    cd bauble
 
+    # Automatically get all the requirements.
+    pip install -r requirements.txt
+
+    # Run the unit tests.
+    python manage.py test
+
+    # Fill the database with data.
     python manage.py syncdb
     python manage.py loaddata color supertype cardtype subtype set rarity block format
+    python manage.py loaddata cards # This takes a while.
 
-You could manually enter all the card data, but with more than
-12,000 cards you'd be at it for a while. Use the built-in `liberate`
-command to get card information from the [Gatherer][10].
+    # Fire up the server.
+    python manage.py runserver
+    # http://localhost:8000/
 
-    python manage.py liberate 'http://gatherer.wizards.com/Pages/Search/?output=spoiler&method=text&special=true&format=+![%22Un-Sets%22]'
+## Configuration
 
-(Getting all the cards at once, as the command above does, takes a
-long time. It depends on a lot of things, but you can expect it to
-take at least 10 minutes.)
+Django's `settings.py` is split into two sections. In the top
+section, you'll find things you'll probably want to change. Use a
+different database, change the administrator, turn off debug mode,
+etc.
 
-You'll have to manually combine double-faced, flip, and split cards.
-The easiest way to do that is through the admin interface. Fire up
-the server with `python manage.py runserver` and point your browser
-to `localhost:8000/admin`. You only need to set one side of the
-relation; the other will be set automatically. For instance, settings
-Assault's other to Battery automatically set's Battery's to Assault.
+You should probably avoid editing the bottom section unless you
+know what you're doing.
 
 [1]: https://secure.travis-ci.org/tfausak/bauble.png
 [2]: http://travis-ci.org/tfausak/bauble
-[3]: http://en.wikipedia.org/wiki/Magic:_The_Gathering
+[3]: http://www.wizards.com/magic/
 [4]: http://python.org/
 [5]: https://www.djangoproject.com/
 [6]: http://www.crummy.com/software/BeautifulSoup/
 [7]: http://docutils.sourceforge.net/
-[8]: https://bitbucket.org/ubernostrum/django-registration/
-[9]: https://bitbucket.org/ubernostrum/django-profiles/
-[10]: http://gatherer.wizards.com/
+[8]: https://bitbucket.org/ubernostrum/django-profiles/
+[9]: https://bitbucket.org/ubernostrum/django-registration/
