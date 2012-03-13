@@ -1,5 +1,3 @@
-"""Django URL configuration.
-"""
 from django.conf import settings
 from django.conf.urls.defaults import patterns, include
 from django.contrib import admin
@@ -10,7 +8,7 @@ from registration.forms import RegistrationFormUniqueEmail
 
 
 admin.autodiscover()
-urlpatterns = patterns('',
+urlpatterns = patterns('',  # pylint: disable=C0103
     ('', include('magic.urls')),
 
     # Django's built-in admin

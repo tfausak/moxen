@@ -1,5 +1,3 @@
-"""Functions for getting web pages.
-"""
 from urllib2 import urlopen
 import liberator.constants
 import re

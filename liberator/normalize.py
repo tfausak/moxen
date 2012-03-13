@@ -1,5 +1,3 @@
-"""Functions for converting card information into consistent values.
-"""
 from django.template.defaultfilters import slugify
 import liberator.constants
 import re

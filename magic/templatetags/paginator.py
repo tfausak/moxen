@@ -1,10 +1,7 @@
-"""Custom Django template tags.
-"""
 from django import template
 from urllib import urlencode
 
-
-register = template.Library()
+register = template.Library()  # pylint: disable=C0103
 
 
 @register.inclusion_tag('paginator.html', takes_context=True)

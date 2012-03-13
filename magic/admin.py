@@ -1,5 +1,4 @@
-"""Django admin configuration.
-"""
+# pylint: disable=R0904
 from django.contrib import admin
 import magic.models
 

@@ -1,5 +1,3 @@
-"""Shortcut functions for liberating web pages.
-"""
 from liberator.fetch import fetch
 from liberator.parse import parse
 from liberator.normalize import normalize

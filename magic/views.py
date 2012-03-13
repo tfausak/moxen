@@ -1,5 +1,3 @@
-"""Functions for viewing cards.
-"""
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from django.views.generic import DetailView, ListView
@@ -28,6 +26,7 @@ class CardDetailView(DetailView):
 class SearchView(CardListView):
     """Search for cards by name.
     """
+    # pylint: disable=R0901,W0201
     def get_queryset(self):
         self.query = self.request.GET.get('query')
         return Card.objects.filter(name__icontains=self.query)

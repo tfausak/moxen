@@ -6,6 +6,7 @@ printings and tournament restrictions.
 References to the Magic: The Gathering comprehensive rules are
 included where appropriate. <http://wizards.com/magic/rules>
 """
+# pylint: disable=R0903,W0232
 from django.contrib.auth.models import User
 from django.db import models
 from django.db.models.signals import post_save
@@ -173,7 +174,7 @@ class Card(models.Model):
                 or self.other_card.kind != self.kind):
             self.other_card.other_card = self
             self.other_card.kind = self.kind
-            self.other_card.save()
+            self.other_card.save()  # pylint: disable=E1101
 
     @models.permalink
     def get_absolute_url(self):
@@ -286,6 +287,7 @@ class Legality(models.Model):
 class UserProfile(models.Model):
     """Extra information about a user.
     """
+    # pylint: disable=E1101
     user = models.OneToOneField(User, related_name='profile')
 
     def __unicode__(self):

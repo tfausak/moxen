@@ -1,5 +1,4 @@
-"""Django model forms.
-"""
+# pylint: disable=R0903,W0232
 from django import forms
 from magic.models import UserProfile
 
