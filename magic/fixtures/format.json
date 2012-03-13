@@ -1,66 +1,426 @@
 [
     {
         "fields": {
-            "name": "extended",
+            "name": "classic",
             "sets": [
                 1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
                 14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
                 24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
                 43,
                 44,
                 45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
                 53,
                 54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69,
+                70,
                 71,
+                72,
                 73,
+                74,
+                75,
                 76,
                 77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                87,
+                88,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
                 96,
-                97
+                97,
+                98,
+                99,
+                100,
+                101,
+                102,
+                103,
+                104,
+                105,
+                106
             ],
-            "slug": "extended"
+            "slug": "classic"
+        },
+        "model": "magic.format",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "name": "commander",
+            "sets": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75,
+                76,
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                87,
+                88,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99,
+                100,
+                101,
+                102,
+                103,
+                104,
+                105,
+                106
+            ],
+            "slug": "commander"
         },
         "model": "magic.format",
         "pk": 2
     },
     {
         "fields": {
-            "name": "ice age block",
+            "name": "extended",
+            "sets": [
+                1,
+                14,
+                15,
+                41,
+                49,
+                50,
+                51,
+                60,
+                63,
+                80,
+                82,
+                86,
+                105,
+                106
+            ],
+            "slug": "extended"
+        },
+        "model": "magic.format",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "name": "freeform",
+            "sets": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75,
+                76,
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                87,
+                88,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99,
+                100,
+                101,
+                102,
+                103,
+                104,
+                105,
+                106
+            ],
+            "slug": "freeform"
+        },
+        "model": "magic.format",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "name": "ice age",
             "sets": [
                 2,
                 13,
-                36
+                40
             ],
-            "slug": "ice-age-block"
+            "slug": "ice-age"
         },
         "model": "magic.format",
         "pk": 5
     },
     {
         "fields": {
-            "name": "invasion block",
+            "name": "innistrad",
             "sets": [
-                4,
-                37,
-                61
+                15,
+                41
             ],
-            "slug": "invasion-block"
+            "slug": "innistrad"
         },
         "model": "magic.format",
-        "pk": 10
+        "pk": 6
     },
     {
         "fields": {
-            "name": "kamigawa block",
+            "name": "invasion",
+            "sets": [
+                4,
+                42,
+                69
+            ],
+            "slug": "invasion"
+        },
+        "model": "magic.format",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "name": "kamigawa",
             "sets": [
                 9,
                 10,
-                72
+                81
             ],
-            "slug": "kamigawa-block"
+            "slug": "kamigawa"
         },
         "model": "magic.format",
-        "pk": 14
+        "pk": 8
     },
     {
         "fields": {
@@ -152,6 +512,8 @@
                 84,
                 85,
                 86,
+                87,
+                88,
                 89,
                 90,
                 91,
@@ -160,184 +522,616 @@
                 94,
                 95,
                 96,
-                97
+                97,
+                98,
+                99,
+                100,
+                101,
+                102,
+                103,
+                104,
+                105,
+                106
             ],
             "slug": "legacy"
-        },
-        "model": "magic.format",
-        "pk": 4
-    },
-    {
-        "fields": {
-            "name": "lorwyn-shadowmoor block",
-            "sets": [
-                24,
-                43,
-                54,
-                76
-            ],
-            "slug": "lorwyn-shadowmoor-block"
-        },
-        "model": "magic.format",
-        "pk": 17
-    },
-    {
-        "fields": {
-            "name": "masques block",
-            "sets": [
-                50,
-                55,
-                68
-            ],
-            "slug": "masques-block"
         },
         "model": "magic.format",
         "pk": 9
     },
     {
         "fields": {
-            "name": "mirage block",
+            "name": "lorwyn-shadowmoor",
             "sets": [
-                51,
-                94,
-                95
-            ],
-            "slug": "mirage-block"
-        },
-        "model": "magic.format",
-        "pk": 6
-    },
-    {
-        "fields": {
-            "name": "mirrodin block",
-            "sets": [
-                15,
                 27,
-                52
+                48,
+                61,
+                85
             ],
-            "slug": "mirrodin-block"
+            "slug": "lorwyn-shadowmoor"
         },
         "model": "magic.format",
-        "pk": 13
+        "pk": 10
     },
     {
         "fields": {
-            "name": "odyssey block",
+            "name": "masques",
             "sets": [
-                38,
                 57,
-                86
+                62,
+                77
             ],
-            "slug": "odyssey-block"
+            "slug": "masques"
         },
         "model": "magic.format",
         "pk": 11
     },
     {
         "fields": {
-            "name": "onslaught block",
+            "name": "mirage",
             "sets": [
-                40,
                 58,
-                74
+                103,
+                104
             ],
-            "slug": "onslaught-block"
+            "slug": "mirage"
         },
         "model": "magic.format",
         "pk": 12
     },
     {
         "fields": {
-            "name": "ravnica block",
+            "name": "mirrodin",
             "sets": [
                 16,
-                34,
-                69
+                30,
+                59
             ],
-            "slug": "ravnica-block"
+            "slug": "mirrodin"
+        },
+        "model": "magic.format",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "name": "modern",
+            "sets": [
+                1,
+                9,
+                10,
+                13,
+                14,
+                15,
+                16,
+                17,
+                26,
+                27,
+                30,
+                37,
+                38,
+                41,
+                48,
+                49,
+                50,
+                51,
+                59,
+                60,
+                61,
+                63,
+                64,
+                67,
+                78,
+                80,
+                81,
+                82,
+                85,
+                86,
+                91,
+                93,
+                94,
+                105,
+                106
+            ],
+            "slug": "modern"
+        },
+        "model": "magic.format",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "name": "odyssey",
+            "sets": [
+                43,
+                65,
+                95
+            ],
+            "slug": "odyssey"
         },
         "model": "magic.format",
         "pk": 15
     },
     {
         "fields": {
-            "name": "scars of mirrodin block",
-            "sets": [
-                53,
-                73
-            ],
-            "slug": "scars-of-mirrodin-block"
-        },
-        "model": "magic.format",
-        "pk": 20
-    },
-    {
-        "fields": {
-            "name": "shards of alara block",
-            "sets": [
-                1,
-                14,
-                77
-            ],
-            "slug": "shards-of-alara-block"
-        },
-        "model": "magic.format",
-        "pk": 18
-    },
-    {
-        "fields": {
-            "name": "standard",
+            "name": "onslaught",
             "sets": [
                 45,
-                53,
-                71,
-                73,
-                96,
-                97
+                66,
+                83
             ],
-            "slug": "standard"
-        },
-        "model": "magic.format",
-        "pk": 1
-    },
-    {
-        "fields": {
-            "name": "tempest block",
-            "sets": [
-                80,
-                81,
-                95
-            ],
-            "slug": "tempest-block"
-        },
-        "model": "magic.format",
-        "pk": 7
-    },
-    {
-        "fields": {
-            "name": "time spiral block",
-            "sets": [
-                33,
-                59,
-                84
-            ],
-            "slug": "time-spiral-block"
+            "slug": "onslaught"
         },
         "model": "magic.format",
         "pk": 16
     },
     {
         "fields": {
-            "name": "urza block",
+            "name": "prismatic",
             "sets": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75,
+                76,
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                87,
+                88,
+                89,
                 90,
                 91,
-                92
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99,
+                100,
+                101,
+                102,
+                103,
+                104,
+                105,
+                106
             ],
-            "slug": "urza-block"
+            "slug": "prismatic"
         },
         "model": "magic.format",
-        "pk": 8
+        "pk": 17
+    },
+    {
+        "fields": {
+            "name": "ravnica",
+            "sets": [
+                17,
+                38,
+                78
+            ],
+            "slug": "ravnica"
+        },
+        "model": "magic.format",
+        "pk": 18
+    },
+    {
+        "fields": {
+            "name": "scars of mirrodin",
+            "sets": [
+                60,
+                63,
+                82
+            ],
+            "slug": "scars-of-mirrodin"
+        },
+        "model": "magic.format",
+        "pk": 19
+    },
+    {
+        "fields": {
+            "name": "shards of alara",
+            "sets": [
+                1,
+                14,
+                86
+            ],
+            "slug": "shards-of-alara"
+        },
+        "model": "magic.format",
+        "pk": 20
+    },
+    {
+        "fields": {
+            "name": "singleton 100",
+            "sets": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75,
+                76,
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                87,
+                88,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99,
+                100,
+                101,
+                102,
+                103,
+                104,
+                105,
+                106
+            ],
+            "slug": "singleton-100"
+        },
+        "model": "magic.format",
+        "pk": 21
+    },
+    {
+        "fields": {
+            "name": "standard",
+            "sets": [
+                15,
+                41,
+                51,
+                60,
+                63,
+                82
+            ],
+            "slug": "standard"
+        },
+        "model": "magic.format",
+        "pk": 22
+    },
+    {
+        "fields": {
+            "name": "tempest",
+            "sets": [
+                28,
+                89,
+                90
+            ],
+            "slug": "tempest"
+        },
+        "model": "magic.format",
+        "pk": 23
+    },
+    {
+        "fields": {
+            "name": "time spiral",
+            "sets": [
+                37,
+                67,
+                93,
+                94
+            ],
+            "slug": "time-spiral"
+        },
+        "model": "magic.format",
+        "pk": 24
+    },
+    {
+        "fields": {
+            "name": "tribal wars legacy",
+            "sets": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75,
+                76,
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                87,
+                88,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99,
+                100,
+                101,
+                102,
+                103,
+                104,
+                105,
+                106
+            ],
+            "slug": "tribal-wars-legacy"
+        },
+        "model": "magic.format",
+        "pk": 25
+    },
+    {
+        "fields": {
+            "name": "tribal wars standard",
+            "sets": [
+                15,
+                41,
+                51,
+                60,
+                63,
+                82
+            ],
+            "slug": "tribal-wars-standard"
+        },
+        "model": "magic.format",
+        "pk": 26
+    },
+    {
+        "fields": {
+            "name": "un-sets",
+            "sets": [
+                96,
+                97
+            ],
+            "slug": "un-sets"
+        },
+        "model": "magic.format",
+        "pk": 27
+    },
+    {
+        "fields": {
+            "name": "urza",
+            "sets": [
+                99,
+                100,
+                101
+            ],
+            "slug": "urza"
+        },
+        "model": "magic.format",
+        "pk": 28
     },
     {
         "fields": {
@@ -429,6 +1223,8 @@
                 84,
                 85,
                 86,
+                87,
+                88,
                 89,
                 90,
                 91,
@@ -437,24 +1233,33 @@
                 94,
                 95,
                 96,
-                97
+                97,
+                98,
+                99,
+                100,
+                101,
+                102,
+                103,
+                104,
+                105,
+                106
             ],
             "slug": "vintage"
         },
         "model": "magic.format",
-        "pk": 3
+        "pk": 29
     },
     {
         "fields": {
-            "name": "zendikar block",
+            "name": "zendikar",
             "sets": [
-                71,
-                96,
-                97
+                80,
+                105,
+                106
             ],
-            "slug": "zendikar-block"
+            "slug": "zendikar"
         },
         "model": "magic.format",
-        "pk": 19
+        "pk": 30
     }
 ]

@@ -117,7 +117,7 @@
             "slug": "dka"
         },
         "model": "magic.set",
-        "pk": 101
+        "pk": 15
     },
     {
         "fields": {
@@ -125,7 +125,7 @@
             "slug": "dst"
         },
         "model": "magic.set",
-        "pk": 15
+        "pk": 16
     },
     {
         "fields": {
@@ -133,7 +133,7 @@
             "slug": "dis"
         },
         "model": "magic.set",
-        "pk": 16
+        "pk": 17
     },
     {
         "fields": {
@@ -141,7 +141,7 @@
             "slug": "ddh"
         },
         "model": "magic.set",
-        "pk": 102
+        "pk": 18
     },
     {
         "fields": {
@@ -149,7 +149,7 @@
             "slug": "ddc"
         },
         "model": "magic.set",
-        "pk": 17
+        "pk": 19
     },
     {
         "fields": {
@@ -157,7 +157,7 @@
             "slug": "ddf"
         },
         "model": "magic.set",
-        "pk": 18
+        "pk": 20
     },
     {
         "fields": {
@@ -165,7 +165,7 @@
             "slug": "evg"
         },
         "model": "magic.set",
-        "pk": 19
+        "pk": 21
     },
     {
         "fields": {
@@ -173,7 +173,7 @@
             "slug": "ddd"
         },
         "model": "magic.set",
-        "pk": 20
+        "pk": 22
     },
     {
         "fields": {
@@ -181,7 +181,7 @@
             "slug": "dd2"
         },
         "model": "magic.set",
-        "pk": 21
+        "pk": 23
     },
     {
         "fields": {
@@ -189,7 +189,7 @@
             "slug": "ddg"
         },
         "model": "magic.set",
-        "pk": 103
+        "pk": 24
     },
     {
         "fields": {
@@ -197,7 +197,7 @@
             "slug": "dde"
         },
         "model": "magic.set",
-        "pk": 22
+        "pk": 25
     },
     {
         "fields": {
@@ -205,7 +205,7 @@
             "slug": "8ed"
         },
         "model": "magic.set",
-        "pk": 23
+        "pk": 26
     },
     {
         "fields": {
@@ -213,7 +213,7 @@
             "slug": "eve"
         },
         "model": "magic.set",
-        "pk": 24
+        "pk": 27
     },
     {
         "fields": {
@@ -221,7 +221,7 @@
             "slug": "ex"
         },
         "model": "magic.set",
-        "pk": 25
+        "pk": 28
     },
     {
         "fields": {
@@ -229,7 +229,7 @@
             "slug": "fe"
         },
         "model": "magic.set",
-        "pk": 26
+        "pk": 29
     },
     {
         "fields": {
@@ -237,7 +237,7 @@
             "slug": "5dn"
         },
         "model": "magic.set",
-        "pk": 27
+        "pk": 30
     },
     {
         "fields": {
@@ -245,7 +245,7 @@
             "slug": "5e"
         },
         "model": "magic.set",
-        "pk": 28
+        "pk": 31
     },
     {
         "fields": {
@@ -253,7 +253,7 @@
             "slug": "4e"
         },
         "model": "magic.set",
-        "pk": 29
+        "pk": 32
     },
     {
         "fields": {
@@ -261,7 +261,7 @@
             "slug": "drb"
         },
         "model": "magic.set",
-        "pk": 30
+        "pk": 33
     },
     {
         "fields": {
@@ -269,7 +269,7 @@
             "slug": "v09"
         },
         "model": "magic.set",
-        "pk": 31
+        "pk": 34
     },
     {
         "fields": {
@@ -277,7 +277,7 @@
             "slug": "v11"
         },
         "model": "magic.set",
-        "pk": 104
+        "pk": 35
     },
     {
         "fields": {
@@ -285,7 +285,7 @@
             "slug": "v10"
         },
         "model": "magic.set",
-        "pk": 32
+        "pk": 36
     },
     {
         "fields": {
@@ -293,7 +293,7 @@
             "slug": "fut"
         },
         "model": "magic.set",
-        "pk": 33
+        "pk": 37
     },
     {
         "fields": {
@@ -301,7 +301,7 @@
             "slug": "gpt"
         },
         "model": "magic.set",
-        "pk": 34
+        "pk": 38
     },
     {
         "fields": {
@@ -309,7 +309,7 @@
             "slug": "hm"
         },
         "model": "magic.set",
-        "pk": 35
+        "pk": 39
     },
     {
         "fields": {
@@ -317,7 +317,7 @@
             "slug": "ia"
         },
         "model": "magic.set",
-        "pk": 36
+        "pk": 40
     },
     {
         "fields": {
@@ -325,7 +325,7 @@
             "slug": "isd"
         },
         "model": "magic.set",
-        "pk": 100
+        "pk": 41
     },
     {
         "fields": {
@@ -333,7 +333,7 @@
             "slug": "in"
         },
         "model": "magic.set",
-        "pk": 37
+        "pk": 42
     },
     {
         "fields": {
@@ -341,7 +341,7 @@
             "slug": "jud"
         },
         "model": "magic.set",
-        "pk": 38
+        "pk": 43
     },
     {
         "fields": {
@@ -349,7 +349,7 @@
             "slug": "le"
         },
         "model": "magic.set",
-        "pk": 39
+        "pk": 44
     },
     {
         "fields": {
@@ -357,7 +357,7 @@
             "slug": "lgn"
         },
         "model": "magic.set",
-        "pk": 40
+        "pk": 45
     },
     {
         "fields": {
@@ -365,7 +365,7 @@
             "slug": "1e"
         },
         "model": "magic.set",
-        "pk": 41
+        "pk": 46
     },
     {
         "fields": {
@@ -373,7 +373,7 @@
             "slug": "2e"
         },
         "model": "magic.set",
-        "pk": 42
+        "pk": 47
     },
     {
         "fields": {
@@ -381,7 +381,7 @@
             "slug": "lrw"
         },
         "model": "magic.set",
-        "pk": 43
+        "pk": 48
     },
     {
         "fields": {
@@ -389,7 +389,7 @@
             "slug": "m10"
         },
         "model": "magic.set",
-        "pk": 44
+        "pk": 49
     },
     {
         "fields": {
@@ -397,7 +397,7 @@
             "slug": "m11"
         },
         "model": "magic.set",
-        "pk": 45
+        "pk": 50
     },
     {
         "fields": {
@@ -405,7 +405,7 @@
             "slug": "m12"
         },
         "model": "magic.set",
-        "pk": 99
+        "pk": 51
     },
     {
         "fields": {
@@ -413,7 +413,7 @@
             "slug": "cmd"
         },
         "model": "magic.set",
-        "pk": 105
+        "pk": 52
     },
     {
         "fields": {
@@ -421,7 +421,7 @@
             "slug": "med"
         },
         "model": "magic.set",
-        "pk": 46
+        "pk": 53
     },
     {
         "fields": {
@@ -429,7 +429,7 @@
             "slug": "me2"
         },
         "model": "magic.set",
-        "pk": 47
+        "pk": 54
     },
     {
         "fields": {
@@ -437,7 +437,7 @@
             "slug": "me3"
         },
         "model": "magic.set",
-        "pk": 48
+        "pk": 55
     },
     {
         "fields": {
@@ -445,7 +445,7 @@
             "slug": "me4"
         },
         "model": "magic.set",
-        "pk": 49
+        "pk": 56
     },
     {
         "fields": {
@@ -453,7 +453,7 @@
             "slug": "mm"
         },
         "model": "magic.set",
-        "pk": 50
+        "pk": 57
     },
     {
         "fields": {
@@ -461,7 +461,7 @@
             "slug": "mi"
         },
         "model": "magic.set",
-        "pk": 51
+        "pk": 58
     },
     {
         "fields": {
@@ -469,7 +469,7 @@
             "slug": "mrd"
         },
         "model": "magic.set",
-        "pk": 52
+        "pk": 59
     },
     {
         "fields": {
@@ -477,7 +477,7 @@
             "slug": "mbs"
         },
         "model": "magic.set",
-        "pk": 53
+        "pk": 60
     },
     {
         "fields": {
@@ -485,7 +485,7 @@
             "slug": "mor"
         },
         "model": "magic.set",
-        "pk": 54
+        "pk": 61
     },
     {
         "fields": {
@@ -493,7 +493,7 @@
             "slug": "ne"
         },
         "model": "magic.set",
-        "pk": 55
+        "pk": 62
     },
     {
         "fields": {
@@ -501,7 +501,7 @@
             "slug": "nph"
         },
         "model": "magic.set",
-        "pk": 98
+        "pk": 63
     },
     {
         "fields": {
@@ -509,7 +509,7 @@
             "slug": "9ed"
         },
         "model": "magic.set",
-        "pk": 56
+        "pk": 64
     },
     {
         "fields": {
@@ -517,7 +517,7 @@
             "slug": "od"
         },
         "model": "magic.set",
-        "pk": 57
+        "pk": 65
     },
     {
         "fields": {
@@ -525,7 +525,7 @@
             "slug": "ons"
         },
         "model": "magic.set",
-        "pk": 58
+        "pk": 66
     },
     {
         "fields": {
@@ -533,7 +533,7 @@
             "slug": "plc"
         },
         "model": "magic.set",
-        "pk": 59
+        "pk": 67
     },
     {
         "fields": {
@@ -541,7 +541,7 @@
             "slug": "hop"
         },
         "model": "magic.set",
-        "pk": 60
+        "pk": 68
     },
     {
         "fields": {
@@ -549,7 +549,7 @@
             "slug": "ps"
         },
         "model": "magic.set",
-        "pk": 61
+        "pk": 69
     },
     {
         "fields": {
@@ -557,7 +557,7 @@
             "slug": "po"
         },
         "model": "magic.set",
-        "pk": 62
+        "pk": 70
     },
     {
         "fields": {
@@ -565,7 +565,7 @@
             "slug": "p2"
         },
         "model": "magic.set",
-        "pk": 63
+        "pk": 71
     },
     {
         "fields": {
@@ -573,7 +573,7 @@
             "slug": "pk"
         },
         "model": "magic.set",
-        "pk": 64
+        "pk": 72
     },
     {
         "fields": {
@@ -581,7 +581,7 @@
             "slug": "pd2"
         },
         "model": "magic.set",
-        "pk": 65
+        "pk": 73
     },
     {
         "fields": {
@@ -589,7 +589,7 @@
             "slug": "pd3"
         },
         "model": "magic.set",
-        "pk": 106
+        "pk": 74
     },
     {
         "fields": {
@@ -597,7 +597,7 @@
             "slug": "h09"
         },
         "model": "magic.set",
-        "pk": 66
+        "pk": 75
     },
     {
         "fields": {
@@ -605,7 +605,7 @@
             "slug": "ppr"
         },
         "model": "magic.set",
-        "pk": 67
+        "pk": 76
     },
     {
         "fields": {
@@ -613,7 +613,7 @@
             "slug": "pr"
         },
         "model": "magic.set",
-        "pk": 68
+        "pk": 77
     },
     {
         "fields": {
@@ -621,7 +621,7 @@
             "slug": "rav"
         },
         "model": "magic.set",
-        "pk": 69
+        "pk": 78
     },
     {
         "fields": {
@@ -629,7 +629,7 @@
             "slug": "3e"
         },
         "model": "magic.set",
-        "pk": 70
+        "pk": 79
     },
     {
         "fields": {
@@ -637,7 +637,7 @@
             "slug": "roe"
         },
         "model": "magic.set",
-        "pk": 71
+        "pk": 80
     },
     {
         "fields": {
@@ -645,7 +645,7 @@
             "slug": "sok"
         },
         "model": "magic.set",
-        "pk": 72
+        "pk": 81
     },
     {
         "fields": {
@@ -653,7 +653,7 @@
             "slug": "som"
         },
         "model": "magic.set",
-        "pk": 73
+        "pk": 82
     },
     {
         "fields": {
@@ -661,7 +661,7 @@
             "slug": "scg"
         },
         "model": "magic.set",
-        "pk": 74
+        "pk": 83
     },
     {
         "fields": {
@@ -669,7 +669,7 @@
             "slug": "7e"
         },
         "model": "magic.set",
-        "pk": 75
+        "pk": 84
     },
     {
         "fields": {
@@ -677,7 +677,7 @@
             "slug": "shm"
         },
         "model": "magic.set",
-        "pk": 76
+        "pk": 85
     },
     {
         "fields": {
@@ -685,7 +685,7 @@
             "slug": "ala"
         },
         "model": "magic.set",
-        "pk": 77
+        "pk": 86
     },
     {
         "fields": {
@@ -693,7 +693,7 @@
             "slug": "p3"
         },
         "model": "magic.set",
-        "pk": 78
+        "pk": 87
     },
     {
         "fields": {
@@ -701,7 +701,7 @@
             "slug": "p4"
         },
         "model": "magic.set",
-        "pk": 79
+        "pk": 88
     },
     {
         "fields": {
@@ -709,7 +709,7 @@
             "slug": "st"
         },
         "model": "magic.set",
-        "pk": 80
+        "pk": 89
     },
     {
         "fields": {
@@ -717,7 +717,7 @@
             "slug": "te"
         },
         "model": "magic.set",
-        "pk": 81
+        "pk": 90
     },
     {
         "fields": {
@@ -725,7 +725,7 @@
             "slug": "10e"
         },
         "model": "magic.set",
-        "pk": 82
+        "pk": 91
     },
     {
         "fields": {
@@ -733,7 +733,7 @@
             "slug": "dk"
         },
         "model": "magic.set",
-        "pk": 83
+        "pk": 92
     },
     {
         "fields": {
@@ -741,7 +741,7 @@
             "slug": "tsp"
         },
         "model": "magic.set",
-        "pk": 84
+        "pk": 93
     },
     {
         "fields": {
@@ -749,7 +749,7 @@
             "slug": "tsb"
         },
         "model": "magic.set",
-        "pk": 85
+        "pk": 94
     },
     {
         "fields": {
@@ -757,7 +757,7 @@
             "slug": "tor"
         },
         "model": "magic.set",
-        "pk": 86
+        "pk": 95
     },
     {
         "fields": {
@@ -765,7 +765,7 @@
             "slug": "ug"
         },
         "model": "magic.set",
-        "pk": 87
+        "pk": 96
     },
     {
         "fields": {
@@ -773,7 +773,7 @@
             "slug": "unh"
         },
         "model": "magic.set",
-        "pk": 88
+        "pk": 97
     },
     {
         "fields": {
@@ -781,7 +781,7 @@
             "slug": "2u"
         },
         "model": "magic.set",
-        "pk": 89
+        "pk": 98
     },
     {
         "fields": {
@@ -789,7 +789,7 @@
             "slug": "cg"
         },
         "model": "magic.set",
-        "pk": 90
+        "pk": 99
     },
     {
         "fields": {
@@ -797,7 +797,7 @@
             "slug": "gu"
         },
         "model": "magic.set",
-        "pk": 91
+        "pk": 100
     },
     {
         "fields": {
@@ -805,7 +805,7 @@
             "slug": "uz"
         },
         "model": "magic.set",
-        "pk": 92
+        "pk": 101
     },
     {
         "fields": {
@@ -813,7 +813,7 @@
             "slug": "van"
         },
         "model": "magic.set",
-        "pk": 93
+        "pk": 102
     },
     {
         "fields": {
@@ -821,7 +821,7 @@
             "slug": "vi"
         },
         "model": "magic.set",
-        "pk": 94
+        "pk": 103
     },
     {
         "fields": {
@@ -829,7 +829,7 @@
             "slug": "wl"
         },
         "model": "magic.set",
-        "pk": 95
+        "pk": 104
     },
     {
         "fields": {
@@ -837,7 +837,7 @@
             "slug": "wwk"
         },
         "model": "magic.set",
-        "pk": 96
+        "pk": 105
     },
     {
         "fields": {
@@ -845,6 +845,6 @@
             "slug": "zen"
         },
         "model": "magic.set",
-        "pk": 97
+        "pk": 106
     }
 ]

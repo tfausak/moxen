@@ -1,29 +1,113 @@
 [
     {
         "fields": {
+            "name": "core sets",
+            "sets": [
+                12,
+                26,
+                31,
+                32,
+                46,
+                47,
+                49,
+                50,
+                51,
+                64,
+                79,
+                84,
+                91,
+                98
+            ],
+            "slug": "core-sets"
+        },
+        "model": "magic.block",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "name": "duel decks",
+            "sets": [
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25
+            ],
+            "slug": "duel-decks"
+        },
+        "model": "magic.block",
+        "pk": 24
+    },
+    {
+        "fields": {
+            "name": "early expansions",
+            "sets": [
+                3,
+                5,
+                29,
+                39,
+                44,
+                92
+            ],
+            "slug": "early-expansions"
+        },
+        "model": "magic.block",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "name": "from the vault",
+            "sets": [
+                33,
+                34,
+                35,
+                36
+            ],
+            "slug": "vault"
+        },
+        "model": "magic.block",
+        "pk": 25
+    },
+    {
+        "fields": {
             "name": "ice age",
             "sets": [
                 2,
                 13,
-                36
+                40
             ],
             "slug": "ice-age"
         },
         "model": "magic.block",
-        "pk": 17
+        "pk": 3
+    },
+    {
+        "fields": {
+            "name": "innistrad",
+            "sets": [
+                15,
+                41
+            ],
+            "slug": "innistrad"
+        },
+        "model": "magic.block",
+        "pk": 4
     },
     {
         "fields": {
             "name": "invasion",
             "sets": [
                 4,
-                37,
-                61
+                42,
+                69
             ],
             "slug": "invasion"
         },
         "model": "magic.block",
-        "pk": 12
+        "pk": 5
     },
     {
         "fields": {
@@ -31,126 +115,208 @@
             "sets": [
                 9,
                 10,
-                72
+                81
             ],
             "slug": "kamigawa"
         },
         "model": "magic.block",
-        "pk": 8
+        "pk": 6
     },
     {
         "fields": {
             "name": "lorwyn",
             "sets": [
-                43,
-                54
+                48,
+                61
             ],
             "slug": "lorwyn"
-        },
-        "model": "magic.block",
-        "pk": 5
-    },
-    {
-        "fields": {
-            "name": "masques",
-            "sets": [
-                50,
-                55,
-                68
-            ],
-            "slug": "masques"
-        },
-        "model": "magic.block",
-        "pk": 13
-    },
-    {
-        "fields": {
-            "name": "mirage",
-            "sets": [
-                51,
-                94,
-                95
-            ],
-            "slug": "mirage"
-        },
-        "model": "magic.block",
-        "pk": 16
-    },
-    {
-        "fields": {
-            "name": "mirrodin",
-            "sets": [
-                15,
-                27,
-                52
-            ],
-            "slug": "mirrodin"
-        },
-        "model": "magic.block",
-        "pk": 9
-    },
-    {
-        "fields": {
-            "name": "odyssey",
-            "sets": [
-                38,
-                57,
-                86
-            ],
-            "slug": "odyssey"
-        },
-        "model": "magic.block",
-        "pk": 11
-    },
-    {
-        "fields": {
-            "name": "onslaught",
-            "sets": [
-                40,
-                58,
-                74
-            ],
-            "slug": "onslaught"
-        },
-        "model": "magic.block",
-        "pk": 10
-    },
-    {
-        "fields": {
-            "name": "ravnica",
-            "sets": [
-                16,
-                34,
-                69
-            ],
-            "slug": "ravnica"
         },
         "model": "magic.block",
         "pk": 7
     },
     {
         "fields": {
-            "name": "scars of mirrodin",
+            "name": "masques",
+            "sets": [
+                57,
+                62,
+                77
+            ],
+            "slug": "masques"
+        },
+        "model": "magic.block",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "name": "masters editions",
             "sets": [
                 53,
-                73
+                54,
+                55,
+                56
+            ],
+            "slug": "masters-editions"
+        },
+        "model": "magic.block",
+        "pk": 28
+    },
+    {
+        "fields": {
+            "name": "mirage",
+            "sets": [
+                58,
+                103,
+                104
+            ],
+            "slug": "mirage"
+        },
+        "model": "magic.block",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "name": "mirrodin",
+            "sets": [
+                16,
+                30,
+                59
+            ],
+            "slug": "mirrodin"
+        },
+        "model": "magic.block",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "name": "miscellaneous",
+            "sets": [
+                6,
+                7,
+                8,
+                11,
+                52,
+                76,
+                102
+            ],
+            "slug": "miscellaneous"
+        },
+        "model": "magic.block",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "name": "odyssey",
+            "sets": [
+                43,
+                65,
+                95
+            ],
+            "slug": "odyssey"
+        },
+        "model": "magic.block",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "name": "onslaught",
+            "sets": [
+                45,
+                66,
+                83
+            ],
+            "slug": "onslaught"
+        },
+        "model": "magic.block",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "name": "planechase",
+            "sets": [
+                68
+            ],
+            "slug": "planechase"
+        },
+        "model": "magic.block",
+        "pk": 27
+    },
+    {
+        "fields": {
+            "name": "portal",
+            "sets": [
+                70,
+                71,
+                72
+            ],
+            "slug": "portal"
+        },
+        "model": "magic.block",
+        "pk": 22
+    },
+    {
+        "fields": {
+            "name": "premium deck series",
+            "sets": [
+                73,
+                74,
+                75
+            ],
+            "slug": "premium-deck-series"
+        },
+        "model": "magic.block",
+        "pk": 26
+    },
+    {
+        "fields": {
+            "name": "rath",
+            "sets": [
+                28,
+                89,
+                90
+            ],
+            "slug": "rath"
+        },
+        "model": "magic.block",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "name": "ravnica",
+            "sets": [
+                17,
+                38,
+                78
+            ],
+            "slug": "ravnica"
+        },
+        "model": "magic.block",
+        "pk": 15
+    },
+    {
+        "fields": {
+            "name": "scars of mirrodin",
+            "sets": [
+                60,
+                63,
+                82
             ],
             "slug": "scars-of-mirrodin"
         },
         "model": "magic.block",
-        "pk": 1
+        "pk": 16
     },
     {
         "fields": {
             "name": "shadowmoor",
             "sets": [
-                24,
-                76
+                27,
+                85
             ],
             "slug": "shadowmoor"
         },
         "model": "magic.block",
-        "pk": 4
+        "pk": 17
     },
     {
         "fields": {
@@ -158,64 +324,75 @@
             "sets": [
                 1,
                 14,
-                77
+                86
             ],
             "slug": "shards-of-alara"
         },
         "model": "magic.block",
-        "pk": 3
+        "pk": 18
     },
     {
         "fields": {
-            "name": "tempest",
+            "name": "starter",
             "sets": [
-                25,
-                80,
-                81
+                87,
+                88
             ],
-            "slug": "tempest"
+            "slug": "starter"
         },
         "model": "magic.block",
-        "pk": 15
+        "pk": 23
     },
     {
         "fields": {
             "name": "time spiral",
             "sets": [
-                33,
-                59,
-                84,
-                85
+                37,
+                67,
+                93,
+                94
             ],
             "slug": "time-spiral"
         },
         "model": "magic.block",
-        "pk": 6
+        "pk": 19
     },
     {
         "fields": {
-            "name": "urza",
+            "name": "un-sets",
             "sets": [
-                90,
-                91,
-                92
+                96,
+                97
             ],
-            "slug": "urza"
+            "slug": "un-sets"
         },
         "model": "magic.block",
-        "pk": 14
+        "pk": 29
+    },
+    {
+        "fields": {
+            "name": "urza's",
+            "sets": [
+                99,
+                100,
+                101
+            ],
+            "slug": "urzas"
+        },
+        "model": "magic.block",
+        "pk": 20
     },
     {
         "fields": {
             "name": "zendikar",
             "sets": [
-                71,
-                96,
-                97
+                80,
+                105,
+                106
             ],
             "slug": "zendikar"
         },
         "model": "magic.block",
-        "pk": 2
+        "pk": 21
     }
 ]

@@ -17,7 +17,7 @@ Before getting any card information, the database needs to be populated
 with types, expansions, etc.
 
     python manage.py syncdb
-    python manage.py loaddata supertype cardtype subtype set rarity color block format
+    python manage.py loaddata color supertype cardtype subtype set rarity block format
 
 You could manually enter all the card data, but with more than
 12,000 cards you'd be at it for a while. Use the built-in `liberate`

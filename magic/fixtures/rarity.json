@@ -5,7 +5,7 @@
             "slug": "c"
         },
         "model": "magic.rarity",
-        "pk": 2
+        "pk": 1
     },
     {
         "fields": {
@@ -13,7 +13,7 @@
             "slug": "l"
         },
         "model": "magic.rarity",
-        "pk": 1
+        "pk": 2
     },
     {
         "fields": {
@@ -21,7 +21,7 @@
             "slug": "m"
         },
         "model": "magic.rarity",
-        "pk": 5
+        "pk": 3
     },
     {
         "fields": {
@@ -29,7 +29,7 @@
             "slug": "p"
         },
         "model": "magic.rarity",
-        "pk": 7
+        "pk": 4
     },
     {
         "fields": {
@@ -37,7 +37,7 @@
             "slug": "r"
         },
         "model": "magic.rarity",
-        "pk": 4
+        "pk": 5
     },
     {
         "fields": {
@@ -53,6 +53,6 @@
             "slug": "u"
         },
         "model": "magic.rarity",
-        "pk": 3
+        "pk": 7
     }
 ]

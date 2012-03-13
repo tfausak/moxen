@@ -65,19 +65,11 @@
     },
     {
         "fields": {
-            "name": "arcance",
-            "slug": "arcance"
-        },
-        "model": "magic.subtype",
-        "pk": 9
-    },
-    {
-        "fields": {
             "name": "arcane",
             "slug": "arcane"
         },
         "model": "magic.subtype",
-        "pk": 285
+        "pk": 9
     },
     {
         "fields": {
@@ -421,7 +413,7 @@
             "slug": "curse"
         },
         "model": "magic.subtype",
-        "pk": 283
+        "pk": 52
     },
     {
         "fields": {
@@ -429,7 +421,7 @@
             "slug": "cyclops"
         },
         "model": "magic.subtype",
-        "pk": 52
+        "pk": 53
     },
     {
         "fields": {
@@ -437,7 +429,7 @@
             "slug": "dauthi"
         },
         "model": "magic.subtype",
-        "pk": 53
+        "pk": 54
     },
     {
         "fields": {
@@ -445,7 +437,7 @@
             "slug": "demon"
         },
         "model": "magic.subtype",
-        "pk": 54
+        "pk": 55
     },
     {
         "fields": {
@@ -453,7 +445,7 @@
             "slug": "desert"
         },
         "model": "magic.subtype",
-        "pk": 55
+        "pk": 56
     },
     {
         "fields": {
@@ -461,7 +453,7 @@
             "slug": "deserter"
         },
         "model": "magic.subtype",
-        "pk": 56
+        "pk": 57
     },
     {
         "fields": {
@@ -469,7 +461,7 @@
             "slug": "devil"
         },
         "model": "magic.subtype",
-        "pk": 57
+        "pk": 58
     },
     {
         "fields": {
@@ -477,7 +469,7 @@
             "slug": "djinn"
         },
         "model": "magic.subtype",
-        "pk": 58
+        "pk": 59
     },
     {
         "fields": {
@@ -485,7 +477,7 @@
             "slug": "dominaria"
         },
         "model": "magic.subtype",
-        "pk": 59
+        "pk": 60
     },
     {
         "fields": {
@@ -493,7 +485,7 @@
             "slug": "dragon"
         },
         "model": "magic.subtype",
-        "pk": 60
+        "pk": 61
     },
     {
         "fields": {
@@ -501,7 +493,7 @@
             "slug": "drake"
         },
         "model": "magic.subtype",
-        "pk": 61
+        "pk": 62
     },
     {
         "fields": {
@@ -509,7 +501,7 @@
             "slug": "dreadnought"
         },
         "model": "magic.subtype",
-        "pk": 62
+        "pk": 63
     },
     {
         "fields": {
@@ -517,7 +509,7 @@
             "slug": "drone"
         },
         "model": "magic.subtype",
-        "pk": 63
+        "pk": 64
     },
     {
         "fields": {
@@ -525,7 +517,7 @@
             "slug": "druid"
         },
         "model": "magic.subtype",
-        "pk": 64
+        "pk": 65
     },
     {
         "fields": {
@@ -533,7 +525,7 @@
             "slug": "dryad"
         },
         "model": "magic.subtype",
-        "pk": 65
+        "pk": 66
     },
     {
         "fields": {
@@ -541,7 +533,7 @@
             "slug": "dwarf"
         },
         "model": "magic.subtype",
-        "pk": 66
+        "pk": 67
     },
     {
         "fields": {
@@ -549,7 +541,7 @@
             "slug": "efreet"
         },
         "model": "magic.subtype",
-        "pk": 67
+        "pk": 68
     },
     {
         "fields": {
@@ -557,7 +549,7 @@
             "slug": "elder"
         },
         "model": "magic.subtype",
-        "pk": 68
+        "pk": 69
     },
     {
         "fields": {
@@ -565,7 +557,7 @@
             "slug": "eldrazi"
         },
         "model": "magic.subtype",
-        "pk": 69
+        "pk": 70
     },
     {
         "fields": {
@@ -573,7 +565,7 @@
             "slug": "elemental"
         },
         "model": "magic.subtype",
-        "pk": 70
+        "pk": 71
     },
     {
         "fields": {
@@ -581,7 +573,7 @@
             "slug": "elephant"
         },
         "model": "magic.subtype",
-        "pk": 71
+        "pk": 72
     },
     {
         "fields": {
@@ -589,7 +581,7 @@
             "slug": "elf"
         },
         "model": "magic.subtype",
-        "pk": 72
+        "pk": 73
     },
     {
         "fields": {
@@ -597,7 +589,7 @@
             "slug": "elk"
         },
         "model": "magic.subtype",
-        "pk": 73
+        "pk": 74
     },
     {
         "fields": {
@@ -605,7 +597,7 @@
             "slug": "elspeth"
         },
         "model": "magic.subtype",
-        "pk": 74
+        "pk": 75
     },
     {
         "fields": {
@@ -613,7 +605,7 @@
             "slug": "equilor"
         },
         "model": "magic.subtype",
-        "pk": 75
+        "pk": 76
     },
     {
         "fields": {
@@ -621,7 +613,7 @@
             "slug": "equipment"
         },
         "model": "magic.subtype",
-        "pk": 76
+        "pk": 77
     },
     {
         "fields": {
@@ -629,7 +621,7 @@
             "slug": "eye"
         },
         "model": "magic.subtype",
-        "pk": 77
+        "pk": 78
     },
     {
         "fields": {
@@ -637,7 +629,7 @@
             "slug": "faerie"
         },
         "model": "magic.subtype",
-        "pk": 78
+        "pk": 79
     },
     {
         "fields": {
@@ -645,7 +637,7 @@
             "slug": "ferret"
         },
         "model": "magic.subtype",
-        "pk": 79
+        "pk": 80
     },
     {
         "fields": {
@@ -653,7 +645,7 @@
             "slug": "fish"
         },
         "model": "magic.subtype",
-        "pk": 80
+        "pk": 81
     },
     {
         "fields": {
@@ -661,7 +653,7 @@
             "slug": "flagbearer"
         },
         "model": "magic.subtype",
-        "pk": 81
+        "pk": 82
     },
     {
         "fields": {
@@ -669,7 +661,7 @@
             "slug": "forest"
         },
         "model": "magic.subtype",
-        "pk": 82
+        "pk": 83
     },
     {
         "fields": {
@@ -677,7 +669,7 @@
             "slug": "fortification"
         },
         "model": "magic.subtype",
-        "pk": 83
+        "pk": 84
     },
     {
         "fields": {
@@ -685,7 +677,7 @@
             "slug": "fox"
         },
         "model": "magic.subtype",
-        "pk": 84
+        "pk": 85
     },
     {
         "fields": {
@@ -693,7 +685,7 @@
             "slug": "frog"
         },
         "model": "magic.subtype",
-        "pk": 85
+        "pk": 86
     },
     {
         "fields": {
@@ -701,7 +693,7 @@
             "slug": "fungus"
         },
         "model": "magic.subtype",
-        "pk": 86
+        "pk": 87
     },
     {
         "fields": {
@@ -709,7 +701,7 @@
             "slug": "gargoyle"
         },
         "model": "magic.subtype",
-        "pk": 87
+        "pk": 88
     },
     {
         "fields": {
@@ -717,7 +709,7 @@
             "slug": "garruk"
         },
         "model": "magic.subtype",
-        "pk": 88
+        "pk": 89
     },
     {
         "fields": {
@@ -725,7 +717,7 @@
             "slug": "germ"
         },
         "model": "magic.subtype",
-        "pk": 286
+        "pk": 90
     },
     {
         "fields": {
@@ -733,7 +725,7 @@
             "slug": "giant"
         },
         "model": "magic.subtype",
-        "pk": 89
+        "pk": 91
     },
     {
         "fields": {
@@ -741,7 +733,7 @@
             "slug": "gideon"
         },
         "model": "magic.subtype",
-        "pk": 90
+        "pk": 92
     },
     {
         "fields": {
@@ -749,7 +741,7 @@
             "slug": "gnome"
         },
         "model": "magic.subtype",
-        "pk": 91
+        "pk": 93
     },
     {
         "fields": {
@@ -757,7 +749,7 @@
             "slug": "goat"
         },
         "model": "magic.subtype",
-        "pk": 92
+        "pk": 94
     },
     {
         "fields": {
@@ -765,7 +757,7 @@
             "slug": "goblin"
         },
         "model": "magic.subtype",
-        "pk": 93
+        "pk": 95
     },
     {
         "fields": {
@@ -773,7 +765,7 @@
             "slug": "golem"
         },
         "model": "magic.subtype",
-        "pk": 94
+        "pk": 96
     },
     {
         "fields": {
@@ -781,7 +773,7 @@
             "slug": "gorgon"
         },
         "model": "magic.subtype",
-        "pk": 95
+        "pk": 97
     },
     {
         "fields": {
@@ -789,7 +781,7 @@
             "slug": "graveborn"
         },
         "model": "magic.subtype",
-        "pk": 96
+        "pk": 98
     },
     {
         "fields": {
@@ -797,7 +789,7 @@
             "slug": "gremlin"
         },
         "model": "magic.subtype",
-        "pk": 287
+        "pk": 99
     },
     {
         "fields": {
@@ -805,7 +797,7 @@
             "slug": "griffin"
         },
         "model": "magic.subtype",
-        "pk": 97
+        "pk": 100
     },
     {
         "fields": {
@@ -813,7 +805,7 @@
             "slug": "hag"
         },
         "model": "magic.subtype",
-        "pk": 98
+        "pk": 101
     },
     {
         "fields": {
@@ -821,7 +813,7 @@
             "slug": "harpy"
         },
         "model": "magic.subtype",
-        "pk": 99
+        "pk": 102
     },
     {
         "fields": {
@@ -829,7 +821,7 @@
             "slug": "hellion"
         },
         "model": "magic.subtype",
-        "pk": 100
+        "pk": 103
     },
     {
         "fields": {
@@ -837,7 +829,7 @@
             "slug": "hippo"
         },
         "model": "magic.subtype",
-        "pk": 101
+        "pk": 104
     },
     {
         "fields": {
@@ -845,7 +837,7 @@
             "slug": "hippogriff"
         },
         "model": "magic.subtype",
-        "pk": 102
+        "pk": 105
     },
     {
         "fields": {
@@ -853,7 +845,7 @@
             "slug": "homarid"
         },
         "model": "magic.subtype",
-        "pk": 103
+        "pk": 106
     },
     {
         "fields": {
@@ -861,7 +853,7 @@
             "slug": "homunculus"
         },
         "model": "magic.subtype",
-        "pk": 104
+        "pk": 107
     },
     {
         "fields": {
@@ -869,7 +861,7 @@
             "slug": "horror"
         },
         "model": "magic.subtype",
-        "pk": 105
+        "pk": 108
     },
     {
         "fields": {
@@ -877,7 +869,7 @@
             "slug": "horse"
         },
         "model": "magic.subtype",
-        "pk": 106
+        "pk": 109
     },
     {
         "fields": {
@@ -885,7 +877,7 @@
             "slug": "hound"
         },
         "model": "magic.subtype",
-        "pk": 107
+        "pk": 110
     },
     {
         "fields": {
@@ -893,7 +885,7 @@
             "slug": "human"
         },
         "model": "magic.subtype",
-        "pk": 108
+        "pk": 111
     },
     {
         "fields": {
@@ -901,7 +893,7 @@
             "slug": "hydra"
         },
         "model": "magic.subtype",
-        "pk": 109
+        "pk": 112
     },
     {
         "fields": {
@@ -909,7 +901,7 @@
             "slug": "hyena"
         },
         "model": "magic.subtype",
-        "pk": 110
+        "pk": 113
     },
     {
         "fields": {
@@ -917,7 +909,7 @@
             "slug": "illusion"
         },
         "model": "magic.subtype",
-        "pk": 111
+        "pk": 114
     },
     {
         "fields": {
@@ -925,7 +917,7 @@
             "slug": "imp"
         },
         "model": "magic.subtype",
-        "pk": 112
+        "pk": 115
     },
     {
         "fields": {
@@ -933,7 +925,7 @@
             "slug": "incarnation"
         },
         "model": "magic.subtype",
-        "pk": 113
+        "pk": 116
     },
     {
         "fields": {
@@ -941,7 +933,7 @@
             "slug": "insect"
         },
         "model": "magic.subtype",
-        "pk": 114
+        "pk": 117
     },
     {
         "fields": {
@@ -949,7 +941,7 @@
             "slug": "iquatana"
         },
         "model": "magic.subtype",
-        "pk": 115
+        "pk": 118
     },
     {
         "fields": {
@@ -957,7 +949,7 @@
             "slug": "ir"
         },
         "model": "magic.subtype",
-        "pk": 116
+        "pk": 119
     },
     {
         "fields": {
@@ -965,7 +957,7 @@
             "slug": "island"
         },
         "model": "magic.subtype",
-        "pk": 117
+        "pk": 120
     },
     {
         "fields": {
@@ -973,7 +965,7 @@
             "slug": "jace"
         },
         "model": "magic.subtype",
-        "pk": 118
+        "pk": 121
     },
     {
         "fields": {
@@ -981,7 +973,7 @@
             "slug": "jellyfish"
         },
         "model": "magic.subtype",
-        "pk": 119
+        "pk": 122
     },
     {
         "fields": {
@@ -989,7 +981,7 @@
             "slug": "juggernaut"
         },
         "model": "magic.subtype",
-        "pk": 120
+        "pk": 123
     },
     {
         "fields": {
@@ -997,7 +989,7 @@
             "slug": "kaldheim"
         },
         "model": "magic.subtype",
-        "pk": 121
+        "pk": 124
     },
     {
         "fields": {
@@ -1005,7 +997,7 @@
             "slug": "kamigawa"
         },
         "model": "magic.subtype",
-        "pk": 122
+        "pk": 125
     },
     {
         "fields": {
@@ -1013,7 +1005,7 @@
             "slug": "karn"
         },
         "model": "magic.subtype",
-        "pk": 284
+        "pk": 126
     },
     {
         "fields": {
@@ -1021,7 +1013,7 @@
             "slug": "karsus"
         },
         "model": "magic.subtype",
-        "pk": 123
+        "pk": 127
     },
     {
         "fields": {
@@ -1029,7 +1021,7 @@
             "slug": "kavu"
         },
         "model": "magic.subtype",
-        "pk": 124
+        "pk": 128
     },
     {
         "fields": {
@@ -1037,7 +1029,7 @@
             "slug": "kinshala"
         },
         "model": "magic.subtype",
-        "pk": 290
+        "pk": 129
     },
     {
         "fields": {
@@ -1045,7 +1037,7 @@
             "slug": "kirin"
         },
         "model": "magic.subtype",
-        "pk": 125
+        "pk": 130
     },
     {
         "fields": {
@@ -1053,7 +1045,7 @@
             "slug": "kithkin"
         },
         "model": "magic.subtype",
-        "pk": 126
+        "pk": 131
     },
     {
         "fields": {
@@ -1061,7 +1053,7 @@
             "slug": "knight"
         },
         "model": "magic.subtype",
-        "pk": 127
+        "pk": 132
     },
     {
         "fields": {
@@ -1069,7 +1061,7 @@
             "slug": "kobold"
         },
         "model": "magic.subtype",
-        "pk": 128
+        "pk": 133
     },
     {
         "fields": {
@@ -1077,7 +1069,7 @@
             "slug": "kor"
         },
         "model": "magic.subtype",
-        "pk": 129
+        "pk": 134
     },
     {
         "fields": {
@@ -1085,7 +1077,7 @@
             "slug": "koth"
         },
         "model": "magic.subtype",
-        "pk": 130
+        "pk": 135
     },
     {
         "fields": {
@@ -1093,7 +1085,7 @@
             "slug": "kraken"
         },
         "model": "magic.subtype",
-        "pk": 131
+        "pk": 136
     },
     {
         "fields": {
@@ -1101,7 +1093,7 @@
             "slug": "lair"
         },
         "model": "magic.subtype",
-        "pk": 132
+        "pk": 137
     },
     {
         "fields": {
@@ -1109,7 +1101,7 @@
             "slug": "lammasu"
         },
         "model": "magic.subtype",
-        "pk": 133
+        "pk": 138
     },
     {
         "fields": {
@@ -1117,7 +1109,7 @@
             "slug": "leech"
         },
         "model": "magic.subtype",
-        "pk": 134
+        "pk": 139
     },
     {
         "fields": {
@@ -1125,7 +1117,7 @@
             "slug": "leviathan"
         },
         "model": "magic.subtype",
-        "pk": 135
+        "pk": 140
     },
     {
         "fields": {
@@ -1133,7 +1125,7 @@
             "slug": "lhurgoyf"
         },
         "model": "magic.subtype",
-        "pk": 136
+        "pk": 141
     },
     {
         "fields": {
@@ -1141,7 +1133,7 @@
             "slug": "licid"
         },
         "model": "magic.subtype",
-        "pk": 137
+        "pk": 142
     },
     {
         "fields": {
@@ -1149,7 +1141,7 @@
             "slug": "liliana"
         },
         "model": "magic.subtype",
-        "pk": 138
+        "pk": 143
     },
     {
         "fields": {
@@ -1157,7 +1149,7 @@
             "slug": "lizard"
         },
         "model": "magic.subtype",
-        "pk": 139
+        "pk": 144
     },
     {
         "fields": {
@@ -1165,7 +1157,7 @@
             "slug": "locus"
         },
         "model": "magic.subtype",
-        "pk": 140
+        "pk": 145
     },
     {
         "fields": {
@@ -1173,7 +1165,7 @@
             "slug": "lorwyn"
         },
         "model": "magic.subtype",
-        "pk": 141
+        "pk": 146
     },
     {
         "fields": {
@@ -1181,7 +1173,7 @@
             "slug": "luvion"
         },
         "model": "magic.subtype",
-        "pk": 142
+        "pk": 147
     },
     {
         "fields": {
@@ -1189,7 +1181,7 @@
             "slug": "manticore"
         },
         "model": "magic.subtype",
-        "pk": 143
+        "pk": 148
     },
     {
         "fields": {
@@ -1197,7 +1189,7 @@
             "slug": "masticore"
         },
         "model": "magic.subtype",
-        "pk": 144
+        "pk": 149
     },
     {
         "fields": {
@@ -1205,7 +1197,7 @@
             "slug": "mercadia"
         },
         "model": "magic.subtype",
-        "pk": 145
+        "pk": 150
     },
     {
         "fields": {
@@ -1213,7 +1205,7 @@
             "slug": "mercenary"
         },
         "model": "magic.subtype",
-        "pk": 146
+        "pk": 151
     },
     {
         "fields": {
@@ -1221,7 +1213,7 @@
             "slug": "merfolk"
         },
         "model": "magic.subtype",
-        "pk": 147
+        "pk": 152
     },
     {
         "fields": {
@@ -1229,7 +1221,7 @@
             "slug": "metathran"
         },
         "model": "magic.subtype",
-        "pk": 148
+        "pk": 153
     },
     {
         "fields": {
@@ -1237,7 +1229,7 @@
             "slug": "mine"
         },
         "model": "magic.subtype",
-        "pk": 149
+        "pk": 154
     },
     {
         "fields": {
@@ -1245,7 +1237,7 @@
             "slug": "minion"
         },
         "model": "magic.subtype",
-        "pk": 150
+        "pk": 155
     },
     {
         "fields": {
@@ -1253,7 +1245,7 @@
             "slug": "minotaur"
         },
         "model": "magic.subtype",
-        "pk": 151
+        "pk": 156
     },
     {
         "fields": {
@@ -1261,7 +1253,7 @@
             "slug": "mirrodin"
         },
         "model": "magic.subtype",
-        "pk": 152
+        "pk": 157
     },
     {
         "fields": {
@@ -1269,7 +1261,7 @@
             "slug": "moag"
         },
         "model": "magic.subtype",
-        "pk": 153
+        "pk": 158
     },
     {
         "fields": {
@@ -1277,7 +1269,7 @@
             "slug": "monger"
         },
         "model": "magic.subtype",
-        "pk": 154
+        "pk": 159
     },
     {
         "fields": {
@@ -1285,7 +1277,7 @@
             "slug": "mongoose"
         },
         "model": "magic.subtype",
-        "pk": 155
+        "pk": 160
     },
     {
         "fields": {
@@ -1293,7 +1285,7 @@
             "slug": "monk"
         },
         "model": "magic.subtype",
-        "pk": 156
+        "pk": 161
     },
     {
         "fields": {
@@ -1301,7 +1293,7 @@
             "slug": "moonfolk"
         },
         "model": "magic.subtype",
-        "pk": 157
+        "pk": 162
     },
     {
         "fields": {
@@ -1309,7 +1301,7 @@
             "slug": "mountain"
         },
         "model": "magic.subtype",
-        "pk": 158
+        "pk": 163
     },
     {
         "fields": {
@@ -1317,7 +1309,7 @@
             "slug": "muraganda"
         },
         "model": "magic.subtype",
-        "pk": 159
+        "pk": 164
     },
     {
         "fields": {
@@ -1325,7 +1317,7 @@
             "slug": "mutant"
         },
         "model": "magic.subtype",
-        "pk": 160
+        "pk": 165
     },
     {
         "fields": {
@@ -1333,7 +1325,7 @@
             "slug": "myr"
         },
         "model": "magic.subtype",
-        "pk": 161
+        "pk": 166
     },
     {
         "fields": {
@@ -1341,7 +1333,7 @@
             "slug": "mystic"
         },
         "model": "magic.subtype",
-        "pk": 162
+        "pk": 167
     },
     {
         "fields": {
@@ -1349,7 +1341,7 @@
             "slug": "nautilus"
         },
         "model": "magic.subtype",
-        "pk": 163
+        "pk": 168
     },
     {
         "fields": {
@@ -1357,7 +1349,7 @@
             "slug": "nephilim"
         },
         "model": "magic.subtype",
-        "pk": 164
+        "pk": 169
     },
     {
         "fields": {
@@ -1365,7 +1357,7 @@
             "slug": "nightmare"
         },
         "model": "magic.subtype",
-        "pk": 165
+        "pk": 170
     },
     {
         "fields": {
@@ -1373,7 +1365,7 @@
             "slug": "nightstalker"
         },
         "model": "magic.subtype",
-        "pk": 166
+        "pk": 171
     },
     {
         "fields": {
@@ -1381,7 +1373,7 @@
             "slug": "ninja"
         },
         "model": "magic.subtype",
-        "pk": 167
+        "pk": 172
     },
     {
         "fields": {
@@ -1389,7 +1381,7 @@
             "slug": "nissa"
         },
         "model": "magic.subtype",
-        "pk": 168
+        "pk": 173
     },
     {
         "fields": {
@@ -1397,7 +1389,7 @@
             "slug": "noggle"
         },
         "model": "magic.subtype",
-        "pk": 169
+        "pk": 174
     },
     {
         "fields": {
@@ -1405,7 +1397,7 @@
             "slug": "nomad"
         },
         "model": "magic.subtype",
-        "pk": 170
+        "pk": 175
     },
     {
         "fields": {
@@ -1413,7 +1405,7 @@
             "slug": "octopus"
         },
         "model": "magic.subtype",
-        "pk": 171
+        "pk": 176
     },
     {
         "fields": {
@@ -1421,7 +1413,7 @@
             "slug": "ogre"
         },
         "model": "magic.subtype",
-        "pk": 172
+        "pk": 177
     },
     {
         "fields": {
@@ -1429,7 +1421,7 @@
             "slug": "ooze"
         },
         "model": "magic.subtype",
-        "pk": 173
+        "pk": 178
     },
     {
         "fields": {
@@ -1437,7 +1429,7 @@
             "slug": "orb"
         },
         "model": "magic.subtype",
-        "pk": 174
+        "pk": 179
     },
     {
         "fields": {
@@ -1445,7 +1437,7 @@
             "slug": "orc"
         },
         "model": "magic.subtype",
-        "pk": 175
+        "pk": 180
     },
     {
         "fields": {
@@ -1453,7 +1445,7 @@
             "slug": "orgg"
         },
         "model": "magic.subtype",
-        "pk": 176
+        "pk": 181
     },
     {
         "fields": {
@@ -1461,7 +1453,7 @@
             "slug": "ouphe"
         },
         "model": "magic.subtype",
-        "pk": 177
+        "pk": 182
     },
     {
         "fields": {
@@ -1469,7 +1461,7 @@
             "slug": "ox"
         },
         "model": "magic.subtype",
-        "pk": 178
+        "pk": 183
     },
     {
         "fields": {
@@ -1477,7 +1469,7 @@
             "slug": "oyster"
         },
         "model": "magic.subtype",
-        "pk": 179
+        "pk": 184
     },
     {
         "fields": {
@@ -1485,7 +1477,7 @@
             "slug": "pegasus"
         },
         "model": "magic.subtype",
-        "pk": 180
+        "pk": 185
     },
     {
         "fields": {
@@ -1493,7 +1485,7 @@
             "slug": "pentavite"
         },
         "model": "magic.subtype",
-        "pk": 181
+        "pk": 186
     },
     {
         "fields": {
@@ -1501,7 +1493,7 @@
             "slug": "pest"
         },
         "model": "magic.subtype",
-        "pk": 182
+        "pk": 187
     },
     {
         "fields": {
@@ -1509,7 +1501,7 @@
             "slug": "phelddagrif"
         },
         "model": "magic.subtype",
-        "pk": 183
+        "pk": 188
     },
     {
         "fields": {
@@ -1517,7 +1509,7 @@
             "slug": "phoenix"
         },
         "model": "magic.subtype",
-        "pk": 184
+        "pk": 189
     },
     {
         "fields": {
@@ -1525,7 +1517,7 @@
             "slug": "phyrexia"
         },
         "model": "magic.subtype",
-        "pk": 185
+        "pk": 190
     },
     {
         "fields": {
@@ -1533,7 +1525,7 @@
             "slug": "pincher"
         },
         "model": "magic.subtype",
-        "pk": 186
+        "pk": 191
     },
     {
         "fields": {
@@ -1541,7 +1533,7 @@
             "slug": "pirate"
         },
         "model": "magic.subtype",
-        "pk": 187
+        "pk": 192
     },
     {
         "fields": {
@@ -1549,7 +1541,7 @@
             "slug": "plains"
         },
         "model": "magic.subtype",
-        "pk": 188
+        "pk": 193
     },
     {
         "fields": {
@@ -1557,7 +1549,7 @@
             "slug": "plant"
         },
         "model": "magic.subtype",
-        "pk": 189
+        "pk": 194
     },
     {
         "fields": {
@@ -1565,7 +1557,7 @@
             "slug": "power-plant"
         },
         "model": "magic.subtype",
-        "pk": 190
+        "pk": 195
     },
     {
         "fields": {
@@ -1573,7 +1565,7 @@
             "slug": "praetor"
         },
         "model": "magic.subtype",
-        "pk": 288
+        "pk": 196
     },
     {
         "fields": {
@@ -1581,7 +1573,7 @@
             "slug": "prism"
         },
         "model": "magic.subtype",
-        "pk": 191
+        "pk": 197
     },
     {
         "fields": {
@@ -1589,7 +1581,7 @@
             "slug": "pyrulea"
         },
         "model": "magic.subtype",
-        "pk": 192
+        "pk": 198
     },
     {
         "fields": {
@@ -1597,7 +1589,7 @@
             "slug": "rabbit"
         },
         "model": "magic.subtype",
-        "pk": 193
+        "pk": 199
     },
     {
         "fields": {
@@ -1605,7 +1597,7 @@
             "slug": "rabiah"
         },
         "model": "magic.subtype",
-        "pk": 194
+        "pk": 200
     },
     {
         "fields": {
@@ -1613,7 +1605,7 @@
             "slug": "rat"
         },
         "model": "magic.subtype",
-        "pk": 195
+        "pk": 201
     },
     {
         "fields": {
@@ -1621,7 +1613,7 @@
             "slug": "rath"
         },
         "model": "magic.subtype",
-        "pk": 196
+        "pk": 202
     },
     {
         "fields": {
@@ -1629,7 +1621,7 @@
             "slug": "ravnica"
         },
         "model": "magic.subtype",
-        "pk": 197
+        "pk": 203
     },
     {
         "fields": {
@@ -1637,7 +1629,7 @@
             "slug": "rebel"
         },
         "model": "magic.subtype",
-        "pk": 198
+        "pk": 204
     },
     {
         "fields": {
@@ -1645,7 +1637,7 @@
             "slug": "reflection"
         },
         "model": "magic.subtype",
-        "pk": 199
+        "pk": 205
     },
     {
         "fields": {
@@ -1653,7 +1645,7 @@
             "slug": "rhino"
         },
         "model": "magic.subtype",
-        "pk": 200
+        "pk": 206
     },
     {
         "fields": {
@@ -1661,7 +1653,7 @@
             "slug": "rigger"
         },
         "model": "magic.subtype",
-        "pk": 201
+        "pk": 207
     },
     {
         "fields": {
@@ -1669,7 +1661,7 @@
             "slug": "rogue"
         },
         "model": "magic.subtype",
-        "pk": 202
+        "pk": 208
     },
     {
         "fields": {
@@ -1677,7 +1669,7 @@
             "slug": "salamander"
         },
         "model": "magic.subtype",
-        "pk": 203
+        "pk": 209
     },
     {
         "fields": {
@@ -1685,7 +1677,7 @@
             "slug": "samurai"
         },
         "model": "magic.subtype",
-        "pk": 204
+        "pk": 210
     },
     {
         "fields": {
@@ -1693,7 +1685,7 @@
             "slug": "sand"
         },
         "model": "magic.subtype",
-        "pk": 205
+        "pk": 211
     },
     {
         "fields": {
@@ -1701,7 +1693,7 @@
             "slug": "saproling"
         },
         "model": "magic.subtype",
-        "pk": 206
+        "pk": 212
     },
     {
         "fields": {
@@ -1709,7 +1701,7 @@
             "slug": "sarkhan"
         },
         "model": "magic.subtype",
-        "pk": 207
+        "pk": 213
     },
     {
         "fields": {
@@ -1717,7 +1709,7 @@
             "slug": "satyr"
         },
         "model": "magic.subtype",
-        "pk": 208
+        "pk": 214
     },
     {
         "fields": {
@@ -1725,7 +1717,7 @@
             "slug": "scarecrow"
         },
         "model": "magic.subtype",
-        "pk": 209
+        "pk": 215
     },
     {
         "fields": {
@@ -1733,7 +1725,7 @@
             "slug": "scorpion"
         },
         "model": "magic.subtype",
-        "pk": 210
+        "pk": 216
     },
     {
         "fields": {
@@ -1741,7 +1733,7 @@
             "slug": "scout"
         },
         "model": "magic.subtype",
-        "pk": 211
+        "pk": 217
     },
     {
         "fields": {
@@ -1749,7 +1741,7 @@
             "slug": "segovia"
         },
         "model": "magic.subtype",
-        "pk": 212
+        "pk": 218
     },
     {
         "fields": {
@@ -1757,7 +1749,7 @@
             "slug": "serf"
         },
         "model": "magic.subtype",
-        "pk": 213
+        "pk": 219
     },
     {
         "fields": {
@@ -1765,7 +1757,7 @@
             "slug": "serpent"
         },
         "model": "magic.subtype",
-        "pk": 214
+        "pk": 220
     },
     {
         "fields": {
@@ -1773,7 +1765,7 @@
             "slug": "serras-realm"
         },
         "model": "magic.subtype",
-        "pk": 215
+        "pk": 221
     },
     {
         "fields": {
@@ -1781,7 +1773,7 @@
             "slug": "shade"
         },
         "model": "magic.subtype",
-        "pk": 216
+        "pk": 222
     },
     {
         "fields": {
@@ -1789,7 +1781,7 @@
             "slug": "shadowmoor"
         },
         "model": "magic.subtype",
-        "pk": 217
+        "pk": 223
     },
     {
         "fields": {
@@ -1797,7 +1789,7 @@
             "slug": "shaman"
         },
         "model": "magic.subtype",
-        "pk": 218
+        "pk": 224
     },
     {
         "fields": {
@@ -1805,7 +1797,7 @@
             "slug": "shandalar"
         },
         "model": "magic.subtype",
-        "pk": 219
+        "pk": 225
     },
     {
         "fields": {
@@ -1813,7 +1805,7 @@
             "slug": "shapeshifter"
         },
         "model": "magic.subtype",
-        "pk": 220
+        "pk": 226
     },
     {
         "fields": {
@@ -1821,7 +1813,7 @@
             "slug": "sheep"
         },
         "model": "magic.subtype",
-        "pk": 221
+        "pk": 227
     },
     {
         "fields": {
@@ -1829,7 +1821,7 @@
             "slug": "shrine"
         },
         "model": "magic.subtype",
-        "pk": 222
+        "pk": 228
     },
     {
         "fields": {
@@ -1837,7 +1829,7 @@
             "slug": "siren"
         },
         "model": "magic.subtype",
-        "pk": 223
+        "pk": 229
     },
     {
         "fields": {
@@ -1845,7 +1837,7 @@
             "slug": "skeleton"
         },
         "model": "magic.subtype",
-        "pk": 224
+        "pk": 230
     },
     {
         "fields": {
@@ -1853,7 +1845,7 @@
             "slug": "slith"
         },
         "model": "magic.subtype",
-        "pk": 225
+        "pk": 231
     },
     {
         "fields": {
@@ -1861,7 +1853,7 @@
             "slug": "sliver"
         },
         "model": "magic.subtype",
-        "pk": 226
+        "pk": 232
     },
     {
         "fields": {
@@ -1869,7 +1861,7 @@
             "slug": "slug"
         },
         "model": "magic.subtype",
-        "pk": 227
+        "pk": 233
     },
     {
         "fields": {
@@ -1877,7 +1869,7 @@
             "slug": "snake"
         },
         "model": "magic.subtype",
-        "pk": 228
+        "pk": 234
     },
     {
         "fields": {
@@ -1885,7 +1877,7 @@
             "slug": "soldier"
         },
         "model": "magic.subtype",
-        "pk": 229
+        "pk": 235
     },
     {
         "fields": {
@@ -1893,7 +1885,7 @@
             "slug": "soltari"
         },
         "model": "magic.subtype",
-        "pk": 230
+        "pk": 236
     },
     {
         "fields": {
@@ -1901,7 +1893,7 @@
             "slug": "sorin"
         },
         "model": "magic.subtype",
-        "pk": 231
+        "pk": 237
     },
     {
         "fields": {
@@ -1909,7 +1901,7 @@
             "slug": "spawn"
         },
         "model": "magic.subtype",
-        "pk": 232
+        "pk": 238
     },
     {
         "fields": {
@@ -1917,7 +1909,7 @@
             "slug": "specter"
         },
         "model": "magic.subtype",
-        "pk": 233
+        "pk": 239
     },
     {
         "fields": {
@@ -1925,7 +1917,7 @@
             "slug": "spellshaper"
         },
         "model": "magic.subtype",
-        "pk": 234
+        "pk": 240
     },
     {
         "fields": {
@@ -1933,7 +1925,7 @@
             "slug": "sphinx"
         },
         "model": "magic.subtype",
-        "pk": 235
+        "pk": 241
     },
     {
         "fields": {
@@ -1941,7 +1933,7 @@
             "slug": "spider"
         },
         "model": "magic.subtype",
-        "pk": 236
+        "pk": 242
     },
     {
         "fields": {
@@ -1949,7 +1941,7 @@
             "slug": "spike"
         },
         "model": "magic.subtype",
-        "pk": 237
+        "pk": 243
     },
     {
         "fields": {
@@ -1957,7 +1949,7 @@
             "slug": "spirit"
         },
         "model": "magic.subtype",
-        "pk": 238
+        "pk": 244
     },
     {
         "fields": {
@@ -1965,7 +1957,7 @@
             "slug": "splinter"
         },
         "model": "magic.subtype",
-        "pk": 239
+        "pk": 245
     },
     {
         "fields": {
@@ -1973,7 +1965,7 @@
             "slug": "sponge"
         },
         "model": "magic.subtype",
-        "pk": 240
+        "pk": 246
     },
     {
         "fields": {
@@ -1981,7 +1973,7 @@
             "slug": "squid"
         },
         "model": "magic.subtype",
-        "pk": 241
+        "pk": 247
     },
     {
         "fields": {
@@ -1989,7 +1981,7 @@
             "slug": "squirrel"
         },
         "model": "magic.subtype",
-        "pk": 242
+        "pk": 248
     },
     {
         "fields": {
@@ -1997,7 +1989,7 @@
             "slug": "starfish"
         },
         "model": "magic.subtype",
-        "pk": 243
+        "pk": 249
     },
     {
         "fields": {
@@ -2005,7 +1997,7 @@
             "slug": "surrakar"
         },
         "model": "magic.subtype",
-        "pk": 244
+        "pk": 250
     },
     {
         "fields": {
@@ -2013,7 +2005,7 @@
             "slug": "survivor"
         },
         "model": "magic.subtype",
-        "pk": 245
+        "pk": 251
     },
     {
         "fields": {
@@ -2021,7 +2013,7 @@
             "slug": "swamp"
         },
         "model": "magic.subtype",
-        "pk": 246
+        "pk": 252
     },
     {
         "fields": {
@@ -2029,7 +2021,7 @@
             "slug": "tetravite"
         },
         "model": "magic.subtype",
-        "pk": 247
+        "pk": 253
     },
     {
         "fields": {
@@ -2037,7 +2029,7 @@
             "slug": "tezzeret"
         },
         "model": "magic.subtype",
-        "pk": 248
+        "pk": 254
     },
     {
         "fields": {
@@ -2045,7 +2037,7 @@
             "slug": "thalakos"
         },
         "model": "magic.subtype",
-        "pk": 249
+        "pk": 255
     },
     {
         "fields": {
@@ -2053,7 +2045,7 @@
             "slug": "thopter"
         },
         "model": "magic.subtype",
-        "pk": 250
+        "pk": 256
     },
     {
         "fields": {
@@ -2061,7 +2053,7 @@
             "slug": "thrull"
         },
         "model": "magic.subtype",
-        "pk": 251
+        "pk": 257
     },
     {
         "fields": {
@@ -2069,7 +2061,7 @@
             "slug": "tower"
         },
         "model": "magic.subtype",
-        "pk": 252
+        "pk": 258
     },
     {
         "fields": {
@@ -2077,7 +2069,7 @@
             "slug": "trap"
         },
         "model": "magic.subtype",
-        "pk": 253
+        "pk": 259
     },
     {
         "fields": {
@@ -2085,7 +2077,7 @@
             "slug": "treefolk"
         },
         "model": "magic.subtype",
-        "pk": 254
+        "pk": 260
     },
     {
         "fields": {
@@ -2093,7 +2085,7 @@
             "slug": "triskelavite"
         },
         "model": "magic.subtype",
-        "pk": 255
+        "pk": 261
     },
     {
         "fields": {
@@ -2101,7 +2093,7 @@
             "slug": "troll"
         },
         "model": "magic.subtype",
-        "pk": 256
+        "pk": 262
     },
     {
         "fields": {
@@ -2109,7 +2101,7 @@
             "slug": "turtle"
         },
         "model": "magic.subtype",
-        "pk": 257
+        "pk": 263
     },
     {
         "fields": {
@@ -2117,7 +2109,7 @@
             "slug": "ulgrotha"
         },
         "model": "magic.subtype",
-        "pk": 258
+        "pk": 264
     },
     {
         "fields": {
@@ -2125,7 +2117,7 @@
             "slug": "unicorn"
         },
         "model": "magic.subtype",
-        "pk": 259
+        "pk": 265
     },
     {
         "fields": {
@@ -2133,7 +2125,7 @@
             "slug": "urzas"
         },
         "model": "magic.subtype",
-        "pk": 260
+        "pk": 266
     },
     {
         "fields": {
@@ -2141,7 +2133,7 @@
             "slug": "valla"
         },
         "model": "magic.subtype",
-        "pk": 261
+        "pk": 267
     },
     {
         "fields": {
@@ -2149,7 +2141,7 @@
             "slug": "vampire"
         },
         "model": "magic.subtype",
-        "pk": 262
+        "pk": 268
     },
     {
         "fields": {
@@ -2157,7 +2149,7 @@
             "slug": "vedalken"
         },
         "model": "magic.subtype",
-        "pk": 263
+        "pk": 269
     },
     {
         "fields": {
@@ -2165,7 +2157,7 @@
             "slug": "venser"
         },
         "model": "magic.subtype",
-        "pk": 264
+        "pk": 270
     },
     {
         "fields": {
@@ -2173,7 +2165,7 @@
             "slug": "viashino"
         },
         "model": "magic.subtype",
-        "pk": 265
+        "pk": 271
     },
     {
         "fields": {
@@ -2181,7 +2173,7 @@
             "slug": "volver"
         },
         "model": "magic.subtype",
-        "pk": 266
+        "pk": 272
     },
     {
         "fields": {
@@ -2189,7 +2181,7 @@
             "slug": "wall"
         },
         "model": "magic.subtype",
-        "pk": 267
+        "pk": 273
     },
     {
         "fields": {
@@ -2197,7 +2189,7 @@
             "slug": "warrior"
         },
         "model": "magic.subtype",
-        "pk": 268
+        "pk": 274
     },
     {
         "fields": {
@@ -2205,7 +2197,7 @@
             "slug": "weird"
         },
         "model": "magic.subtype",
-        "pk": 269
+        "pk": 275
     },
     {
         "fields": {
@@ -2213,7 +2205,7 @@
             "slug": "werewolf"
         },
         "model": "magic.subtype",
-        "pk": 289
+        "pk": 276
     },
     {
         "fields": {
@@ -2221,7 +2213,7 @@
             "slug": "whale"
         },
         "model": "magic.subtype",
-        "pk": 270
+        "pk": 277
     },
     {
         "fields": {
@@ -2229,7 +2221,7 @@
             "slug": "wildfire"
         },
         "model": "magic.subtype",
-        "pk": 271
+        "pk": 278
     },
     {
         "fields": {
@@ -2237,7 +2229,7 @@
             "slug": "wizard"
         },
         "model": "magic.subtype",
-        "pk": 272
+        "pk": 279
     },
     {
         "fields": {
@@ -2245,7 +2237,7 @@
             "slug": "wolf"
         },
         "model": "magic.subtype",
-        "pk": 273
+        "pk": 280
     },
     {
         "fields": {
@@ -2253,7 +2245,7 @@
             "slug": "wolverine"
         },
         "model": "magic.subtype",
-        "pk": 274
+        "pk": 281
     },
     {
         "fields": {
@@ -2261,7 +2253,7 @@
             "slug": "wombat"
         },
         "model": "magic.subtype",
-        "pk": 275
+        "pk": 282
     },
     {
         "fields": {
@@ -2269,7 +2261,7 @@
             "slug": "worm"
         },
         "model": "magic.subtype",
-        "pk": 276
+        "pk": 283
     },
     {
         "fields": {
@@ -2277,7 +2269,7 @@
             "slug": "wraith"
         },
         "model": "magic.subtype",
-        "pk": 277
+        "pk": 284
     },
     {
         "fields": {
@@ -2285,7 +2277,7 @@
             "slug": "wurm"
         },
         "model": "magic.subtype",
-        "pk": 278
+        "pk": 285
     },
     {
         "fields": {
@@ -2293,7 +2285,7 @@
             "slug": "yeti"
         },
         "model": "magic.subtype",
-        "pk": 279
+        "pk": 286
     },
     {
         "fields": {
@@ -2301,7 +2293,7 @@
             "slug": "zendikar"
         },
         "model": "magic.subtype",
-        "pk": 280
+        "pk": 287
     },
     {
         "fields": {
@@ -2309,7 +2301,7 @@
             "slug": "zombie"
         },
         "model": "magic.subtype",
-        "pk": 281
+        "pk": 288
     },
     {
         "fields": {
@@ -2317,6 +2309,6 @@
             "slug": "zubera"
         },
         "model": "magic.subtype",
-        "pk": 282
+        "pk": 289
     }
 ]
