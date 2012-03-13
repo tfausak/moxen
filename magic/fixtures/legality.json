@@ -1,0 +1,2945 @@
+[
+    {
+        "fields": {
+            "card": 274,
+            "format": 29,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 58
+    },
+    {
+        "fields": {
+            "card": 274,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 185
+    },
+    {
+        "fields": {
+            "card": 274,
+            "format": 5,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 299
+    },
+    {
+        "fields": {
+            "card": 294,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 70
+    },
+    {
+        "fields": {
+            "card": 294,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 186
+    },
+    {
+        "fields": {
+            "card": 296,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 139
+    },
+    {
+        "fields": {
+            "card": 299,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 140
+    },
+    {
+        "fields": {
+            "card": 299,
+            "format": 13,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 176
+    },
+    {
+        "fields": {
+            "card": 406,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "card": 428,
+            "format": 13,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 177
+    },
+    {
+        "fields": {
+            "card": 697,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "card": 697,
+            "format": 1,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 39
+    },
+    {
+        "fields": {
+            "card": 697,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 71
+    },
+    {
+        "fields": {
+            "card": 697,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 113
+    },
+    {
+        "fields": {
+            "card": 697,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 187
+    },
+    {
+        "fields": {
+            "card": 697,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 248
+    },
+    {
+        "fields": {
+            "card": 697,
+            "format": 2,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 302
+    },
+    {
+        "fields": {
+            "card": 815,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 249
+    },
+    {
+        "fields": {
+            "card": 837,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 188
+    },
+    {
+        "fields": {
+            "card": 919,
+            "format": 2,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 303
+    },
+    {
+        "fields": {
+            "card": 927,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 141
+    },
+    {
+        "fields": {
+            "card": 933,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 72
+    },
+    {
+        "fields": {
+            "card": 933,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 189
+    },
+    {
+        "fields": {
+            "card": 939,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 190
+    },
+    {
+        "fields": {
+            "card": 972,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 142
+    },
+    {
+        "fields": {
+            "card": 1218,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 73
+    },
+    {
+        "fields": {
+            "card": 1264,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 250
+    },
+    {
+        "fields": {
+            "card": 1281,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 251
+    },
+    {
+        "fields": {
+            "card": 1297,
+            "format": 29,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 59
+    },
+    {
+        "fields": {
+            "card": 1297,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 191
+    },
+    {
+        "fields": {
+            "card": 1337,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 252
+    },
+    {
+        "fields": {
+            "card": 1350,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 74
+    },
+    {
+        "fields": {
+            "card": 1350,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 253
+    },
+    {
+        "fields": {
+            "card": 1642,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "card": 1642,
+            "format": 1,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 40
+    },
+    {
+        "fields": {
+            "card": 1642,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 75
+    },
+    {
+        "fields": {
+            "card": 1642,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 192
+    },
+    {
+        "fields": {
+            "card": 1642,
+            "format": 2,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 304
+    },
+    {
+        "fields": {
+            "card": 1651,
+            "format": 29,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 60
+    },
+    {
+        "fields": {
+            "card": 1651,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 193
+    },
+    {
+        "fields": {
+            "card": 1722,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 143
+    },
+    {
+        "fields": {
+            "card": 1757,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "card": 1838,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 144
+    },
+    {
+        "fields": {
+            "card": 1854,
+            "format": 2,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 305
+    },
+    {
+        "fields": {
+            "card": 1925,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 254
+    },
+    {
+        "fields": {
+            "card": 1958,
+            "format": 29,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 61
+    },
+    {
+        "fields": {
+            "card": 1958,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 194
+    },
+    {
+        "fields": {
+            "card": 2126,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 114
+    },
+    {
+        "fields": {
+            "card": 2126,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 255
+    },
+    {
+        "fields": {
+            "card": 2189,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 256
+    },
+    {
+        "fields": {
+            "card": 2215,
+            "format": 23,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 38
+    },
+    {
+        "fields": {
+            "card": 2273,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 145
+    },
+    {
+        "fields": {
+            "card": 2294,
+            "format": 29,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 62
+    },
+    {
+        "fields": {
+            "card": 2294,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 195
+    },
+    {
+        "fields": {
+            "card": 2299,
+            "format": 13,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 178
+    },
+    {
+        "fields": {
+            "card": 2496,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 290
+    },
+    {
+        "fields": {
+            "card": 2506,
+            "format": 29,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 63
+    },
+    {
+        "fields": {
+            "card": 2506,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 196
+    },
+    {
+        "fields": {
+            "card": 2508,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "card": 2508,
+            "format": 1,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 41
+    },
+    {
+        "fields": {
+            "card": 2508,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 76
+    },
+    {
+        "fields": {
+            "card": 2508,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 197
+    },
+    {
+        "fields": {
+            "card": 2508,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 257
+    },
+    {
+        "fields": {
+            "card": 2512,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "card": 2512,
+            "format": 1,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 42
+    },
+    {
+        "fields": {
+            "card": 2512,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 77
+    },
+    {
+        "fields": {
+            "card": 2512,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 115
+    },
+    {
+        "fields": {
+            "card": 2512,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 198
+    },
+    {
+        "fields": {
+            "card": 2512,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 258
+    },
+    {
+        "fields": {
+            "card": 2562,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 259
+    },
+    {
+        "fields": {
+            "card": 2587,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 260
+    },
+    {
+        "fields": {
+            "card": 2633,
+            "format": 13,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 179
+    },
+    {
+        "fields": {
+            "card": 2792,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 146
+    },
+    {
+        "fields": {
+            "card": 2954,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 199
+    },
+    {
+        "fields": {
+            "card": 2954,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 261
+    },
+    {
+        "fields": {
+            "card": 3000,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 262
+    },
+    {
+        "fields": {
+            "card": 3128,
+            "format": 2,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 306
+    },
+    {
+        "fields": {
+            "card": 3167,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "card": 3173,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 263
+    },
+    {
+        "fields": {
+            "card": 3190,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 264
+    },
+    {
+        "fields": {
+            "card": 3264,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 265
+    },
+    {
+        "fields": {
+            "card": 3342,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "card": 3369,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 266
+    },
+    {
+        "fields": {
+            "card": 3403,
+            "format": 29,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 64
+    },
+    {
+        "fields": {
+            "card": 3403,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 200
+    },
+    {
+        "fields": {
+            "card": 3440,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "card": 3440,
+            "format": 1,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 43
+    },
+    {
+        "fields": {
+            "card": 3440,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 78
+    },
+    {
+        "fields": {
+            "card": 3440,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 116
+    },
+    {
+        "fields": {
+            "card": 3440,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 201
+    },
+    {
+        "fields": {
+            "card": 3440,
+            "format": 2,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 307
+    },
+    {
+        "fields": {
+            "card": 3653,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "card": 3653,
+            "format": 1,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 44
+    },
+    {
+        "fields": {
+            "card": 3653,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 79
+    },
+    {
+        "fields": {
+            "card": 3653,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 117
+    },
+    {
+        "fields": {
+            "card": 3653,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 202
+    },
+    {
+        "fields": {
+            "card": 3653,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 267
+    },
+    {
+        "fields": {
+            "card": 3826,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 203
+    },
+    {
+        "fields": {
+            "card": 3919,
+            "format": 28,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 168
+    },
+    {
+        "fields": {
+            "card": 4104,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 80
+    },
+    {
+        "fields": {
+            "card": 4104,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 118
+    },
+    {
+        "fields": {
+            "card": 4104,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 268
+    },
+    {
+        "fields": {
+            "card": 4104,
+            "format": 2,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 308
+    },
+    {
+        "fields": {
+            "card": 4151,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 147
+    },
+    {
+        "fields": {
+            "card": 4166,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 269
+    },
+    {
+        "fields": {
+            "card": 4275,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 204
+    },
+    {
+        "fields": {
+            "card": 4342,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 148
+    },
+    {
+        "fields": {
+            "card": 4437,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 149
+    },
+    {
+        "fields": {
+            "card": 4437,
+            "format": 13,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 180
+    },
+    {
+        "fields": {
+            "card": 4458,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 150
+    },
+    {
+        "fields": {
+            "card": 4483,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 270
+    },
+    {
+        "fields": {
+            "card": 4562,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "card": 4562,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 205
+    },
+    {
+        "fields": {
+            "card": 4791,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 206
+    },
+    {
+        "fields": {
+            "card": 4791,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 271
+    },
+    {
+        "fields": {
+            "card": 5005,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 151
+    },
+    {
+        "fields": {
+            "card": 5051,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 272
+    },
+    {
+        "fields": {
+            "card": 5095,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "card": 5095,
+            "format": 1,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 45
+    },
+    {
+        "fields": {
+            "card": 5095,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 81
+    },
+    {
+        "fields": {
+            "card": 5095,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 119
+    },
+    {
+        "fields": {
+            "card": 5095,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 207
+    },
+    {
+        "fields": {
+            "card": 5095,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 273
+    },
+    {
+        "fields": {
+            "card": 5208,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 274
+    },
+    {
+        "fields": {
+            "card": 5241,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 120
+    },
+    {
+        "fields": {
+            "card": 5241,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 275
+    },
+    {
+        "fields": {
+            "card": 5320,
+            "format": 3,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 33
+    },
+    {
+        "fields": {
+            "card": 5320,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 152
+    },
+    {
+        "fields": {
+            "card": 5320,
+            "format": 26,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 246
+    },
+    {
+        "fields": {
+            "card": 5365,
+            "format": 29,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 65
+    },
+    {
+        "fields": {
+            "card": 5365,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 208
+    },
+    {
+        "fields": {
+            "card": 5492,
+            "format": 2,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 309
+    },
+    {
+        "fields": {
+            "card": 5709,
+            "format": 2,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 310
+    },
+    {
+        "fields": {
+            "card": 5832,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 209
+    },
+    {
+        "fields": {
+            "card": 5955,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "card": 5955,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 82
+    },
+    {
+        "fields": {
+            "card": 5955,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 121
+    },
+    {
+        "fields": {
+            "card": 5955,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 210
+    },
+    {
+        "fields": {
+            "card": 5955,
+            "format": 2,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 311
+    },
+    {
+        "fields": {
+            "card": 5972,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 122
+    },
+    {
+        "fields": {
+            "card": 5972,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 276
+    },
+    {
+        "fields": {
+            "card": 6028,
+            "format": 2,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 312
+    },
+    {
+        "fields": {
+            "card": 6029,
+            "format": 11,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 326
+    },
+    {
+        "fields": {
+            "card": 6037,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 83
+    },
+    {
+        "fields": {
+            "card": 6037,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 123
+    },
+    {
+        "fields": {
+            "card": 6037,
+            "format": 2,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 313
+    },
+    {
+        "fields": {
+            "card": 6058,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 277
+    },
+    {
+        "fields": {
+            "card": 6127,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 84
+    },
+    {
+        "fields": {
+            "card": 6291,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "card": 6291,
+            "format": 1,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 46
+    },
+    {
+        "fields": {
+            "card": 6291,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 85
+    },
+    {
+        "fields": {
+            "card": 6291,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 124
+    },
+    {
+        "fields": {
+            "card": 6291,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 211
+    },
+    {
+        "fields": {
+            "card": 6291,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 278
+    },
+    {
+        "fields": {
+            "card": 6293,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 212
+    },
+    {
+        "fields": {
+            "card": 6309,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 15
+    },
+    {
+        "fields": {
+            "card": 6309,
+            "format": 1,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 47
+    },
+    {
+        "fields": {
+            "card": 6309,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 86
+    },
+    {
+        "fields": {
+            "card": 6309,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 125
+    },
+    {
+        "fields": {
+            "card": 6309,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 213
+    },
+    {
+        "fields": {
+            "card": 6472,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 87
+    },
+    {
+        "fields": {
+            "card": 6472,
+            "format": 28,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 169
+    },
+    {
+        "fields": {
+            "card": 6472,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 214
+    },
+    {
+        "fields": {
+            "card": 6482,
+            "format": 3,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 34
+    },
+    {
+        "fields": {
+            "card": 6482,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 153
+    },
+    {
+        "fields": {
+            "card": 6482,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 215
+    },
+    {
+        "fields": {
+            "card": 6495,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 88
+    },
+    {
+        "fields": {
+            "card": 6495,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 279
+    },
+    {
+        "fields": {
+            "card": 6536,
+            "format": 2,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 314
+    },
+    {
+        "fields": {
+            "card": 6601,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 126
+    },
+    {
+        "fields": {
+            "card": 6601,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 216
+    },
+    {
+        "fields": {
+            "card": 6617,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 89
+    },
+    {
+        "fields": {
+            "card": 6617,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 217
+    },
+    {
+        "fields": {
+            "card": 6692,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 16
+    },
+    {
+        "fields": {
+            "card": 6692,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 218
+    },
+    {
+        "fields": {
+            "card": 6729,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 17
+    },
+    {
+        "fields": {
+            "card": 6878,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 90
+    },
+    {
+        "fields": {
+            "card": 6878,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 219
+    },
+    {
+        "fields": {
+            "card": 6879,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 91
+    },
+    {
+        "fields": {
+            "card": 6879,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 220
+    },
+    {
+        "fields": {
+            "card": 6881,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 92
+    },
+    {
+        "fields": {
+            "card": 6881,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 221
+    },
+    {
+        "fields": {
+            "card": 6882,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 93
+    },
+    {
+        "fields": {
+            "card": 6882,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 222
+    },
+    {
+        "fields": {
+            "card": 6883,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 94
+    },
+    {
+        "fields": {
+            "card": 6883,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 223
+    },
+    {
+        "fields": {
+            "card": 6983,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 280
+    },
+    {
+        "fields": {
+            "card": 6984,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 95
+    },
+    {
+        "fields": {
+            "card": 6984,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 224
+    },
+    {
+        "fields": {
+            "card": 6984,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 281
+    },
+    {
+        "fields": {
+            "card": 7070,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 18
+    },
+    {
+        "fields": {
+            "card": 7070,
+            "format": 1,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 48
+    },
+    {
+        "fields": {
+            "card": 7070,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 96
+    },
+    {
+        "fields": {
+            "card": 7070,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 225
+    },
+    {
+        "fields": {
+            "card": 7280,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 226
+    },
+    {
+        "fields": {
+            "card": 7521,
+            "format": 2,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 315
+    },
+    {
+        "fields": {
+            "card": 7545,
+            "format": 2,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 316
+    },
+    {
+        "fields": {
+            "card": 7624,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 19
+    },
+    {
+        "fields": {
+            "card": 7664,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 282
+    },
+    {
+        "fields": {
+            "card": 7885,
+            "format": 3,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 35
+    },
+    {
+        "fields": {
+            "card": 7885,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 97
+    },
+    {
+        "fields": {
+            "card": 7885,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 154
+    },
+    {
+        "fields": {
+            "card": 7937,
+            "format": 3,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 36
+    },
+    {
+        "fields": {
+            "card": 7937,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 155
+    },
+    {
+        "fields": {
+            "card": 8014,
+            "format": 2,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 317
+    },
+    {
+        "fields": {
+            "card": 8075,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 156
+    },
+    {
+        "fields": {
+            "card": 8372,
+            "format": 29,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 66
+    },
+    {
+        "fields": {
+            "card": 8372,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 227
+    },
+    {
+        "fields": {
+            "card": 8406,
+            "format": 2,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 318
+    },
+    {
+        "fields": {
+            "card": 8434,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 98
+    },
+    {
+        "fields": {
+            "card": 8434,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 127
+    },
+    {
+        "fields": {
+            "card": 8655,
+            "format": 11,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 327
+    },
+    {
+        "fields": {
+            "card": 8659,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 157
+    },
+    {
+        "fields": {
+            "card": 9160,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 158
+    },
+    {
+        "fields": {
+            "card": 9160,
+            "format": 13,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 181
+    },
+    {
+        "fields": {
+            "card": 9234,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 128
+    },
+    {
+        "fields": {
+            "card": 9234,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 159
+    },
+    {
+        "fields": {
+            "card": 9274,
+            "format": 28,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 170
+    },
+    {
+        "fields": {
+            "card": 9312,
+            "format": 29,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 67
+    },
+    {
+        "fields": {
+            "card": 9312,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 228
+    },
+    {
+        "fields": {
+            "card": 9638,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 20
+    },
+    {
+        "fields": {
+            "card": 9638,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 130
+    },
+    {
+        "fields": {
+            "card": 9638,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 161
+    },
+    {
+        "fields": {
+            "card": 9638,
+            "format": 13,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 184
+    },
+    {
+        "fields": {
+            "card": 9638,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 229
+    },
+    {
+        "fields": {
+            "card": 9638,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 283
+    },
+    {
+        "fields": {
+            "card": 9794,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 21
+    },
+    {
+        "fields": {
+            "card": 9794,
+            "format": 1,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 49
+    },
+    {
+        "fields": {
+            "card": 9794,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 99
+    },
+    {
+        "fields": {
+            "card": 9794,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 131
+    },
+    {
+        "fields": {
+            "card": 9794,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 230
+    },
+    {
+        "fields": {
+            "card": 9794,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 284
+    },
+    {
+        "fields": {
+            "card": 10132,
+            "format": 12,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 298
+    },
+    {
+        "fields": {
+            "card": 10152,
+            "format": 2,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 319
+    },
+    {
+        "fields": {
+            "card": 10192,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 22
+    },
+    {
+        "fields": {
+            "card": 10224,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 285
+    },
+    {
+        "fields": {
+            "card": 10231,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 286
+    },
+    {
+        "fields": {
+            "card": 10274,
+            "format": 3,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 37
+    },
+    {
+        "fields": {
+            "card": 10274,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 160
+    },
+    {
+        "fields": {
+            "card": 10274,
+            "format": 26,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 247
+    },
+    {
+        "fields": {
+            "card": 10348,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 23
+    },
+    {
+        "fields": {
+            "card": 10348,
+            "format": 1,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 50
+    },
+    {
+        "fields": {
+            "card": 10348,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 100
+    },
+    {
+        "fields": {
+            "card": 10348,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 132
+    },
+    {
+        "fields": {
+            "card": 10348,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 231
+    },
+    {
+        "fields": {
+            "card": 10348,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 287
+    },
+    {
+        "fields": {
+            "card": 10412,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 288
+    },
+    {
+        "fields": {
+            "card": 10426,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 289
+    },
+    {
+        "fields": {
+            "card": 10459,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 291
+    },
+    {
+        "fields": {
+            "card": 10487,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 129
+    },
+    {
+        "fields": {
+            "card": 10487,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 232
+    },
+    {
+        "fields": {
+            "card": 10506,
+            "format": 2,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 320
+    },
+    {
+        "fields": {
+            "card": 10525,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 162
+    },
+    {
+        "fields": {
+            "card": 10543,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 292
+    },
+    {
+        "fields": {
+            "card": 10709,
+            "format": 29,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 68
+    },
+    {
+        "fields": {
+            "card": 10709,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 233
+    },
+    {
+        "fields": {
+            "card": 10786,
+            "format": 5,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 300
+    },
+    {
+        "fields": {
+            "card": 10787,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 24
+    },
+    {
+        "fields": {
+            "card": 10827,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 101
+    },
+    {
+        "fields": {
+            "card": 10977,
+            "format": 28,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 171
+    },
+    {
+        "fields": {
+            "card": 10980,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 25
+    },
+    {
+        "fields": {
+            "card": 10980,
+            "format": 1,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 51
+    },
+    {
+        "fields": {
+            "card": 10980,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 102
+    },
+    {
+        "fields": {
+            "card": 10980,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 133
+    },
+    {
+        "fields": {
+            "card": 10980,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 234
+    },
+    {
+        "fields": {
+            "card": 10980,
+            "format": 2,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 321
+    },
+    {
+        "fields": {
+            "card": 10981,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 103
+    },
+    {
+        "fields": {
+            "card": 10981,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 235
+    },
+    {
+        "fields": {
+            "card": 10987,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 104
+    },
+    {
+        "fields": {
+            "card": 10987,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 236
+    },
+    {
+        "fields": {
+            "card": 10989,
+            "format": 29,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 69
+    },
+    {
+        "fields": {
+            "card": 10989,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 237
+    },
+    {
+        "fields": {
+            "card": 10994,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 26
+    },
+    {
+        "fields": {
+            "card": 10994,
+            "format": 1,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 52
+    },
+    {
+        "fields": {
+            "card": 10994,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 105
+    },
+    {
+        "fields": {
+            "card": 10994,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 134
+    },
+    {
+        "fields": {
+            "card": 10994,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 238
+    },
+    {
+        "fields": {
+            "card": 10994,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 293
+    },
+    {
+        "fields": {
+            "card": 10994,
+            "format": 2,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 322
+    },
+    {
+        "fields": {
+            "card": 11018,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 294
+    },
+    {
+        "fields": {
+            "card": 11019,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 27
+    },
+    {
+        "fields": {
+            "card": 11019,
+            "format": 1,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 54
+    },
+    {
+        "fields": {
+            "card": 11019,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 106
+    },
+    {
+        "fields": {
+            "card": 11019,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 135
+    },
+    {
+        "fields": {
+            "card": 11019,
+            "format": 28,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 172
+    },
+    {
+        "fields": {
+            "card": 11019,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 239
+    },
+    {
+        "fields": {
+            "card": 11019,
+            "format": 2,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 323
+    },
+    {
+        "fields": {
+            "card": 11163,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 163
+    },
+    {
+        "fields": {
+            "card": 11163,
+            "format": 13,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 182
+    },
+    {
+        "fields": {
+            "card": 11207,
+            "format": 1,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 53
+    },
+    {
+        "fields": {
+            "card": 11207,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 107
+    },
+    {
+        "fields": {
+            "card": 11236,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 28
+    },
+    {
+        "fields": {
+            "card": 11308,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 29
+    },
+    {
+        "fields": {
+            "card": 11308,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 136
+    },
+    {
+        "fields": {
+            "card": 11308,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 164
+    },
+    {
+        "fields": {
+            "card": 11308,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 295
+    },
+    {
+        "fields": {
+            "card": 11383,
+            "format": 2,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 324
+    },
+    {
+        "fields": {
+            "card": 11437,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 165
+    },
+    {
+        "fields": {
+            "card": 11464,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 30
+    },
+    {
+        "fields": {
+            "card": 11464,
+            "format": 1,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 55
+    },
+    {
+        "fields": {
+            "card": 11464,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 108
+    },
+    {
+        "fields": {
+            "card": 11464,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 137
+    },
+    {
+        "fields": {
+            "card": 11464,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 240
+    },
+    {
+        "fields": {
+            "card": 11464,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 296
+    },
+    {
+        "fields": {
+            "card": 11479,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 166
+    },
+    {
+        "fields": {
+            "card": 11479,
+            "format": 13,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 183
+    },
+    {
+        "fields": {
+            "card": 11747,
+            "format": 28,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 173
+    },
+    {
+        "fields": {
+            "card": 11986,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 31
+    },
+    {
+        "fields": {
+            "card": 11986,
+            "format": 1,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 56
+    },
+    {
+        "fields": {
+            "card": 11986,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 109
+    },
+    {
+        "fields": {
+            "card": 11986,
+            "format": 21,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 138
+    },
+    {
+        "fields": {
+            "card": 11986,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 241
+    },
+    {
+        "fields": {
+            "card": 12050,
+            "format": 14,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 167
+    },
+    {
+        "fields": {
+            "card": 12085,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 110
+    },
+    {
+        "fields": {
+            "card": 12085,
+            "format": 28,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 174
+    },
+    {
+        "fields": {
+            "card": 12085,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 242
+    },
+    {
+        "fields": {
+            "card": 12207,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 243
+    },
+    {
+        "fields": {
+            "card": 12289,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 111
+    },
+    {
+        "fields": {
+            "card": 12289,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 244
+    },
+    {
+        "fields": {
+            "card": 12289,
+            "format": 2,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 325
+    },
+    {
+        "fields": {
+            "card": 12291,
+            "format": 25,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 32
+    },
+    {
+        "fields": {
+            "card": 12291,
+            "format": 1,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 57
+    },
+    {
+        "fields": {
+            "card": 12291,
+            "format": 29,
+            "status": "r"
+        },
+        "model": "magic.legality",
+        "pk": 112
+    },
+    {
+        "fields": {
+            "card": 12291,
+            "format": 9,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 245
+    },
+    {
+        "fields": {
+            "card": 12291,
+            "format": 17,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 297
+    },
+    {
+        "fields": {
+            "card": 12379,
+            "format": 5,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 301
+    },
+    {
+        "fields": {
+            "card": 141,
+            "format": 13,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 175
+    }
+]
