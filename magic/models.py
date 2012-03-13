@@ -286,10 +286,10 @@ class Legality(models.Model):
 class UserProfile(models.Model):
     """Extra information about a user.
     """
-    user = models.OneToOneField(User)
+    user = models.OneToOneField(User, related_name='profile')
 
     def __unicode__(self):
-        return unicode(self.user)
+        return self.user.get_full_name() or self.user.username
 
     @models.permalink
     def get_absolute_url(self):

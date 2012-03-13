@@ -24,29 +24,42 @@
                     </a>
 
                     <h1>
-                        <a class="brand" href="{% url index as index_url %}{{ index_url }}">{{ site.name }}</a>
+                        {% url index as index_url %}
+                        <a class="brand" href="{{ index_url }}">{{ site.name }}</a>
                     </h1>
 
                     <div class="pull-right">
                         {% if user.is_authenticated %}
-                            <a class="btn" href="{% url profile as profile_url %}{{ profile_url }}"><i class="icon-user"></i> {{ user }}</a>
+                            {% url profile as profile_url %}
+                            <a class="btn" href="{{ profile_url }}"><i class="icon-user"></i> {{ user.profile }}</a>
                         {% else %}
-                            <a class="btn" href="{% url auth_login as auth_login_url %}{{ auth_login_url }}">Log In</a>
+                            {% url auth_login as auth_login_url %}
+                            <a class="btn" href="{{ auth_login_url }}">Log In</a>
                         {% endif %}
                     </div>
 
                     <div class="nav-collapse">
                         <ul class="nav">
-                            <li>
-                                <a href="{% url card_list as card_list_url %}{{ card_list_url }}">Cards</a>
+                            {% url index as index_url %}
+                            <li {% if request.get_full_path == index_url %}class="active"{% endif %}>
+                                <a href="{{ index_url }}">Home</a>
                             </li>
-                            <li>
-                                <a href="{% url profiles_profile_list as profiles_profile_list_url %}{{ profiles_profile_list_url }}">Users</a>
+
+                            {% url card_list as card_list_url %}
+                            <li {% if request.get_full_path == card_list_url %}class="active"{% endif %}>
+                                <a href="{{ card_list_url }}">Cards</a>
                             </li>
+
+                            {% url profiles_profile_list as profiles_profile_list_url %}
+                            <li {% if request.get_full_path == profiles_profile_list_url %}class="active"{% endif %}>
+                                <a href="{{ profiles_profile_list_url }}">Users</a>
+                            </li>
+
                             <li class="divider-vertical"></li>
                         </ul>
 
-                        <form action="{% url search as search_url %}{{ search_url }}" class="navbar-search" method="get">
+                        {% url search as search_url %}
+                        <form action="{{ search_url }}" class="navbar-search" method="get">
                             <input class="search-query" name="query" placeholder="Search" type="text" value="{{ request.GET.query }}">
                         </form>
                     </div>
@@ -73,7 +86,7 @@
             {% block content %}
             {% endblock %}
 
-            <footer class="footer">
+            <div class="footer">
                 <p class="pull-right">
                     {% if debug %}
                         <a href="/admin/">Admin</a>
@@ -86,7 +99,7 @@
                 <p>This web site is not affiliated with, endorsed, sponsored, or specifically approved by Wizards of the Coast. Magic: The Gathering is a trademark of Wizards of the Coast.</p>
 
                 <p>Icons from <a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-            </footer>
+            </div>
         </div>
 
         <script src="/static/js/jquery.js"></script>
