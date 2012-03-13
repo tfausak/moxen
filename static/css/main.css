@@ -1,6 +1,14 @@
-#user-dropdown .dropdown-menu {
+#user .dropdown-menu-no-collapse {
     left: auto;
     right: 0;
+}
+#user .dropdown-menu-no-collapse:before {
+    left: auto;
+    right: 12px;
+}
+#user .dropdown-menu-no-collapse:after {
+    left: auto;
+    right: 13px;
 }
 
 .footer {

@@ -35,12 +35,12 @@
                         <a class="brand" href="{{ index_url }}">{{ site.name }}</a>
                     </h1>
 
-                    <div class="pull-right">
+                    <div class="pull-right" id="user">
                         {% if user.is_authenticated %}
                             <div class="btn-group">
                                 <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user"></i> {{ user.profile }} <i class="caret"></i></a>
 
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu-no-collapse">
                                     <li>
                                         {% url profiles_profile_detail username=user.username as profiles_profile_detail_url %}
                                         <a href="{{ profiles_profile_detail_url }}"><i class="icon-info-sign"></i> Profile</a>
