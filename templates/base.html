@@ -36,11 +36,28 @@
 
                     <div class="pull-right">
                         {% if user.is_authenticated %}
-                            {% url profile as profile_url %}
-                            <a class="btn" href="{{ profile_url }}"><i class="icon-user"></i> {{ user.profile }}</a>
+                            <div class="btn-group">
+                                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user"></i> {{ user.profile }} <i class="caret"></i></a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        {% url profiles_profile_detail username=user.username as profiles_profile_detail_url %}
+                                        <a href="{{ profiles_profile_detail_url }}"><i class="icon-info-sign"></i> Profile</a>
+                                    </li>
+                                    <li>
+                                        {% url profile as profile_url %}
+                                        <a href="{{ profile_url }}"><i class="icon-cog"></i> Settings</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        {% url auth_logout as auth_logout_url %}
+                                        <a href="{{ auth_logout_url }}"><i class="icon-signout"></i> Log out</a>
+                                    </li>
+                                </ul>
+                            </div>
                         {% else %}
                             {% url auth_login as auth_login_url %}
-                            <a class="btn" href="{{ auth_login_url }}">Log In</a>
+                            <a class="btn" href="{{ auth_login_url }}"><i class="icon-signin"></i> Log In</a>
                         {% endif %}
                     </div>
 
