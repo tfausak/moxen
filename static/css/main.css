@@ -6,6 +6,9 @@
     margin-top: 45px;
     padding: 35px 0 36px;
 }
+.footer p {
+    margin-bottom: 0;
+}
 
 .card {
     border-radius: 3px;
