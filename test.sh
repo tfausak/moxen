@@ -1,4 +1,3 @@
-#!/usr/bin/env sh
-find . -name '*.py' | xargs pep8
-find . -name '*.py' | xargs pylint --rcfile=./.pylintrc
+find . -name '*.py' | xargs pep8 && \
+find . -name '*.py' | xargs pylint --rcfile=./.pylintrc && \
 python manage.py test
