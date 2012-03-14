@@ -157,10 +157,8 @@ class Card(models.Model):
     # The rules text can be found in the text box (207.1).
     rules_text = models.TextField(blank=True)
 
-    # Mana costs are usually at the top right (202.1). There are a
-    # bunch of cards with five hybrid symbols, each of which takes
-    # five characters.
-    mana_cost = models.CharField(blank=True, max_length=25)
+    # Mana costs are usually at the top right (202.1).
+    mana_cost = models.ForeignKey(ManaCost, blank=True, null=True)
 
     # These are defined elsewhere, but they're all sourced from the
     # type line (205.1).
@@ -168,12 +166,16 @@ class Card(models.Model):
     card_types = models.ManyToManyField(CardType)
     sub_types = models.ManyToManyField(SubType, blank=True)
 
-    # Creatures have power and toughness (208.1), planeswalkers
-    # have loyalty (209.1), and vangaurds have modifiers (210.1,
-    # 211.1).
+    # Creatures have power and toughness (208.1).
     power = models.CharField(blank=True, max_length=3)
     toughness = models.CharField(blank=True, max_length=3)
+    converted_power = models.PositiveIntegerField(blank=True, default=0)
+    converted_toughness = models.PositiveIntegerField(blank=True, default=0)
+
+    # Planeswalkers have loyalty (209.1).
     loyalty = models.PositiveIntegerField(blank=True, default=0)
+
+    # Vanguards have hand and life modifiers (210.1, 211.1).
     hand_modifier = models.IntegerField(blank=True, default=0)
     life_modifier = models.IntegerField(blank=True, default=0)
 
@@ -183,11 +185,7 @@ class Card(models.Model):
     kind = models.CharField(blank=True, choices=KIND_CHOICES,
         default=KIND_CHOICES[0][0], max_length=1)
 
-    # These fields are derived from other fields.
     colors = models.ManyToManyField(Color, blank=True)
-    converted_mana_cost = models.PositiveIntegerField(blank=True, default=0)
-    converted_power = models.PositiveIntegerField(blank=True, default=0)
-    converted_toughness = models.PositiveIntegerField(blank=True, default=0)
 
     class Meta:
         ordering = ['name']
