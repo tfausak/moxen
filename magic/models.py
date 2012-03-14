@@ -14,11 +14,34 @@ from django.dispatch import receiver
 
 
 class ManaSymbol(models.Model):
-    pass
+    """A mana symbol.
+
+    Mana symbols are enumerated in 107.4.
+    """
+    name = models.CharField(max_length=3, unique=True)
+    value = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        ordering = ['value']
+
+    def __unicode__(self):
+        return self.name
 
 
 class ManaCost(models.Model):
-    pass
+    """A mana cost.
+
+    Mana costs are comprised of zero or more mana symbols.
+    """
+    mana_symbols = models.ManyToManyField(ManaSymbol, blank=True)
+    value = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        ordering = ['value']
+
+    def __unicode__(self):
+        return ' '.join(mana_symbol.name for mana_symbol
+            in self.mana_symbols.all())
 
 
 class SuperType(models.Model):

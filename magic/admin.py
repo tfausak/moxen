@@ -4,12 +4,13 @@ import magic.models
 
 
 class ManaSymbolAdmin(admin.ModelAdmin):
-    pass
+    search_fields = ['name']
 admin.site.register(magic.models.ManaSymbol, ManaSymbolAdmin)
 
 
 class ManaCostAdmin(admin.ModelAdmin):
-    pass
+    list_filter = ('mana_symbols',)
+    search_fields = ['mana_symbols__name']
 admin.site.register(magic.models.ManaCost, ManaCostAdmin)
 
 
