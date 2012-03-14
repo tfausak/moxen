@@ -34,8 +34,8 @@ class ManaSymbol(models.Model):
     Mana symbols are enumerated in 107.4.
     """
     name = models.CharField(max_length=3, unique=True)
-    value = models.PositiveIntegerField(default=0)
     colors = models.ManyToManyField(Color, blank=True)
+    value = models.PositiveIntegerField(blank=True, default=0)
 
     class Meta:
         ordering = ['value', 'name']

@@ -17,9 +17,7 @@ class ColorForm(forms.ModelForm):
         return re.sub(r'\s+', ' ', self.cleaned_data['name'].lower().strip())
 
     def clean_slug(self):
-        slug = self.cleaned_data['slug']
-        slug = slug.lower()
-        return slug
+        return re.sub(r'\s+', '', self.cleaned_data['slug'].lower())
 
 
 class ManaSymbolForm(forms.ModelForm):
@@ -87,6 +85,32 @@ class SubTypeForm(forms.ModelForm):
 
     def clean_slug(self):
         return slugify(self.cleaned_data['name'])
+
+
+class SetForm(forms.ModelForm):
+    """Form for sets.
+    """
+    class Meta:
+        model = magic.models.Set
+
+    def clean_name(self):
+        return re.sub(r'\s+', ' ', self.cleaned_data['name'].lower().strip())
+
+    def clean_slug(self):
+        return re.sub(r'\s+', '', self.cleaned_data['slug'].lower())
+
+
+class RarityForm(forms.ModelForm):
+    """Form for rarities.
+    """
+    class Meta:
+        model = magic.models.Rarity
+
+    def clean_name(self):
+        return re.sub(r'\s+', ' ', self.cleaned_data['name'].lower().strip())
+
+    def clean_slug(self):
+        return re.sub(r'\s+', '', self.cleaned_data['slug'].lower())
 
 
 class UserProfileForm(forms.ModelForm):

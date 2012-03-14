@@ -46,11 +46,13 @@ admin.site.register(magic.models.SubType, SubTypeAdmin)
 
 
 class SetAdmin(admin.ModelAdmin):
+    form = magic.forms.SetForm
     search_fields = ['name']
 admin.site.register(magic.models.Set, SetAdmin)
 
 
 class RarityAdmin(admin.ModelAdmin):
+    form = magic.forms.RarityForm
     search_fields = ['name']
 admin.site.register(magic.models.Rarity, RarityAdmin)
 
