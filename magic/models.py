@@ -13,6 +13,21 @@ from django.db.models.signals import post_save
 from django.dispatch import receiver
 
 
+class Color(models.Model):
+    """A color in Magic.
+
+    The colors are defined and enumerated in 105.1.
+    """
+    name = models.CharField(max_length=5, unique=True)
+    slug = models.SlugField(max_length=1, unique=True)
+
+    class Meta:
+        ordering = ['name']
+
+    def __unicode__(self):
+        return self.name
+
+
 class ManaSymbol(models.Model):
     """A mana symbol.
 
@@ -20,6 +35,10 @@ class ManaSymbol(models.Model):
     """
     name = models.CharField(max_length=3, unique=True)
     value = models.PositiveIntegerField(default=0)
+    colors = models.ManyToManyField(Color, blank=True)
+
+    class Meta:
+        ordering = ['value', 'name']
 
     def __unicode__(self):
         return self.name
@@ -108,21 +127,6 @@ class Rarity(models.Model):
     class Meta:
         ordering = ['name']
         verbose_name_plural = 'rarities'
-
-    def __unicode__(self):
-        return self.name
-
-
-class Color(models.Model):
-    """A card's color.
-
-    The colors are defined and enumerated in 105.1.
-    """
-    name = models.CharField(max_length=5, unique=True)
-    slug = models.SlugField(max_length=1, unique=True)
-
-    class Meta:
-        ordering = ['name']
 
     def __unicode__(self):
         return self.name

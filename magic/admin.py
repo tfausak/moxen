@@ -4,8 +4,15 @@ import magic.forms
 import magic.models
 
 
+class ColorAdmin(admin.ModelAdmin):
+    form = magic.forms.ColorForm
+    search_fields = ['name']
+admin.site.register(magic.models.Color, ColorAdmin)
+
+
 class ManaSymbolAdmin(admin.ModelAdmin):
     form = magic.forms.ManaSymbolForm
+    list_filter = ('value', 'colors')
     search_fields = ['name']
 admin.site.register(magic.models.ManaSymbol, ManaSymbolAdmin)
 
@@ -43,11 +50,6 @@ admin.site.register(magic.models.Set, SetAdmin)
 class RarityAdmin(admin.ModelAdmin):
     search_fields = ['name']
 admin.site.register(magic.models.Rarity, RarityAdmin)
-
-
-class ColorAdmin(admin.ModelAdmin):
-    search_fields = ['name']
-admin.site.register(magic.models.Color, ColorAdmin)
 
 
 class CardAdmin(admin.ModelAdmin):

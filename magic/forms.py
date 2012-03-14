@@ -6,6 +6,24 @@ import operator
 import re
 
 
+class ColorForm(forms.ModelForm):
+    """Form for colors.
+    """
+    class Meta:
+        model = magic.models.Color
+
+    def clean_name(self):
+        name = self.cleaned_data['name']
+        name = name.lower()
+        name = re.sub(r'\s', '', name)
+        return name
+
+    def clean_slug(self):
+        slug = self.cleaned_data['slug']
+        slug = slug.lower()
+        return slug
+
+
 class ManaSymbolForm(forms.ModelForm):
     """Form for mana symbols.
     """
@@ -29,7 +47,7 @@ class ManaCostForm(forms.ModelForm):
         mana_symbols = self.cleaned_data['mana_symbols']
         if (magic.models.ManaCost.objects
                 .filter(reduce(operator.or_, (Q(mana_symbols=mana_symbol)
-                    for mana_symbol in mana_symbols)))
+                    for mana_symbol in mana_symbols), Q()))
                 .annotate(count=Count('mana_symbols'))
                 .filter(count=len(mana_symbols))):
             raise forms.ValidationError(
