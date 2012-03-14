@@ -1,6 +1,7 @@
 # pylint: disable=R0903,W0232
 from django import forms
 from django.db.models import Count, Q
+from django.template.defaultfilters import slugify
 import magic.models
 import operator
 import re
@@ -13,10 +14,7 @@ class ColorForm(forms.ModelForm):
         model = magic.models.Color
 
     def clean_name(self):
-        name = self.cleaned_data['name']
-        name = name.lower()
-        name = re.sub(r'\s', '', name)
-        return name
+        return re.sub(r'\s+', ' ', self.cleaned_data['name'].lower().strip())
 
     def clean_slug(self):
         slug = self.cleaned_data['slug']
@@ -31,10 +29,7 @@ class ManaSymbolForm(forms.ModelForm):
         model = magic.models.ManaSymbol
 
     def clean_name(self):
-        name = self.cleaned_data['name']
-        name = name.lower()
-        name = re.sub(r'\s', '', name)
-        return name
+        return re.sub(r'\s+', '', self.cleaned_data['name'].lower())
 
 
 class ManaCostForm(forms.ModelForm):
@@ -53,6 +48,45 @@ class ManaCostForm(forms.ModelForm):
             raise forms.ValidationError(
                 'Mana cost with these Mana symbols already exists.')
         return mana_symbols
+
+
+class SuperTypeForm(forms.ModelForm):
+    """Form for super types.
+    """
+    class Meta:
+        model = magic.models.SuperType
+
+    def clean_name(self):
+        return re.sub(r'\s+', ' ', self.cleaned_data['name'].lower().strip())
+
+    def clean_slug(self):
+        return slugify(self.cleaned_data['name'])
+
+
+class CardTypeForm(forms.ModelForm):
+    """Form for card types.
+    """
+    class Meta:
+        model = magic.models.CardType
+
+    def clean_name(self):
+        return re.sub(r'\s+', ' ', self.cleaned_data['name'].lower().strip())
+
+    def clean_slug(self):
+        return slugify(self.cleaned_data['name'])
+
+
+class SubTypeForm(forms.ModelForm):
+    """Form for sub types.
+    """
+    class Meta:
+        model = magic.models.SubType
+
+    def clean_name(self):
+        return re.sub(r'\s+', ' ', self.cleaned_data['name'].lower().strip())
+
+    def clean_slug(self):
+        return slugify(self.cleaned_data['name'])
 
 
 class UserProfileForm(forms.ModelForm):
