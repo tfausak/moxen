@@ -3,6 +3,16 @@ from django.contrib import admin
 import magic.models
 
 
+class ManaSymbolAdmin(admin.ModelAdmin):
+    pass
+admin.site.register(magic.models.ManaSymbol, ManaSymbolAdmin)
+
+
+class ManaCostAdmin(admin.ModelAdmin):
+    pass
+admin.site.register(magic.models.ManaCost, ManaCostAdmin)
+
+
 class SuperTypeAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('name',)}
     search_fields = ['name']

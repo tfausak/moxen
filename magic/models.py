@@ -13,6 +13,14 @@ from django.db.models.signals import post_save
 from django.dispatch import receiver
 
 
+class ManaSymbol(models.Model):
+    pass
+
+
+class ManaCost(models.Model):
+    pass
+
+
 class SuperType(models.Model):
     """A card's super type.
 
