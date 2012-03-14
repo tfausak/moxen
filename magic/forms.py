@@ -36,16 +36,12 @@ class ManaCostForm(forms.ModelForm):
     class Meta:
         model = magic.models.ManaCost
 
-    def clean_mana_symbols(self):
-        mana_symbols = self.cleaned_data['mana_symbols']
-        if (magic.models.ManaCost.objects
-                .filter(reduce(operator.or_, (Q(mana_symbols=mana_symbol)
-                    for mana_symbol in mana_symbols), Q()))
-                .annotate(count=Count('mana_symbols'))
-                .filter(count=len(mana_symbols))):
+    def clean_count(self):
+        count = self.cleaned_data['count']
+        if count < 1:
             raise forms.ValidationError(
-                'Mana cost with these Mana symbols already exists.')
-        return mana_symbols
+                'Ensure this value is greater than or equal to 1.')
+        return count
 
 
 class SuperTypeForm(forms.ModelForm):

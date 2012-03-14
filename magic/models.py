@@ -45,15 +45,18 @@ class ManaSymbol(models.Model):
 
 
 class ManaCost(models.Model):
-    """A mana cost.
+    """A run of consecutive mana symbols.
 
-    Mana costs are comprised of zero or more mana symbols.
+    Used by the card model to specify a mana cost.
     """
-    mana_symbols = models.ManyToManyField(ManaSymbol, blank=True)
+    mana_symbol = models.ForeignKey(ManaSymbol)
+    count = models.PositiveIntegerField(blank=True, default=1)
+
+    class Meta:
+        unique_together = ['mana_symbol', 'count']
 
     def __unicode__(self):
-        return ' '.join(mana_symbol.name for mana_symbol
-            in self.mana_symbols.all())
+        return ' '.join(self.mana_symbol.name for _ in range(self.count))
 
 
 class SuperType(models.Model):
@@ -155,7 +158,7 @@ class Card(models.Model):
     rules_text = models.TextField(blank=True)
 
     # Mana costs are usually at the top right (202.1).
-    mana_cost = models.ForeignKey(ManaCost, blank=True, null=True)
+    mana_cost = models.ManyToManyField(ManaCost, blank=True)
 
     # These are defined elsewhere, but they're all sourced from the
     # type line (205.1).

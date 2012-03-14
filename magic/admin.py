@@ -19,8 +19,8 @@ admin.site.register(magic.models.ManaSymbol, ManaSymbolAdmin)
 
 class ManaCostAdmin(admin.ModelAdmin):
     form = magic.forms.ManaCostForm
-    list_filter = ('mana_symbols',)
-    search_fields = ['mana_symbols__name']
+    list_filter = ('mana_symbol',)
+    search_fields = ['mana_symbol__name']
 admin.site.register(magic.models.ManaCost, ManaCostAdmin)
 
 
