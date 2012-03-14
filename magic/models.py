@@ -21,9 +21,6 @@ class ManaSymbol(models.Model):
     name = models.CharField(max_length=3, unique=True)
     value = models.PositiveIntegerField(default=0)
 
-    class Meta:
-        ordering = ['value']
-
     def __unicode__(self):
         return self.name
 
@@ -34,10 +31,6 @@ class ManaCost(models.Model):
     Mana costs are comprised of zero or more mana symbols.
     """
     mana_symbols = models.ManyToManyField(ManaSymbol, blank=True)
-    value = models.PositiveIntegerField(default=0)
-
-    class Meta:
-        ordering = ['value']
 
     def __unicode__(self):
         return ' '.join(mana_symbol.name for mana_symbol

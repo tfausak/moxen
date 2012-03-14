@@ -1,14 +1,17 @@
 # pylint: disable=R0904
 from django.contrib import admin
+import magic.forms
 import magic.models
 
 
 class ManaSymbolAdmin(admin.ModelAdmin):
+    form = magic.forms.ManaSymbolForm
     search_fields = ['name']
 admin.site.register(magic.models.ManaSymbol, ManaSymbolAdmin)
 
 
 class ManaCostAdmin(admin.ModelAdmin):
+    form = magic.forms.ManaCostForm
     list_filter = ('mana_symbols',)
     search_fields = ['mana_symbols__name']
 admin.site.register(magic.models.ManaCost, ManaCostAdmin)
