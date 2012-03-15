@@ -137,7 +137,7 @@ class CardForm(forms.ModelForm):
         cleaned_data = self.cleaned_data
         kind = cleaned_data.get('kind')
         other_card = cleaned_data.get('other_card')
-        if kind == magic.models.Card._meta.get_field('kind').default:
+        if kind == magic.models.Card.KIND_CHOICES[0][0]:
             if other_card is not None:
                 raise forms.ValidationError(
                     'A normal card cannot have an other card.')
