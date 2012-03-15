@@ -58,6 +58,7 @@ admin.site.register(magic.models.Rarity, RarityAdmin)
 
 
 class CardAdmin(admin.ModelAdmin):
+    form = magic.forms.CardForm
     list_filter = ('kind', 'super_types', 'card_types')
     prepopulated_fields = {'slug': ('name',)}
     search_fields = ['name']

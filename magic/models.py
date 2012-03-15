@@ -182,8 +182,8 @@ class Card(models.Model):
     # Some cards are comprised of more than one (conceptual) card
     # printed on one (actual) card.
     other_card = models.OneToOneField('self', blank=True, null=True)
-    kind = models.CharField(blank=True, choices=KIND_CHOICES,
-        default=KIND_CHOICES[0][0], max_length=1)
+    kind = models.CharField(choices=KIND_CHOICES, default=KIND_CHOICES[0][0],
+        max_length=1)
 
     colors = models.ManyToManyField(Color, blank=True)
 
