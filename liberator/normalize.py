@@ -1,5 +1,6 @@
 from collections import defaultdict
 from django.template.defaultfilters import slugify
+from magic.models import ManaCost, ManaSymbol
 import liberator.constants
 import re
 
@@ -46,6 +47,26 @@ def _normalize_card(card):
     # Mana cost
     card['cost'] = re.findall(liberator.constants.MANA_SYMBOL, card['cost'])
     card['cost'] = ['/'.join(match[0] or match[1:]) for match in card['cost']]
+    card['cost'] = [ManaSymbol.objects.get(name=mana_symbol)
+        for mana_symbol in card['cost']]
+    mana_symbols = defaultdict(lambda: 0)
+    for mana_symbol in card['cost']:
+        mana_symbols[mana_symbol] += 1
+    card['mana_cost'] = []
+    for mana_symbol, count in mana_symbols.items():
+        mana_cost, _ = ManaCost.objects.get_or_create(
+            mana_symbol=mana_symbol, count=count)
+        card['mana_cost'].append(mana_cost)
+
+    # Color(s)
+    try:
+        card['colors'] = [Color.objects.get(name=card['color'])]
+    except Color.DoesNotExist:
+        card['colors'] = []
+        for mana_symbol in card['cost']:
+            for color in mana_symbol.colors.all():
+                if color not in card['colors']:
+                    card['colors'].append(color)
 
     # Super, card, and sub types
     card['super_types'] = [super_type for super_type
@@ -101,7 +122,7 @@ def _normalize_card(card):
     card['life_modifier'] = _normalize_int(card['life_modifier'])
 
     # Remove obsolete fields.
-    for key in ('color', 'type', 'set_rarity', 'pow_tgh', 'hand_life'):
+    for key in ('color', 'cost', 'type', 'set_rarity', 'pow_tgh', 'hand_life'):
         del card[key]
 
     return card
