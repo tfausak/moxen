@@ -47,8 +47,6 @@ def _normalize_card(card):
     card['cost'] = re.findall(liberator.constants.MANA_SYMBOL, card['cost'])
     card['cost'] = ['/'.join(match[0] or match[1:]) for match in card['cost']]
 
-    # Color
-
     # Super, card, and sub types
     card['super_types'] = [super_type for super_type
         in liberator.constants.SUPER_TYPES
@@ -62,6 +60,17 @@ def _normalize_card(card):
 
     # Sets and rarities
     card['set_rarity'] = card['set_rarity'].split(', ')
+    sets, rarities = [], []
+    for set_rarity in card['set_rarity']:
+        for set_ in liberator.constants.SETS:
+            if re.search(set_.pattern, set_rarity):
+                sets.append(set_)
+                break
+        for rarity in liberator.constants.RARITIES:
+            if re.search(rarity.pattern, set_rarity):
+                rarities.append(rarity)
+                break
+    card['sets_rarities'] = zip(sets, rarities)
 
     # Rules text
     card['rules_text'] = [_normalize_string(line, lower=False)
@@ -90,5 +99,9 @@ def _normalize_card(card):
     card['loyalty'] = _normalize_int(card['loyalty'])
     card['hand_modifier'] = _normalize_int(card['hand_modifier'])
     card['life_modifier'] = _normalize_int(card['life_modifier'])
+
+    # Remove obsolete fields.
+    for key in ('color', 'type', 'set_rarity', 'pow_tgh', 'hand_life'):
+        del card[key]
 
     return card
