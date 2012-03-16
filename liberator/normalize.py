@@ -100,7 +100,7 @@ def _normalize_card(card):
 
     # Power and toughness
     try:
-        card['power'], card['toughness'] = '/'.split(card['pow_tgh'])
+        card['power'], card['toughness'] = card['pow_tgh'][1:-1].split('/')
     except ValueError:
         card['power'] = card['toughness'] = ''
 
