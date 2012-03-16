@@ -29,41 +29,14 @@ def _parse_gatherer_text(response):
     """Parse a page of text spoilers from the Gatherer.
     """
     dom = BeautifulSoup(response)
-    tags = dom.findAll('a', 'nameLink')
-    cards = []
-    for tag in tags:
-        tag = tag.parent.parent
-        card = [tag] + tag.findNextSiblings('tr', limit=6)
-        if card[1].contents[3].string.lower().strip() == 'vanguard':
-            # Vanguard cards are missing the "Cost:" line.
-            cards.append({
-                'color': '',
-                'mana_cost': '',
-                'misc': card[2].contents[3].string,
-                'name': card[0].contents[3].contents[1].string,
-                'rules_text': card[3].contents[3].findAll(text=True),
-                'sets_rarities': card[4].contents[3].string,
-                'type': card[1].contents[3].string,
-            })
-        elif card[2].contents[1].string.lower().strip() == 'color:':
-            # Cards without a mana cost have a "Color:" line.
-            cards.append({
-                'color': card[2].contents[3].string,
-                'mana_cost': card[1].contents[3].string,
-                'misc': card[4].contents[3].string,
-                'name': card[0].contents[3].contents[1].string,
-                'rules_text': card[5].contents[3].findAll(text=True),
-                'sets_rarities': card[6].contents[3].string,
-                'type': card[3].contents[3].string,
-            })
+    card, cards = {}, []
+    for row in dom.find('div', 'textspoiler').findAll('tr'):
+        cells = row.findAll('td')
+        if len(cells) != 1:
+            key = re.sub('[^a-z]', '_', cells[0].string.strip().lower()[:-1])
+            value = '\n'.join(text for text in cells[1].findAll(text=True))
+            card[key] = value
         else:
-            cards.append({
-                'color': '',
-                'mana_cost': card[1].contents[3].string,
-                'misc': card[3].contents[3].string,
-                'name': card[0].contents[3].contents[1].string,
-                'rules_text': card[4].contents[3].findAll(text=True),
-                'sets_rarities': card[5].contents[3].string,
-                'type': card[2].contents[3].string,
-            })
+            cards.append(card)
+            card = {}
     return cards
