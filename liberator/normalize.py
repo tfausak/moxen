@@ -1,6 +1,6 @@
 from collections import defaultdict
 from django.template.defaultfilters import slugify
-from magic.models import ManaCost, ManaSymbol
+from magic.models import Color, ManaCost, ManaSymbol
 import liberator.constants
 import re
 
