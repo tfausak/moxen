@@ -23,8 +23,8 @@ cd bauble
 # Automatically get all the requirements.
 pip install -r requirements.txt
 
-# Run the unit tests.
-python manage.py test
+# Run tests.
+sh test.sh
 
 # Fill the database with data.
 python manage.py syncdb
