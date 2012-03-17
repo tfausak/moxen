@@ -58,6 +58,16 @@ class ManaCost(models.Model):
     def __unicode__(self):
         return ' '.join(self.mana_symbol.name for _ in range(self.count))
 
+    def mana_symbols(self):
+        """Return a list of this mana cost's symbols.
+        """
+        return [self.mana_symbol] * self.count
+
+    def value(self):
+        """Calculate this mana cost's converted value.
+        """
+        return self.mana_symbol.value * self.count
+
 
 class SuperType(models.Model):
     """A card's super type.
@@ -233,6 +243,11 @@ class Card(models.Model):
         card_types += u' \u2014 ' if sub_types else u''
 
         return super_types + card_types + sub_types
+
+    def converted_mana_cost(self):
+        """Calculate this card's converted mana cost.
+        """
+        return sum(mana_cost.value() for mana_cost in self.mana_cost.all())
 
 
 class Printing(models.Model):

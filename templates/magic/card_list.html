@@ -14,7 +14,13 @@
             <div class="span3">
                 <div class="card {{ card.color }}">
                     <a class="link" href="{{ card.get_absolute_url }}">
-                        <div class="mana_cost pull-right">{{ card.mana_cost|upper }}</div>
+                        <div class="mana_cost pull-right">
+                            {% for mana_cost in card.mana_cost.all %}
+                                {% for mana_symbol in mana_cost.mana_symbols %}
+                                    <span class="mana_symbol">{{ mana_symbol|upper }}</span>
+                                {% endfor %}
+                            {% endfor %}
+                        </div>
                         <div class="name">{{ card|title }}</div>
                         <div class="type">{{ card.type|title }}</div>
                         <div class="rules_text">{{ card.rules_text }}</div>

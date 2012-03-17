@@ -19,7 +19,13 @@
 
         {% if card.mana_cost %}
             <dt>Mana cost</dt>
-            <dd>{{ card.mana_cost|upper }}</dd>
+            <dd>
+                {% for mana_cost in card.mana_cost.all %}
+                    {% for mana_symbol in mana_cost.mana_symbols %}
+                        <span class="mana_symbol">{{ mana_symbol|upper }}</span>
+                    {% endfor %}
+                {% endfor %}
+            </dd>
 
             <dt>Converted mana cost</dt>
             <dd>{{ card.converted_mana_cost }}</dd>
