@@ -62,22 +62,16 @@ def _normalize_card(card):
     try:
         card['colors'] = [Color.objects.get(name=card['color'])]
     except Color.DoesNotExist:
-        card['colors'] = []
-        for mana_symbol in card['cost']:
-            for color in mana_symbol.colors.all():
-                if color not in card['colors']:
-                    card['colors'].append(color)
+        card['colors'] = set(color for mana_symbol in card['cost']
+            for color in mana_symbol.colors.all())
 
     # Super, card, and sub types
-    card['super_types'] = [super_type for super_type
-        in liberator.constants.SUPER_TYPES
-        if re.search(super_type.pattern, card['type'])]
-    card['card_types'] = [card_type for card_type
-        in liberator.constants.CARD_TYPES
-        if re.search(card_type.pattern, card['type'])]
-    card['sub_types'] = [sub_type for sub_type
-        in liberator.constants.SUB_TYPES
-        if re.search(sub_type.pattern, card['type'])]
+    card['super_types'] = [type_ for type_ in liberator.constants.SUPER_TYPES
+        if re.search(type_.pattern, card['type'])]
+    card['card_types'] = [type_ for type_ in liberator.constants.CARD_TYPES
+        if re.search(type_.pattern, card['type'])]
+    card['sub_types'] = [type_ for type_ in liberator.constants.SUB_TYPES
+        if re.search(type_.pattern, card['type'])]
 
     # Sets and rarities
     card['set_rarity'] = card['set_rarity'].split(', ')
@@ -120,9 +114,5 @@ def _normalize_card(card):
     card['loyalty'] = _normalize_int(card['loyalty'])
     card['hand_modifier'] = _normalize_int(card['hand_modifier'])
     card['life_modifier'] = _normalize_int(card['life_modifier'])
-
-    # Remove obsolete fields.
-    for key in ('color', 'cost', 'type', 'set_rarity', 'pow_tgh', 'hand_life'):
-        del card[key]
 
     return card

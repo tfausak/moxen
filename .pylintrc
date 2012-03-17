@@ -11,4 +11,4 @@ reports=no
 evaluation=10.0 - ((float(5 * error + warning + refactor + convention) / statement) * 10)
 
 [TYPECHECK]
-generated-members=objects,all,count
+generated-members=objects,all,count,DoesNotExist
