@@ -1,0 +1,810 @@
+[
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 3
+        },
+        "model": "magic.manacost",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 6
+        },
+        "model": "magic.manacost",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 7
+        },
+        "model": "magic.manacost",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 33
+        },
+        "model": "magic.manacost",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 27
+        },
+        "model": "magic.manacost",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "count": 3,
+            "mana_symbol": 23
+        },
+        "model": "magic.manacost",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 23
+        },
+        "model": "magic.manacost",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "count": 2,
+            "mana_symbol": 19
+        },
+        "model": "magic.manacost",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 19
+        },
+        "model": "magic.manacost",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "count": 2,
+            "mana_symbol": 23
+        },
+        "model": "magic.manacost",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "count": 2,
+            "mana_symbol": 7
+        },
+        "model": "magic.manacost",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 34
+        },
+        "model": "magic.manacost",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "count": 2,
+            "mana_symbol": 11
+        },
+        "model": "magic.manacost",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 15
+        },
+        "model": "magic.manacost",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 36
+        },
+        "model": "magic.manacost",
+        "pk": 15
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 1
+        },
+        "model": "magic.manacost",
+        "pk": 16
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 11
+        },
+        "model": "magic.manacost",
+        "pk": 17
+    },
+    {
+        "fields": {
+            "count": 2,
+            "mana_symbol": 17
+        },
+        "model": "magic.manacost",
+        "pk": 18
+    },
+    {
+        "fields": {
+            "count": 2,
+            "mana_symbol": 15
+        },
+        "model": "magic.manacost",
+        "pk": 19
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 35
+        },
+        "model": "magic.manacost",
+        "pk": 20
+    },
+    {
+        "fields": {
+            "count": 3,
+            "mana_symbol": 31
+        },
+        "model": "magic.manacost",
+        "pk": 21
+    },
+    {
+        "fields": {
+            "count": 3,
+            "mana_symbol": 15
+        },
+        "model": "magic.manacost",
+        "pk": 22
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 26
+        },
+        "model": "magic.manacost",
+        "pk": 23
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 37
+        },
+        "model": "magic.manacost",
+        "pk": 24
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 40
+        },
+        "model": "magic.manacost",
+        "pk": 25
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 38
+        },
+        "model": "magic.manacost",
+        "pk": 26
+    },
+    {
+        "fields": {
+            "count": 3,
+            "mana_symbol": 19
+        },
+        "model": "magic.manacost",
+        "pk": 27
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 25
+        },
+        "model": "magic.manacost",
+        "pk": 28
+    },
+    {
+        "fields": {
+            "count": 3,
+            "mana_symbol": 7
+        },
+        "model": "magic.manacost",
+        "pk": 29
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 24
+        },
+        "model": "magic.manacost",
+        "pk": 30
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 39
+        },
+        "model": "magic.manacost",
+        "pk": 31
+    },
+    {
+        "fields": {
+            "count": 3,
+            "mana_symbol": 10
+        },
+        "model": "magic.manacost",
+        "pk": 32
+    },
+    {
+        "fields": {
+            "count": 2,
+            "mana_symbol": 26
+        },
+        "model": "magic.manacost",
+        "pk": 33
+    },
+    {
+        "fields": {
+            "count": 3,
+            "mana_symbol": 11
+        },
+        "model": "magic.manacost",
+        "pk": 34
+    },
+    {
+        "fields": {
+            "count": 3,
+            "mana_symbol": 18
+        },
+        "model": "magic.manacost",
+        "pk": 35
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 13
+        },
+        "model": "magic.manacost",
+        "pk": 36
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 14
+        },
+        "model": "magic.manacost",
+        "pk": 37
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 18
+        },
+        "model": "magic.manacost",
+        "pk": 38
+    },
+    {
+        "fields": {
+            "count": 3,
+            "mana_symbol": 28
+        },
+        "model": "magic.manacost",
+        "pk": 39
+    },
+    {
+        "fields": {
+            "count": 3,
+            "mana_symbol": 13
+        },
+        "model": "magic.manacost",
+        "pk": 40
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 12
+        },
+        "model": "magic.manacost",
+        "pk": 41
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 42
+        },
+        "model": "magic.manacost",
+        "pk": 42
+    },
+    {
+        "fields": {
+            "count": 2,
+            "mana_symbol": 24
+        },
+        "model": "magic.manacost",
+        "pk": 43
+    },
+    {
+        "fields": {
+            "count": 3,
+            "mana_symbol": 16
+        },
+        "model": "magic.manacost",
+        "pk": 44
+    },
+    {
+        "fields": {
+            "count": 2,
+            "mana_symbol": 18
+        },
+        "model": "magic.manacost",
+        "pk": 45
+    },
+    {
+        "fields": {
+            "count": 2,
+            "mana_symbol": 3
+        },
+        "model": "magic.manacost",
+        "pk": 46
+    },
+    {
+        "fields": {
+            "count": 2,
+            "mana_symbol": 22
+        },
+        "model": "magic.manacost",
+        "pk": 47
+    },
+    {
+        "fields": {
+            "count": 2,
+            "mana_symbol": 8
+        },
+        "model": "magic.manacost",
+        "pk": 48
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 8
+        },
+        "model": "magic.manacost",
+        "pk": 49
+    },
+    {
+        "fields": {
+            "count": 2,
+            "mana_symbol": 20
+        },
+        "model": "magic.manacost",
+        "pk": 50
+    },
+    {
+        "fields": {
+            "count": 4,
+            "mana_symbol": 11
+        },
+        "model": "magic.manacost",
+        "pk": 51
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 22
+        },
+        "model": "magic.manacost",
+        "pk": 52
+    },
+    {
+        "fields": {
+            "count": 2,
+            "mana_symbol": 13
+        },
+        "model": "magic.manacost",
+        "pk": 53
+    },
+    {
+        "fields": {
+            "count": 3,
+            "mana_symbol": 22
+        },
+        "model": "magic.manacost",
+        "pk": 54
+    },
+    {
+        "fields": {
+            "count": 3,
+            "mana_symbol": 8
+        },
+        "model": "magic.manacost",
+        "pk": 55
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 10
+        },
+        "model": "magic.manacost",
+        "pk": 56
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 41
+        },
+        "model": "magic.manacost",
+        "pk": 57
+    },
+    {
+        "fields": {
+            "count": 4,
+            "mana_symbol": 23
+        },
+        "model": "magic.manacost",
+        "pk": 58
+    },
+    {
+        "fields": {
+            "count": 3,
+            "mana_symbol": 24
+        },
+        "model": "magic.manacost",
+        "pk": 59
+    },
+    {
+        "fields": {
+            "count": 5,
+            "mana_symbol": 8
+        },
+        "model": "magic.manacost",
+        "pk": 60
+    },
+    {
+        "fields": {
+            "count": 5,
+            "mana_symbol": 10
+        },
+        "model": "magic.manacost",
+        "pk": 61
+    },
+    {
+        "fields": {
+            "count": 5,
+            "mana_symbol": 16
+        },
+        "model": "magic.manacost",
+        "pk": 62
+    },
+    {
+        "fields": {
+            "count": 2,
+            "mana_symbol": 9
+        },
+        "model": "magic.manacost",
+        "pk": 63
+    },
+    {
+        "fields": {
+            "count": 5,
+            "mana_symbol": 24
+        },
+        "model": "magic.manacost",
+        "pk": 64
+    },
+    {
+        "fields": {
+            "count": 5,
+            "mana_symbol": 22
+        },
+        "model": "magic.manacost",
+        "pk": 65
+    },
+    {
+        "fields": {
+            "count": 3,
+            "mana_symbol": 26
+        },
+        "model": "magic.manacost",
+        "pk": 66
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 46
+        },
+        "model": "magic.manacost",
+        "pk": 67
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 20
+        },
+        "model": "magic.manacost",
+        "pk": 68
+    },
+    {
+        "fields": {
+            "count": 4,
+            "mana_symbol": 15
+        },
+        "model": "magic.manacost",
+        "pk": 69
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 45
+        },
+        "model": "magic.manacost",
+        "pk": 70
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 16
+        },
+        "model": "magic.manacost",
+        "pk": 71
+    },
+    {
+        "fields": {
+            "count": 3,
+            "mana_symbol": 30
+        },
+        "model": "magic.manacost",
+        "pk": 72
+    },
+    {
+        "fields": {
+            "count": 3,
+            "mana_symbol": 14
+        },
+        "model": "magic.manacost",
+        "pk": 73
+    },
+    {
+        "fields": {
+            "count": 2,
+            "mana_symbol": 10
+        },
+        "model": "magic.manacost",
+        "pk": 74
+    },
+    {
+        "fields": {
+            "count": 5,
+            "mana_symbol": 20
+        },
+        "model": "magic.manacost",
+        "pk": 75
+    },
+    {
+        "fields": {
+            "count": 2,
+            "mana_symbol": 16
+        },
+        "model": "magic.manacost",
+        "pk": 76
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 21
+        },
+        "model": "magic.manacost",
+        "pk": 77
+    },
+    {
+        "fields": {
+            "count": 3,
+            "mana_symbol": 20
+        },
+        "model": "magic.manacost",
+        "pk": 78
+    },
+    {
+        "fields": {
+            "count": 5,
+            "mana_symbol": 26
+        },
+        "model": "magic.manacost",
+        "pk": 79
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 17
+        },
+        "model": "magic.manacost",
+        "pk": 80
+    },
+    {
+        "fields": {
+            "count": 2,
+            "mana_symbol": 14
+        },
+        "model": "magic.manacost",
+        "pk": 81
+    },
+    {
+        "fields": {
+            "count": 4,
+            "mana_symbol": 19
+        },
+        "model": "magic.manacost",
+        "pk": 82
+    },
+    {
+        "fields": {
+            "count": 8,
+            "mana_symbol": 11
+        },
+        "model": "magic.manacost",
+        "pk": 83
+    },
+    {
+        "fields": {
+            "count": 4,
+            "mana_symbol": 7
+        },
+        "model": "magic.manacost",
+        "pk": 84
+    },
+    {
+        "fields": {
+            "count": 4,
+            "mana_symbol": 20
+        },
+        "model": "magic.manacost",
+        "pk": 85
+    },
+    {
+        "fields": {
+            "count": 5,
+            "mana_symbol": 18
+        },
+        "model": "magic.manacost",
+        "pk": 86
+    },
+    {
+        "fields": {
+            "count": 2,
+            "mana_symbol": 25
+        },
+        "model": "magic.manacost",
+        "pk": 87
+    },
+    {
+        "fields": {
+            "count": 5,
+            "mana_symbol": 13
+        },
+        "model": "magic.manacost",
+        "pk": 88
+    },
+    {
+        "fields": {
+            "count": 5,
+            "mana_symbol": 14
+        },
+        "model": "magic.manacost",
+        "pk": 89
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 9
+        },
+        "model": "magic.manacost",
+        "pk": 90
+    },
+    {
+        "fields": {
+            "count": 6,
+            "mana_symbol": 11
+        },
+        "model": "magic.manacost",
+        "pk": 91
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 32
+        },
+        "model": "magic.manacost",
+        "pk": 92
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 28
+        },
+        "model": "magic.manacost",
+        "pk": 93
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 29
+        },
+        "model": "magic.manacost",
+        "pk": 94
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 30
+        },
+        "model": "magic.manacost",
+        "pk": 95
+    },
+    {
+        "fields": {
+            "count": 1,
+            "mana_symbol": 31
+        },
+        "model": "magic.manacost",
+        "pk": 96
+    },
+    {
+        "fields": {
+            "count": 5,
+            "mana_symbol": 11
+        },
+        "model": "magic.manacost",
+        "pk": 97
+    },
+    {
+        "fields": {
+            "count": 3,
+            "mana_symbol": 32
+        },
+        "model": "magic.manacost",
+        "pk": 98
+    },
+    {
+        "fields": {
+            "count": 2,
+            "mana_symbol": 12
+        },
+        "model": "magic.manacost",
+        "pk": 99
+    },
+    {
+        "fields": {
+            "count": 3,
+            "mana_symbol": 29
+        },
+        "model": "magic.manacost",
+        "pk": 100
+    },
+    {
+        "fields": {
+            "count": 4,
+            "mana_symbol": 26
+        },
+        "model": "magic.manacost",
+        "pk": 101
+    }
+]
