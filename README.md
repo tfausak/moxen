@@ -15,28 +15,30 @@ A [Magic: The Gathering][3] card database.
 
 ## Installation
 
-    # Get the source.
-    git clone https://github.com/tfausak/bauble.git
-    cd bauble
+```sh
+# Get the source.
+git clone https://github.com/tfausak/bauble.git
+cd bauble
 
-    # Automatically get all the requirements.
-    pip install -r requirements.txt
+# Automatically get all the requirements.
+pip install -r requirements.txt
 
-    # Run the unit tests.
-    python manage.py test
+# Run the unit tests.
+python manage.py test
 
-    # Fill the database with data.
-    python manage.py syncdb
-    python manage.py loaddata color manasymbol manacost supertype cardtype subtype set rarity block format
+# Fill the database with data.
+python manage.py syncdb
+python manage.py loaddata color manasymbol manacost supertype cardtype subtype set rarity block format
 
-    # Get card and printing data.
-    python manage.py loaddata card printing legality
-    # or
-    python manage.py liberate 'http://gatherer.wizards.com/Pages/Search/?output=spoiler&method=text&special=true&format=+![%22Un-Sets%22]'
+# Get card and printing data.
+python manage.py loaddata card printing legality
+# or
+python manage.py liberate 'http://gatherer.wizards.com/Pages/Search/?output=spoiler&method=text&special=true&format=+![%22Un-Sets%22]'
 
-    # Fire up the server.
-    python manage.py runserver
-    # http://localhost:8000/
+# Fire up the server.
+python manage.py runserver
+# http://localhost:8000/
+```
 
 ## Configuration
 
