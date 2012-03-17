@@ -45,8 +45,8 @@ def _normalize_card(card):
     card['slug'] = slugify(card['name'])
 
     # Mana cost
-    card['cost'] = re.findall(liberator.constants.MANA_SYMBOL, card['cost'])
-    card['cost'] = ['/'.join(match[0] or match[1:]) for match in card['cost']]
+    card['cost'] = re.findall(liberator.constants.MANA_COST, card['cost'])
+    card['cost'] = [match[0] or '/'.join(match[1:]) for match in card['cost']]
     card['cost'] = [ManaSymbol.objects.get(name=mana_symbol)
         for mana_symbol in card['cost']]
     mana_symbols = defaultdict(lambda: 0)
