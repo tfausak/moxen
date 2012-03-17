@@ -1,0 +1,476 @@
+[
+    {
+        "fields": {
+            "colors": [],
+            "name": "0",
+            "value": 0
+        },
+        "model": "magic.manasymbol",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "colors": [],
+            "name": "p",
+            "value": 0
+        },
+        "model": "magic.manasymbol",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "colors": [],
+            "name": "x",
+            "value": 0
+        },
+        "model": "magic.manasymbol",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "colors": [],
+            "name": "y",
+            "value": 0
+        },
+        "model": "magic.manasymbol",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "colors": [],
+            "name": "z",
+            "value": 0
+        },
+        "model": "magic.manasymbol",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "colors": [],
+            "name": "1",
+            "value": 1
+        },
+        "model": "magic.manasymbol",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "colors": [
+                1
+            ],
+            "name": "b",
+            "value": 1
+        },
+        "model": "magic.manasymbol",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "colors": [
+                1,
+                3
+            ],
+            "name": "b/g",
+            "value": 1
+        },
+        "model": "magic.manasymbol",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "colors": [
+                1
+            ],
+            "name": "b/p",
+            "value": 1
+        },
+        "model": "magic.manasymbol",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "colors": [
+                1,
+                4
+            ],
+            "name": "b/r",
+            "value": 1
+        },
+        "model": "magic.manasymbol",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "colors": [
+                3
+            ],
+            "name": "g",
+            "value": 1
+        },
+        "model": "magic.manasymbol",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "colors": [
+                3
+            ],
+            "name": "g/p",
+            "value": 1
+        },
+        "model": "magic.manasymbol",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "colors": [
+                2,
+                3
+            ],
+            "name": "g/u",
+            "value": 1
+        },
+        "model": "magic.manasymbol",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "colors": [
+                3,
+                5
+            ],
+            "name": "g/w",
+            "value": 1
+        },
+        "model": "magic.manasymbol",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "colors": [
+                4
+            ],
+            "name": "r",
+            "value": 1
+        },
+        "model": "magic.manasymbol",
+        "pk": 15
+    },
+    {
+        "fields": {
+            "colors": [
+                3,
+                4
+            ],
+            "name": "r/g",
+            "value": 1
+        },
+        "model": "magic.manasymbol",
+        "pk": 16
+    },
+    {
+        "fields": {
+            "colors": [
+                4
+            ],
+            "name": "r/p",
+            "value": 1
+        },
+        "model": "magic.manasymbol",
+        "pk": 17
+    },
+    {
+        "fields": {
+            "colors": [
+                4,
+                5
+            ],
+            "name": "r/w",
+            "value": 1
+        },
+        "model": "magic.manasymbol",
+        "pk": 18
+    },
+    {
+        "fields": {
+            "colors": [
+                2
+            ],
+            "name": "u",
+            "value": 1
+        },
+        "model": "magic.manasymbol",
+        "pk": 19
+    },
+    {
+        "fields": {
+            "colors": [
+                1,
+                2
+            ],
+            "name": "u/b",
+            "value": 1
+        },
+        "model": "magic.manasymbol",
+        "pk": 20
+    },
+    {
+        "fields": {
+            "colors": [
+                2
+            ],
+            "name": "u/p",
+            "value": 1
+        },
+        "model": "magic.manasymbol",
+        "pk": 21
+    },
+    {
+        "fields": {
+            "colors": [
+                2,
+                4
+            ],
+            "name": "u/r",
+            "value": 1
+        },
+        "model": "magic.manasymbol",
+        "pk": 22
+    },
+    {
+        "fields": {
+            "colors": [
+                5
+            ],
+            "name": "w",
+            "value": 1
+        },
+        "model": "magic.manasymbol",
+        "pk": 23
+    },
+    {
+        "fields": {
+            "colors": [
+                1,
+                5
+            ],
+            "name": "w/b",
+            "value": 1
+        },
+        "model": "magic.manasymbol",
+        "pk": 24
+    },
+    {
+        "fields": {
+            "colors": [
+                5
+            ],
+            "name": "w/p",
+            "value": 1
+        },
+        "model": "magic.manasymbol",
+        "pk": 25
+    },
+    {
+        "fields": {
+            "colors": [
+                2,
+                5
+            ],
+            "name": "w/u",
+            "value": 1
+        },
+        "model": "magic.manasymbol",
+        "pk": 26
+    },
+    {
+        "fields": {
+            "colors": [],
+            "name": "2",
+            "value": 2
+        },
+        "model": "magic.manasymbol",
+        "pk": 27
+    },
+    {
+        "fields": {
+            "colors": [
+                1
+            ],
+            "name": "2/b",
+            "value": 2
+        },
+        "model": "magic.manasymbol",
+        "pk": 28
+    },
+    {
+        "fields": {
+            "colors": [
+                3
+            ],
+            "name": "2/g",
+            "value": 2
+        },
+        "model": "magic.manasymbol",
+        "pk": 29
+    },
+    {
+        "fields": {
+            "colors": [
+                4
+            ],
+            "name": "2/r",
+            "value": 2
+        },
+        "model": "magic.manasymbol",
+        "pk": 30
+    },
+    {
+        "fields": {
+            "colors": [
+                2
+            ],
+            "name": "2/u",
+            "value": 2
+        },
+        "model": "magic.manasymbol",
+        "pk": 31
+    },
+    {
+        "fields": {
+            "colors": [
+                5
+            ],
+            "name": "2/w",
+            "value": 2
+        },
+        "model": "magic.manasymbol",
+        "pk": 32
+    },
+    {
+        "fields": {
+            "colors": [],
+            "name": "3",
+            "value": 3
+        },
+        "model": "magic.manasymbol",
+        "pk": 33
+    },
+    {
+        "fields": {
+            "colors": [],
+            "name": "4",
+            "value": 4
+        },
+        "model": "magic.manasymbol",
+        "pk": 34
+    },
+    {
+        "fields": {
+            "colors": [],
+            "name": "5",
+            "value": 5
+        },
+        "model": "magic.manasymbol",
+        "pk": 35
+    },
+    {
+        "fields": {
+            "colors": [],
+            "name": "6",
+            "value": 6
+        },
+        "model": "magic.manasymbol",
+        "pk": 36
+    },
+    {
+        "fields": {
+            "colors": [],
+            "name": "7",
+            "value": 7
+        },
+        "model": "magic.manasymbol",
+        "pk": 37
+    },
+    {
+        "fields": {
+            "colors": [],
+            "name": "8",
+            "value": 8
+        },
+        "model": "magic.manasymbol",
+        "pk": 38
+    },
+    {
+        "fields": {
+            "colors": [],
+            "name": "9",
+            "value": 9
+        },
+        "model": "magic.manasymbol",
+        "pk": 39
+    },
+    {
+        "fields": {
+            "colors": [],
+            "name": "10",
+            "value": 10
+        },
+        "model": "magic.manasymbol",
+        "pk": 40
+    },
+    {
+        "fields": {
+            "colors": [],
+            "name": "11",
+            "value": 11
+        },
+        "model": "magic.manasymbol",
+        "pk": 41
+    },
+    {
+        "fields": {
+            "colors": [],
+            "name": "12",
+            "value": 12
+        },
+        "model": "magic.manasymbol",
+        "pk": 42
+    },
+    {
+        "fields": {
+            "colors": [],
+            "name": "13",
+            "value": 13
+        },
+        "model": "magic.manasymbol",
+        "pk": 43
+    },
+    {
+        "fields": {
+            "colors": [],
+            "name": "14",
+            "value": 14
+        },
+        "model": "magic.manasymbol",
+        "pk": 44
+    },
+    {
+        "fields": {
+            "colors": [],
+            "name": "15",
+            "value": 15
+        },
+        "model": "magic.manasymbol",
+        "pk": 45
+    },
+    {
+        "fields": {
+            "colors": [],
+            "name": "16",
+            "value": 16
+        },
+        "model": "magic.manasymbol",
+        "pk": 46
+    }
+]
