@@ -27,7 +27,12 @@ A [Magic: The Gathering][3] card database.
 
     # Fill the database with data.
     python manage.py syncdb
-    python manage.py loaddata color supertype cardtype subtype set rarity block format card printing legality
+    python manage.py loaddata color manasymbol manacost supertype cardtype subtype set rarity block format
+
+    # Get card and printing data.
+    python manage.py loaddata card printing legality
+    # or
+    python manage.py liberate 'http://gatherer.wizards.com/Pages/Search/?output=spoiler&method=text&special=true&format=+![%22Un-Sets%22]'
 
     # Fire up the server.
     python manage.py runserver
