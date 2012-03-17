@@ -22,6 +22,25 @@
                             {% endfor %}
                         </div>
                         <div class="name">{{ card|title }}</div>
+                        <div class="pull-right">
+                            {% if card.power and card.toughness %}
+                                <span class="power-toughness">
+                                    <span class="power">{{ card.power }}</span>
+                                    <span>/</span>
+                                    <span class="toughness">{{ card.toughness }}</span>
+                                </span>
+                            {% endif %}
+                            {% if card.loyalty %}
+                                <span class="loyalty">{{ card.loyalty }}</span>
+                            {% endif %}
+                            {% if card.hand_modifier and card.life_modifier %}
+                                <span class="hand-modifier-life-modifier">
+                                    <span class="hand-modifier">{{ card.hand_modifier }}</span>
+                                    <span>/</span>
+                                    <span class="life-modifier">{{ card.life_modifier }}</span>
+                                </span>
+                            {% endif %}
+                        </div>
                         <div class="type">{{ card.type|title }}</div>
                         <div class="rules_text">{{ card.rules_text }}</div>
                     </a>
