@@ -240,7 +240,7 @@ class Card(models.Model):
             for sub_type in self.sub_types.all())
 
         super_types += ' ' if super_types else ''
-        card_types += ' \u2014 ' if sub_types else ''
+        card_types += u' \u2014 ' if sub_types else ''
 
         return super_types + card_types + sub_types
 
