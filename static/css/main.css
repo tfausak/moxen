@@ -12,15 +12,20 @@
 }
 
 .card {
-    border-top: 3px solid #999999;
-    margin-bottom: 15px;
+    color: inherit;
+    display: block;
+    margin-bottom: 18px;
     padding: 9px;
 }
-.card.white { border-color: #fffbd5; }
-.card.blue  { border-color: #aae0fa; }
-.card.black { border-color: #cbc2bf; }
-.card.red   { border-color: #f9aa8f; }
-.card.green { border-color: #9bd3ae; }
+.card:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
+.card.white { background-color: #fffbd5; }
+.card.blue  { background-color: #aae0fa; }
+.card.black { background-color: #cbc2bf; }
+.card.red   { background-color: #f9aa8f; }
+.card.green { background-color: #9bd3ae; }
 .card.white.blue,
 .card.white.black,
 .card.white.red,
@@ -31,7 +36,7 @@
 .card.black.red,
 .card.black.green,
 .card.red.green {
-    border-color: #eeeeee;
+    background-color: #eeeeee;
 }
 .card .mana-cost {
     float: right;
@@ -39,6 +44,7 @@
 .card .mana-symbol {
     background-color: #eeeeee;
     border-radius: 9px;
+    box-shadow: 1px 1px 0 #999999;
     display: inline-block;
     text-align: center;
     white-space: nowrap;

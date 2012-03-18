@@ -12,7 +12,7 @@
     <div class="row">
         {% for card in object_list %}
             <div class="span3">
-                <div class="card {% for color in card.colors.all %} {{ color }} {% endfor %}">
+                <a class="card {% for color in card.colors.all %} {{ color }} {% endfor %}" href="{{ card.get_absolute_url }}">
                     {# Mana cost #}
                     <div class="mana-cost">
                         {% for mana_symbol in card.mana_symbols %}
@@ -29,9 +29,7 @@
                     </div>
 
                     {# Name #}
-                    <div class="name">
-                        <a href="{{ card.get_absolute_url }}">{{ card|title }}</a>
-                    </div>
+                    <div class="name">{{ card|title }}</div>
 
                     {# Power, toughness, loyalty, hand-, and life-modifiers #}
                     {% if card.power and card.toughness %}
@@ -58,7 +56,7 @@
                     {# Rules text #}
                     <div class="rules-text">{{ card.rules_text }}</div>
                 </div>
-            </div>
+            </a>
         {% endfor %}
     </div>
 
