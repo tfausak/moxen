@@ -12,46 +12,51 @@
     <div class="row">
         {% for card in object_list %}
             <div class="span3">
-                <div class="card {{ card.color }}">
-                    <a class="link" href="{{ card.get_absolute_url }}">
-                        <div class="mana_cost pull-right">
-                            {% for mana_cost in card.mana_cost.all %}
-                                {% for mana_symbol in mana_cost.mana_symbols %}
-                                    <span class="mana_symbol">
-                                        {% if mana_symbol.name|length == 3 %}
-                                            <sup>{{ mana_symbol.name.0|upper }}</sup>
-                                            <span>/</span>
-                                            <sub>{{ mana_symbol.name.2|upper }}</sub>
-                                        {% else %}
-                                            <span>{{ mana_symbol|upper }}</span>
-                                        {% endif %}
-                                    </span>
-                                {% endfor %}
-                            {% endfor %}
+                <div class="card {% for color in card.colors.all %} {{ color }} {% endfor %}">
+                    {# Mana cost #}
+                    <div class="mana-cost">
+                        {% for mana_symbol in card.mana_symbols %}
+                            <span class="mana-symbol {% for color in mana_symbol.colors.all %} {{ color }} {% endfor %}">
+                                {% if mana_symbol.name|length == 1 %}
+                                    <span>{{ mana_symbol|upper }}</span>
+                                {% else %}
+                                    <sup>{{ mana_symbol.name.0|upper }}</sup>
+                                    <span class="divider">/</span>
+                                    <sub>{{ mana_symbol.name.2|upper }}</sub></span>
+                                {% endif %}
+                            </span>
+                        {% endfor %}
+                    </div>
+
+                    {# Name #}
+                    <div class="name">
+                        <a href="{{ card.get_absolute_url }}">{{ card|title }}</a>
+                    </div>
+
+                    {# Power, toughness, loyalty, hand-, and life-modifiers #}
+                    {% if card.power and card.toughness %}
+                        <div class="power-toughness">
+                            <span class="power">{{ card.power }}</span>
+                            <span class="divider">/</span>
+                            <span class="toughness">{{ card.toughness }}</span>
                         </div>
-                        <div class="name">{{ card|title }}</div>
-                        <div class="pull-right">
-                            {% if card.power and card.toughness %}
-                                <span class="power-toughness">
-                                    <span class="power">{{ card.power }}</span>
-                                    <span>/</span>
-                                    <span class="toughness">{{ card.toughness }}</span>
-                                </span>
-                            {% endif %}
-                            {% if card.loyalty %}
-                                <span class="loyalty">{{ card.loyalty }}</span>
-                            {% endif %}
-                            {% if card.hand_modifier and card.life_modifier %}
-                                <span class="hand-modifier-life-modifier">
-                                    <span class="hand-modifier">{{ card.hand_modifier }}</span>
-                                    <span>/</span>
-                                    <span class="life-modifier">{{ card.life_modifier }}</span>
-                                </span>
-                            {% endif %}
+                    {% endif %}
+                    {% if card.loyalty %}
+                        <div class="loyalty">{{ card.loyalty }}</div>
+                    {% endif %}
+                    {% if card.hand_modifier and card.life_modifier %}
+                        <div class="hand-modifier-life-modifier">
+                            <span class="hand-modifier">{{ card.hand_modifier }}</span>
+                            <span class="divider">/</span>
+                            <span class="life-modifier">{{ card.life_modifier }}</span>
                         </div>
-                        <div class="type">{{ card.type|title }}</div>
-                        <div class="rules_text">{{ card.rules_text }}</div>
-                    </a>
+                    {% endif %}
+
+                    {# Type #}
+                    <div class="type">{{ card.type|title }}</div>
+
+                    {# Rules text #}
+                    <div class="rules-text">{{ card.rules_text }}</div>
                 </div>
             </div>
         {% endfor %}
