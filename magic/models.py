@@ -265,7 +265,8 @@ class Card(models.Model):
                     else:
                         order = 4
             mana_costs.append((order, mana_cost))
-        mana_costs.sort()
+        mana_costs.sort(key=lambda item: item[1].mana_symbol.name)
+        mana_costs.sort(key=lambda item: item[0])
         return [mana_cost.mana_symbols() for order, mana_cost in mana_costs]
 
 
