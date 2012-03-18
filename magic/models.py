@@ -249,6 +249,25 @@ class Card(models.Model):
         """
         return sum(mana_cost.value() for mana_cost in self.mana_cost.all())
 
+    def mana_symbols(self):
+        """Return this card's mana symbols in order.
+        """
+        mana_costs = []
+        for mana_cost in self.mana_cost.all():
+            if mana_cost.mana_symbol.name.isdigit():
+                order = 2
+            else:
+                if mana_cost.mana_symbol.value == 0:
+                    order = 1
+                else:
+                    if len(mana_cost.mana_symbol.name) > 1:
+                        order = 3
+                    else:
+                        order = 4
+            mana_costs.append((order, mana_cost))
+        mana_costs.sort()
+        return [mana_cost.mana_symbols() for order, mana_cost in mana_costs]
+
 
 class Printing(models.Model):
     """A printed card.
