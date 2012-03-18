@@ -267,7 +267,10 @@ class Card(models.Model):
             mana_costs.append((order, mana_cost))
         mana_costs.sort(key=lambda item: item[1].mana_symbol.name)
         mana_costs.sort(key=lambda item: item[0])
-        return [mana_cost.mana_symbols() for order, mana_cost in mana_costs]
+        mana_symbols = []
+        for order, mana_cost in mana_costs:
+            mana_symbols.extend(mana_cost.mana_symbols())
+        return mana_symbols
 
 
 class Printing(models.Model):
