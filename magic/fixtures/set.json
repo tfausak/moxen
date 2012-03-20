@@ -2,6 +2,7 @@
     {
         "fields": {
             "name": "alara reborn",
+            "release_date": "2009-04-30",
             "slug": "arb"
         },
         "model": "magic.set",
@@ -10,6 +11,7 @@
     {
         "fields": {
             "name": "alliances",
+            "release_date": "1996-06-10",
             "slug": "al"
         },
         "model": "magic.set",
@@ -18,6 +20,7 @@
     {
         "fields": {
             "name": "antiquities",
+            "release_date": "1994-03-01",
             "slug": "aq"
         },
         "model": "magic.set",
@@ -26,6 +29,7 @@
     {
         "fields": {
             "name": "apocalypse",
+            "release_date": "2001-06-04",
             "slug": "ap"
         },
         "model": "magic.set",
@@ -34,6 +38,7 @@
     {
         "fields": {
             "name": "arabian nights",
+            "release_date": "1993-12-01",
             "slug": "an"
         },
         "model": "magic.set",
@@ -42,6 +47,7 @@
     {
         "fields": {
             "name": "archenemy",
+            "release_date": "2010-07-18",
             "slug": "arc"
         },
         "model": "magic.set",
@@ -50,6 +56,7 @@
     {
         "fields": {
             "name": "battle royale box set",
+            "release_date": "1999-11-12",
             "slug": "br"
         },
         "model": "magic.set",
@@ -58,6 +65,7 @@
     {
         "fields": {
             "name": "beatdown box set",
+            "release_date": "2000-12-01",
             "slug": "bd"
         },
         "model": "magic.set",
@@ -66,6 +74,7 @@
     {
         "fields": {
             "name": "betrayers of kamigawa",
+            "release_date": "2005-02-04",
             "slug": "bok"
         },
         "model": "magic.set",
@@ -74,6 +83,7 @@
     {
         "fields": {
             "name": "champions of kamigawa",
+            "release_date": "2004-10-01",
             "slug": "chk"
         },
         "model": "magic.set",
@@ -82,6 +92,7 @@
     {
         "fields": {
             "name": "chronicles",
+            "release_date": "1995-07-01",
             "slug": "ch"
         },
         "model": "magic.set",
@@ -90,6 +101,7 @@
     {
         "fields": {
             "name": "classic sixth edition",
+            "release_date": "1999-04-28",
             "slug": "6e"
         },
         "model": "magic.set",
@@ -98,6 +110,7 @@
     {
         "fields": {
             "name": "coldsnap",
+            "release_date": "2006-07-21",
             "slug": "csp"
         },
         "model": "magic.set",
@@ -106,6 +119,7 @@
     {
         "fields": {
             "name": "conflux",
+            "release_date": "2009-02-06",
             "slug": "con"
         },
         "model": "magic.set",
@@ -114,6 +128,7 @@
     {
         "fields": {
             "name": "dark ascension",
+            "release_date": "2012-02-03",
             "slug": "dka"
         },
         "model": "magic.set",
@@ -122,6 +137,7 @@
     {
         "fields": {
             "name": "darksteel",
+            "release_date": "2004-02-06",
             "slug": "dst"
         },
         "model": "magic.set",
@@ -130,6 +146,7 @@
     {
         "fields": {
             "name": "dissension",
+            "release_date": "2006-05-05",
             "slug": "dis"
         },
         "model": "magic.set",
@@ -138,6 +155,7 @@
     {
         "fields": {
             "name": "duel decks: ajani vs. nicol bolas",
+            "release_date": "2011-09-02",
             "slug": "ddh"
         },
         "model": "magic.set",
@@ -146,6 +164,7 @@
     {
         "fields": {
             "name": "duel decks: divine vs. demonic",
+            "release_date": "2009-04-10",
             "slug": "ddc"
         },
         "model": "magic.set",
@@ -154,6 +173,7 @@
     {
         "fields": {
             "name": "duel decks: elspeth vs. tezzeret",
+            "release_date": "2010-09-03",
             "slug": "ddf"
         },
         "model": "magic.set",
@@ -162,6 +182,7 @@
     {
         "fields": {
             "name": "duel decks: elves vs. goblins",
+            "release_date": "2007-11-16",
             "slug": "evg"
         },
         "model": "magic.set",
@@ -170,6 +191,7 @@
     {
         "fields": {
             "name": "duel decks: garruk vs. liliana",
+            "release_date": "2009-10-30",
             "slug": "ddd"
         },
         "model": "magic.set",
@@ -178,6 +200,7 @@
     {
         "fields": {
             "name": "duel decks: jace vs. chandra",
+            "release_date": "2008-11-07",
             "slug": "dd2"
         },
         "model": "magic.set",
@@ -186,6 +209,7 @@
     {
         "fields": {
             "name": "duel decks: knights vs. dragons",
+            "release_date": "2011-04-01",
             "slug": "ddg"
         },
         "model": "magic.set",
@@ -194,6 +218,7 @@
     {
         "fields": {
             "name": "duel decks: phyrexia vs. the coalition",
+            "release_date": "2010-03-19",
             "slug": "dde"
         },
         "model": "magic.set",
@@ -202,6 +227,7 @@
     {
         "fields": {
             "name": "eighth edition",
+            "release_date": "2003-07-28",
             "slug": "8ed"
         },
         "model": "magic.set",
@@ -210,6 +236,7 @@
     {
         "fields": {
             "name": "eventide",
+            "release_date": "2008-07-25",
             "slug": "eve"
         },
         "model": "magic.set",
@@ -218,6 +245,7 @@
     {
         "fields": {
             "name": "exodus",
+            "release_date": "1998-06-15",
             "slug": "ex"
         },
         "model": "magic.set",
@@ -226,6 +254,7 @@
     {
         "fields": {
             "name": "fallen empires",
+            "release_date": "1994-11-01",
             "slug": "fe"
         },
         "model": "magic.set",
@@ -234,6 +263,7 @@
     {
         "fields": {
             "name": "fifth dawn",
+            "release_date": "2004-06-04",
             "slug": "5dn"
         },
         "model": "magic.set",
@@ -242,6 +272,7 @@
     {
         "fields": {
             "name": "fifth edition",
+            "release_date": "1997-03-24",
             "slug": "5e"
         },
         "model": "magic.set",
@@ -250,6 +281,7 @@
     {
         "fields": {
             "name": "fourth edition",
+            "release_date": "1995-04-01",
             "slug": "4e"
         },
         "model": "magic.set",
@@ -258,6 +290,7 @@
     {
         "fields": {
             "name": "from the vault: dragons",
+            "release_date": "2008-08-29",
             "slug": "drb"
         },
         "model": "magic.set",
@@ -266,6 +299,7 @@
     {
         "fields": {
             "name": "from the vault: exiled",
+            "release_date": "2009-08-28",
             "slug": "v09"
         },
         "model": "magic.set",
@@ -274,6 +308,7 @@
     {
         "fields": {
             "name": "from the vault: legends",
+            "release_date": "2011-08-26",
             "slug": "v11"
         },
         "model": "magic.set",
@@ -282,6 +317,7 @@
     {
         "fields": {
             "name": "from the vault: relics",
+            "release_date": "2010-08-27",
             "slug": "v10"
         },
         "model": "magic.set",
@@ -290,6 +326,7 @@
     {
         "fields": {
             "name": "future sight",
+            "release_date": "2007-05-04",
             "slug": "fut"
         },
         "model": "magic.set",
@@ -298,6 +335,7 @@
     {
         "fields": {
             "name": "guildpact",
+            "release_date": "2006-02-03",
             "slug": "gpt"
         },
         "model": "magic.set",
@@ -306,6 +344,7 @@
     {
         "fields": {
             "name": "homelands",
+            "release_date": "1995-10-01",
             "slug": "hm"
         },
         "model": "magic.set",
@@ -314,6 +353,7 @@
     {
         "fields": {
             "name": "ice age",
+            "release_date": "1995-06-01",
             "slug": "ia"
         },
         "model": "magic.set",
@@ -322,6 +362,7 @@
     {
         "fields": {
             "name": "innistrad",
+            "release_date": "2011-09-30",
             "slug": "isd"
         },
         "model": "magic.set",
@@ -330,6 +371,7 @@
     {
         "fields": {
             "name": "invasion",
+            "release_date": "2000-10-02",
             "slug": "in"
         },
         "model": "magic.set",
@@ -338,6 +380,7 @@
     {
         "fields": {
             "name": "judgment",
+            "release_date": "2002-05-27",
             "slug": "jud"
         },
         "model": "magic.set",
@@ -346,6 +389,7 @@
     {
         "fields": {
             "name": "legends",
+            "release_date": "1994-06-01",
             "slug": "le"
         },
         "model": "magic.set",
@@ -354,6 +398,7 @@
     {
         "fields": {
             "name": "legions",
+            "release_date": "2003-02-03",
             "slug": "lgn"
         },
         "model": "magic.set",
@@ -362,6 +407,7 @@
     {
         "fields": {
             "name": "limited edition alpha",
+            "release_date": "1993-08-05",
             "slug": "1e"
         },
         "model": "magic.set",
@@ -370,6 +416,7 @@
     {
         "fields": {
             "name": "limited edition beta",
+            "release_date": "1993-10-01",
             "slug": "2e"
         },
         "model": "magic.set",
@@ -378,6 +425,7 @@
     {
         "fields": {
             "name": "lorwyn",
+            "release_date": "2007-10-12",
             "slug": "lrw"
         },
         "model": "magic.set",
@@ -386,6 +434,7 @@
     {
         "fields": {
             "name": "magic 2010",
+            "release_date": "2009-07-17",
             "slug": "m10"
         },
         "model": "magic.set",
@@ -394,6 +443,7 @@
     {
         "fields": {
             "name": "magic 2011",
+            "release_date": "2010-07-16",
             "slug": "m11"
         },
         "model": "magic.set",
@@ -402,6 +452,7 @@
     {
         "fields": {
             "name": "magic 2012",
+            "release_date": "2011-07-15",
             "slug": "m12"
         },
         "model": "magic.set",
@@ -410,6 +461,7 @@
     {
         "fields": {
             "name": "magic: the gathering-commander",
+            "release_date": "2011-06-17",
             "slug": "cmd"
         },
         "model": "magic.set",
@@ -418,6 +470,7 @@
     {
         "fields": {
             "name": "masters edition",
+            "release_date": "2007-09-10",
             "slug": "med"
         },
         "model": "magic.set",
@@ -426,6 +479,7 @@
     {
         "fields": {
             "name": "masters edition ii",
+            "release_date": "2008-09-22",
             "slug": "me2"
         },
         "model": "magic.set",
@@ -434,6 +488,7 @@
     {
         "fields": {
             "name": "masters edition iii",
+            "release_date": "2009-09-07",
             "slug": "me3"
         },
         "model": "magic.set",
@@ -442,6 +497,7 @@
     {
         "fields": {
             "name": "masters edition iv",
+            "release_date": "2011-01-10",
             "slug": "me4"
         },
         "model": "magic.set",
@@ -450,6 +506,7 @@
     {
         "fields": {
             "name": "mercadian masques",
+            "release_date": "1999-10-04",
             "slug": "mm"
         },
         "model": "magic.set",
@@ -458,6 +515,7 @@
     {
         "fields": {
             "name": "mirage",
+            "release_date": "1996-10-07",
             "slug": "mi"
         },
         "model": "magic.set",
@@ -466,6 +524,7 @@
     {
         "fields": {
             "name": "mirrodin",
+            "release_date": "2003-10-03",
             "slug": "mrd"
         },
         "model": "magic.set",
@@ -474,6 +533,7 @@
     {
         "fields": {
             "name": "mirrodin besieged",
+            "release_date": "2011-02-04",
             "slug": "mbs"
         },
         "model": "magic.set",
@@ -482,6 +542,7 @@
     {
         "fields": {
             "name": "morningtide",
+            "release_date": "2008-02-01",
             "slug": "mor"
         },
         "model": "magic.set",
@@ -490,6 +551,7 @@
     {
         "fields": {
             "name": "nemesis",
+            "release_date": "2000-02-14",
             "slug": "ne"
         },
         "model": "magic.set",
@@ -498,6 +560,7 @@
     {
         "fields": {
             "name": "new phyrexia",
+            "release_date": "2011-05-13",
             "slug": "nph"
         },
         "model": "magic.set",
@@ -506,6 +569,7 @@
     {
         "fields": {
             "name": "ninth edition",
+            "release_date": "2005-07-29",
             "slug": "9ed"
         },
         "model": "magic.set",
@@ -514,6 +578,7 @@
     {
         "fields": {
             "name": "odyssey",
+            "release_date": "2001-10-01",
             "slug": "od"
         },
         "model": "magic.set",
@@ -522,6 +587,7 @@
     {
         "fields": {
             "name": "onslaught",
+            "release_date": "2002-10-07",
             "slug": "ons"
         },
         "model": "magic.set",
@@ -530,6 +596,7 @@
     {
         "fields": {
             "name": "planar chaos",
+            "release_date": "2007-02-02",
             "slug": "plc"
         },
         "model": "magic.set",
@@ -538,6 +605,7 @@
     {
         "fields": {
             "name": "planechase",
+            "release_date": "2009-09-04",
             "slug": "hop"
         },
         "model": "magic.set",
@@ -546,6 +614,7 @@
     {
         "fields": {
             "name": "planeshift",
+            "release_date": "2001-02-05",
             "slug": "ps"
         },
         "model": "magic.set",
@@ -554,6 +623,7 @@
     {
         "fields": {
             "name": "portal",
+            "release_date": "1997-06-01",
             "slug": "po"
         },
         "model": "magic.set",
@@ -562,6 +632,7 @@
     {
         "fields": {
             "name": "portal second age",
+            "release_date": "1998-06-01",
             "slug": "p2"
         },
         "model": "magic.set",
@@ -570,6 +641,7 @@
     {
         "fields": {
             "name": "portal three kingdoms",
+            "release_date": "1999-05-01",
             "slug": "pk"
         },
         "model": "magic.set",
@@ -578,6 +650,7 @@
     {
         "fields": {
             "name": "premium deck series: fire and lightning",
+            "release_date": "2010-11-19",
             "slug": "pd2"
         },
         "model": "magic.set",
@@ -586,6 +659,7 @@
     {
         "fields": {
             "name": "premium deck series: graveborn",
+            "release_date": "2011-11-18",
             "slug": "pd3"
         },
         "model": "magic.set",
@@ -594,6 +668,7 @@
     {
         "fields": {
             "name": "premium deck series: slivers",
+            "release_date": "2009-11-20",
             "slug": "h09"
         },
         "model": "magic.set",
@@ -602,6 +677,7 @@
     {
         "fields": {
             "name": "promo set for gatherer",
+            "release_date": null,
             "slug": "ppr"
         },
         "model": "magic.set",
@@ -610,6 +686,7 @@
     {
         "fields": {
             "name": "prophecy",
+            "release_date": "2000-06-05",
             "slug": "pr"
         },
         "model": "magic.set",
@@ -618,6 +695,7 @@
     {
         "fields": {
             "name": "ravnica: city of guilds",
+            "release_date": "2005-10-07",
             "slug": "rav"
         },
         "model": "magic.set",
@@ -626,6 +704,7 @@
     {
         "fields": {
             "name": "revised edition",
+            "release_date": "1994-04-01",
             "slug": "3e"
         },
         "model": "magic.set",
@@ -634,6 +713,7 @@
     {
         "fields": {
             "name": "rise of the eldrazi",
+            "release_date": "2010-04-23",
             "slug": "roe"
         },
         "model": "magic.set",
@@ -642,6 +722,7 @@
     {
         "fields": {
             "name": "saviors of kamigawa",
+            "release_date": "2005-06-03",
             "slug": "sok"
         },
         "model": "magic.set",
@@ -650,6 +731,7 @@
     {
         "fields": {
             "name": "scars of mirrodin",
+            "release_date": "2010-01-01",
             "slug": "som"
         },
         "model": "magic.set",
@@ -658,6 +740,7 @@
     {
         "fields": {
             "name": "scourge",
+            "release_date": "2003-05-26",
             "slug": "scg"
         },
         "model": "magic.set",
@@ -666,6 +749,7 @@
     {
         "fields": {
             "name": "seventh edition",
+            "release_date": "2001-04-11",
             "slug": "7e"
         },
         "model": "magic.set",
@@ -674,6 +758,7 @@
     {
         "fields": {
             "name": "shadowmoor",
+            "release_date": "2008-05-02",
             "slug": "shm"
         },
         "model": "magic.set",
@@ -682,6 +767,7 @@
     {
         "fields": {
             "name": "shards of alara",
+            "release_date": "2008-10-03",
             "slug": "ala"
         },
         "model": "magic.set",
@@ -690,6 +776,7 @@
     {
         "fields": {
             "name": "starter 1999",
+            "release_date": "1999-07-01",
             "slug": "p3"
         },
         "model": "magic.set",
@@ -698,6 +785,7 @@
     {
         "fields": {
             "name": "starter 2000",
+            "release_date": "1999-07-01",
             "slug": "p4"
         },
         "model": "magic.set",
@@ -706,6 +794,7 @@
     {
         "fields": {
             "name": "stronghold",
+            "release_date": "1998-03-02",
             "slug": "st"
         },
         "model": "magic.set",
@@ -714,6 +803,7 @@
     {
         "fields": {
             "name": "tempest",
+            "release_date": "1997-10-13",
             "slug": "te"
         },
         "model": "magic.set",
@@ -722,6 +812,7 @@
     {
         "fields": {
             "name": "tenth edition",
+            "release_date": "2007-07-14",
             "slug": "10e"
         },
         "model": "magic.set",
@@ -730,6 +821,7 @@
     {
         "fields": {
             "name": "the dark",
+            "release_date": "1994-08-01",
             "slug": "dk"
         },
         "model": "magic.set",
@@ -738,6 +830,7 @@
     {
         "fields": {
             "name": "time spiral",
+            "release_date": "2006-10-06",
             "slug": "tsp"
         },
         "model": "magic.set",
@@ -746,6 +839,7 @@
     {
         "fields": {
             "name": "time spiral \"timeshifted\"",
+            "release_date": "2006-10-06",
             "slug": "tsb"
         },
         "model": "magic.set",
@@ -754,6 +848,7 @@
     {
         "fields": {
             "name": "torment",
+            "release_date": "2002-02-04",
             "slug": "tor"
         },
         "model": "magic.set",
@@ -762,6 +857,7 @@
     {
         "fields": {
             "name": "unglued",
+            "release_date": "1998-08-17",
             "slug": "ug"
         },
         "model": "magic.set",
@@ -770,6 +866,7 @@
     {
         "fields": {
             "name": "unhinged",
+            "release_date": "2004-11-19",
             "slug": "unh"
         },
         "model": "magic.set",
@@ -778,6 +875,7 @@
     {
         "fields": {
             "name": "unlimited edition",
+            "release_date": "1993-12-01",
             "slug": "2u"
         },
         "model": "magic.set",
@@ -786,6 +884,7 @@
     {
         "fields": {
             "name": "urza's destiny",
+            "release_date": "1999-06-07",
             "slug": "cg"
         },
         "model": "magic.set",
@@ -794,6 +893,7 @@
     {
         "fields": {
             "name": "urza's legacy",
+            "release_date": "1999-02-15",
             "slug": "gu"
         },
         "model": "magic.set",
@@ -802,6 +902,7 @@
     {
         "fields": {
             "name": "urza's saga",
+            "release_date": "1998-10-12",
             "slug": "uz"
         },
         "model": "magic.set",
@@ -810,6 +911,7 @@
     {
         "fields": {
             "name": "vanguard",
+            "release_date": null,
             "slug": "van"
         },
         "model": "magic.set",
@@ -818,6 +920,7 @@
     {
         "fields": {
             "name": "visions",
+            "release_date": "1997-02-03",
             "slug": "vi"
         },
         "model": "magic.set",
@@ -826,6 +929,7 @@
     {
         "fields": {
             "name": "weatherlight",
+            "release_date": "1997-06-09",
             "slug": "wl"
         },
         "model": "magic.set",
@@ -834,6 +938,7 @@
     {
         "fields": {
             "name": "worldwake",
+            "release_date": "2010-02-05",
             "slug": "wwk"
         },
         "model": "magic.set",
@@ -842,6 +947,7 @@
     {
         "fields": {
             "name": "zendikar",
+            "release_date": "2009-10-02",
             "slug": "zen"
         },
         "model": "magic.set",
