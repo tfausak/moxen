@@ -1117,6 +1117,15 @@
     },
     {
         "fields": {
+            "card": 5166,
+            "format": 6,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 328
+    },
+    {
+        "fields": {
             "card": 5182,
             "format": 21,
             "status": "b"
@@ -1285,6 +1294,15 @@
         },
         "model": "magic.legality",
         "pk": 235
+    },
+    {
+        "fields": {
+            "card": 5968,
+            "format": 6,
+            "status": "b"
+        },
+        "model": "magic.legality",
+        "pk": 329
     },
     {
         "fields": {
