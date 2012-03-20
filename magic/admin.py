@@ -47,6 +47,7 @@ admin.site.register(magic.models.SubType, SubTypeAdmin)
 
 class SetAdmin(admin.ModelAdmin):
     form = magic.forms.SetForm
+    list_display = ('name', 'slug', 'release_date')
     search_fields = ['name']
 admin.site.register(magic.models.Set, SetAdmin)
 
