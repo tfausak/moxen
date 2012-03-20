@@ -12,6 +12,8 @@
 }
 
 .card {
+    background-color: #eeeeee;
+    border-radius: 3px;
     color: inherit;
     display: block;
     margin-bottom: 18px;
@@ -26,17 +28,10 @@
 .card.black { background-color: #cbc2bf; }
 .card.red   { background-color: #f9aa8f; }
 .card.green { background-color: #9bd3ae; }
-.card.white.blue,
-.card.white.black,
-.card.white.red,
-.card.white.green,
-.card.blue.black,
-.card.blue.red,
-.card.blue.green,
-.card.black.red,
-.card.black.green,
-.card.red.green {
-    background-color: #eeeeee;
+.card.white.blue, .card.white.black, .card.white.red, .card.white.green,
+.card.blue.black, .card.blue.red, .card.blue.green, .card.black.red,
+.card.black.green, .card.red.green {
+    background-color: #ffec80;
 }
 .card .mana-cost {
     float: right;
