@@ -124,7 +124,7 @@ class Set(models.Model):
     """
     name = models.CharField(max_length=39, unique=True)
     slug = models.SlugField(max_length=3, unique=True)
-    release_date = models.DateField(null=True)
+    release_date = models.DateField(blank=True, null=True)
 
     class Meta:
         ordering = ['name']
