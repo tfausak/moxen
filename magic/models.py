@@ -103,6 +103,9 @@ class SubType(models.Model):
     """A card's sub type.
 
     Sub types are defined in 205.3 and enumerated in 205.3g-p.
+
+    Technically, a sub type belongs to one or more card types. However,
+    it's simply not worth it to keep track of this relationship.
     """
     name = models.CharField(max_length=24, unique=True)
     slug = models.SlugField(max_length=24, unique=True)
@@ -222,12 +225,12 @@ class Card(models.Model):
     def type(self):
         """Combine this card's super, card, and sub types.
         """
-        super_types = ' '.join(unicode(super_type)
-            for super_type in self.super_types.all())
-        card_types = ' '.join(unicode(card_type)
-            for card_type in self.card_types.all())
-        sub_types = ' '.join(unicode(sub_type)
-            for sub_type in self.sub_types.all())
+        super_types = ' '.join(super_type.name for super_type
+            in self.super_types.all())
+        card_types = ' '.join(card_type.name for card_type
+            in self.card_types.all())
+        sub_types = ' '.join(sub_type.name for sub_type
+            in self.sub_types.all())
 
         super_types += ' ' if super_types else ''
         card_types += u' \u2014 ' if sub_types else ''
@@ -278,7 +281,8 @@ class Printing(models.Model):
         unique_together = ['card', 'set', 'rarity']
 
     def __unicode__(self):
-        return u'{0} ({1} {2})'.format(self.card, self.set, self.rarity)
+        return u'{0} ({1} {2})'.format(self.card.name, self.set.name,
+            self.rarity.name)
 
 
 class Block(models.Model):
@@ -337,8 +341,8 @@ class Legality(models.Model):
         verbose_name_plural = 'legalities'
 
     def __unicode__(self):
-        return u'{0} ({1} in {2})'.format(self.card,
-            dict(self.STATUS_CHOICES)[self.status], self.format)
+        return u'{0} ({1} in {2})'.format(self.card.name,
+            dict(self.STATUS_CHOICES)[self.status], self.format.name)
 
 
 class UserProfile(models.Model):
@@ -348,7 +352,7 @@ class UserProfile(models.Model):
     user = models.OneToOneField(User, related_name='profile')
 
     def __unicode__(self):
-        return self.user.get_full_name() or self.user.username
+        return self.user.username
 
     @models.permalink
     def get_absolute_url(self):
