@@ -26,7 +26,8 @@ class Command(BaseCommand):
                 'tribal': 1,
                 'vanguard': 1,
                 'x': 1,
-            }[getattr((printing.card.card_types.all() or [None])[0], 'name', 'x')])
+            }[getattr((printing.card.card_types.all() or [None])[0],
+                'name', 'x')])
             printings.sort(key=lambda printing: {
                 'basic': 3,
                 'legendary': 1,
@@ -34,7 +35,8 @@ class Command(BaseCommand):
                 'snow': 2,
                 'world': 1,
                 'x': 1,
-            }[getattr((printing.card.super_types.all() or [None])[0], 'name', 'x')])
+            }[getattr((printing.card.super_types.all() or [None])[0],
+                'name', 'x')])
             printings.sort(key=lambda printing: {
                 'w': 1,
                 'u': 2,
@@ -42,7 +44,8 @@ class Command(BaseCommand):
                 'r': 4,
                 'g': 5,
                 'x': 6,
-            }[getattr((printing.card.colors.all() or [None])[0], 'slug', 'x')])
+            }[getattr((printing.card.colors.all() or [None])[0],
+                'slug', 'x')])
 
             number = 1
             for printing in printings:
