@@ -64,7 +64,9 @@
         <div class="span4">
             <ul>
                 {% for printing in card.printing_set.all %}
-                    <li>#{{ printing.number }} {{ printing.set.name|title }} {{ printing.rarity.name|title }}</li>
+                    <li>
+                        <a href="{{ printing.get_absolute_url }}">#{{ printing.number }} {{ printing.set.name|title }} {{ printing.rarity.name|title }}</a>
+                    </li>
                 {% endfor %}
             </ul>
         </div>
