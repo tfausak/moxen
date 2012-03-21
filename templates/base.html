@@ -63,19 +63,9 @@
 
                     <div class="nav-collapse">
                         <ul class="nav">
-                            {% url index as index_url %}
-                            <li {% if request.get_full_path == index_url %}class="active"{% endif %}>
-                                <a href="{{ index_url }}">Home</a>
-                            </li>
-
                             {% url card_list as card_list_url %}
                             <li {% if request.get_full_path == card_list_url %}class="active"{% endif %}>
                                 <a href="{{ card_list_url }}">Cards</a>
-                            </li>
-
-                            {% url profiles_profile_list as profiles_profile_list_url %}
-                            <li {% if request.get_full_path == profiles_profile_list_url %}class="active"{% endif %}>
-                                <a href="{{ profiles_profile_list_url }}">Users</a>
                             </li>
 
                             <li class="divider-vertical"></li>
