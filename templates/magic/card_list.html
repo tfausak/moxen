@@ -22,7 +22,7 @@
                                 {% else %}
                                     <sup>{{ mana_symbol.name.0|upper }}</sup>
                                     <span class="divider">/</span>
-                                    <sub>{{ mana_symbol.name.2|upper }}</sub></span>
+                                    <sub>{{ mana_symbol.name.2|upper }}</sub>
                                 {% endif %}
                             </span>
                         {% endfor %}
@@ -55,8 +55,8 @@
 
                     {# Rules text #}
                     <div class="rules-text">{{ card.rules_text }}</div>
-                </div>
-            </a>
+                </a>
+            </div>
         {% endfor %}
     </div>
 
