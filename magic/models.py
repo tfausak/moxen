@@ -281,7 +281,7 @@ class Printing(models.Model):
 
     class Meta:
         ordering = ['card__name']
-        unique_together = ['card', 'set', 'rarity']
+        unique_together = ['set', 'number']
 
     def __unicode__(self):
         return u'{0} ({1} {2})'.format(self.card.name, self.set.name,
