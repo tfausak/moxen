@@ -290,6 +290,11 @@ class Printing(models.Model):
         return u'{0} ({1} {2})'.format(self.card.name, self.set.name,
             self.rarity.name)
 
+    @models.permalink
+    def get_absolute_url(self):
+        return ('printing_detail', (), {'set_slug': self.set.slug,
+            'number': self.number, 'card_slug': self.card.slug})
+
 
 class Block(models.Model):
     """A collection of sets.

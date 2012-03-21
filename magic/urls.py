@@ -1,7 +1,7 @@
 # pylint: disable=C0103,E1120
 from django.conf.urls.defaults import patterns, url
-from magic.views import (CardDetailView, CardListView, SearchView,
-    SetDetailView, SetListView)
+from magic.views import (CardDetailView, CardListView, PrintingDetailView,
+    SearchView, SetDetailView, SetListView)
 
 
 urlpatterns = patterns('magic.views',
@@ -13,5 +13,7 @@ urlpatterns = patterns('magic.views',
     url('^sets/$', SetListView.as_view(), name='set_list'),
     url('^sets/(?P<slug>[-\w]+)/$', SetDetailView.as_view(),
         name='set_detail'),
+    url('^sets/(?P<set_slug>[-\w]+)/(?P<number>\d+)-(?P<card_slug>[-\w]+)/$',
+        PrintingDetailView.as_view(), name='printing_detail'),
     url('^users/settings/$', 'profile', name='profile'),
 )

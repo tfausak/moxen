@@ -1,7 +1,7 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from django.views.generic import DetailView, ListView
-from magic.models import Card, Set
+from magic.models import Card, Printing, Set
 
 
 def index(request):
@@ -42,6 +42,16 @@ class SetDetailView(DetailView):
     """Display a single set's details.
     """
     model = Set
+
+
+class PrintingDetailView(DetailView):
+    """Display a single printing's details.
+    """
+    model = Printing
+
+    def get_object(self):
+        return Printing.objects.get(set__slug=self.kwargs['set_slug'],
+            number=self.kwargs['number'], card__slug=self.kwargs['card_slug'])
 
 
 @login_required
