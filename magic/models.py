@@ -276,6 +276,8 @@ class Printing(models.Model):
     card = models.ForeignKey(Card)
     set = models.ForeignKey(Set)
     rarity = models.ForeignKey(Rarity)
+    artist = models.CharField(max_length=255)
+    number = models.PositiveIntegerField()
 
     class Meta:
         ordering = ['card__name']
