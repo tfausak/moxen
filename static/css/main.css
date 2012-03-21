@@ -12,6 +12,11 @@
     right: 13px;
 }
 
+.card-image {
+    display: block;
+    max-width: 100%;
+}
+
 /* Card listing */
 .card {
     background-color: #eeeeee;

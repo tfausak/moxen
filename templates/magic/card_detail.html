@@ -9,73 +9,64 @@
 {% endblock %}
 
 {% block content %}
-    <dl>
-        {% if card.other_card %}
-            <dt>Other card</dt>
-            <dd>
-                <a href="{{ card.other_card.get_absolute_url }}">{{ card.other_card|title }}</a>
-            </dd>
-        {% endif %}
+    <div class="row">
+        <div class="span4">
+            <img alt="" class="card-image" src="{{ STATIC_URL }}img/cards/{{ card.printing_set.all.0.set.slug }}/{{ card.printing_set.all.0.number }}-{{ card.slug }}.jpg">
+        </div>
 
-        {% if card.mana_cost %}
-            <dt>Mana cost</dt>
-            <dd>
-                {% for mana_cost in card.mana_cost.all %}
-                    {% for mana_symbol in mana_cost.mana_symbols %}
-                        <span class="mana_symbol">{{ mana_symbol|upper }}</span>
+        <div class="span4">
+            <div class="card {% for color in card.colors.all %} {{ color }} {% endfor %}">
+                {# Mana cost #}
+                <div class="mana-cost pull-right">
+                    {% for mana_symbol in card.mana_symbols %}
+                        <span class="mana-symbol {% for color in mana_symbol.colors.all %} {{ color }} {% endfor %}">
+                            {% if mana_symbol.name|length == 1 %}
+                                <span>{{ mana_symbol|upper }}</span>
+                            {% else %}
+                                <sup>{{ mana_symbol.name.0|upper }}</sup>
+                                <span class="divider">/</span>
+                                <sub>{{ mana_symbol.name.2|upper }}</sub>
+                            {% endif %}
+                        </span>
                     {% endfor %}
-                {% endfor %}
-            </dd>
+                </div>
 
-            <dt>Converted mana cost</dt>
-            <dd>{{ card.converted_mana_cost }}</dd>
-        {% endif %}
+                {# Name #}
+                <div class="name">{{ card|title }}</div>
 
-        {% if card.colors.all %}
-            <dt>Color{{ card.colors.all|pluralize }}</dt>
-            <dd>{{ card.colors.all|join:", " }}</dd>
-        {% endif %}
+                {# Power, toughness, loyalty, hand-, and life-modifiers #}
+                {% if card.power and card.toughness %}
+                    <div class="power-toughness pull-right">
+                        <span class="power">{{ card.power }}</span>
+                        <span class="divider">/</span>
+                        <span class="toughness">{{ card.toughness }}</span>
+                    </div>
+                {% endif %}
+                {% if card.loyalty %}
+                    <div class="loyalty pull-right">{{ card.loyalty }}</div>
+                {% endif %}
+                {% if card.hand_modifier and card.life_modifier %}
+                    <div class="hand-modifier-life-modifier pull-right">
+                        <span class="hand-modifier">{{ card.hand_modifier }}</span>
+                        <span class="divider">/</span>
+                        <span class="life-modifier">{{ card.life_modifier }}</span>
+                    </div>
+                {% endif %}
 
-        <dt>Type</dt>
-        <dd>{{ card.type|title }}</dd>
+                {# Type #}
+                <div class="type">{{ card.type|title }}</div>
 
-        <dt>Rules text</dt>
-        <dd style="white-space:pre-wrap">{{ card.rules_text }}</dd>
+                {# Rules text #}
+                <div class="rules-text" style="height: auto;">{{ card.rules_text }}</div>
+            </div>
+        </div>
 
-        {% if card.power and card.toughness %}
-            <dt>Power</dt>
-            <dd>{{ card.power }}</dd>
-
-            <dt>Converted power</dt>
-            <dd>{{ card.converted_power }}</dd>
-
-            <dt>Toughness</dt>
-            <dd>{{ card.toughness }}</dd>
-
-            <dt>Converted toughness</dt>
-            <dd>{{ card.converted_toughness }}</dd>
-        {% endif %}
-
-        {% if card.loyalty %}
-            <dt>Loyalty</dt>
-            <dd>{{ card.loyalty }}</dd>
-        {% endif %}
-
-        {% if card.hand_modifier and card.life_modifier %}
-            <dt>Hand modifier</dt>
-            <dd>{{ card.hand_modifier }}</dd>
-
-            <dt>Life modifier</dt>
-            <dd>{{ card.life_modifier }}</dd>
-        {% endif %}
-
-        <dt>Printings</dt>
-        <dd>
+        <div class="span4">
             <ul>
                 {% for printing in card.printing_set.all %}
-                    <li>{{ printing|title }}</li>
+                    <li>#{{ printing.number }} {{ printing.set.name|title }} {{ printing.rarity.name|title }}</li>
                 {% endfor %}
             </ul>
-        </dd>
-    </dl>
+        </div>
+    </div>
 {% endblock %}
