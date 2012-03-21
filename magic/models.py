@@ -280,7 +280,7 @@ class Printing(models.Model):
     number = models.PositiveIntegerField(blank=True, default=0)
 
     class Meta:
-        ordering = ['card__name']
+        ordering = ['-set__release_date', 'number', 'card__name']
 
     def __unicode__(self):
         return u'{0} ({1} {2})'.format(self.card.name, self.set.name,
