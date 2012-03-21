@@ -1,7 +1,7 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from django.views.generic import DetailView, ListView
-from magic.models import Card
+from magic.models import Card, Set
 
 
 def index(request):
@@ -30,6 +30,18 @@ class SearchView(CardListView):
     def get_queryset(self):
         self.query = self.request.GET.get('query')
         return Card.objects.filter(name__icontains=self.query)
+
+
+class SetListView(ListView):
+    """Display a list of all the sets.
+    """
+    model = Set
+
+
+class SetDetailView(DetailView):
+    """Display a single set's details.
+    """
+    model = Set
 
 
 @login_required

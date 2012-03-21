@@ -68,6 +68,11 @@
                                 <a href="{{ card_list_url }}">Cards</a>
                             </li>
 
+                            {% url set_list as set_list_url %}
+                            <li {% if request.get_full_path == set_list_url %}class="active"{% endif %}>
+                                <a href="{{ set_list_url }}">Sets</a>
+                            </li>
+
                             <li class="divider-vertical"></li>
                         </ul>
 

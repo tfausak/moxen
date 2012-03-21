@@ -132,6 +132,10 @@ class Set(models.Model):
     def __unicode__(self):
         return self.name
 
+    @models.permalink
+    def get_absolute_url(self):
+        return ('set_detail', (), {'slug': self.slug})
+
 
 class Rarity(models.Model):
     """A card's rarity.
