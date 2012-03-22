@@ -25,8 +25,7 @@ class CardDetailView(DetailView):
 
 class SearchView(CardListView):
     """Search for cards by name.
-    """
-    # pylint: disable=R0901,W0201
+    """  # pylint: disable=R0901,W0201
     def get_queryset(self):
         self.query = self.request.GET.get('query')
         return Card.objects.filter(name__icontains=self.query)
@@ -49,7 +48,7 @@ class PrintingDetailView(DetailView):
     """
     model = Printing
 
-    def get_object(self):
+    def get_object(self, **_):
         return Printing.objects.get(set__slug=self.kwargs['set_slug'],
             number=self.kwargs['number'], card__slug=self.kwargs['card_slug'])
 

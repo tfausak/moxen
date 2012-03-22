@@ -5,8 +5,7 @@ printings and tournament restrictions.
 
 References to the Magic: The Gathering comprehensive rules are
 included where appropriate. <http://wizards.com/magic/rules>
-"""
-# pylint: disable=R0903,W0232
+"""  # pylint: disable=R0903,W0232
 from django.contrib.auth.models import User
 from django.db import models
 from django.db.models.signals import post_save
@@ -276,7 +275,7 @@ class Printing(models.Model):
 
     One card can (and often is) printed in multiple sets. Within
     each set, its rarity might be different than any other.
-    """
+    """  # pylint: disable=E1101
     card = models.ForeignKey(Card)
     set = models.ForeignKey(Set)
     rarity = models.ForeignKey(Rarity)
@@ -358,8 +357,7 @@ class Legality(models.Model):
 
 class UserProfile(models.Model):
     """Extra information about a user.
-    """
-    # pylint: disable=E1101
+    """  # pylint: disable=E1101
     user = models.OneToOneField(User, related_name='profile')
 
     def __unicode__(self):
