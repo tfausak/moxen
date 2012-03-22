@@ -9,11 +9,33 @@
 {% endblock %}
 
 {% block content %}
-    <ol>
-        {% for printing in set.printing_set.all %}
-            <li>
-                <a href="{{ printing.get_absolute_url }}">{{ printing.card|title }}</a>
-            </li>
-        {% endfor %}
-    </ol>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Colors</th>
+                <th>Rarity</th>
+                <th>Artist</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for printing in set.printing_set.all %}
+                <tr>
+                    <td>{{ printing.number }}</td>
+                    <td>
+                        <a href="{{ printing.get_absolute_url }}">{{ printing.card|title }}</a>
+                    </td>
+                    <td>
+                        {% for color in printing.card.colors.all %}
+                            <span class="badge {{ color }}">{{ color.slug|upper }}</span>
+                        {% endfor %}
+                    </td>
+                    <td>{{ printing.rarity|title }}</td>
+                    <td>{{ printing.artist|title }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 {% endblock %}

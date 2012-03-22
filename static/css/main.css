@@ -86,6 +86,12 @@
 .mana-symbol sub {
 }
 
+/* Color labels */
+.badge.white, .badge.blue, .badge.black, .badge.red, .badge.green {
+    color: inherit;
+    text-shadow: none;
+}
+
 /* Colors */
 .white { background-color: #fffbd5; }
 .blue  { background-color: #aae0fa; }
