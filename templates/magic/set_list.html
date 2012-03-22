@@ -9,11 +9,25 @@
 {% endblock %}
 
 {% block content %}
-    <ul>
-        {% for set in object_list %}
-            <li>
-                <a href="{{ set.get_absolute_url }}">{{ set|title }}</a>
-            </li>
-        {% endfor %}
-    </ul>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Release Date</th>
+                <th>Size</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for set in object_list %}
+                <tr>
+                    <td>
+                        <a href="{{ set.get_absolute_url }}">{{ set|title }}</a>
+                    </td>
+                    <td>{{ set.release_date }}</td>
+                    <td>{{ set.printing_set.all|length }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 {% endblock %}
