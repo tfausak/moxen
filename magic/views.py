@@ -1,4 +1,3 @@
-from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from django.views.generic import DetailView, ListView
 from magic.models import Card, Printing, Set
@@ -51,10 +50,3 @@ class PrintingDetailView(DetailView):
     def get_object(self, **_):
         return Printing.objects.get(set__slug=self.kwargs['set_slug'],
             number=self.kwargs['number'], card__slug=self.kwargs['card_slug'])
-
-
-@login_required
-def profile(request):
-    """Display a user's profile.
-    """
-    return render(request, 'magic/profile.html')

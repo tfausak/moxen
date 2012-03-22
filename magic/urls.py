@@ -15,5 +15,4 @@ urlpatterns = patterns('magic.views',
         name='set_detail'),
     url('^sets/(?P<set_slug>[-\w]+)/(?P<number>\d+)-(?P<card_slug>[-\w]+)/$',
         PrintingDetailView.as_view(), name='printing_detail'),
-    url('^users/settings/$', 'profile', name='profile'),
 )

@@ -2,14 +2,16 @@ from django.conf import settings
 from django.conf.urls.defaults import patterns, include
 from django.contrib import admin
 from django.contrib.sitemaps import GenericSitemap
-from magic.forms import UserProfileForm
-from magic.models import Card, UserProfile
+from magic.models import Card
 from registration.forms import RegistrationFormUniqueEmail
+from users.forms import UserProfileForm
+from users.models import UserProfile
 
 
 admin.autodiscover()
 urlpatterns = patterns('',  # pylint: disable=C0103
     ('', include('magic.urls')),
+    ('', include('users.urls')),
 
     # Django's built-in admin
     ('^admin/doc/', include('django.contrib.admindocs.urls')),

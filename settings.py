@@ -20,7 +20,7 @@ INTERNAL_IPS = (
 
 # Here be dragons!
 ACCOUNT_ACTIVATION_DAYS = 7
-AUTH_PROFILE_MODULE = 'magic.UserProfile'
+AUTH_PROFILE_MODULE = 'users.UserProfile'
 LOGIN_REDIRECT_URL = '/users/settings/'
 LOGIN_URL = '/users/login/'
 LOGOUT_URL = '/users/logout/'
@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'magic',
     'profiles',
     'registration',
+    'users',
     'django.contrib.admindocs',  # Must be last.
 )
 

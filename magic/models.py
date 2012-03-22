@@ -6,10 +6,7 @@ printings and tournament restrictions.
 References to the Magic: The Gathering comprehensive rules are
 included where appropriate. <http://wizards.com/magic/rules>
 """  # pylint: disable=R0903,W0232
-from django.contrib.auth.models import User
 from django.db import models
-from django.db.models.signals import post_save
-from django.dispatch import receiver
 
 
 class Color(models.Model):
@@ -353,25 +350,3 @@ class Legality(models.Model):
     def __unicode__(self):
         return u'{0} ({1} in {2})'.format(self.card.name,
             dict(self.STATUS_CHOICES)[self.status], self.format.name)
-
-
-class UserProfile(models.Model):
-    """Extra information about a user.
-    """  # pylint: disable=E1101
-    user = models.OneToOneField(User, related_name='profile')
-
-    def __unicode__(self):
-        return self.user.username
-
-    @models.permalink
-    def get_absolute_url(self):
-        return ('profiles_profile_detail', (),
-            {'username': self.user.username})
-
-
-@receiver(post_save, sender=User)
-def create_user_profile(instance=None, created=False, **_):
-    """Create a user profile for new users.
-    """
-    if created:
-        UserProfile(user=instance).save()
