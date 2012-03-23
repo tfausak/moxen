@@ -2,6 +2,18 @@
 
 {% block title %}Users &#xb7; {{ site.name }}{% endblock %}
 
+{% block breadcrumbs %}
+    <ul class="breadcrumb">
+        <li>
+            <a href="{% url index %}">Home</a>
+            <span class="divider">/</span>
+        </li>
+        <li class="active">
+            <a href="{% url profiles_profile_list %}">Users</a>
+        </li>
+    </ul>
+{% endblock %}
+
 {% block header %}
     <div class="page-header">
         <h1>Users</h1>
@@ -12,7 +24,7 @@
     <ul>
         {% for profile in object_list %}
             <li>
-                <a href="{% url profiles_profile_detail username=profile.user.username %}">{{ profile }}</a>
+                <a href="{% url profiles_profile_detail profile.user.username %}">{{ profile }}</a>
             </li>
         {% endfor %}
     </ul>

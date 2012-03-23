@@ -95,6 +95,15 @@
                 {% endfor %}
             {% endblock %}
 
+            {% block breadcrumbs %}
+                <ul class="breadcrumb">
+                    <li class="active">
+                        {% url index as index_url %}
+                        <a href="{{ index_url }}">Home</a>
+                    </li>
+                </ul>
+            {% endblock %}
+
             {% block header %}
                 <div class="page-header">
                     <h1>{{ site.name }}</h1>

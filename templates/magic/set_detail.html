@@ -2,6 +2,22 @@
 
 {% block title %}{{ set|title }} &#xb7; {{ site.name }}{% endblock %}
 
+{% block breadcrumbs %}
+    <ul class="breadcrumb">
+        <li>
+            <a href="{% url index %}">Home</a>
+            <span class="divider">/</span>
+        </li>
+        <li>
+            <a href="{% url set_list %}">Sets</a>
+            <span class="divider">/</span>
+        </li>
+        <li class="active">
+            <a href="{{ set.get_absolute_url }}">{{ set|title }}</a>
+        </li>
+    </ul>
+{% endblock %}
+
 {% block header %}
     <div class="page-header">
         <h1>{{ set|title }}</h1>
