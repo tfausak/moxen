@@ -86,9 +86,10 @@
 .mana-symbol sub {
 }
 
-/* Color labels */
+/* Color badges */
 .badge.white, .badge.blue, .badge.black, .badge.red, .badge.green {
     color: inherit;
+    cursor: default;
     text-shadow: none;
 }
 
@@ -101,6 +102,28 @@
 .white.blue, .white.black, .white.red, .white.green, .blue.black,
 .blue.red, .blue.green, .black.red, .black.green, .red.green {
     background-color: #ffec80;
+}
+
+/* Rarity badges */
+.badge.c, .badge.l, .badge.m, .badge.p, .badge.r, .badge.s, .badge.u {
+    cursor: default;
+}
+
+/* Rarities */
+.c, .l, .p {
+    background-color: #231f20;
+}
+.m {
+    background-color: #be3526;
+}
+.r {
+    background-color: #8e753f;
+}
+.s {
+    background-color: #612a74;
+}
+.u {
+    background-color: #567280;
 }
 
 /* Footer */

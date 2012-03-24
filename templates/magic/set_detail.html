@@ -30,9 +30,8 @@
             <tr>
                 <th>#</th>
                 <th>Name</th>
-                <th>Colors</th>
+                <th>Color</th>
                 <th>Rarity</th>
-                <th>Artist</th>
             </tr>
         </thead>
 
@@ -41,15 +40,16 @@
                 <tr>
                     <td>{{ printing.number }}</td>
                     <td>
-                        <a href="{{ printing.get_absolute_url }}">{{ printing.card|title }}</a>
+                        <a href="{{ printing.get_absolute_url }}">{{ printing.card.name|title }}</a>
                     </td>
                     <td>
                         {% for color in printing.card.colors.all %}
-                            <span class="badge {{ color }}">{{ color.slug|upper }}</span>
+                            <span class="badge {{ color }}" title="{{ color.name|title }}">{{ color.slug|upper }}</span>
                         {% endfor %}
                     </td>
-                    <td>{{ printing.rarity|title }}</td>
-                    <td>{{ printing.artist|title }}</td>
+                    <td>
+                        <span class="badge {{ printing.rarity.slug }}" title="{{ printing.rarity.name|title }}">{{ printing.rarity.slug|upper }}</span>
+                    </td>
                 </tr>
             {% endfor %}
         </tbody>
