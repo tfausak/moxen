@@ -13,14 +13,14 @@
             <span class="divider">/</span>
         </li>
         <li class="active">
-            <a href="{{ set.get_absolute_url }}">{{ set|title }}</a>
+            <a href="{{ set.get_absolute_url }}">{{ set.name|title }}</a>
         </li>
     </ul>
 {% endblock %}
 
 {% block header %}
     <div class="page-header">
-        <h1>{{ set|title }}</h1>
+        <h1>{{ set.name|title }}</h1>
     </div>
 {% endblock %}
 
@@ -44,7 +44,7 @@
                     </td>
                     <td>
                         {% for color in printing.card.colors.all %}
-                            <span class="badge {{ color }}" title="{{ color.name|title }}">{{ color.slug|upper }}</span>
+                            <span class="badge {{ color.name }}" title="{{ color.name|title }}">{{ color.slug|upper }}</span>
                         {% endfor %}
                     </td>
                     <td>

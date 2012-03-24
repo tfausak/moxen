@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}{{ printing.card|title }} &#xb7; {{ site.name }}{% endblock %}
+{% block title %}{{ printing.card.name|title }} &#xb7; {{ site.name }}{% endblock %}
 
 {% block breadcrumbs %}
     <ul class="breadcrumb">
@@ -13,18 +13,18 @@
             <span class="divider">/</span>
         </li>
         <li>
-            <a href="{{ printing.set.get_absolute_url }}">{{ printing.set|title }}</a>
+            <a href="{{ printing.set.get_absolute_url }}">{{ printing.set.name|title }}</a>
             <span class="divider">/</span>
         </li>
         <li class="active">
-            <a href="{{ printing.get_absolute_url }}">#{{ printing.number }} {{ printing.card|title }}</a>
+            <a href="{{ printing.get_absolute_url }}">{{ printing.card.name|title }}</a>
         </li>
     </ul>
 {% endblock %}
 
 {% block header %}
     <div class="page-header">
-        <h1>{{ printing.card|title }} <small>{{ printing.set|title }}</small></h1>
+        <h1>{{ printing.card.name|title }} <small>{{ printing.set.name|title }}</small></h1>
     </div>
 {% endblock %}
 
