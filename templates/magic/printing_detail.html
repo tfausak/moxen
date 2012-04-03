@@ -30,4 +30,20 @@
 
 {% block content %}
     <img alt="" src="{{ STATIC_URL }}{{ printing.image }}">
+
+    {% if previous_printing or next_printing %}
+        <ul class="pager">
+            {% if previous_printing %}
+                <li class="previous">
+                    <a href="{{ previous_printing.get_absolute_url }}">&#x2190; {{ previous_printing.card.name|title }}</a>
+                </li>
+            {% endif %}
+
+            {% if next_printing %}
+                <li class="next">
+                    <a href="{{ next_printing.get_absolute_url }}">{{ next_printing.card.name|title }} &#x2192;</a>
+                </li>
+            {% endif %}
+        </ul>
+    {% endif %}
 {% endblock %}
