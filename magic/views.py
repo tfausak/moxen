@@ -35,6 +35,11 @@ class SetListView(ListView):
     """
     model = Set
 
+    def get_queryset(self):
+        queryset = super(SetListView, self).get_queryset()
+        queryset = queryset.order_by('-release_date')
+        return queryset
+
 
 class SetDetailView(DetailView):
     """Display a single set's details.
