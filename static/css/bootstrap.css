@@ -1798,7 +1798,6 @@ table .span24 {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-.dropdown-menu-no-collapse,
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -1827,12 +1826,10 @@ table .span24 {
   *border-right-width: 2px;
   *border-bottom-width: 2px;
 }
-.dropdown-menu-no-collapse.pull-right,
 .dropdown-menu.pull-right {
   right: 0;
   left: auto;
 }
-.dropdown-menu-no-collapse .divider,
 .dropdown-menu .divider {
   height: 1px;
   margin: 8px 1px;
@@ -1842,7 +1839,6 @@ table .span24 {
   *width: 100%;
   *margin: -5px 0 5px;
 }
-.dropdown-menu-no-collapse a,
 .dropdown-menu a {
   display: block;
   padding: 3px 15px;
@@ -1852,9 +1848,6 @@ table .span24 {
   color: #333333;
   white-space: nowrap;
 }
-.dropdown-menu-no-collapse li > a:hover,
-.dropdown-menu-no-collapse .active > a,
-.dropdown-menu-no-collapse .active > a:hover,
 .dropdown-menu li > a:hover,
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
@@ -1870,11 +1863,9 @@ table .span24 {
   background: #ccc;
   background: rgba(0, 0, 0, 0.3);
 }
-.dropdown.open .dropdown-menu-no-collapse,
 .dropdown.open .dropdown-menu {
   display: block;
 }
-.pull-right .dropdown-menu-no-collapse,
 .pull-right .dropdown-menu {
   left: auto;
   right: 0;
@@ -1885,8 +1876,6 @@ table .span24 {
   border-bottom: 4px solid #000000;
   content: "\2191";
 }
-.dropup .dropdown-menu-no-collapse,
-.navbar-fixed-bottom .dropdown .dropdown-menu-no-collapse,
 .dropup .dropdown-menu,
 .navbar-fixed-bottom .dropdown .dropdown-menu {
   top: auto;
@@ -2390,7 +2379,6 @@ input[type="submit"].btn.btn-mini {
 .btn-group.open {
   *z-index: 1000;
 }
-.btn-group.open .dropdown-menu-no-collapse,
 .btn-group.open .dropdown-menu {
   display: block;
   margin-top: 1px;
@@ -2641,14 +2629,11 @@ input[type="submit"].btn.btn-mini {
 .nav-pills.nav-stacked > li:last-child > a {
   margin-bottom: 1px;
 }
-.nav-tabs .dropdown-menu-no-collapse,
-.nav-pills .dropdown-menu-no-collapse,
 .nav-tabs .dropdown-menu,
 .nav-pills .dropdown-menu {
   margin-top: 1px;
   border-width: 1px;
 }
-.nav-pills .dropdown-menu-no-collapse,
 .nav-pills .dropdown-menu {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -3044,14 +3029,12 @@ input[type="submit"].btn.btn-mini {
   margin-left: 10px;
   margin-right: 0;
 }
-.navbar .dropdown-menu-no-collapse,
 .navbar .dropdown-menu {
   margin-top: 1px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-.navbar .dropdown-menu-no-collapse:before,
 .navbar .dropdown-menu:before {
   content: '';
   display: inline-block;
@@ -3063,7 +3046,6 @@ input[type="submit"].btn.btn-mini {
   top: -7px;
   left: 9px;
 }
-.navbar .dropdown-menu-no-collapse:after,
 .navbar .dropdown-menu:after {
   content: '';
   display: inline-block;
@@ -3074,7 +3056,6 @@ input[type="submit"].btn.btn-mini {
   top: -6px;
   left: 10px;
 }
-.navbar-fixed-bottom .dropdown-menu-no-collapse:before,
 .navbar-fixed-bottom .dropdown-menu:before {
   border-top: 7px solid #ccc;
   border-top-color: rgba(0, 0, 0, 0.2);
@@ -3082,7 +3063,6 @@ input[type="submit"].btn.btn-mini {
   bottom: -7px;
   top: auto;
 }
-.navbar-fixed-bottom .dropdown-menu-no-collapse:after,
 .navbar-fixed-bottom .dropdown-menu:after {
   border-top: 6px solid #ffffff;
   border-bottom: 0;
@@ -3106,22 +3086,16 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav .active > .dropdown-toggle:hover {
   color: #ffffff;
 }
-.navbar .nav.pull-right .dropdown-menu-no-collapse,
-.navbar .nav .dropdown-menu-no-collapse.pull-right,
 .navbar .nav.pull-right .dropdown-menu,
 .navbar .nav .dropdown-menu.pull-right {
   left: auto;
   right: 0;
 }
-.navbar .nav.pull-right .dropdown-menu-no-collapse:before,
-.navbar .nav .dropdown-menu-no-collapse.pull-right:before,
 .navbar .nav.pull-right .dropdown-menu:before,
 .navbar .nav .dropdown-menu.pull-right:before {
   left: auto;
   right: 12px;
 }
-.navbar .nav.pull-right .dropdown-menu-no-collapse:after,
-.navbar .nav .dropdown-menu-no-collapse.pull-right:after,
 .navbar .nav.pull-right .dropdown-menu:after,
 .navbar .nav .dropdown-menu.pull-right:after {
   left: auto;
@@ -3268,7 +3242,6 @@ input[type="submit"].btn.btn-mini {
   background-color: #fff;
   cursor: default;
 }
-.modal-open .dropdown-menu-no-collapse,
 .modal-open .dropdown-menu {
   z-index: 2050;
 }
