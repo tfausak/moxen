@@ -35,7 +35,7 @@
                     <td>
                         <a href="{{ set.get_absolute_url }}">{{ set|title }}</a>
                     </td>
-                    <td>{{ set.release_date }}</td>
+                    <td>{{ set.release_date|date:"F j, Y" }}</td>
                 </tr>
             {% endfor %}
         </tbody>
