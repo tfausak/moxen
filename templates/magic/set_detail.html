@@ -44,11 +44,11 @@
                     </td>
                     <td>
                         {% for color in printing.card.colors.all %}
-                            <span class="badge {{ color.name }}" title="{{ color.name|title }}">{{ color.slug|upper }}</span>
+                            <span class="badge badge-color color-{{ color.slug }}" title="{{ color.name|title }}">{{ color.slug|upper }}</span>
                         {% endfor %}
                     </td>
                     <td>
-                        <span class="badge {{ printing.rarity.slug }}" title="{{ printing.rarity.name|title }}">{{ printing.rarity.slug|upper }}</span>
+                        <span class="badge badge-rarity rarity-{{ printing.rarity.slug }}" title="{{ printing.rarity.name|title }}">{{ printing.rarity.slug|upper }}</span>
                     </td>
                 </tr>
             {% endfor %}

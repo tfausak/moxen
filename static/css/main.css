@@ -1,23 +1,52 @@
-/* User dropdown */
-#user .dropdown-menu-no-collapse {
-    left: auto;
-    right: 0;
+/*
+    Colors
+*/
+.badge-color {
+    color: inherit;
 }
-#user .dropdown-menu-no-collapse:before {
-    left: auto;
-    right: 12px;
+.badge-color:hover {
+    color: inherit;
+    cursor: inherit;
 }
-#user .dropdown-menu-no-collapse:after {
-    left: auto;
-    right: 13px;
+.color-w { background-color: #fffbd5; }
+.color-u { background-color: #aae0fa; }
+.color-b { background-color: #cbc2bf; }
+.color-r { background-color: #f9aa8f; }
+.color-g { background-color: #9bd3ae; }
+.color-w.color-u,
+.color-w.color-b,
+.color-w.color-r,
+.color-w.color-g,
+.color-u.color-b,
+.color-u.color-r,
+.color-u.color-g,
+.color-b.color-r,
+.color-b.color-g,
+.color-r.color-g {
+    background-color: #ffec80;
 }
-
 .card-image {
     display: block;
     max-width: 100%;
 }
 
-/* Card listing */
+/*
+    Rarities
+*/
+.badge-rarity:hover {
+    cursor: inherit;
+}
+.rarity-l { background-color: #231f20; }
+.rarity-c { background-color: #231f20; }
+.rarity-u { background-color: #567280; }
+.rarity-r { background-color: #8e753f; }
+.rarity-m { background-color: #be3526; }
+.rarity-s { background-color: #612a74; }
+.rarity-p { background-color: #231f20; }
+
+/*
+    Card
+*/
 .card {
     background-color: #eeeeee;
     border-radius: 3px;
@@ -25,34 +54,25 @@
     display: block;
     margin-bottom: 18px;
     padding: 9px;
+    text-decoration: none;
 }
 .card:hover {
     color: inherit;
     text-decoration: none;
+}
+.card .mana-cost .mana-symbol {
+    box-shadow: 1px 1px 0 #aaaaaa;
+    display: inline-block;
+    margin-bottom: -2px;
+    padding: 0;
+    text-align: center;
+    width: 18px;
 }
 .card .name {
     font-weight: bold;
     overflow-x: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-}
-.card .power-toughness .divider,
-.card .hand-modifier-life-modifier .divider {
-    margin: 0 0.25em;
-}
-.card .power-toughness {
-}
-.card .power {
-}
-.card .toughness {
-}
-.card .loyalty {
-}
-.card .hand-modifier-life-modifier {
-}
-.card .hand-modifier {
-}
-.card .life-modifier {
 }
 .card .type {
     font-style: italic;
@@ -62,71 +82,13 @@
 }
 .card .rules-text {
     height: 36px;
-    overflow: hidden;
+    overflow-y: hidden;
     white-space: pre-wrap;
 }
 
-/* Mana costs and symbol */
-.mana-cost {
-}
-.mana-symbol {
-    background: #eeeeee;
-    border-radius: 9px;
-    box-shadow: 1px 1px 0 #999999;
-    display: inline-block;
-    text-align: center;
-    white-space: nowrap;
-    width: 18px;
-}
-.mana-symbol sup {
-}
-.mana-symbol .divider {
-    margin: 0 -2px;
-}
-.mana-symbol sub {
-}
-
-/* Color badges */
-.badge.white, .badge.blue, .badge.black, .badge.red, .badge.green {
-    color: inherit;
-    cursor: default;
-    text-shadow: none;
-}
-
-/* Colors */
-.white { background-color: #fffbd5; }
-.blue  { background-color: #aae0fa; }
-.black { background-color: #cbc2bf; }
-.red   { background-color: #f9aa8f; }
-.green { background-color: #9bd3ae; }
-.white.blue, .white.black, .white.red, .white.green, .blue.black,
-.blue.red, .blue.green, .black.red, .black.green, .red.green {
-    background-color: #ffec80;
-}
-
-/* Rarity badges */
-.badge.c, .badge.l, .badge.m, .badge.p, .badge.r, .badge.s, .badge.u {
-    cursor: default;
-}
-
-/* Rarities */
-.c, .l, .p {
-    background-color: #231f20;
-}
-.m {
-    background-color: #be3526;
-}
-.r {
-    background-color: #8e753f;
-}
-.s {
-    background-color: #612a74;
-}
-.u {
-    background-color: #567280;
-}
-
-/* Footer */
+/*
+    Footer
+*/
 .footer {
     border-top: 1px solid #e5e5e5;
     margin-top: 45px;
@@ -136,7 +98,9 @@
     margin-bottom: 0;
 }
 
-/* Media queries */
+/*
+    Responsive layout
+*/
 @media (max-width: 767px) {
     .pagination li {
         display: none;

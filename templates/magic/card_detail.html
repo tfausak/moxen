@@ -26,16 +26,12 @@
 
 {% block content %}
     <div class="row">
-        <div class="span4">
-            <img alt="" class="card-image" src="{{ STATIC_URL }}img/cards/{{ card.printing_set.all.0.set.slug }}/{{ card.printing_set.all.0.number }}-{{ card.slug }}.jpg">
-        </div>
-
-        <div class="span4">
-            <div class="card {% for color in card.colors.all %} {{ color }} {% endfor %}">
+        <div class="span4 offset2">
+            <div class="card {% for color in card.colors.all %} color-{{ color.slug }} {% endfor %}">
                 {# Mana cost #}
                 <div class="mana-cost pull-right">
                     {% for mana_symbol in card.mana_symbols %}
-                        <span class="mana-symbol {% for color in mana_symbol.colors.all %} {{ color }} {% endfor %}">
+                        <span class="badge badge-color mana-symbol {% for color in mana_symbol.colors.all %} color-{{ color.slug }} {% endfor %}">
                             {% if mana_symbol.name|length == 1 %}
                                 <span>{{ mana_symbol|upper }}</span>
                             {% else %}
