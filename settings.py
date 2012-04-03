@@ -1,5 +1,5 @@
 DEBUG = True
-SECRET_KEY = ''
+SECRET_KEY = 'https://docs.djangoproject.com/en/dev/ref/settings/#secret-key'
 STATIC_URL = '/static/'
 
 ADMINS = (
