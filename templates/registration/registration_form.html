@@ -27,7 +27,7 @@
 
         {% for field in form.visible_fields %}
             <div class="control-group {% if field.errors %}error{% endif %}">
-                <label class="control-label" for="{{ field.html_name }}">{{ field.label }}</label>
+                <label class="control-label" for="{{ field.html_name }}">{{ field.label|title }}</label>
                 <div class="controls">
                     {% if field.html_name == 'username' %}
                         <input autofocus id="{{ field.html_name }}" name="{{ field.html_name }}" type="text" value="{{ field.value|default_if_none:"" }}">
