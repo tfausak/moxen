@@ -6,6 +6,7 @@ printings and tournament restrictions.
 References to the Magic: The Gathering comprehensive rules are
 included where appropriate. <http://wizards.com/magic/rules>
 """  # pylint: disable=R0903,W0232
+from django.conf import settings
 from django.db import models
 
 
@@ -278,6 +279,8 @@ class Printing(models.Model):
     rarity = models.ForeignKey(Rarity)
     artist = models.CharField(blank=True, max_length=255)
     number = models.PositiveIntegerField(blank=True, default=0)
+    image = models.URLField(blank=True,
+        default='{0}img/cards/unknown-card.png'.format(settings.STATIC_URL))
 
     class Meta:
         ordering = ['-set__release_date', 'number', 'card__name']
