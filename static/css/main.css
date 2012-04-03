@@ -36,13 +36,13 @@
 .badge-rarity:hover {
     cursor: inherit;
 }
-.rarity-l { background-color: #231f20; }
-.rarity-c { background-color: #231f20; }
+.rarity-l,
+.rarity-c,
+.rarity-p { background-color: #231f20; }
 .rarity-u { background-color: #567280; }
 .rarity-r { background-color: #8e753f; }
 .rarity-m { background-color: #be3526; }
 .rarity-s { background-color: #612a74; }
-.rarity-p { background-color: #231f20; }
 
 /*
     Card
@@ -68,11 +68,18 @@
     text-align: center;
     width: 18px;
 }
+.card .mana-cost .divider {
+    margin: 0 -2px;
+}
 .card .name {
     font-weight: bold;
     overflow-x: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+.card .power-toughness .divider,
+.card .hand-modifier-life-modifier .divider {
+    margin: 0 0.25em;
 }
 .card .type {
     font-style: italic;
