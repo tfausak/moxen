@@ -29,7 +29,70 @@
 {% endblock %}
 
 {% block content %}
-    <img alt="" src="{{ STATIC_URL }}{{ printing.image }}">
+    <div class="row">
+        <div class="span4">
+            <img alt="" src="{{ STATIC_URL }}{{ printing.image }}">
+        </div>
+
+        <div class="span4 offset">
+            <a class="card {% for color in printing.card.colors.all %} color-{{ color.slug }} {% endfor %}" href="{{ printing.card.get_absolute_url }}">
+                {# Mana cost #}
+                <div class="mana-cost pull-right">
+                    {% for mana_symbol in printing.card.mana_symbols %}
+                        <span class="badge badge-color mana-symbol {% for color in mana_symbol.colors.all %} color-{{ color.slug }} {% endfor %}">
+                            {% if mana_symbol.name|length == 1 %}
+                                <span>{{ mana_symbol|upper }}</span>
+                            {% else %}
+                                <sup>{{ mana_symbol.name.0|upper }}</sup>
+                                <span class="divider">/</span>
+                                <sub>{{ mana_symbol.name.2|upper }}</sub>
+                            {% endif %}
+                        </span>
+                    {% endfor %}
+                </div>
+
+                {# Name #}
+                <div class="name">{{ printing.card|title }}</div>
+
+                {# Power, toughness, loyalty, hand-, and life-modifiers #}
+                {% if printing.card.power and printing.card.toughness %}
+                    <div class="power-toughness pull-right">
+                        <span class="power">{{ printing.card.power }}</span>
+                        <span class="divider">/</span>
+                        <span class="toughness">{{ printing.card.toughness }}</span>
+                    </div>
+                {% endif %}
+                {% if printing.card.loyalty %}
+                    <div class="loyalty pull-right">{{ printing.card.loyalty }}</div>
+                {% endif %}
+                {% if printing.card.hand_modifier and printing.card.life_modifier %}
+                    <div class="hand-modifier-life-modifier pull-right">
+                        <span class="hand-modifier">{{ printing.card.hand_modifier }}</span>
+                        <span class="divider">/</span>
+                        <span class="life-modifier">{{ printing.card.life_modifier }}</span>
+                    </div>
+                {% endif %}
+
+                {# Type #}
+                <div class="type">{{ printing.card.type|title }}</div>
+
+                {# Rules text #}
+                <div class="rules-text" style="height: auto;">{{ printing.card.rules_text }}</div>
+            </a>
+        </div>
+
+        <div class="span4">
+            <ul>
+                {% for printing_ in printing.card.printing_set.all %}
+                    {% if printing_ != printing %}
+                    <li>
+                        <a href="{{ printing_.get_absolute_url }}">#{{ printing_.number }} {{ printing_.set.name|title }} {{ printing_.rarity.name|title }}</a>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
 
     {% if previous_printing or next_printing %}
         <ul class="pager">
