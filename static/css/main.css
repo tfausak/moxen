@@ -1,3 +1,51 @@
+/*
+    Card
+*/
+.card {
+    background-color: #eeeeee;
+    border-radius: 3px;
+    color: inherit;
+    display: block;
+    margin-bottom: 18px;
+    padding: 9px;
+    text-decoration: none;
+}
+.card:hover {
+    color: inherit;
+    text-decoration: none;
+}
+.card .mana-cost .mana-symbol {
+    box-shadow: 1px 1px 0 #aaaaaa;
+    display: inline-block;
+    margin-bottom: -2px;
+    padding: 0;
+    text-align: center;
+    width: 18px;
+}
+.card .mana-cost .divider {
+    margin: 0 -2px;
+}
+.card .name {
+    font-weight: bold;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.card .power-toughness .divider,
+.card .hand-modifier-life-modifier .divider {
+    margin: 0 0.25em;
+}
+.card .type {
+    font-style: italic;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.card .rules-text {
+    height: 36px;
+    overflow-y: hidden;
+    white-space: pre-wrap;
+}
 .card-image {
     display: block;
     margin: 0 auto;
@@ -49,55 +97,6 @@
 .rarity-r { background-color: #b39959; }
 .rarity-m { background-color: #db662c; }
 .rarity-s { background-color: #925799; }
-
-/*
-    Card
-*/
-.card {
-    background-color: #eeeeee;
-    border-radius: 3px;
-    color: inherit;
-    display: block;
-    margin-bottom: 18px;
-    padding: 9px;
-    text-decoration: none;
-}
-.card:hover {
-    color: inherit;
-    text-decoration: none;
-}
-.card .mana-cost .mana-symbol {
-    box-shadow: 1px 1px 0 #aaaaaa;
-    display: inline-block;
-    margin-bottom: -2px;
-    padding: 0;
-    text-align: center;
-    width: 18px;
-}
-.card .mana-cost .divider {
-    margin: 0 -2px;
-}
-.card .name {
-    font-weight: bold;
-    overflow-x: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-.card .power-toughness .divider,
-.card .hand-modifier-life-modifier .divider {
-    margin: 0 0.25em;
-}
-.card .type {
-    font-style: italic;
-    overflow-x: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-.card .rules-text {
-    height: 36px;
-    overflow-y: hidden;
-    white-space: pre-wrap;
-}
 
 /*
     Footer
