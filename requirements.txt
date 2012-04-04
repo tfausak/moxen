@@ -1,5 +1,6 @@
 BeautifulSoup==3.2
 Django==1.4
+django-compressor==1.1.2
 django-profiles==0.2
 django-registration==0.7
 docutils==0.8

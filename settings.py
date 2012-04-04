@@ -1,9 +1,8 @@
 DEBUG = True
 SECRET_KEY = 'https://docs.djangoproject.com/en/dev/ref/settings/#secret-key'
-STATIC_URL = '/static/'
 
 ADMINS = (
-    # ('First Last', 'first.last@example.com'),
+    #('First Last', 'first.last@example.com'),
 )
 
 DATABASES = {
@@ -14,19 +13,22 @@ DATABASES = {
 }
 
 INTERNAL_IPS = (
-    # '127.0.0.1',
+    #'127.0.0.1',
 )
 
 
 # Here be dragons!
 ACCOUNT_ACTIVATION_DAYS = 7
 AUTH_PROFILE_MODULE = 'users.UserProfile'
+COMPRESS_OUTPUT_DIR = 'cache'
 LOGIN_REDIRECT_URL = '/users/settings/'
 LOGIN_URL = '/users/login/'
 LOGOUT_URL = '/users/logout/'
 MANAGERS = ADMINS
 ROOT_URLCONF = 'urls'
 SITE_ID = 1
+STATIC_ROOT = './static/'
+STATIC_URL = '/static/'
 TEMPLATE_DEBUG = DEBUG
 
 INSTALLED_APPS = (
@@ -37,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sitemaps',
     'django.contrib.sites',
+    'compressor',
     'liberator',
     'magic',
     'profiles',

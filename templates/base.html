@@ -1,3 +1,5 @@
+{% load compress %}
+
 {% spaceless %}
 <!doctype html>
 
@@ -6,9 +8,11 @@
         <meta charset="utf-8">
         <meta content="maximum-scale=1,minimum-scale=1,width=device-width" name="viewport">
 
-        <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet">
-        <link href="{{ STATIC_URL }}css/bootstrap-responsive.css" rel="stylesheet">
-        <link href="{{ STATIC_URL }}css/main.css" rel="stylesheet">
+        {% compress css %}
+            <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet">
+            <link href="{{ STATIC_URL }}css/bootstrap-responsive.css" rel="stylesheet">
+            <link href="{{ STATIC_URL }}css/main.css" rel="stylesheet">
+        {% endcompress %}
 
         <link href="{{ STATIC_URL }}img/favicon.ico" rel="shortcut icon">
         <link href="{{ STATIC_URL }}img/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
@@ -114,9 +118,11 @@
             </div>
         </div>
 
-        <script src="{{ STATIC_URL }}js/jquery.js"></script>
-        <script src="{{ STATIC_URL }}js/bootstrap.js"></script>
-        <script src="{{ STATIC_URL }}js/main.js"></script>
+        {% compress js %}
+            <script src="{{ STATIC_URL }}js/jquery.js"></script>
+            <script src="{{ STATIC_URL }}js/bootstrap.js"></script>
+            <script src="{{ STATIC_URL }}js/main.js"></script>
+        {% endcompress %}
     </body>
 </html>
 {% endspaceless %}
