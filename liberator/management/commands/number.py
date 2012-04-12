@@ -7,6 +7,7 @@ class Command(BaseCommand):
         slugs = ('1e', '2e', '2u', '3e', '4e', '5e', 'al', 'an', 'aq', 'bd',
             'br', 'ch', 'dk', 'fe', 'hm', 'ia', 'le', 'mi', 'p2', 'p4', 'po',
             'st', 'te', 'vi', 'wl')
+        slugs = ('ia',)
         for slug in slugs:
             set_ = Set.objects.get(slug=slug)
             printings = list(Printing.objects.filter(set=set_))
@@ -77,14 +78,17 @@ def sort_by_land(printing):
     is_land = any(
         type_.name == 'land' for type_ in printing.card.card_types.all())
     if is_land:
-        if printing.card.name == 'plains':
-            return 2
-        elif printing.card.name == 'island':
-            return 3
-        elif printing.card.name == 'swamp':
-            return 4
-        elif printing.card.name == 'mountain':
-            return 5
-        elif printing.card.name == 'forest':
-            return 6
+        # Snow-covered basic lands
+        if printing.card.name == 'snow-covered plains':   return 2
+        if printing.card.name == 'snow-covered island':   return 3
+        if printing.card.name == 'snow-covered swamp':    return 4
+        if printing.card.name == 'snow-covered mountain': return 5
+        if printing.card.name == 'snow-covered forest':   return 6
+
+        # Basic lands
+        if printing.card.name == 'plains':   return 7
+        if printing.card.name == 'island':   return 8
+        if printing.card.name == 'swamp':    return 9
+        if printing.card.name == 'mountain': return 10
+        if printing.card.name == 'forest':   return 11
     return is_land
