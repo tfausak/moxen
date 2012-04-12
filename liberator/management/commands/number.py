@@ -7,7 +7,6 @@ class Command(BaseCommand):
         slugs = ('1e', '2e', '2u', '3e', '4e', '5e', 'al', 'an', 'aq', 'bd',
             'br', 'ch', 'dk', 'fe', 'hm', 'ia', 'le', 'mi', 'p2', 'p4', 'po',
             'st', 'te', 'vi', 'wl')
-        slugs = ('ia',)
         for slug in slugs:
             set_ = Set.objects.get(slug=slug)
             printings = list(Printing.objects.filter(set=set_))
