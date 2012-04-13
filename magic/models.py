@@ -278,7 +278,6 @@ class Printing(models.Model):
     rarity = models.ForeignKey(Rarity)
     artist = models.CharField(blank=True, max_length=255)
     number = models.PositiveIntegerField(blank=True, default=0)
-    image = models.URLField(blank=True, default='img/cards/unknown-card.png')
 
     class Meta:
         ordering = ['-set__release_date', 'number', 'card__name']
