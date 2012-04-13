@@ -6,6 +6,7 @@ printings and tournament restrictions.
 References to the Magic: The Gathering comprehensive rules are
 included where appropriate. <http://wizards.com/magic/rules>
 """  # pylint: disable=R0903,W0232
+from django.conf import settings
 from django.db import models
 
 
@@ -290,6 +291,10 @@ class Printing(models.Model):
     def get_absolute_url(self):
         return ('printing_detail', (), {'set_slug': self.set.slug,
             'number': self.number, 'card_slug': self.card.slug})
+
+    def image(self):
+        return '{0}img/cards/{1}/{2}-{3}.jpg'.format(settings.STATIC_URL,
+            self.set.slug, self.number, self.card.slug)
 
 
 class Block(models.Model):
