@@ -39,55 +39,97 @@ def sort_by_name(printing):
 
 
 def sort_by_color(printing):
-    colors = ''.join(sorted(color.slug for color in printing.card.colors.all()))
+    # pylint: disable=R0912
+    colors = ''.join(sorted(
+        color.slug for color in printing.card.colors.all()))
 
     # Colorless
-    if colors == '': return 22
+    if colors == '':
+        result = 22
 
     # Monocolored
-    if colors == 'w': return 1
-    if colors == 'u': return 2
-    if colors == 'b': return 3
-    if colors == 'r': return 4
-    if colors == 'g': return 5
+    elif colors == 'w':
+        result = 1
+    elif colors == 'u':
+        result = 2
+    elif colors == 'b':
+        result = 3
+    elif colors == 'r':
+        result = 4
+    elif colors == 'g':
+        result = 5
 
     # Multicolored (2 colors)
-    if colors == 'uw': return 6
-    if colors == 'bu': return 7
-    if colors == 'br': return 8
-    if colors == 'gr': return 9
-    if colors == 'gw': return 10
-    if colors == 'bw': return 11
-    if colors == 'ru': return 12
-    if colors == 'bg': return 13
-    if colors == 'rw': return 14
-    if colors == 'gu': return 15
+    elif colors == 'uw':
+        result = 6
+    elif colors == 'bu':
+        result = 7
+    elif colors == 'br':
+        result = 8
+    elif colors == 'gr':
+        result = 9
+    elif colors == 'gw':
+        result = 10
+    elif colors == 'bw':
+        result = 11
+    elif colors == 'ru':
+        result = 12
+    elif colors == 'bg':
+        result = 13
+    elif colors == 'rw':
+        result = 14
+    elif colors == 'gu':
+        result = 15
 
     # Multicolored (3 colors)
-    if colors == 'buw': return 16
-    if colors == 'bru': return 17
-    if colors == 'bgr': return 18
-    if colors == 'grw': return 19
-    if colors == 'guw': return 20
+    elif colors == 'buw':
+        result = 16
+    elif colors == 'bru':
+        result = 17
+    elif colors == 'bgr':
+        result = 18
+    elif colors == 'grw':
+        result = 19
+    elif colors == 'guw':
+        result = 20
 
-    return 21
+    # Multicolored (4+ colors)
+    else:
+        result = 21
+
+    return result
 
 
 def sort_by_land(printing):
     is_land = any(
         type_.name == 'land' for type_ in printing.card.card_types.all())
     if is_land:
+        result = None
+
         # Snow-covered basic lands
-        if printing.card.name == 'snow-covered plains':   return 2
-        if printing.card.name == 'snow-covered island':   return 3
-        if printing.card.name == 'snow-covered swamp':    return 4
-        if printing.card.name == 'snow-covered mountain': return 5
-        if printing.card.name == 'snow-covered forest':   return 6
+        if printing.card.name == 'snow-covered plains':
+            result = 2
+        elif printing.card.name == 'snow-covered island':
+            result = 3
+        elif printing.card.name == 'snow-covered swamp':
+            result = 4
+        elif printing.card.name == 'snow-covered mountain':
+            result = 5
+        elif printing.card.name == 'snow-covered forest':
+            result = 6
 
         # Basic lands
-        if printing.card.name == 'plains':   return 7
-        if printing.card.name == 'island':   return 8
-        if printing.card.name == 'swamp':    return 9
-        if printing.card.name == 'mountain': return 10
-        if printing.card.name == 'forest':   return 11
+        elif printing.card.name == 'plains':
+            result = 7
+        elif printing.card.name == 'island':
+            result = 8
+        elif printing.card.name == 'swamp':
+            result = 9
+        elif printing.card.name == 'mountain':
+            result = 10
+        elif printing.card.name == 'forest':
+            result = 11
+
+        if result is not None:
+            return result
     return is_land
