@@ -59,18 +59,22 @@ class PrintingDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super(PrintingDetailView, self).get_context_data(**kwargs)
 
+        printings = Printing.objects.filter(set__slug=self.kwargs['set_slug'],
+            number=int(self.kwargs['number']) - 1)
         try:
-            context['previous_printing'] = Printing.objects.get(
-                set__slug=self.kwargs['set_slug'],
-                number=int(self.kwargs['number']) - 1)
+            context['previous_printing'] = printings.get()
         except Printing.DoesNotExist:
             context['previous_printing'] = None
+        except Printing.MultipleObjectsReturned:
+            context['previous_printing'] = printings[0]
 
+        printings = Printing.objects.filter(set__slug=self.kwargs['set_slug'],
+            number=int(self.kwargs['number']) + 1)
         try:
-            context['next_printing'] = Printing.objects.get(
-                set__slug=self.kwargs['set_slug'],
-                number=int(self.kwargs['number']) + 1)
+            context['next_printing'] = printings.get()
         except Printing.DoesNotExist:
             context['next_printing'] = None
+        except Printing.MultipleObjectsReturned:
+            context['next_printing'] = printings[0]
 
         return context
