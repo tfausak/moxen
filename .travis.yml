@@ -1,2 +1,2 @@
 language: python
-script: sh test.sh
+script: sh ./utilities/test.sh
