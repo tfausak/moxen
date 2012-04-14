@@ -776,7 +776,7 @@
     {
         "fields": {
             "name": "starter 1999",
-            "release_date": "1999-07-01",
+            "release_date": "1999-08-27",
             "slug": "p3"
         },
         "model": "magic.set",
@@ -785,7 +785,7 @@
     {
         "fields": {
             "name": "starter 2000",
-            "release_date": "1999-07-01",
+            "release_date": "2000-04-24",
             "slug": "p4"
         },
         "model": "magic.set",
