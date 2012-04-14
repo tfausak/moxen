@@ -201,6 +201,7 @@ class Card(models.Model):
         max_length=1)
 
     colors = models.ManyToManyField(Color, blank=True)
+    reserved = models.BooleanField(default=False)
 
     class Meta:
         ordering = ['name']
