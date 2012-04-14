@@ -278,6 +278,7 @@ class Printing(models.Model):
     set = models.ForeignKey(Set)
     rarity = models.ForeignKey(Rarity)
     artist = models.CharField(blank=True, max_length=255)
+    flavor_text = models.TextField(blank=True)
     number = models.PositiveIntegerField(blank=True, default=0)
 
     class Meta:
