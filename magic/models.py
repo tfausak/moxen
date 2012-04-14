@@ -150,6 +150,13 @@ class Rarity(models.Model):
         return self.name
 
 
+class Ruling(models.Model):
+    """A DCI ruling on a card.
+    """
+    date = models.DateField()
+    text = models.TextField()
+
+
 class Card(models.Model):
     """A Magic: The Gathering card.
 
@@ -202,6 +209,7 @@ class Card(models.Model):
 
     colors = models.ManyToManyField(Color, blank=True)
     reserved = models.BooleanField(default=False)
+    rulings = models.ManyToManyField(Ruling, blank=True)
 
     class Meta:
         ordering = ['name']
