@@ -58,6 +58,13 @@ class RarityAdmin(admin.ModelAdmin):
 admin.site.register(magic.models.Rarity, RarityAdmin)
 
 
+class RulingAdmin(admin.ModelAdmin):
+    list_display = ('text', 'date')
+    list_filter = ['date']
+    search_fields = ['text']
+admin.site.register(magic.models.Ruling, RulingAdmin)
+
+
 class CardAdmin(admin.ModelAdmin):
     form = magic.forms.CardForm
     list_filter = ('kind', 'super_types', 'card_types')

@@ -156,6 +156,9 @@ class Ruling(models.Model):
     date = models.DateField()
     text = models.TextField()
 
+    def __unicode__(self):
+        return self.text
+
 
 class Card(models.Model):
     """A Magic: The Gathering card.
