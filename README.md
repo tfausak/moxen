@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 # Fill the database with data.
 python manage.py syncdb
-python manage.py loaddata color manasymbol manacost supertype cardtype subtype set rarity block format card printing legality
+python manage.py loaddata color manasymbol manacost supertype cardtype subtype set rarity block format card printing legality ruling
 
 # Fire up the server.
 python manage.py runserver
