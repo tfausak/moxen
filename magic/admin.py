@@ -67,7 +67,7 @@ admin.site.register(magic.models.Ruling, RulingAdmin)
 
 class CardAdmin(admin.ModelAdmin):
     form = magic.forms.CardForm
-    list_filter = ['kind', 'super_types', 'card_types']
+    list_filter = ['reserved', 'kind', 'super_types', 'card_types']
     prepopulated_fields = {'slug': ['name']}
     search_fields = ['name']
 admin.site.register(magic.models.Card, CardAdmin)
