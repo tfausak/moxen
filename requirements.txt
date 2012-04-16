@@ -4,5 +4,3 @@ django-compressor==1.1.2
 django-profiles==0.2
 django-registration==0.7
 docutils==0.8
-pep8==0.6
-pylint==0.25
