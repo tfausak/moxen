@@ -1,6 +1,6 @@
 # pylint: disable=R0903,W0232
 from django import forms
-import users.models
+import bauble.models
 
 
 class UserProfileForm(forms.ModelForm):
@@ -10,8 +10,8 @@ class UserProfileForm(forms.ModelForm):
     last_name = forms.CharField(required=False)
 
     class Meta:
-        exclude = ('user',)
-        model = users.models.UserProfile
+        exclude = ['user']
+        model = bauble.models.UserProfile
 
     def __init__(self, *args, **kwargs):
         super(UserProfileForm, self).__init__(*args, **kwargs)

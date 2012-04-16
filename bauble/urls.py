@@ -1,17 +1,17 @@
+from bauble.forms import UserProfileForm
+from bauble.models import UserProfile
 from django.conf import settings
-from django.conf.urls.defaults import patterns, include
+from django.conf.urls.defaults import patterns, include, url
 from django.contrib import admin
 from django.contrib.sitemaps import GenericSitemap
 from magic.models import Card
 from registration.forms import RegistrationFormUniqueEmail
-from users.forms import UserProfileForm
-from users.models import UserProfile
 
 
 admin.autodiscover()
 urlpatterns = patterns('',  # pylint: disable=C0103
     ('', include('magic.urls')),
-    ('', include('users.urls')),
+    url('^users/settings/$', 'bauble.views.profile', name='profile'),
 
     # Django's built-in admin
     ('^admin/doc/', include('django.contrib.admindocs.urls')),

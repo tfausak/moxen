@@ -19,13 +19,13 @@ INTERNAL_IPS = (
 
 # Here be dragons!
 ACCOUNT_ACTIVATION_DAYS = 7
-AUTH_PROFILE_MODULE = 'users.UserProfile'
+AUTH_PROFILE_MODULE = 'bauble.UserProfile'
 COMPRESS_OUTPUT_DIR = 'cache'
 LOGIN_REDIRECT_URL = '/users/settings/'
 LOGIN_URL = '/users/login/'
 LOGOUT_URL = '/users/logout/'
 MANAGERS = ADMINS
-ROOT_URLCONF = 'urls'
+ROOT_URLCONF = 'bauble.urls'
 SITE_ID = 1
 STATIC_ROOT = './static/'
 STATIC_URL = '/static/'
@@ -39,12 +39,12 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sitemaps',
     'django.contrib.sites',
+    'bauble',
     'compressor',
     'liberator',
     'magic',
     'profiles',
     'registration',
-    'users',
     'django.contrib.admindocs',  # Must be last.
 )
 
