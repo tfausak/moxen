@@ -39,7 +39,6 @@ def sort_by_name(printing):
 
 
 def sort_by_color(printing):
-    # pylint: disable=R0912
     colors = ''.join(sorted(
         color.slug for color in printing.card.colors.all()))
 

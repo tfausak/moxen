@@ -1,4 +1,3 @@
-# pylint: disable=C0103,E1120
 from django.conf.urls.defaults import patterns, url
 from magic.views import (CardDetailView, CardListView, PrintingDetailView,
     SearchView, SetDetailView, SetListView)

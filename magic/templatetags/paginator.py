@@ -1,7 +1,8 @@
 from django import template
 from urllib import urlencode
 
-register = template.Library()  # pylint: disable=C0103
+
+register = template.Library()
 
 
 @register.inclusion_tag('paginator.html', takes_context=True)

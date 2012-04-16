@@ -6,7 +6,7 @@ from django.dispatch import receiver
 
 class UserProfile(models.Model):
     """Extra information about a user.
-    """  # pylint: disable=E1101
+    """
     user = models.OneToOneField(User, related_name='profile')
 
     def __unicode__(self):
@@ -19,7 +19,7 @@ class UserProfile(models.Model):
 
 
 @receiver(post_save, sender=User)
-def create_user_profile(instance=None, created=False, **_):
+def create_user_profile(instance=None, created=False, **kwargs):
     """Create a user profile for new users.
     """
     if created:

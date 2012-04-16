@@ -24,7 +24,7 @@ class CardDetailView(DetailView):
 
 class SearchView(CardListView):
     """Search for cards by name.
-    """  # pylint: disable=R0901,W0201
+    """
     def get_queryset(self):
         self.query = self.request.GET.get('query')
         return Card.objects.filter(name__icontains=self.query)

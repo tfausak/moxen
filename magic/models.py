@@ -5,7 +5,7 @@ printings and tournament restrictions.
 
 References to the Magic: The Gathering comprehensive rules are
 included where appropriate. <http://wizards.com/magic/rules>
-"""  # pylint: disable=R0903,W0232
+"""
 from django.conf import settings
 from django.db import models
 
@@ -230,7 +230,7 @@ class Card(models.Model):
                 or self.other_card.kind != self.kind):
             self.other_card.other_card = self
             self.other_card.kind = self.kind
-            self.other_card.save()  # pylint: disable=E1101
+            self.other_card.save()
 
     @models.permalink
     def get_absolute_url(self):
@@ -285,7 +285,7 @@ class Printing(models.Model):
 
     One card can (and often is) printed in multiple sets. Within
     each set, its rarity might be different than any other.
-    """  # pylint: disable=E1101
+    """
     card = models.ForeignKey(Card)
     set = models.ForeignKey(Set)
     rarity = models.ForeignKey(Rarity)

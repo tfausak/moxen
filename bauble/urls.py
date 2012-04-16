@@ -9,26 +9,20 @@ from registration.forms import RegistrationFormUniqueEmail
 
 
 admin.autodiscover()
-urlpatterns = patterns('',  # pylint: disable=C0103
+urlpatterns = patterns('',
     ('', include('magic.urls')),
+
     url('^users/settings/$', 'bauble.views.profile', name='profile'),
-
-    # Django's built-in admin
-    ('^admin/', include(admin.site.urls)),
-
-    # django-registration
     ('^users/register/$', 'registration.views.register',
         {'form_class': RegistrationFormUniqueEmail}, 'registration_register'),
     ('^users/', include('registration.urls')),
-
-    # django-profiles
     ('^users/create/', 'profiles.views.create_profile',
         {'form_class': UserProfileForm}, 'profiles_profile_create'),
     ('^users/edit/', 'profiles.views.edit_profile',
         {'form_class': UserProfileForm}, 'profiles_profile_edit'),
     ('^users/', include('profiles.urls')),
 
-    # Django's built-in sitemap
+    ('^admin/', include(admin.site.urls)),
     ('^sitemap[.]xml', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': {
             'cards': GenericSitemap({'queryset': Card.objects.all()}),
             'users': GenericSitemap({'queryset': UserProfile.objects.all()}),
@@ -38,5 +32,5 @@ urlpatterns = patterns('',  # pylint: disable=C0103
 if settings.DEBUG:
     urlpatterns += patterns('',
         ('^static/(?P<path>.*)$', 'django.views.static.serve',
-            {'document_root': './static/', 'show_indexes': True})
+            {'document_root': settings.STATIC_ROOT, 'show_indexes': True})
     )

@@ -1,4 +1,3 @@
-# pylint: disable=R0903,W0232
 from django import forms
 from django.template.defaultfilters import slugify
 import magic.models
