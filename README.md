@@ -1,58 +1,44 @@
-# Bauble [![][1]][2]
+# Bauble [![Build status][]][Travis CI]
 
-A [Magic: The Gathering][3] card database.
+A [Magic: the Gathering][] card database.
 
-## Requirements
-
--   [Python][4] 2.7
--   [Django][5] 1.4
--   [BeautifulSoup][6] 3.2
--   [django-profiles][8] 0.2
--   [django-registration][9] 0.7
-
-## Installation
+## Setup
 
 ```sh
-# Get the source.
+# Get source.
 git clone https://github.com/tfausak/bauble.git
 cd bauble
 
-# Automatically get all the requirements.
+# Load dependencies.
 pip install -r requirements.txt
 
 # Run tests.
 python manage.py test bauble magic
 
-# Fill the database with data.
+# Fill database.
 python manage.py syncdb
 python manage.py loaddata color manasymbol manacost \
     supertype cardtype subtype \
     set rarity block format \
     card printing legality ruling
 
-# Fire up the server.
+# Run server.
 python manage.py runserver
-# http://localhost:8000/
 ```
 
-## Configuration
+## Requirements
 
-You should go to the admin page (usually `localhost:8000/admin`)
-to change the site name and domain. "example.com" isn't very catchy.
+-   [Python][] 2.7
+-   [Django][] 1.4
+-   [BeautifulSoup][] 3.2
+-   [django-profiles][] 0.2
+-   [django-registration][] 0.7
 
-Django's `settings.py` is split into two sections. In the top
-section, you'll find things you'll probably want to change. Use a
-different database, change the administrator, turn off debug mode,
-etc.
-
-You should probably avoid editing the bottom section unless you
-know what you're doing.
-
-[1]: https://secure.travis-ci.org/tfausak/bauble.png
-[2]: http://travis-ci.org/tfausak/bauble
-[3]: http://www.wizards.com/magic/
-[4]: http://python.org/
-[5]: https://www.djangoproject.com/
-[6]: http://www.crummy.com/software/BeautifulSoup/
-[8]: https://bitbucket.org/ubernostrum/django-profiles/
-[9]: https://bitbucket.org/ubernostrum/django-registration/
+[build status]: <https://secure.travis-ci.org/tfausak/bauble.png> "Travis CI build status"
+[travis ci]: <http://travis-ci.org/tfausak/bauble> "Travis CI"
+[magic: the gathering]: <http://wizards.com/magic> "Magic: the Gathering"
+[python]: <http://python.org/> "Python"
+[django]: <https://www.djangoproject.com/> "Django"
+[beautifulsoup]: <http://www.crummy.com/software/BeautifulSoup> "BeautifulSoup"
+[django-profiles]: <https://bitbucket.org/ubernostrum/django-profiles> "django-profiles"
+[django-registration]: <https://bitbucket.org/ubernostrum/django-registration> "django-registration"
