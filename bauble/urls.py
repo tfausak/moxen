@@ -14,7 +14,6 @@ urlpatterns = patterns('',  # pylint: disable=C0103
     url('^users/settings/$', 'bauble.views.profile', name='profile'),
 
     # Django's built-in admin
-    ('^admin/doc/', include('django.contrib.admindocs.urls')),
     ('^admin/', include(admin.site.urls)),
 
     # django-registration

@@ -7,7 +7,6 @@ A [Magic: The Gathering][3] card database.
 -   [Python][4] 2.7
 -   [Django][5] 1.4
 -   [BeautifulSoup][6] 3.2
--   [Docutils][7] 0.8 -- generates admin documentation
 -   [django-profiles][8] 0.2
 -   [django-registration][9] 0.7
 
@@ -55,8 +54,5 @@ know what you're doing.
 [4]: http://python.org/
 [5]: https://www.djangoproject.com/
 [6]: http://www.crummy.com/software/BeautifulSoup/
-[7]: http://docutils.sourceforge.net/
 [8]: https://bitbucket.org/ubernostrum/django-profiles/
 [9]: https://bitbucket.org/ubernostrum/django-registration/
-[10]: https://github.com/jcrocholl/pep8
-[11]: http://www.logilab.org/project/pylint

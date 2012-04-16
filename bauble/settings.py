@@ -45,7 +45,6 @@ INSTALLED_APPS = (
     'magic',
     'profiles',
     'registration',
-    'django.contrib.admindocs',  # Must be last.
 )
 
 MIDDLEWARE_CLASSES = (
