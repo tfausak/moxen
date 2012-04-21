@@ -226,6 +226,15 @@
     },
     {
         "fields": {
+            "name": "duel decks: venser vs. koth",
+            "release_date": "2012-03-30",
+            "slug": "ddi"
+        },
+        "model": "magic.set",
+        "pk": 107
+    },
+    {
+        "fields": {
             "name": "eighth edition",
             "release_date": "2003-07-28",
             "slug": "8ed"
