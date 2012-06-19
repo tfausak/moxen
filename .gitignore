@@ -1,3 +1,7 @@
 *.pyc
 .DS_Store
+.Python
+bin/
 db.sq3
+include/
+lib/
