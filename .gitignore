@@ -3,5 +3,6 @@
 .Python
 bin/
 db.sq3
+db.sq3-journal
 include/
 lib/
