@@ -55,6 +55,15 @@
     },
     {
         "fields": {
+            "name": "avacyn restored",
+            "release_date": "2012-05-04",
+            "slug": "avr"
+        },
+        "model": "magic.set",
+        "pk": 108
+    },
+    {
+        "fields": {
             "name": "battle royale box set",
             "release_date": "1999-11-12",
             "slug": "br"
