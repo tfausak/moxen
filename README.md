@@ -26,6 +26,20 @@ python manage.py loaddata color manasymbol manacost \
 python manage.py runserver
 ```
 
+## Fixtures
+
+Card data is provided in JSON fixtures. If you update the card data,
+either with the scraper or manually, you should repopulate all the
+fixtures to keep them current.
+
+```sh
+fixtures=( Block Card CardType Color Format Legality ManaCost ManaSymbol Printing Rarity Ruling Set SubType SuperType )
+for fixture in ${fixtures[@]}
+do
+    python manage.py dumpdata magic.$fixture | python -m json.tool | sed 's/ $//' > magic/fixtures/$(echo $fixture | tr '[A-Z]' '[a-z]').json
+done
+```
+
 ## Requirements
 
 -   [Python][] 2.7
