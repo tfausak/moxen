@@ -38,8 +38,7 @@ for fixture in ${fixtures[@]}
 do
     python manage.py dumpdata magic.$fixture |
     python -m json.tool |
-    sed 's/ $//' >
-    magic/fixtures/$(echo $fixture | tr '[A-Z]' '[a-z]').json
+    sed 's/ $//' > magic/fixtures/$(echo $fixture | tr '[A-Z]' '[a-z]').json
 done
 ```
 
