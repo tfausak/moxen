@@ -1,5 +1,6 @@
 from BeautifulSoup import BeautifulSoup
-from liberator.normalize import _normalize_card, _normalize_int, _normalize_string
+from liberator.normalize import (_normalize_card, _normalize_int,
+    _normalize_string)
 from liberator.store import _store_card
 from magic.models import Set, Rarity, Printing
 from urllib import urlencode, urlretrieve
@@ -12,7 +13,7 @@ def scrape(set_):
     """Scrape a set's data from the Gatherer.
     """
     # Searching by set is case-sensitive when outputting the checklist.
-    pattern = '\<(and|for|of|s|set|the|vs)\>'
+    pattern = r'\b(And|For|Of|S|Set|The|Vs)\b'
     replacement = lambda match: match.group(1).lower()
     name = re.sub(pattern, replacement, set_.name.title())
 
