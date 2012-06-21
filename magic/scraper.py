@@ -3,6 +3,7 @@ from liberator.normalize import (_normalize_card, _normalize_int,
     _normalize_string)
 from liberator.store import _store_card
 from magic.models import Set, Rarity, Printing
+from magic.templatetags.magic_extras import title
 from urllib import urlencode, urlretrieve
 from urllib2 import urlopen
 import os
@@ -12,16 +13,11 @@ import re
 def scrape(set_):
     """Scrape a set's data from the Gatherer.
     """
-    # Searching by set is case-sensitive when outputting the checklist.
-    pattern = r'\b(And|For|Of|S|Set|The|Vs)\b'
-    replacement = lambda match: match.group(1).lower()
-    name = re.sub(pattern, replacement, set_.name.title())
-
     # Build a URL to the checklist for this set.
     url = 'http://gatherer.wizards.com/Pages/Search/'
     parameters = {
         'output': 'checklist',
-        'set': '["{0}"]'.format(name),
+        'set': '["{0}"]'.format(title(set_.name)),
         'special': 'true',
     }
     full_url = '{0}?{1}'.format(url, urlencode(parameters))
@@ -102,17 +98,13 @@ def scrape(set_):
             cards[name]['printings'].append(printing)
 
     # Download card images.
+    url_ = 'http://gatherer.wizards.com/Handlers/Image.ashx'
+    parameters = {'type': 'card'}
     for name, card in cards.items():
-        url_ = 'http://gatherer.wizards.com/Handlers/Image.ashx'
-        parameters = {
-            'type': 'card',
-            'multiverseid': card['multiverse_id'],
-        }
-        url = '{0}?{1}'.format(url_, urlencode(parameters))
-
         for printing in card['printings']:
             file_ = 'static/img/cards/{0}/{1}-{2}.jpg'.format(
                 printing.set.slug, printing.number, printing.card.slug)
             if not os.path.isfile(file_):
-                print url, '->', file_
+                parameters['multiverseid'] = card['multiverse_id']
+                url = '{0}?{1}'.format(url_, urlencode(parameters))
                 urlretrieve(url, file_)
