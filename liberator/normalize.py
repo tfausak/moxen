@@ -14,6 +14,9 @@ def normalize(cards):
 def _normalize_string(value, lower=True):
     """Normalize a string.
     """
+    if not isinstance(value, basestring):
+        return value
+
     value = value.strip()
     value = re.sub(r'\s+', ' ', value)
     if lower:

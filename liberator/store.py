@@ -24,8 +24,8 @@ def _store_card(data):
     card, _ = Card.objects.get_or_create(name=data['name'], slug=data['slug'])
     for key in ('rules_text', 'mana_cost', 'super_types', 'card_types',
             'sub_types', 'power', 'toughness', 'loyalty', 'hand_modifier',
-            'life_modifier', 'colors', 'converted_mana_cost',
-            'converted_power', 'converted_toughness'):
+            'life_modifier', 'colors', 'converted_power',
+            'converted_toughness'):
         setattr(card, key, data[key])
     card.save()
     return card
