@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% load title from magic_extras %}
+
 {% block title %}{{ printing.card.name|title }} &#xb7; {{ site.name }}{% endblock %}
 
 {% block breadcrumbs %}
