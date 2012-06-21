@@ -102,11 +102,11 @@ def scrape(set_):
             'type': 'card',
             'multiverseid': card['multiverse_id'],
         }
-        url = '{0}?{1}'.format(url, urlencode(parameters))
+        url = '{0}?{1}'.format(url_, urlencode(parameters))
 
         for printing in card['printings']:
             file_ = 'static/img/cards/{0}/{1}-{2}.jpg'.format(
                 printing.set.slug, printing.number, printing.card.slug)
             if not os.path.isfile(file_):
-                print file_
+                print url, '->', file_
                 urlretrieve(url, file_)
