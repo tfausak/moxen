@@ -51,9 +51,14 @@ def scrape(set_):
         if card['name'] not in cards:
             card['numbers'] = [card['number']]
             del card['number']
+
+            card['artists'] = [card['artist']]
+            del card['artist']
+
             cards[card['name']] = card
         else:
             cards[card['name']]['numbers'].append(card['number'])
+            cards[card['name']]['artists'].append(card['artist'])
 
     # Build a URL to the text spoiler for this set.
     url = 'http://gatherer.wizards.com/Pages/Search/'
@@ -85,14 +90,14 @@ def scrape(set_):
         card_ = _store_card(card)
         cards[name]['card'] = card_
         cards[name]['printings'] = []
-        for number in card['numbers']:
+        for number, artist in zip(card['numbers'], card['artists']):
             printing, _ = Printing.objects.get_or_create(
                 card=card_,
                 set=Set.objects.get(name=card['set']),
                 rarity=Rarity.objects.get(slug=card['rarity']),
                 number=number,
             )
-            printing.artist = card['artist']
+            printing.artist = artist
             printing.save()
             cards[name]['printings'].append(printing)
 
