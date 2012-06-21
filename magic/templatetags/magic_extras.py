@@ -1,5 +1,7 @@
 from django import template
+from django.template.defaultfilters import stringfilter
 from urllib import urlencode
+import re
 
 
 register = template.Library()
@@ -29,3 +31,24 @@ def link(context, key, value):
     get = context['request'].GET.copy()
     get[key] = value
     return '?' + urlencode(get)
+
+
+@register.filter
+@stringfilter
+def title(string):
+    """Convert a string to title case.
+    """
+    # Convert to naive title case.
+    string = string.title()
+
+    # Convert some words back to lower case.
+    pattern = r'\b(a|an|and|into|for|of|s|the|to|vs)\b'
+    replacement = lambda match: match.group(1).lower()
+    string = re.sub(pattern, replacement, string, flags=re.IGNORECASE)
+
+    # Convert some words to all upper case.
+    pattern = r'(^.|\b[iv]+\b)'
+    replacement = lambda match: match.group(1).upper()
+    string = re.sub(pattern, replacement, string, flags=re.IGNORECASE)
+
+    return string
