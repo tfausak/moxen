@@ -1,106 +1,112 @@
 from BeautifulSoup import BeautifulSoup
-from liberator.normalize import _normalize_int, _normalize_string, normalize
-from liberator.parse import _parse_gatherer_text
-from magic.models import Card, Printing, Rarity, Set
+from liberator.normalize import _normalize_card, _normalize_int, _normalize_string
+from liberator.store import _store_card
+from magic.models import Set, Rarity, Printing
+from urllib import urlencode, urlretrieve
+from urllib2 import urlopen
 import os
 import re
-import urllib
-import urllib2
 
 
 def scrape(set_):
-    # Build a Gatherer checklist URL.
+    """Scrape a set's data from the Gatherer.
+    """
+    # Searching by set is case-sensitive when outputting the checklist.
     pattern = '\<(and|for|of|s|set|the|vs)\>'
     replacement = lambda match: match.group(1).lower()
+    name = re.sub(pattern, replacement, set_.name.title())
+
+    # Build a URL to the checklist for this set.
     url = 'http://gatherer.wizards.com/Pages/Search/'
     parameters = {
         'output': 'checklist',
-        'set': '|["{0}"]'.format(re.sub(pattern, replacement, set_.name.title())),
-        'special': True,
+        'set': '["{0}"]'.format(name),
+        'special': 'true',
     }
-    full_url = '{0}?{1}'.format(url, urllib.urlencode(parameters))
+    full_url = '{0}?{1}'.format(url, urlencode(parameters))
 
     # Get the checklist and parse the DOM.
-    response = urllib2.urlopen(full_url)
+    response = urlopen(full_url)
     dom = BeautifulSoup(response)
 
-    # Get information from the checklist.
+    # Collect card data from the checklist.
+    rows = dom.findAll('tr', 'cardItem') or []
     cards = {}
-    printings = {}
-    rows = dom.findAll('tr', 'cardItem')
     for row in rows:
-        # Pull out relevant data.
-        id_ = _normalize_int(
-            row.find('td', 'name').find('a')['href'].split('=')[1])
-        name = _normalize_string(row.find('td', 'name').find('a').string)
-        set_ = _normalize_string(row.find('td', 'set').string)
-        rarity = _normalize_string(row.find('td', 'rarity').string)
-        number = _normalize_int(row.find('td', 'number').string)
-        artist = _normalize_string(row.find('td', 'artist').string)
+        card = {
+            'multiverse_id': row.find('a', 'nameLink')['href'].split('=')[1],
+            'name': row.find('a', 'nameLink').string,
+            'artist': row.find('td', 'artist').string,
+            'color': row.find('td', 'color').string,
+            'rarity': row.find('td', 'rarity').string,
+            'set': row.find('td', 'set').string,
+            'number': row.find('td', 'number').string,
+        }
+        for key in card:
+            card[key] = _normalize_string(card[key])
+        card['number'] = _normalize_int(card['number'])
+        card['multiverse_id'] = _normalize_int(card['multiverse_id'])
 
-        # Get or create (but don't save!) Card object.
-        try:
-            card = Card.objects.get(name=name)
-        except Card.DoesNotExist:
-            print u'Creating card: {0}'.format(name)
-            card = Card(name=name)
-        cards[id_] = card
+        if card['name'] not in cards:
+            card['numbers'] = [card['number']]
+            del card['number']
+            cards[card['name']] = card
+        else:
+            cards[card['name']]['numbers'].append(card['number'])
 
-        # Get or create (but don't save!) Printing object.
-        set_ = Set.objects.get(name=set_)
-        rarity = Rarity.objects.get(slug=rarity)
-        try:
-            printing = Printing.objects.get(
-                card=card, set=set_, rarity=rarity, number=number)
-        except Printing.DoesNotExist:
-            print u'Creating printing: {0} {1} {2} {3}'.format(set_, rarity, number, card.name)
-            printing = Printing(
-                card=card, set=set_, rarity=rarity, number=number)
-        printings[id_] = printing
-
-        print u'{0:3} {1} {2:3d} {3}'.format(set_.slug, rarity.slug, number, name)
-
-    # Build a Gatherer text spoiler URL.
-    parameters['output'] = 'spoiler'
+    # Build a URL to the text spoiler for this set.
+    url = 'http://gatherer.wizards.com/Pages/Search/'
     parameters['method'] = 'text'
-    full_url = '{0}?{1}'.format(url, urllib.urlencode(parameters))
+    parameters['output'] = 'spoiler'
+    full_url = '{0}?{1}'.format(url, urlencode(parameters))
 
-    # Get the text spoilers and parse their information.
-    response = urllib2.urlopen(full_url)
-    spoilers = _parse_gatherer_text(response)
-    spoilers = normalize(spoilers)
-    for id_ in cards:
-        card = cards[id_]
-        printing = printings[id_]
-        found = False
-        for spoiler in spoilers:
-            if spoiler['name'] == card.name:
-                found = True
-                break
-        if not found:
-            print u'Failed to match {0}'.format(card.name)
-            continue
+    # Get the text spoiler and parse the DOM.
+    response = urlopen(full_url)
+    dom = BeautifulSoup(response)
 
-        # Set card details.
-        card.slug = spoiler['slug']
-        card.save()
-        for key in ('rules_text', 'mana_cost', 'super_types', 'card_types',
-                'sub_types', 'power', 'toughness', 'loyalty',
-                'hand_modifier', 'life_modifier', 'colors',
-                'converted_mana_cost', 'converted_power',
-                'converted_toughness'):
-            setattr(card, key, spoiler[key])
+    # Collect card data from the text spoiler.
+    rows = dom.find('div', 'textspoiler').findAll('tr') or []
+    card = {}
+    for row in rows:
+        cells = row.findAll('td')
+        if len(cells) != 1:
+            key = re.sub('[^a-z]', '_', cells[0].string.strip().lower()[:-1])
+            value = '\n'.join(text for text in cells[1].findAll(text=True))
+            card[key] = value
+        else:
+            card = _normalize_card(card)
+            for key, value in card.items():
+                cards[card['name']][key] = value
+            card = {}
 
-        # Save everything.
-        card.save()
-        printing.card = card
-        printing.save()
+    # Save cards and printings.
+    for name, card in cards.items():
+        card_ = _store_card(card)
+        cards[name]['card'] = card_
+        cards[name]['printings'] = []
+        for number in card['numbers']:
+            printing, _ = Printing.objects.get_or_create(
+                card=card_,
+                set=Set.objects.get(name=card['set']),
+                rarity=Rarity.objects.get(slug=card['rarity']),
+                number=number,
+            )
+            printing.artist = card['artist']
+            printing.save()
+            cards[name]['printings'].append(printing)
 
-    # Get card images.
-    for id_ in printings:
-        printing = printings[id_]
-        url_ = 'http://gatherer.wizards.com/Handlers/Image.ashx?type=card&multiverseid={0}'.format(id_)
-        file_ = 'static/img/cards/{0}/{1}-{2}.jpg'.format(printing.set.slug, printing.number, printing.card.slug)
-        if not os.path.isfile(file_):
-            urllib.urlretrieve(url_, file_)
-            print file_
+    # Download card images.
+    for name, card in cards.items():
+        url_ = 'http://gatherer.wizards.com/Handlers/Image.ashx'
+        parameters = {
+            'type': 'card',
+            'multiverseid': card['multiverse_id'],
+        }
+        url = '{0}?{1}'.format(url, urlencode(parameters))
+
+        for printing in card['printings']:
+            file_ = 'static/img/cards/{0}/{1}-{2}.jpg'.format(
+                printing.set.slug, printing.number, printing.card.slug)
+            if not os.path.isfile(file_):
+                print file_
+                urlretrieve(url, file_)
