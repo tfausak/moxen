@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import DetailView, ListView
-from magic.models import Card, Printing, Set
+from magic.models import Card, Deck, Printing, Set
 
 
 def index(request):
@@ -78,3 +78,15 @@ class PrintingDetailView(DetailView):
             context['next_printing'] = printings[0]
 
         return context
+
+
+class DeckListView(ListView):
+    """Display a list of all user-made decks.
+    """
+    model = Deck
+
+
+class DeckDetailView(DetailView):
+    """Display a single deck's details.
+    """
+    model = Deck

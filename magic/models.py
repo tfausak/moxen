@@ -378,8 +378,15 @@ class Deck(models.Model):
     name = models.CharField(max_length=255)
     cards = models.ManyToManyField(Card, through='DeckCard')
 
+    class Meta:
+        ordering = ['name']
+
     def __unicode__(self):
         return self.name
+
+    @models.permalink
+    def get_absolute_url(self):
+        return ('deck_detail', (), {'pk': self.pk})
 
 
 class DeckCard(models.Model):
@@ -393,6 +400,7 @@ class DeckCard(models.Model):
     sideboard = models.BooleanField()
 
     class Meta:
+        ordering = ['sideboard', 'card__name']
         unique_together = ['deck', 'card', 'sideboard']
 
     def __unicode__(self):

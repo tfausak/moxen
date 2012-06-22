@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Decks &#xb7; {{ site.name }}{% endblock %}
+
+{% block breadcrumbs %}
+    <ul class="breadcrumb">
+        <li>
+            <a href="{% url index %}">Home</a>
+            <span class="divider">/</span>
+        </li>
+        <li class="active">
+            <a href="{% url deck_list %}">Decks</a>
+        </li>
+    </ul>
+{% endblock %}
+
+{% block header %}
+    <div class="page-header">
+        <h1>Decks</h1>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for deck in object_list %}
+                <tr>
+                    <td>
+                        <a href="{{ deck.get_absolute_url }}">{{ deck }}</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
