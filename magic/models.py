@@ -306,9 +306,13 @@ class Printing(models.Model):
         return ('printing_detail', (), {'set_slug': self.set.slug,
             'number': self.number, 'card_slug': self.card.slug})
 
-    def image(self):
+    def card_image(self):
         return '{0}img/cards/{1}/{2}-{3}.jpg'.format(settings.STATIC_URL,
             self.set.slug, self.number, self.card.slug)
+
+    def set_rarity_image(self):
+        return '{0}img/sets/{1}/{2}.gif'.format(settings.STATIC_URL,
+            self.set.slug, self.rarity.slug)
 
 
 class Block(models.Model):
