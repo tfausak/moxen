@@ -31,6 +31,17 @@
 
         <dt>Last name</dt>
         <dd>{{ profile.user.last_name }}</dd>
+
+        <dt>Decks</dt>
+        <dd>
+            <ul>
+                {% for deck in profile.user.deck_set.all %}
+                    <li>
+                        <a href="{{ deck.get_absolute_url }}">{{ deck }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </dd>
     </dl>
 
     {% if profile.user == user %}

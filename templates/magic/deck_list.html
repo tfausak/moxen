@@ -25,6 +25,7 @@
         <thead>
             <tr>
                 <th>Name</th>
+                <th>Creator</th>
             </tr>
         </thead>
 
@@ -33,6 +34,9 @@
                 <tr>
                     <td>
                         <a href="{{ deck.get_absolute_url }}">{{ deck }}</a>
+                    </td>
+                    <td>
+                        <a href="{{ deck.user.get_absolute_url }}">{{ deck.user }}</a>
                     </td>
                 </tr>
             {% endfor %}
