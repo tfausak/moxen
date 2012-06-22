@@ -41,7 +41,6 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'bauble',
     'compressor',
-    'liberator',
     'magic',
     'profiles',
     'registration',
