@@ -41,10 +41,14 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.card .rules-text {
+.card .rules-text,
+.card .flavor-text {
     height: 36px;
     overflow-y: hidden;
     white-space: pre-wrap;
+}
+.card .flavor-text {
+    font-style: italic;
 }
 .card-image {
     display: block;
