@@ -1207,15 +1207,6 @@
     },
     {
         "fields": {
-            "card": 5767,
-            "format": 9,
-            "status": "b"
-        },
-        "model": "magic.legality",
-        "pk": 30
-    },
-    {
-        "fields": {
             "card": 5890,
             "format": 9,
             "status": "b"
