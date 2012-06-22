@@ -4,6 +4,7 @@ from django.template.defaultfilters import slugify
 from magic.models import (Card, CardType, Color, ManaCost, ManaSymbol,
     Printing, Rarity, Set, SubType, SuperType)
 from magic.templatetags.magic_extras import title
+from time import sleep
 from urllib import urlencode, urlretrieve
 from urllib2 import urlopen
 import os
@@ -68,6 +69,7 @@ def scrape(set_):
     full_url = '{0}?{1}'.format(url, urlencode(parameters))
 
     # Get the checklist and parse the DOM.
+    print full_url
     response = urlopen(full_url)
     dom = BeautifulSoup(response)
 
@@ -108,6 +110,7 @@ def scrape(set_):
     full_url = '{0}?{1}'.format(url, urlencode(parameters))
 
     # Get the text spoiler and parse the DOM.
+    print full_url
     response = urlopen(full_url)
     dom = BeautifulSoup(response)
 
@@ -152,7 +155,29 @@ def scrape(set_):
             if not os.path.isfile(file_):
                 parameters['multiverseid'] = card['multiverse_id']
                 url = '{0}?{1}'.format(url_, urlencode(parameters))
+                print url
                 urlretrieve(url, file_)
+
+    # Get flavor text.
+    url = 'http://gatherer.wizards.com/Pages/Card/Details.aspx'
+    parameters = {}
+    for card in cards.values():
+        parameters['multiverseid'] = card['multiverse_id']
+        full_url = '{0}?{1}'.format(url, urlencode(parameters))
+        print full_url
+        response = urlopen(full_url)
+        dom = BeautifulSoup(response)
+        dom.findAll('div', 'cardtextbox')
+        tag = dom.find('div',
+            id='ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_FlavorText')
+        if tag:
+            texts = tag.findAll(text=True)
+            text = '\n'.join(text for text in texts).strip()
+            for printing in card['printings']:
+                printing.flavor_text = text
+                printing.save()
+
+        sleep(1)
 
 
 def _normalize_string(value, lower=True):
