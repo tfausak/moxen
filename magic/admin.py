@@ -106,10 +106,10 @@ class DeckAdmin(admin.ModelAdmin):
 admin.site.register(magic.models.Deck, DeckAdmin)
 
 
-class DeckItemAdmin(admin.ModelAdmin):
+class DeckCardAdmin(admin.ModelAdmin):
     list_filter = ['number']
     search_fields = ['card__name']
-admin.site.register(magic.models.DeckItem, DeckItemAdmin)
+admin.site.register(magic.models.DeckCard, DeckCardAdmin)
 
 
 class CollectionAdmin(admin.ModelAdmin):

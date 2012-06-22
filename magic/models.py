@@ -376,13 +376,13 @@ class Deck(models.Model):
     """
     user = models.ForeignKey(User)
     name = models.CharField(max_length=255)
-    cards = models.ManyToManyField(Card, through='DeckItem')
+    cards = models.ManyToManyField(Card, through='DeckCard')
 
     def __unicode__(self):
         return self.name
 
 
-class DeckItem(models.Model):
+class DeckCard(models.Model):
     """One card (any number of times) within a deck.
 
     If this item is not in the sideboard, then it is in the main deck.
