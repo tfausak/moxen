@@ -7,6 +7,7 @@ References to the Magic: The Gathering comprehensive rules are
 included where appropriate. <http://wizards.com/magic/rules>
 """
 from django.conf import settings
+from django.contrib.auth.models import User
 from django.db import models
 
 
@@ -368,3 +369,31 @@ class Legality(models.Model):
     def __unicode__(self):
         return u'{0} ({1} in {2})'.format(self.card.name,
             dict(self.STATUS_CHOICES)[self.status], self.format.name)
+
+
+class Deck(models.Model):
+    """A deck of cards.
+    """
+    user = models.ForeignKey(User)
+    name = models.CharField(max_length=255)
+    cards = models.ManyToManyField(Card, through='DeckItem')
+
+    def __unicode__(self):
+        return self.name
+
+
+class DeckItem(models.Model):
+    """One card (any number of times) within a deck.
+
+    If this item is not in the sideboard, then it is in the main deck.
+    """
+    deck = models.ForeignKey(Deck)
+    number = models.PositiveIntegerField()
+    card = models.ForeignKey(Card)
+    sideboard = models.BooleanField()
+
+    class Meta:
+        unique_together = ['deck', 'card', 'sideboard']
+
+    def __unicode__(self):
+        return u'{0} {1}'.format(self.number, self.card.name)

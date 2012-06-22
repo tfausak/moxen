@@ -98,3 +98,15 @@ class LegalityAdmin(admin.ModelAdmin):
     list_filter = ['status', 'format']
     search_fields = ['card__name']
 admin.site.register(magic.models.Legality, LegalityAdmin)
+
+
+class DeckAdmin(admin.ModelAdmin):
+    list_display = ['name', 'user']
+    search_fields = ['name']
+admin.site.register(magic.models.Deck, DeckAdmin)
+
+
+class DeckItemAdmin(admin.ModelAdmin):
+    list_filter = ['number']
+    search_fields = ['card__name']
+admin.site.register(magic.models.DeckItem, DeckItemAdmin)
