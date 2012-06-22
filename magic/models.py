@@ -397,3 +397,45 @@ class DeckItem(models.Model):
 
     def __unicode__(self):
         return u'{0} {1}'.format(self.number, self.card.name)
+
+
+class Collection(models.Model):
+    """A collection of cards.
+    """
+    user = models.OneToOneField(User)
+    cards = models.ManyToManyField(Card, through='CollectionCard')
+    printings = models.ManyToManyField(Printing, through='CollectionPrinting')
+
+    def __unicode__(self):
+        return self.user.username
+
+
+class CollectionCard(models.Model):
+    """A card in a collection.
+
+    Note that this represents a card, not a printing.
+    """
+    collection = models.ForeignKey(Collection)
+    number = models.PositiveIntegerField()
+    card = models.ForeignKey(Card)
+
+    class Meta:
+        unique_together = ['collection', 'card']
+
+    def __unicode__(self):
+        return u'{0} {1}'.format(self.number, self.card.name)
+
+
+class CollectionPrinting(models.Model):
+    """A printing in a collection
+    """
+    collection = models.ForeignKey(Collection)
+    number = models.PositiveIntegerField()
+    printing = models.ForeignKey(Printing)
+
+    class Meta:
+        unique_together = ['collection', 'printing']
+
+    def __unicode__(self):
+        return u'{0} {1} {2}'.format(self.number, self.printing.set.name,
+            self.printing.card.name)

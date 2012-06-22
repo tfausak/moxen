@@ -110,3 +110,18 @@ class DeckItemAdmin(admin.ModelAdmin):
     list_filter = ['number']
     search_fields = ['card__name']
 admin.site.register(magic.models.DeckItem, DeckItemAdmin)
+
+
+class CollectionAdmin(admin.ModelAdmin):
+    search_fields = ['user__username']
+admin.site.register(magic.models.Collection, CollectionAdmin)
+
+
+class CollectionCardAdmin(admin.ModelAdmin):
+    search_fields = ['card__name']
+admin.site.register(magic.models.CollectionCard, CollectionCardAdmin)
+
+
+class CollectionPrintingAdmin(admin.ModelAdmin):
+    search_fields = ['printing__card__name']
+admin.site.register(magic.models.CollectionPrinting, CollectionPrintingAdmin)
