@@ -1,1 +1,3834 @@
-[]
+[
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The land retains any other abilities it has."
+        },
+        "model": "magic.ruling",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Aggravate targets only the player. Creatures with hexproof that player controls will be dealt damage by Aggravate if it resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The controller of a creature dealt damage by Aggravate still decides which player or planeswalker the creature attacks."
+        },
+        "model": "magic.ruling",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If, during a player's declare attackers step, a creature is tapped, is affected by a spell or ability that says it can't attack, or hasn't been under that player's control continuously since the turn began (and doesn't have haste), then it doesn't attack. If there's a cost associated with having a creature attack, the player isn't forced to pay that cost, so it doesn't have to attack in that case either."
+        },
+        "model": "magic.ruling",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "You can cast a nonland card with flash any time you could cast an instant."
+        },
+        "model": "magic.ruling",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The last ability applies to nonland cards in any zone, provided something is allowing you to cast them. For example, you could cast a sorcery with flashback as though it had flash."
+        },
+        "model": "magic.ruling",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If you cast Amass the Components with fewer than three cards in your library, you'll draw the remaining cards in your library, put a card from your hand on the bottom of your library, then lose the game for drawing a card from a library with no cards in it the next time state-based actions are performed."
+        },
+        "model": "magic.ruling",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Only Zombie permanents on the battlefield are exiled. Zombie cards in other zones are not."
+        },
+        "model": "magic.ruling",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If a spell or activated ability has a cost that requires a player to pay life (as Griselbrand's activated ability does) or sacrifice a creature (as Fling does), that spell or ability can't be cast or activated."
+        },
+        "model": "magic.ruling",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Other things may still cause players to pay life or sacrifice creatures, such as a resolving spell or ability."
+        },
+        "model": "magic.ruling",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Angel of Jubilation's last ability doesn't look for specific words on other cards. Rather, it stops players from taking specific actions. For example, you couldn't activate an ability with an activation of cost of \"Sacrifice an artifact:\" by sacrificing an artifact creature (although you could sacrifice a noncreature artifact)."
+        },
+        "model": "magic.ruling",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If Angel's Tomb is already a creature when a creature enters the battlefield, its ability will override any effects that set its power and toughness to specific values, but other changes to its power and toughness will still apply."
+        },
+        "model": "magic.ruling",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If a card in a player's hand has {X} in its mana cost, X is 0."
+        },
+        "model": "magic.ruling",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Arcane Melee can't reduce the colored mana requirement of an instant or sorcery spell."
+        },
+        "model": "magic.ruling",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If there are additional costs to cast a spell, such as a kicker cost or a cost imposed by another effect (such as Thalia, Guardian of Thraben's ability), apply those increases before applying cost reductions."
+        },
+        "model": "magic.ruling",
+        "pk": 15
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Arcane Melee can reduce alternative costs such as miracle costs."
+        },
+        "model": "magic.ruling",
+        "pk": 16
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The cost to cast an instant or sorcery spell with one generic mana in its mana cost will be reduced by {1}. For example, an instant spell with a mana cost of {1}{G} would cost {G} to cast."
+        },
+        "model": "magic.ruling",
+        "pk": 17
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Archwing Dragon is only returned to its owner's hand if it's on the battlefield."
+        },
+        "model": "magic.ruling",
+        "pk": 18
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Indestructible creatures still have damage marked on them, even though that damage won't destroy them. If Avacyn leaves the battlefield, any previously indestructible creature that has lethal damage marked on it will be destroyed."
+        },
+        "model": "magic.ruling",
+        "pk": 19
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "An indestructible permanent can't be destroyed, but it can still be sacrificed, exiled, put into a graveyard, and so on."
+        },
+        "model": "magic.ruling",
+        "pk": 20
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Only creatures you control when Banners Raised resolves will get the bonus. Creatures that enter the battlefield or that you gain control of later in the turn will be unaffected."
+        },
+        "model": "magic.ruling",
+        "pk": 21
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The active player chooses which creatures will be sacrificed first, then each other player in turn order does the same. Then all creatures are sacrificed simultaneously."
+        },
+        "model": "magic.ruling",
+        "pk": 22
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If a player controls only one creature, that creature is sacrificed."
+        },
+        "model": "magic.ruling",
+        "pk": 23
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Barter in Blood doesn't target any creatures and may be cast even if a player controls fewer than two creatures."
+        },
+        "model": "magic.ruling",
+        "pk": 24
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Battle Hymn uses the stack and can be responded to. The amount of mana you add to your mana pool is based on the number of creatures you control when Battle Hymn resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 25
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "You may choose up to four target creatures. You declare how many counters will be placed on each target creature as you cast Blessings of Nature. Each target must receive at least one counter."
+        },
+        "model": "magic.ruling",
+        "pk": 26
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If Blood Artist and one or more other creatures die at the same time, its ability will trigger for each of those creatures."
+        },
+        "model": "magic.ruling",
+        "pk": 27
+    },
+    {
+        "fields": {
+            "date": "2008-10-01",
+            "text": "You could choose to target the creature you're going to sacrifice to pay for Bone Splinters. First you choose the target (at which time it's still on the battlefield), then you pay the costs (at which time you sacrifice it). The spell will be countered."
+        },
+        "model": "magic.ruling",
+        "pk": 28
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Bonfire of the Damned targets only the player. Creatures with hexproof that player controls will be dealt damage by Bonfire of the Damned if it resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 29
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If the player is an illegal target when Bonfire of the Damned tries to resolve, it will be countered and none of its effects will happen. No damage will be dealt to any creature or player."
+        },
+        "model": "magic.ruling",
+        "pk": 30
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Preventing some or all of the damage dealt to the player won't affect the amount of damage dealt to each creature that player controls. The same is true for any effect that increases or decreases the amount of damage dealt to the player."
+        },
+        "model": "magic.ruling",
+        "pk": 31
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Bower Passage won't affect a blocking creature that gains flying after blockers are declared."
+        },
+        "model": "magic.ruling",
+        "pk": 32
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Creatures with reach can still block creatures you control."
+        },
+        "model": "magic.ruling",
+        "pk": 33
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Only Auras that could legally enchant Bruna may be attached to it, whether they're being moved from other permanents or being put onto the battlefield. An Aura with \"enchant land,\" for example, could not be attached to Bruna this way."
+        },
+        "model": "magic.ruling",
+        "pk": 34
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "All of these Auras will become attached to Bruna before combat damage is dealt. If Bruna is attacking, these Auras become attached before blockers are declared."
+        },
+        "model": "magic.ruling",
+        "pk": 35
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Players may not respond to the paying of costs. Once Burn at the Stake has been announced and put on the stack, no one can try to respond by tapping any creatures."
+        },
+        "model": "magic.ruling",
+        "pk": 36
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The amount of damage Burn at the Stake deals won't change if any creatures tapped to cast it become untapped or leave the battlefield before it resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 37
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "All creatures tapped this way become tapped at the same time."
+        },
+        "model": "magic.ruling",
+        "pk": 38
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If the enchanted creature becomes black, Call to Serve will be put into its owner's graveyard the next time state-based actions are performed."
+        },
+        "model": "magic.ruling",
+        "pk": 39
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The creature that entered the battlefield and caused the ability to trigger will also get a +1/+1 counter, provided it's still on the battlefield when the ability resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 40
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "You must choose an existing _Magic_ creature type, such as Zombie or Warrior. Card types such as artifact can't be chosen."
+        },
+        "model": "magic.ruling",
+        "pk": 41
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The spell can't be countered if the mana produced by Cavern of Souls is spent to cover any cost of the spell, even an additional cost such as a kicker cost. This is true even if you use the mana to pay an additional cost while casting a spell \"without paying its mana cost.\""
+        },
+        "model": "magic.ruling",
+        "pk": 42
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Creatures with power less than Champion of Lambholt can't block any creature you control, not just Champion of Lambholt."
+        },
+        "model": "magic.ruling",
+        "pk": 43
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Champion of Lambholt's ability works even if it isn't attacking."
+        },
+        "model": "magic.ruling",
+        "pk": 44
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The comparison of power is only done when blockers are declared. Increasing the power of a blocking creature (or decreasing the power of Champion of Lambholt) after this point won't cause any creature to stop blocking or become unblocked."
+        },
+        "model": "magic.ruling",
+        "pk": 45
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The controller of the enchanted creature gets the token."
+        },
+        "model": "magic.ruling",
+        "pk": 46
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "You can sacrifice Corpse Traders to pay the cost of its ability."
+        },
+        "model": "magic.ruling",
+        "pk": 47
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If you cast Corspe Traders as normal during your main phase, it will enter the battlefield and you'll receive priority. If no abilities trigger because of this, you can activate its ability before another player has a chance to cast a spell or activate an ability."
+        },
+        "model": "magic.ruling",
+        "pk": 48
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The bonus is calculated based on the number of creatures you control when Craterhoof Behemoth's ability resolves, potentially including itself. If that number increases or decreases later in the turn, the bonus won't change."
+        },
+        "model": "magic.ruling",
+        "pk": 49
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Only creatures you control when Craterhoof Behemoth's ability resolves will get the bonus. Creatures that enter the battlefield or that you gain control of later in the turn will be unaffected."
+        },
+        "model": "magic.ruling",
+        "pk": 50
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Crippling Chill can target a creature that's already tapped. It still won't untap during its controller's next untap step."
+        },
+        "model": "magic.ruling",
+        "pk": 51
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Crippling Chill tracks the creature, but not its controller. If the creature changes controllers before its first controller's next untap step has come around, then it won't untap during its new controller's next untap step."
+        },
+        "model": "magic.ruling",
+        "pk": 52
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "You must be able to target a card in a graveyard to activate Crypt Creeper's ability. It can't target itself."
+        },
+        "model": "magic.ruling",
+        "pk": 53
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If the enchantment is an illegal target when Cursebreak tries to resolve, it'll be countered and none of its effects will happen. You won't gain 2 life."
+        },
+        "model": "magic.ruling",
+        "pk": 54
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If you have no cards in hand when Dangerous Wager resolves, you'll simply draw two cards."
+        },
+        "model": "magic.ruling",
+        "pk": 55
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Dark Impostor gains only activated abilities. It doesn't gain triggered abilities or static abilities. Activated abilities contain a colon. They're generally written \"[Cost]: [Effect].\" Some keywords are activated abilities; they have colons in their reminder text."
+        },
+        "model": "magic.ruling",
+        "pk": 56
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If an activated ability of a card in exile references the card it's printed on by name, treat Dark Impostor's version of that ability as though it referenced Dark Impostor by name instead. For example, if Marrow Bats (which says \"Pay 4 life: Regenerate Marrow Bats\") is exiled with Dark Impostor, Dark Impostor has the ability \"Pay 4 life: Regenerate Dark Impostor.\""
+        },
+        "model": "magic.ruling",
+        "pk": 57
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Dark Impostor can target and exile a permanent that's only a creature temporarily, like an animated land. However, because that card isn't a creature card, Dark Impostor won't have any of that card's activated abilities."
+        },
+        "model": "magic.ruling",
+        "pk": 58
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If you control more than one Dark Impostor, each will have only the activated abilities of creature cards exiled with that specific Dark Impostor."
+        },
+        "model": "magic.ruling",
+        "pk": 59
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Once Dark Impostor leaves the battlefield, it will no longer have the activated abilities of the creature cards exiled with it. If it returns to the battlefield, it will be a new Dark Impostor with no connection to those exiled cards."
+        },
+        "model": "magic.ruling",
+        "pk": 60
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Once Deadeye Navigator or the creature it's paired with is exiled, the other creature will no longer have the activated ability. However, you can activate the ability of one creature in response to activating the ability of the other creature."
+        },
+        "model": "magic.ruling",
+        "pk": 61
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "No player can cast spells or activate abilities between returning the creature card to the battlefield and checking whether it's an Angel."
+        },
+        "model": "magic.ruling",
+        "pk": 62
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If the creature is an Angel only on the battlefield (perhaps because it's a non-Angel creature card and Xenograft is on the battlefield), it will get the +1/+1 counters."
+        },
+        "model": "magic.ruling",
+        "pk": 63
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If you control zero creatures or more than one creature at the beginning of your end step, the ability won't trigger. If you control zero creatures or more than one creature when the ability resolves, it will do nothing."
+        },
+        "model": "magic.ruling",
+        "pk": 64
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Although you must control exactly one creature both when the ability would trigger and when it would resolve in order for the ability to create the Demon token, that creature doesn't have to be the same one both times. For example, if the ability triggers, then you lose control of your one creature before it resolves, you can cast a creature with flash to make sure you control exactly one creature when the ability resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 65
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If you control no other creatures, you won't sacrifice anything."
+        },
+        "model": "magic.ruling",
+        "pk": 66
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If Demonic Taskmaster leaves the battlefield after its ability triggers but before it resolves, you'll still have to sacrifice a creature. Notably, if you control two Demonic Taskmasters and no other creatures, each one will force you to sacrifice the other."
+        },
+        "model": "magic.ruling",
+        "pk": 67
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Demonlord of Ashmouth's enters-the-battlefield ability will trigger no matter how it entered the battlefield, including because of its undying ability."
+        },
+        "model": "magic.ruling",
+        "pk": 68
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "You don't have to sacrifice another creature, even if you control one. You may choose to exile Demonlord of Ashmouth."
+        },
+        "model": "magic.ruling",
+        "pk": 69
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If you cast a card \"without paying its mana cost,\" you can't pay any alternative costs. You can pay additional costs, such as kicker costs. If the card has mandatory additional costs, you must pay those."
+        },
+        "model": "magic.ruling",
+        "pk": 70
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If the card has {X} in its mana cost, you must choose 0 as its value."
+        },
+        "model": "magic.ruling",
+        "pk": 71
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If the revealed card is a creature card that shares a creature type with a creature you control, but you choose not to cast it, it stays on top of your library."
+        },
+        "model": "magic.ruling",
+        "pk": 72
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "For each despair counter on Descent into Madness, you'll exile a permanent you control or exile a card from your hand, not both."
+        },
+        "model": "magic.ruling",
+        "pk": 73
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "First you choose the permanents and/or cards from your hand that will be exiled. Then each other player in turn order does the same. Then all the chosen permanents and cards are exiled simultaneously. Players who choose after you will know what permanents you'll be exiling when they choose. They'll know how many cards you'll be exiling from your hand, but they won't see those cards."
+        },
+        "model": "magic.ruling",
+        "pk": 74
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If there are more counters on Descent into Madness than the total number of permanents you control plus the number of cards in your hand, you'll exile all permanents you control (including Descent into Madness) and all cards from your hand."
+        },
+        "model": "magic.ruling",
+        "pk": 75
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If Descent into Madness isn't on the battlefield when its ability resolves, use the number of counters on it when it left the battlefield to determine how many permanents and/or cards from hands to exile."
+        },
+        "model": "magic.ruling",
+        "pk": 76
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "You can tap any two untapped Humans you control, including ones you haven't controlled continuously since the beginning of your most recent turn, to pay the cost of Devout Chaplain's activated ability. You must have controlled Devout Chaplain continuously since the beginning of your most recent turn, however."
+        },
+        "model": "magic.ruling",
+        "pk": 77
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Diregraf Escort can be paired with a Zombie. The protection will have no effect on the pairing."
+        },
+        "model": "magic.ruling",
+        "pk": 78
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Divine Deflection's only target is the creature or player it may deal damage to. You choose that target as you cast Divine Deflection, not at the time it prevents damage."
+        },
+        "model": "magic.ruling",
+        "pk": 79
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If the targeted creature or player is an illegal target by the time Divine Deflection resolves, the entire spell is countered. No damage will be prevented."
+        },
+        "model": "magic.ruling",
+        "pk": 80
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Divine Deflection can prevent damage that would be dealt to you, one or more creatures you control, and/or one or more planeswalkers you control."
+        },
+        "model": "magic.ruling",
+        "pk": 81
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Divine Deflection can prevent damage from multiple sources dealing damage simultaneously (such as during combat). If the chosen value for X won't prevent all the damage, you choose which sources to prevent damage from."
+        },
+        "model": "magic.ruling",
+        "pk": 82
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If damage is dealt to multiple permanents you control, or is dealt to you and at least one permanent you control, you choose which of that damage to prevent if the chosen value for X won't prevent all the damage. For example, if 3 damage would be dealt to you and to each of two creatures you control, and Divine Deflection will prevent the next 3 damage, you might choose to prevent the next 2 damage it would deal to you and the next 1 damage it would deal to one of the creatures, among other choices. You don't decide until the point at which the damage would be dealt."
+        },
+        "model": "magic.ruling",
+        "pk": 83
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Divine Deflection's effect is not a redirection effect. If it prevents damage, Divine Deflection (not the original source) deals damage to the targeted creature or player as part of that prevention effect. Divine Deflection is the source of the new damage, so the characteristics of the original source (such as its color, or whether it had lifelink or deathtouch) don't affect this damage. The new damage is not combat damage, even if the prevented damage was. Since you control the source of the new damage, if you targeted an opponent with Divine Deflection, you may have Divine Deflection deal its damage to a planeswalker that opponent controls."
+        },
+        "model": "magic.ruling",
+        "pk": 84
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If Divine Deflection prevents damage, excess damage (if any) dealt by that source is dealt at the same time. Immediately afterward, as part of that same prevention effect, Divine Deflection deals its damage. This happens before state-based actions are checked, and before the spell or ability that caused damage to be dealt resumes its resolution."
+        },
+        "model": "magic.ruling",
+        "pk": 85
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Whether the targeted creature or player is still a legal target is not checked after Divine Deflection resolves. For example, if a creature targeted by Divine Deflection gains shroud after Divine Deflection resolves, Divine Deflection can still deal damage to that creature."
+        },
+        "model": "magic.ruling",
+        "pk": 86
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If Divine Deflection can't deal damage to the targeted creature or player (because the creature has gained protection from white, is no longer on the battlefield, or is no longer a creature, or the player is no longer in the game, for example), it will still prevent damage. It just won't deal any damage itself."
+        },
+        "model": "magic.ruling",
+        "pk": 87
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Each time a creature dies, check whether Dread Slaver had dealt any damage to it at any time during that turn. If so, Dread Slaver's ability will trigger. It doesn't matter who controlled the creature or whose graveyard it was put into."
+        },
+        "model": "magic.ruling",
+        "pk": 88
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If Dread Slaver and a creature it was blocking or blocked by both die in combat, Dread Slaver's ability will trigger."
+        },
+        "model": "magic.ruling",
+        "pk": 89
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Dread Slaver will return if it somehow dealt damage to itself and then dies."
+        },
+        "model": "magic.ruling",
+        "pk": 90
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The card will return to the battlefield under your control only if it's still in the graveyard when the ability resolves. If it's not (perhaps because an ability like undying has already returned it to the battlefield), nothing happens."
+        },
+        "model": "magic.ruling",
+        "pk": 91
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The number of cards put into the graveyard is based on the number of lands you control when Dreadwaters resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 92
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If Driver of the Dead dies at the same time as a creature with converted mana cost 2 or less, you can target that card and return it to the battlefield."
+        },
+        "model": "magic.ruling",
+        "pk": 93
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If Druid's Familiar becomes unpaired, it will immediately lose the +2/+2 bonus. If this causes it to have damage marked on it equal to it or greater than its new toughness, it will be destroyed. The same is true for the creature it was paired with."
+        },
+        "model": "magic.ruling",
+        "pk": 94
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The first ability of Druids' Repository will trigger once for each creature you control that attacks."
+        },
+        "model": "magic.ruling",
+        "pk": 95
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "You can activate the second ability of Druids' Repository multiple times in the same turn. It's a mana ability, doesn't use the stack, and can't be responded to."
+        },
+        "model": "magic.ruling",
+        "pk": 96
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The ability granted by Dual Casting can target (and copy) any instant or sorcery spell you control, not just one with targets."
+        },
+        "model": "magic.ruling",
+        "pk": 97
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The copy is created on the stack, so it's not \"cast.\" Abilities that trigger when a player casts a spell won't trigger. The copy will then resolve like a normal spell, after players get a chance to cast spells and activate abilities."
+        },
+        "model": "magic.ruling",
+        "pk": 98
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The copy will have the same targets as the spell it's copying unless you choose new ones. You may change any number of the targets, including all of them or none of them. If, for one of the targets, you can't choose a new legal target, then it remains unchanged (even if the current target is illegal)."
+        },
+        "model": "magic.ruling",
+        "pk": 99
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If the spell being copied is modal (that is, it says \"Choose one --\" or the like), the copy will have the same mode(s). You can't choose different ones."
+        },
+        "model": "magic.ruling",
+        "pk": 100
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If the spell being copied has an X whose value was determined as it was cast (like Earthquake does), the copy has the same value of X."
+        },
+        "model": "magic.ruling",
+        "pk": 101
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "You can't choose to pay any additional costs for the copy. However, effects based on any additional costs that were paid for the original spell are copied as though those same costs were paid for the copy too. For example, if you sacrifice a 3/3 creature to cast Fling and then copy it with the ability granted by Dual Casting, the copy of Fling will also deal 3 damage to its target."
+        },
+        "model": "magic.ruling",
+        "pk": 102
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The triggered ability doesn't target a permanent. You choose which one to return to its owner's hand as the ability resolves. No one can respond to the choice."
+        },
+        "model": "magic.ruling",
+        "pk": 103
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If Emancipation Angel is still on the battlefield as its triggered ability resolves, you may return Emancipation Angel itself."
+        },
+        "model": "magic.ruling",
+        "pk": 104
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The value of X is determined when Essence Harvest resolves. If you control no creatures that time, no life will be lost or gained."
+        },
+        "model": "magic.ruling",
+        "pk": 105
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Essence Harvest targets only the player. It doesn't target any creatures. If that player is an illegal target when Essence Harvest tries to resolve, it will be countered and none of its effects will happen. No life will be lost or gained."
+        },
+        "model": "magic.ruling",
+        "pk": 106
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Evernight Shade's ability doesn't put +1/+1 counters on it; it just gives Evernight Shade +1/+1 until end of turn. If Evernight Shade has no +1/+1 counters on it and dies after its ability has resolved, undying will still return it to the battlefield."
+        },
+        "model": "magic.ruling",
+        "pk": 107
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Damage dealt to an opponent usually causes that opponent to lose life. An opponent paying life also causes loss of life."
+        },
+        "model": "magic.ruling",
+        "pk": 108
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If you and an opponent both lose life simultaneously, and this causes your life total to become 0 or less, you'll lose the game before Exquisite Blood's triggered ability can resolve."
+        },
+        "model": "magic.ruling",
+        "pk": 109
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The amount of mana you need to pay is determined when the triggered ability resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 110
+    },
+    {
+        "fields": {
+            "date": "2010-06-15",
+            "text": "If the targeted creature is an illegal target by the time Fleeting  Distraction resolves, the spell is countered. You won't draw a card."
+        },
+        "model": "magic.ruling",
+        "pk": 111
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If the targeted creature is an illegal target when Fleeting Distraction tries to resolve, it will be countered and none of its effects will happen. You won't draw a card."
+        },
+        "model": "magic.ruling",
+        "pk": 112
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Whether Flowering Lumberknot is paired is checked only when attackers or blockers are declared. After that point, Flowering Lumberknot becoming unpaired won't cause it to stop attacking or blocking."
+        },
+        "model": "magic.ruling",
+        "pk": 113
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If the creature Flowering Lumberknot is paired with loses soulbond, Flowering Lumberknot will remain paired but won't be able to attack or block."
+        },
+        "model": "magic.ruling",
+        "pk": 114
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "You can tap any three untapped Humans you control, including ones you haven't controlled continuously since the beginning of your most recent turn, to pay the cost of the activated ability."
+        },
+        "model": "magic.ruling",
+        "pk": 115
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If the targeted creature is an illegal target when the ability tries to resolve, the ability will be countered and none of its effects will happen. The creature's controller won't put a Spirit token onto the battlefield."
+        },
+        "model": "magic.ruling",
+        "pk": 116
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "You divide the damage as you put Gang of Devils's triggered ability on the stack, not as it resolves. Each target must be assigned at least 1 damage. (In other words, as you put the ability on the stack, you choose whether to have it deal 3 damage to a single target, 2 damage to one target and 1 damage to another target, or 1 damage to each of three targets.)"
+        },
+        "model": "magic.ruling",
+        "pk": 117
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If the target creature spell is an illegal target when Geist Snatch tries to resolve, Geist Snatch will be countered and none of its effects will happen. You won't put a Spirit token onto the battlefield."
+        },
+        "model": "magic.ruling",
+        "pk": 118
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If Geist Snatch resolves but the creature spell can't be countered, you'll still put the Spirit token onto the battlefield."
+        },
+        "model": "magic.ruling",
+        "pk": 119
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The two targets can have different card types. For example, you can target one artifact and one creature with Ghostly Flicker."
+        },
+        "model": "magic.ruling",
+        "pk": 120
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If Ghoulflesh causes a creature to have 0 toughness or have damage marked on it equal to or greater than its toughness, it will be a black Zombie (in addition to its other colors and types) when it dies."
+        },
+        "model": "magic.ruling",
+        "pk": 121
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Gisela doubles damage dealt to opponents and permanents your opponents control from any source, including sources controlled by those opponents."
+        },
+        "model": "magic.ruling",
+        "pk": 122
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If multiple replacement effects would modify how damage would be dealt, the player being dealt damage (or the controller of the permanent being dealt damage) chooses the order in which to apply those effects."
+        },
+        "model": "magic.ruling",
+        "pk": 123
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If damage dealt by a source you control is being divided among multiple permanents an opponent controls or among an opponent and one or more permanents he or she controls simultaneously, divide the original amount and double the results. For example, if you attack with a 5/5 creature with trample and your opponent blocks with a 2/2 creature, you can assign 2 damage to the blocker and 3 damage to the defending player. These amounts are then doubled to 4 and 6 damage, respectively. You can't double the damage to 10 first and then assign 2 to the creature and 8 to the player."
+        },
+        "model": "magic.ruling",
+        "pk": 124
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Combat damage that would be dealt to Gloom Surgeon will be prevented even if you can't exile that many cards from the top of your library."
+        },
+        "model": "magic.ruling",
+        "pk": 125
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If damage that can't be prevented (such as the damage Malignus deals) is dealt to Gloom Surgeon, you'll still exile cards from your library."
+        },
+        "model": "magic.ruling",
+        "pk": 126
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The creature that entered the battlefield will also get +1/+1 until end of turn if it's still on the battlefield when the ability resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 127
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The amount of life you gain is based on the number of other creatures you control when the ability resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 128
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Grave Exchange targets both a creature card in your graveyard and a player. You can't cast it unless there is a legal target to choose for both. You can target a player who controls no creatures."
+        },
+        "model": "magic.ruling",
+        "pk": 129
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If both targets are illegal when Grave Exchange tries to resolve, it will be countered and none of its effects will happen. If only one target is legal, the effect relevant to that target will happen and the other will not."
+        },
+        "model": "magic.ruling",
+        "pk": 130
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "You can't activate Griselbrand's ability if you have 6 or less life."
+        },
+        "model": "magic.ruling",
+        "pk": 131
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The creature can later gain flying from another effect. That will override Grounded's effect."
+        },
+        "model": "magic.ruling",
+        "pk": 132
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The controller of the enchanted creature still decides which player or planeswalker the creature attacks."
+        },
+        "model": "magic.ruling",
+        "pk": 133
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If, during its controller's declare attackers step, the enchanted creature is tapped, is affected by a spell or ability that says it can't attack, or hasn't been under that player's control continuously since the turn began (and doesn't have haste), then it doesn't attack. If there's a cost associated with having a creature attack, the player isn't forced to pay that cost, so it doesn't have to attack in that case either."
+        },
+        "model": "magic.ruling",
+        "pk": 134
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If you don't control any other creatures, the ability won't do anything."
+        },
+        "model": "magic.ruling",
+        "pk": 135
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The +1/+1 counter is put on Herald of War before blockers are declared and combat damage is dealt."
+        },
+        "model": "magic.ruling",
+        "pk": 136
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The cost reduction is based on the total number of +1/+1 counters on Herald of War, not just the ones put on it by its own ability."
+        },
+        "model": "magic.ruling",
+        "pk": 137
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If there are additional costs to cast a creature spell, such as a kicker cost, apply those increases before applying cost reductions."
+        },
+        "model": "magic.ruling",
+        "pk": 138
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "A creature spell that's both an Angel and a Human will cost {1} less to cast for each +1/+1 counter on Herald of War."
+        },
+        "model": "magic.ruling",
+        "pk": 139
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If the creature is an untapped Zombie, it will become tapped, then exiled."
+        },
+        "model": "magic.ruling",
+        "pk": 140
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The comparison of power is performed only when blockers are declared. Increasing the power of a blocking creature (or decreasing the power of Howlgeist) after this point won't cause any creature to stop blocking or become unblocked."
+        },
+        "model": "magic.ruling",
+        "pk": 141
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Infinite Reflection can enchant a creature controlled by another player."
+        },
+        "model": "magic.ruling",
+        "pk": 142
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If Infinite Reflection enters the battlefield attached to a creature and then becomes attached to a different creature before its enters-the-battlefield trigger resolves, each other nontoken creature you control will become a copy of the first creature."
+        },
+        "model": "magic.ruling",
+        "pk": 143
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If Infinite Reflection leaves the battlefield or becomes attached to a different creature, none of the copy effects end. Your creatures will still be copies of whatever creature each was a copy of."
+        },
+        "model": "magic.ruling",
+        "pk": 144
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If Infinite Reflection enters the battlefield attached to a token creature, the nontoken creatures that become copies of that creature are not themselves tokens."
+        },
+        "model": "magic.ruling",
+        "pk": 145
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Creatures you control don't copy whether the enchanted creature is tapped or untapped, whether it has any counters on it, whether it has any Auras and Equipment attached to it, or any noncopy effects that have changed its power, toughness, types, color, or so on."
+        },
+        "model": "magic.ruling",
+        "pk": 146
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Because creatures you control enter the battlefield as a copy of the enchanted creature, any enters-the-battlefield triggered abilities printed on such creatures won't trigger. However, if the enchanted creature has any enters-the-battlefield triggered abilities, those will trigger."
+        },
+        "model": "magic.ruling",
+        "pk": 147
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Replacement effects that modify how a permanent enters the battlefield are now applied in the following order: control-changing effects (such as Gather Specimens), then copy effects (such as the abilities of Infinite Reflection and Clone), then all other effects."
+        },
+        "model": "magic.ruling",
+        "pk": 148
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If a creature such as Clone is entering the battlefield under your control, there will be two copy effects to apply: the creature's own and Infinite Reflection's. No matter what order these effects are applied, the creature will be a copy of the enchanted creature when it enters the battlefield."
+        },
+        "model": "magic.ruling",
+        "pk": 149
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Other enters-the-battlefield replacement abilities printed on the creature entering the battlefield won't be applied because the creature will already be a copy of the enchanted creature at that point (and therefore it won't have those abilities). For example, if the enchanted creature is Serra Angel, a creature that normally enters the battlefield tapped will enter the battlefield as an untapped copy of Serra Angel, and a creature that would normally enter the battlefield with counters on it will enter the battlefield as a copy of Serra Angel with no counters."
+        },
+        "model": "magic.ruling",
+        "pk": 150
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "External abilities may still affect how a creature enters the battlefield. For example, if your opponent controls Urabrask the Hidden, which reads, in part, \"Creatures your opponents control enter the battlefield tapped,\" a creature entering the battlefield under your control will be a tapped copy of the enchanted creature."
+        },
+        "model": "magic.ruling",
+        "pk": 151
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If you control more than one Infinite Reflection, you can apply those copy effects in any order. Creatures you control will enter the battlefield as a copy of the one whose copy effect you apply last."
+        },
+        "model": "magic.ruling",
+        "pk": 152
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Joint Assault targets only one creature. If that creature is an illegal target when Joint Assault tries to resolve, it will be countered and none of its effects will happen. No creature will get +2/+2."
+        },
+        "model": "magic.ruling",
+        "pk": 153
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Joint Assault checks whether the target creature is paired only when it resolves. If it becomes unpaired later in the turn, neither creature will lose the bonus. Similarly, if it becomes paired later in the turn, the creature it's paired with won't gain the bonus."
+        },
+        "model": "magic.ruling",
+        "pk": 154
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The number of Humans you control is counted when the enters-the-battlefield ability resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 155
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "First, the active player chooses whether to pay X life for each creature he or she controls. Then each other player in turn order chooses for his or her creatures. Then each player pays life and sacrifices creatures at the same time. Players will know the decisions of players who chose before them."
+        },
+        "model": "magic.ruling",
+        "pk": 156
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "A player may choose to pay life for some creatures and sacrifice the rest. It's not an all-or-nothing decision."
+        },
+        "model": "magic.ruling",
+        "pk": 157
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "You can't pay more life than you have."
+        },
+        "model": "magic.ruling",
+        "pk": 158
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If you can't sacrifice a creature (perhaps because of Sigarda, Host of Herons), you can choose not to pay life and nothing will happen."
+        },
+        "model": "magic.ruling",
+        "pk": 159
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "A creature that loses haste after it's been declared as an attacking creature doesn't stop attacking."
+        },
+        "model": "magic.ruling",
+        "pk": 160
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "You must put one of the cards into your hand, even if you'd rather put all four on the bottom of your library."
+        },
+        "model": "magic.ruling",
+        "pk": 161
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If you control Lone Revenant and any other creature (including another Lone Revenant), its ability won't trigger."
+        },
+        "model": "magic.ruling",
+        "pk": 162
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Check whether Lone Revenant's ability triggers after combat damage is dealt but before any creatures that are destroyed due to combat damage leave the battlefield. For example, if you control Lone Revenant and another creature, and that other creature takes lethal damage in the same combat damage step that Lone Revenant deals damage to a player, Lone Revenant's ability won't trigger."
+        },
+        "model": "magic.ruling",
+        "pk": 163
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If you control no creatures when Lone Revenant's ability resolves, you'll still look at the top four cards and put one into your hand."
+        },
+        "model": "magic.ruling",
+        "pk": 164
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The triggered ability will go on the stack on top of the instant spell and resolve before it."
+        },
+        "model": "magic.ruling",
+        "pk": 165
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The decision to pay {1} is made when the triggered ability resolves. It's not an additional cost of the instant spell."
+        },
+        "model": "magic.ruling",
+        "pk": 166
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Discarding a card is part of the ability's activation cost. You can't activate the ability if you have no cards in hand."
+        },
+        "model": "magic.ruling",
+        "pk": 167
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Once a creature has been declared as a blocking creature, making it unable to block will have no effect."
+        },
+        "model": "magic.ruling",
+        "pk": 168
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If Malignus becomes blocked by a creature with protection from red, the damage Malignus deals to that creature won't be prevented."
+        },
+        "model": "magic.ruling",
+        "pk": 169
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The number of Humans you control is counted only when Mass Appeal resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 170
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If the targeted player has fewer than two cards in his or her hand, that player will still lose 2 life (and discard one card, if applicable)."
+        },
+        "model": "magic.ruling",
+        "pk": 171
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Mist Raven's ability is mandatory. If Mist Raven is the only creature on the battlefield when its ability triggers, you must choose it as the target."
+        },
+        "model": "magic.ruling",
+        "pk": 172
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Misthollow Griffin can also be cast from a player's hand."
+        },
+        "model": "magic.ruling",
+        "pk": 173
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Misthollow Griffin doesn't have an ability that exiles itself. Some other effect will be needed to get the card into exile."
+        },
+        "model": "magic.ruling",
+        "pk": 174
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "You must still pay Misthollow Griffin's mana cost when you cast it from exile."
+        },
+        "model": "magic.ruling",
+        "pk": 175
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Misthollow Griffin's ability doesn't change when you can cast creature spells: when you have priority during your main phase when the stack is empty."
+        },
+        "model": "magic.ruling",
+        "pk": 176
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If the artifact or enchantment is an illegal target when Natural End tries to resolve, Natural End will be countered and none of its effects will happen. You won't gain 3 life."
+        },
+        "model": "magic.ruling",
+        "pk": 177
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The spell you target could also target other things, as long as it also targets a player."
+        },
+        "model": "magic.ruling",
+        "pk": 178
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "A creature dealt damage by Pillar of Flame that dies that turn will be exiled even if it wasn't the target of Pillar of Flame (because the damage was redirected somehow)."
+        },
+        "model": "magic.ruling",
+        "pk": 179
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "A creature dealt damage by Pillar of Flame that turn will be exiled no matter why the creature would die. It could have its toughness reduced to 0 or less or be destroyed by another spell or ability."
+        },
+        "model": "magic.ruling",
+        "pk": 180
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "A permanent card is an artifact, creature, enchantment, land, or planeswalker card."
+        },
+        "model": "magic.ruling",
+        "pk": 181
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Repeating the process includes the instruction to repeat the process. That is, you'll keep exiling cards and putting them onto the battlefield until you fail to put a permanent card onto the battlefield."
+        },
+        "model": "magic.ruling",
+        "pk": 182
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If you exile a permanent card that you can't put onto the battlefield (such as an Aura with nothing legal to enchant) or one you don't want to put onto the battlefield, Primal Surge finishes resolving."
+        },
+        "model": "magic.ruling",
+        "pk": 183
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If putting any of those permanent cards onto the battlefield causes abilities to trigger, those abilities will wait to go on the stack until Primal Surge has finished resolving. Starting with the active player, each player puts his or her abilities on the stack in any order."
+        },
+        "model": "magic.ruling",
+        "pk": 184
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "You can choose just one mode, any two of the modes, or all three. You make this choice as you cast Rain of Thorns."
+        },
+        "model": "magic.ruling",
+        "pk": 185
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "First you choose the order for the card types. Then each player in turn order (starting with the active player) chooses one permanent he or she controls of the first card type. Then those permanents are sacrificed at the same time. Then each player in turn order chooses two permanents he or she controls of the second card type. Then those permanents are sacrificed at the same time. Finally, each player in turn order chooses three permanents of the third card type, then those permanents are sacrificed at the same time."
+        },
+        "model": "magic.ruling",
+        "pk": 186
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Permanents sacrificed for one card type won't be on the battlefield to be chosen for subsequent card types."
+        },
+        "model": "magic.ruling",
+        "pk": 187
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If any abilities trigger while Rite of Ruin is resolving, those abilities will wait until Rite of Ruin finishes resolving before going on the stack. Starting with the active player, each player puts his or her abilities on the stack in any order."
+        },
+        "model": "magic.ruling",
+        "pk": 188
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The value of X is determined when Rush of Blood resolves. The bonus won't change later in the turn if the creature's power changes."
+        },
+        "model": "magic.ruling",
+        "pk": 189
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If the creature has power less than 0, the \"bonus\" will be negative. For example, a creature that's somehow become -1/3 would get -1/+0 and become -2/3."
+        },
+        "model": "magic.ruling",
+        "pk": 190
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Whether you control an Angel is checked when the ability resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 191
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Whether you control a Demon is checked when the ability resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 192
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Second Guess can't be cast unless the spell it targets is the second spell cast this turn."
+        },
+        "model": "magic.ruling",
+        "pk": 193
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "It doesn't matter if the first spell cast that turn has resolved yet or not. It also doesn't matter how many spells have been cast after the second one, as long as the second spell cast is still on the stack."
+        },
+        "model": "magic.ruling",
+        "pk": 194
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Most spells and abilities that copy a spell create that copy on the stack. These copies are not cast and won't count toward the number of spells cast that turn. However, a few (like Isochron Scepter's ability) instruct you to copy a spell and \"cast the copy.\" These spells are cast and will count toward the number of spells cast that turn."
+        },
+        "model": "magic.ruling",
+        "pk": 195
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If a creature gains hexproof in response to a spell or ability controlled by an opponent that targets only it, that spell or ability will countered for having an illegal target when it tries to resolve."
+        },
+        "model": "magic.ruling",
+        "pk": 196
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "As a spell or ability an opponent controls resolves, if it would force you to sacrifice a permanent, you just don't. That part of the effect does nothing. If that spell or ability gives you the option to sacrifice a permanent (as Brain Gorger's ability does), you can't take that option."
+        },
+        "model": "magic.ruling",
+        "pk": 197
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If a spell or ability an opponent controls instructs you to perform an action unless you sacrifice a permanent (as Ogre Marauder does), you can't choose to sacrifice a permanent. You must perform the action. On the other hand, if a spell or ability an opponent controls instructs you to sacrifice a permanent unless you perform an action (as Killing Wave does), you can choose whether or not to perform the action. If you don't perform the action, nothing happens, since you can't sacrifice any permanents."
+        },
+        "model": "magic.ruling",
+        "pk": 198
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "You may still sacrifice permanents to pay the costs of spells you cast and abilities you activate, or because a resolving spell or ability you control instructs or allows you to do so."
+        },
+        "model": "magic.ruling",
+        "pk": 199
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "You may sacrifice a permanent to pay the activation cost of an ability, even if that ability comes from a permanent an opponent controls (such as Excavation)."
+        },
+        "model": "magic.ruling",
+        "pk": 200
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "You may sacrifice a permanent as a special action, even if the effect that allows you to do so comes from an opponent's permanent (such as Damping Engine or Volrath's Curse). No one controls special actions."
+        },
+        "model": "magic.ruling",
+        "pk": 201
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "This ability affects only sacrifices. It won't stop a creature from being put into the graveyard due to lethal damage or having 0 toughness, and it won't stop a permanent from being put into the graveyard due to the \"legend rule\" or the \"planeswalker uniqueness rule.\" None of these are sacrifices; they're the result of game rules."
+        },
+        "model": "magic.ruling",
+        "pk": 202
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Mana produced by Somberwald Sage can be spent on any part of a creature spell's total cost. This includes additional costs (such as kicker) and alternative costs (such as evoke costs)."
+        },
+        "model": "magic.ruling",
+        "pk": 203
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Mana produced by Somberwald Sage can't be spent on activated abilities, even ones that put a creature card directly onto the battlefield, such as unearth or ninjutsu."
+        },
+        "model": "magic.ruling",
+        "pk": 204
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Mana produced by Somberwald Sage can't be spent on noncreature spells that would put creature tokens onto the battlefield."
+        },
+        "model": "magic.ruling",
+        "pk": 205
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Somberwald Vigilante's ability will trigger for each creature it becomes blocked by."
+        },
+        "model": "magic.ruling",
+        "pk": 206
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The ability resolves before combat damage is dealt, so it could cause blocking creatures to be destroyed and thus not deal combat damage."
+        },
+        "model": "magic.ruling",
+        "pk": 207
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "A creature card that enters the battlefield as a copy of a token creature is still a nontoken creature. You'll be able to draw a card."
+        },
+        "model": "magic.ruling",
+        "pk": 208
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "You cast the card from exile. Each land card exiled this way will remain exiled."
+        },
+        "model": "magic.ruling",
+        "pk": 209
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If you can't cast the nonland card (perhaps because there are no legal targets available) or if you choose not to cast it, it will remain exiled."
+        },
+        "model": "magic.ruling",
+        "pk": 210
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "You must follow the normal timing restrictions of the exiled card."
+        },
+        "model": "magic.ruling",
+        "pk": 211
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If there are no nonland cards left in that library, the opponent will exile all cards from his or her library, and Stolen Goods will finish resolving."
+        },
+        "model": "magic.ruling",
+        "pk": 212
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Tamiyo's first ability tracks the permanent, but not its controller. If the permanent changes controllers before its first controller's next untap step has come around, then it won't untap during its new controller's next untap step."
+        },
+        "model": "magic.ruling",
+        "pk": 213
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The number of tapped creatures the player controls is determined when Tamiyo's second ability resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 214
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Tamiyo's third ability creates one emblem with two abilities."
+        },
+        "model": "magic.ruling",
+        "pk": 215
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If you activate Tamiyo's third ability when she has eight loyalty counters on her, she'll be put into your graveyard before the emblem is created. She won't return to your hand."
+        },
+        "model": "magic.ruling",
+        "pk": 216
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Cards that are put into your graveyard can be returned to your hand by the emblem's ability even if they were never in your hand."
+        },
+        "model": "magic.ruling",
+        "pk": 217
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Each player chooses the order for his or her own creatures. This order isn't revealed to other players."
+        },
+        "model": "magic.ruling",
+        "pk": 218
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Although Terrifying Presence doesn't affect the target creature, if that creature is an illegal target when Terrifying Presence tries to resolve, it will be countered and none of its effects will happen. No damage will be prevented."
+        },
+        "model": "magic.ruling",
+        "pk": 219
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The number of cards in the target player's hand is determined when Tibalt's second ability resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 220
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "When Tibalt's third ability resolves, all creatures will become untapped and gain haste, including ones you controlled before the ability resolved."
+        },
+        "model": "magic.ruling",
+        "pk": 221
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "You may choose Timberland Guide as the target of its own ability."
+        },
+        "model": "magic.ruling",
+        "pk": 222
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "You still decide which player or planeswalker the equipped creature attacks."
+        },
+        "model": "magic.ruling",
+        "pk": 223
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If, during your declare attackers step, the equipped creature is tapped, is affected by a spell or ability that says it can't attack, or hasn't been under your control continuously since the turn began (and doesn't have haste), then it doesn't attack. If there's a cost associated with having a creature attack, you're not forced to pay that cost, so it doesn't have to attack in that case either."
+        },
+        "model": "magic.ruling",
+        "pk": 224
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Triumph of Cruelty's ability will trigger at the beginning of each of your upkeeps regardless of who controls the creature with the greatest power. The ability checks whether the opponent will discard a card when it resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 225
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Triumph of Ferocity's ability will trigger at the beginning of each of your upkeeps regardless of who controls the creature with the greatest power. The ability checks whether you'll draw a card when it resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 226
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Repeating the process includes the instruction to repeat the process. That is, the opponent will keep sacrificing permanents until he or she sacrifices a land."
+        },
+        "model": "magic.ruling",
+        "pk": 227
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Repeating the process does not include targeting an opponent. Only one opponent will have to sacrifice permanents."
+        },
+        "model": "magic.ruling",
+        "pk": 228
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If any abilities trigger while Tyrant of Discord's enters-the-battlefield ability is resolving, those abilities will wait until the enters-the-battlefield ability finishes resolving before going on the stack. Starting with the active player, each player puts his or her abilities on the stack in any order."
+        },
+        "model": "magic.ruling",
+        "pk": 229
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If the target opponent can't sacrifice permanents (perhaps because of Sigarda, Host of Herons), the opponent will choose a permanent at random but not sacrifice it. The ability will then finish resolving."
+        },
+        "model": "magic.ruling",
+        "pk": 230
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The second target may be a creature any player controls, including you."
+        },
+        "model": "magic.ruling",
+        "pk": 231
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If either or both targets are illegal when Ulvenwald Tracker's ability tries to resolve, no creature will deal or be dealt damage."
+        },
+        "model": "magic.ruling",
+        "pk": 232
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The card will return to the battlefield under your control only if it's still in the graveyard when Unhallowed Pact's ability resolves. If it's not (perhaps because an ability like undying has already returned it to the battlefield), nothing happens."
+        },
+        "model": "magic.ruling",
+        "pk": 233
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If Unhallowed Pact is enchanting a token creature, that creature can't return to the battlefield."
+        },
+        "model": "magic.ruling",
+        "pk": 234
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Abilities that allow a creature to block an additional creature are cumulative."
+        },
+        "model": "magic.ruling",
+        "pk": 235
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If a player chooses to have Vexing Devil deal 4 damage to him or her, but some or all of that damage is prevented or redirected, Vexing Devil will still be sacrificed."
+        },
+        "model": "magic.ruling",
+        "pk": 236
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The comparison of power is only done when blockers are declared. Increasing the power of a blocking creature (or decreasing the power of Wandering Wolf) after this point won't cause any creature to stop blocking or become unblocked."
+        },
+        "model": "magic.ruling",
+        "pk": 237
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "Wild Defiance's ability will resolve before that instant or sorcery spell."
+        },
+        "model": "magic.ruling",
+        "pk": 238
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If an instant or sorcery spell targets the same creature you control more than once, Wild Defiance will trigger only once."
+        },
+        "model": "magic.ruling",
+        "pk": 239
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The value of X is determined when the ability resolves. The bonus won't change later in the turn if the creature's power changes."
+        },
+        "model": "magic.ruling",
+        "pk": 240
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "If Yew Spirit has power less than 0, the \"bonus\" will be negative. For example, if it's somehow become -10/3, it would get -10/-10 and become -20/-7."
+        },
+        "model": "magic.ruling",
+        "pk": 241
+    },
+    {
+        "fields": {
+            "date": "2012-05-01",
+            "text": "The enters-the-battlefield ability can target any permanent, including one that's untapped or one that you already control."
+        },
+        "model": "magic.ruling",
+        "pk": 242
+    },
+    {
+        "fields": {
+            "date": "2007-02-01",
+            "text": "The blocked creature is returned to its owner's hand at end of combat only if the blocked creature is still on the battlefield. It doesn't matter whether AEther Membrane is on the battlefield."
+        },
+        "model": "magic.ruling",
+        "pk": 243
+    },
+    {
+        "fields": {
+            "date": "2009-10-01",
+            "text": "Angelic Shield goes to the graveyard when you activate the ability, but the targeted creature does not get returned until the ability resolves. All your creatures lose the bonus while the ability is on the stack which may result in the targeted creature being destroyed before the return can take effect."
+        },
+        "model": "magic.ruling",
+        "pk": 244
+    },
+    {
+        "fields": {
+            "date": "2004-10-04",
+            "text": "The timestamp for the \"in your graveyard\" ability is set at the time that this card goes to your graveyard, regardless of whether you control a Mountain at that time."
+        },
+        "model": "magic.ruling",
+        "pk": 245
+    },
+    {
+        "fields": {
+            "date": "2008-08-01",
+            "text": "This ability isn't targeted. You choose a permanent to return when the ability resolves. No one will be able to respond to the choice."
+        },
+        "model": "magic.ruling",
+        "pk": 246
+    },
+    {
+        "fields": {
+            "date": "2009-02-01",
+            "text": "Unlike the normal cycling ability, Mountaincycling doesn't allow you to draw a card. Instead, it lets you search your library for a Mountain card. After you find a Mountain card in your library, you reveal it, put it into your hand, then shuffle your library."
+        },
+        "model": "magic.ruling",
+        "pk": 247
+    },
+    {
+        "fields": {
+            "date": "2009-02-01",
+            "text": "Mountaincycling is a form of cycling. Any ability that triggers on a card being cycled also triggers on Mountaincycling this card. Any ability that stops a cycling ability from being activated also stops Mountaincycling from being activated."
+        },
+        "model": "magic.ruling",
+        "pk": 248
+    },
+    {
+        "fields": {
+            "date": "2009-02-01",
+            "text": "Mountaincycling is an activated ability. Effects that interact with activated abilities (such as Stifle or Rings of Brighthearth) will interact with Mountaincycling. Effects that interact with spells (such as Remove Soul or Faerie Tauntings) will not."
+        },
+        "model": "magic.ruling",
+        "pk": 249
+    },
+    {
+        "fields": {
+            "date": "2009-02-01",
+            "text": "You can choose to find any card with the Mountain land type, including nonbasic lands. You can also choose not to find a card, even if there is a Mountain card in your library."
+        },
+        "model": "magic.ruling",
+        "pk": 250
+    },
+    {
+        "fields": {
+            "date": "2004-10-04",
+            "text": "As a copy, the Clone copies all characteristics of the chosen creature. This includes name, color, power/toughness, abilities, and more. For example, a copy of an artifact creature is an artifact creature."
+        },
+        "model": "magic.ruling",
+        "pk": 251
+    },
+    {
+        "fields": {
+            "date": "2004-10-04",
+            "text": "Clone is not targeted, so it can copy an untargetable creature or a creature with Protection."
+        },
+        "model": "magic.ruling",
+        "pk": 252
+    },
+    {
+        "fields": {
+            "date": "2004-10-04",
+            "text": "If there is nothing to copy or you choose not to copy something, the Clone is 0/0 and will be put in the graveyard (unless something increases the toughness of your creatures)."
+        },
+        "model": "magic.ruling",
+        "pk": 253
+    },
+    {
+        "fields": {
+            "date": "2005-10-01",
+            "text": "The Clone is not a Creature - Shapeshifter card in addition to the type of what it copies, it is only the copied creature's type."
+        },
+        "model": "magic.ruling",
+        "pk": 254
+    },
+    {
+        "fields": {
+            "date": "2007-07-15",
+            "text": "Clone doesn't copy whether the original creature is tapped or untapped. It also doesn't copy any counters on that creature, any Auras attached to that creature, or any effects that are currently affecting that creature -- you get exactly what's printed on the chosen card and nothing more. So if you copy an animated\nChimeric Staff\n, for example, you get a normal, nonanimated Chimeric Staff."
+        },
+        "model": "magic.ruling",
+        "pk": 255
+    },
+    {
+        "fields": {
+            "date": "2007-07-15",
+            "text": "If the chosen creature is copying something else (for example, if the chosen creature is another Clone), then your Clone enters the battlefield as whatever the chosen creature copied."
+        },
+        "model": "magic.ruling",
+        "pk": 256
+    },
+    {
+        "fields": {
+            "date": "2007-07-15",
+            "text": "If the chosen creature is a token, your Clone copies the original characteristics of that token as stated by the effect that put it onto the battlefield. Your Clone is not a token."
+        },
+        "model": "magic.ruling",
+        "pk": 257
+    },
+    {
+        "fields": {
+            "date": "2007-07-15",
+            "text": "Any enters-the-battlefield abilities of the copied creature will trigger when Clone enters the battlefield. Any \"as [this creature] enters the battlefield\" or \"[this creature] enters the battlefield with\" abilities of the chosen creature will also work."
+        },
+        "model": "magic.ruling",
+        "pk": 258
+    },
+    {
+        "fields": {
+            "date": "2009-10-01",
+            "text": "If the chosen creature has {X} in its mana cost (such as Protean Hydra), X is considered to be zero."
+        },
+        "model": "magic.ruling",
+        "pk": 259
+    },
+    {
+        "fields": {
+            "date": "2010-03-01",
+            "text": "The landfall ability triggerss whenever a land enters the battlefield under your control for any reason. It triggers whenever you play a land, as well as whenever a spell or ability (such as Rampant Growth) causes you to put a land onto the battlefield under your control. It will even trigger when a spell or ability causes another player to put a land onto the battlefield under your control (as can happen with Yavimaya Dryad's ability, for example)."
+        },
+        "model": "magic.ruling",
+        "pk": 260
+    },
+    {
+        "fields": {
+            "date": "2010-03-01",
+            "text": "When a land enters the battlefield under your control, each landfall ability of the permanents you control will trigger. You can put them on the stack in any order. The last ability you put on the stack will be the first one that resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 261
+    },
+    {
+        "fields": {
+            "date": "2007-05-01",
+            "text": "You do the three different scry actions in sequence, in the order they're printed on the card."
+        },
+        "model": "magic.ruling",
+        "pk": 262
+    },
+    {
+        "fields": {
+            "date": "2010-08-15",
+            "text": "The ability cares about lands with the land type Mountain, not necessarily lands named Mountain."
+        },
+        "model": "magic.ruling",
+        "pk": 263
+    },
+    {
+        "fields": {
+            "date": "2004-10-04",
+            "text": "Because the \"search\" requires you to find a card with certain characteristics, you don't have to find the card if you don't want to."
+        },
+        "model": "magic.ruling",
+        "pk": 264
+    },
+    {
+        "fields": {
+            "date": "2007-10-01",
+            "text": "Galepowder Mage's ability can target a creature controlled by any player. It's not optional."
+        },
+        "model": "magic.ruling",
+        "pk": 265
+    },
+    {
+        "fields": {
+            "date": "2007-10-01",
+            "text": "The exiled card will be returned to the battlefield at the beginning of the end step even if Galepowder Mage is no longer on the battlefield at that time."
+        },
+        "model": "magic.ruling",
+        "pk": 266
+    },
+    {
+        "fields": {
+            "date": "2007-10-01",
+            "text": "If Galepowder Mage is the only creature on the battlefield when it attacks, its ability has no effect."
+        },
+        "model": "magic.ruling",
+        "pk": 267
+    },
+    {
+        "fields": {
+            "date": "2009-10-01",
+            "text": "The landfall ability triggers whenever a land enters the battlefield under your control for any reason. It triggers whenever you play a land, as well as whenever a spell or ability (such as Rampant Growth) causes you to put a land onto the battlefield under your control. It will even trigger when a spell or ability causes another player to put a land onto the battlefield under your control (as can happen with Yavimaya Dryad's ability, for example)."
+        },
+        "model": "magic.ruling",
+        "pk": 268
+    },
+    {
+        "fields": {
+            "date": "2009-10-01",
+            "text": "When a land enters the battlefield under your control, each landfall ability of the permanents you control will trigger. You can put them on the stack in any order. The last ability you put on the stack will be the first one that resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 269
+    },
+    {
+        "fields": {
+            "date": "2006-07-15",
+            "text": "After Greater Stone Spirit's activated ability is activated, the affected creature gains an activated ability that only that creature's controller can activate."
+        },
+        "model": "magic.ruling",
+        "pk": 270
+    },
+    {
+        "fields": {
+            "date": "2007-05-01",
+            "text": "Creatures with the Reach ability (such as\nGiant Spider\n) can block this because they don\u2019t actually have Flying."
+        },
+        "model": "magic.ruling",
+        "pk": 271
+    },
+    {
+        "fields": {
+            "date": "2008-05-01",
+            "text": "The amount of damage is locked in as you cast Jaws of Stone. It won't change, even if the number of Mountains you control changes."
+        },
+        "model": "magic.ruling",
+        "pk": 272
+    },
+    {
+        "fields": {
+            "date": "2008-05-01",
+            "text": "If you control no Mountains as you cast Jaws of Stone, the number of targets must be zero."
+        },
+        "model": "magic.ruling",
+        "pk": 273
+    },
+    {
+        "fields": {
+            "date": "2008-05-01",
+            "text": "If you control any Mountains as you cast Jaws of Stone, the number of targets must be at least one and at most X. You divide the damage among the targets as you cast Jaws of Stone. Each target must be assigned at least 1 damage."
+        },
+        "model": "magic.ruling",
+        "pk": 274
+    },
+    {
+        "fields": {
+            "date": "2011-01-01",
+            "text": "Emblems behave similarly to enchantments: They have an ability that, in a general sense, continually affects the game. The primary difference between them is that emblems aren't permanents and don't exist on the battlefield. Nothing in the game can remove an emblem, simply because no other spell or ability references them. Once you get an emblem, you keep it for the rest of the game. Emblems have no color, name, card type, or other characteristics beyond the listed ability"
+        },
+        "model": "magic.ruling",
+        "pk": 275
+    },
+    {
+        "fields": {
+            "date": "2011-01-01",
+            "text": "Koth's first ability can target any Mountain, including an untapped Mountain and/or a Mountain another player controls."
+        },
+        "model": "magic.ruling",
+        "pk": 276
+    },
+    {
+        "fields": {
+            "date": "2011-01-01",
+            "text": "If Koth's first ability animates a Mountain that came under your control that turn, it will have \"summoning sickness\" and be unable to attack. It will also be unable to be tapped to activate an ability with the {T} symbol in its cost, such as the Mountain's mana ability or the ability granted to it by Koth's emblem."
+        },
+        "model": "magic.ruling",
+        "pk": 277
+    },
+    {
+        "fields": {
+            "date": "2011-01-01",
+            "text": "Loyalty abilities can't be mana abilities. Koth's second ability uses the stack and can be countered or otherwise responded to. Like all loyalty abilities, it can be activated only once per turn, during your main phase, when the stack is empty, and only if no other loyalty abilities of this permanent have been activated this turn."
+        },
+        "model": "magic.ruling",
+        "pk": 278
+    },
+    {
+        "fields": {
+            "date": "2011-01-01",
+            "text": "Koth's emblem grants an activated ability to each Mountain you control at any given time for the rest of the game. It will continuously check which permanents you control are Mountains to determine what has the ability. For example, a Mountain that comes under your control later in the game will have the ability, while a Mountain you controlled at the time the emblem was created, but that later came under the control of another player, will no longer have the ability."
+        },
+        "model": "magic.ruling",
+        "pk": 279
+    },
+    {
+        "fields": {
+            "date": "2007-10-01",
+            "text": "If Oblivion Ring leaves the battlefield before its first ability has resolved, its second ability will trigger and do nothing. Then its first ability will resolve and exile the targeted nonland permanent forever."
+        },
+        "model": "magic.ruling",
+        "pk": 280
+    },
+    {
+        "fields": {
+            "date": "2007-10-01",
+            "text": "If there are no nonland permanents on the battlefield other than an Oblivion Ring, and the card it exiled was another Oblivion Ring, casting a third Oblivion Ring will result in an involuntary infinite loop that will end the game in a draw (unless someone chooses to break it by putting another nonland permanent onto the battlefield or destroying one of the Oblivion Rings, for example)."
+        },
+        "model": "magic.ruling",
+        "pk": 281
+    },
+    {
+        "fields": {
+            "date": "2008-10-01",
+            "text": "If the exiled card is an Aura, that card's owner chooses what it will enchant as it comes back onto the battlefield. An Aura put onto the battlefield this way doesn't target anything, but the Aura's enchant ability restricts what it can be attached to. If the Aura can't legally be attached to anything, it remains exiled forever."
+        },
+        "model": "magic.ruling",
+        "pk": 282
+    },
+    {
+        "fields": {
+            "date": "2006-05-01",
+            "text": "You gain the life whether or not the spell's controller pays {X} and whether or not the spell is countered."
+        },
+        "model": "magic.ruling",
+        "pk": 283
+    },
+    {
+        "fields": {
+            "date": "2009-02-01",
+            "text": "If the targeted creature becomes an illegal target by the time Path to Exile would resolve, the entire spell is countered. The creature's controller won't get to search for a basic land card."
+        },
+        "model": "magic.ruling",
+        "pk": 284
+    },
+    {
+        "fields": {
+            "date": "2007-02-01",
+            "text": "If a creature enters the battlefield as a copy of Primal Plasma, the controller of the creature entering the battlefield gets to make the choice."
+        },
+        "model": "magic.ruling",
+        "pk": 285
+    },
+    {
+        "fields": {
+            "date": "2007-02-01",
+            "text": "If a creature that's already on the battlefield becomes a copy of Primal Plasma, it copies the power, toughness, and abilities that were chosen for Primal Plasma when it entered the battlefield."
+        },
+        "model": "magic.ruling",
+        "pk": 286
+    },
+    {
+        "fields": {
+            "date": "2007-02-01",
+            "text": "This is the timeshifted version of\nPrimal Clay\n."
+        },
+        "model": "magic.ruling",
+        "pk": 287
+    },
+    {
+        "fields": {
+            "date": "2009-10-01",
+            "text": "Safe Passage prevents all damage, not just combat damage, that would be dealt to you and creatures you control this turn."
+        },
+        "model": "magic.ruling",
+        "pk": 288
+    },
+    {
+        "fields": {
+            "date": "2009-10-01",
+            "text": "Safe Passage will affect creatures that weren't on the battlefield at the time it resolved."
+        },
+        "model": "magic.ruling",
+        "pk": 289
+    },
+    {
+        "fields": {
+            "date": "2009-10-01",
+            "text": "Safe Passage doesn't prevent damage that would be dealt to planeswalkers you control. Although it can't prevent combat damage that would be dealt to your planeswalkers, it can still prevent noncombat damage that your opponent would want to redirect from you to one of your planeswalkers. Just apply Safe Passage's prevention effect to that damage first, and there won't be any damage to redirect."
+        },
+        "model": "magic.ruling",
+        "pk": 290
+    },
+    {
+        "fields": {
+            "date": "2009-10-01",
+            "text": "Safe Passage has no effect on damage that's already been dealt."
+        },
+        "model": "magic.ruling",
+        "pk": 291
+    },
+    {
+        "fields": {
+            "date": "2004-10-04",
+            "text": "Both triggered abilities trigger at the same time so you can decide which order they go on the stack. If you have no cards in hand, you would likely choose the order where you draw and put on the library before unsummoning the creature that is on the battlefield."
+        },
+        "model": "magic.ruling",
+        "pk": 292
+    },
+    {
+        "fields": {
+            "date": "2004-10-04",
+            "text": "You choose the creature to return on resolution of the triggered ability. This is not targeted."
+        },
+        "model": "magic.ruling",
+        "pk": 293
+    },
+    {
+        "fields": {
+            "date": "2010-08-15",
+            "text": "The ability triggers just once each time Scroll Thief deals combat damage to a player, regardless of how much damage it deals."
+        },
+        "model": "magic.ruling",
+        "pk": 294
+    },
+    {
+        "fields": {
+            "date": "2010-08-15",
+            "text": "The ability is mandatory. You must draw a card when it resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 295
+    },
+    {
+        "fields": {
+            "date": "2010-03-01",
+            "text": "You must choose two targets as you cast Searing Blaze: a player and a creature that player controls. If you can't (because there are no creatures on the battlefield, perhaps), then you can't cast the spell."
+        },
+        "model": "magic.ruling",
+        "pk": 296
+    },
+    {
+        "fields": {
+            "date": "2010-03-01",
+            "text": "If either target is illegal by the time Searing Blaze resolves, it still deals damage to the other target."
+        },
+        "model": "magic.ruling",
+        "pk": 297
+    },
+    {
+        "fields": {
+            "date": "2011-09-22",
+            "text": "You (not your opponent) choose which pile to put into your hand and which to put into your graveyard."
+        },
+        "model": "magic.ruling",
+        "pk": 298
+    },
+    {
+        "fields": {
+            "date": "2011-09-22",
+            "text": "A pile can have no cards in it. In this case, you'll choose whether to put all the revealed cards into your hand or into your graveyard."
+        },
+        "model": "magic.ruling",
+        "pk": 299
+    },
+    {
+        "fields": {
+            "date": "2011-09-22",
+            "text": "If your library has fewer than five cards, you reveal all the cards in it, then your opponent separates them into two piles."
+        },
+        "model": "magic.ruling",
+        "pk": 300
+    },
+    {
+        "fields": {
+            "date": "2011-09-22",
+            "text": "In multiplayer games, you choose an opponent to separate the cards when the ability resolves. This doesn't target that opponent. Because the cards are revealed, all players may see the cards and offer opinions."
+        },
+        "model": "magic.ruling",
+        "pk": 301
+    },
+    {
+        "fields": {
+            "date": "2008-05-01",
+            "text": "If the enchanted creature is both of the listed colors, it will get both bonuses."
+        },
+        "model": "magic.ruling",
+        "pk": 302
+    },
+    {
+        "fields": {
+            "date": "2008-08-01",
+            "text": "If the Giant's power and/or toughness change so that its toughness is less than its power, you can have the ability target the Giant itself."
+        },
+        "model": "magic.ruling",
+        "pk": 303
+    },
+    {
+        "fields": {
+            "date": "2009-10-01",
+            "text": "To work as an evasion ability, an attacking creature must already have flying when the declare blockers step begins. Once a creature has become blocked, giving it flying won't change that."
+        },
+        "model": "magic.ruling",
+        "pk": 304
+    },
+    {
+        "fields": {
+            "date": "2009-10-01",
+            "text": "If Stone Giant's ability is activated during a turn's end step, the delayed triggered ability won't trigger until the beginning of the next turn's end step. The targeted creature will be destroyed at that time."
+        },
+        "model": "magic.ruling",
+        "pk": 305
+    },
+    {
+        "fields": {
+            "date": "2009-10-01",
+            "text": "When the delayed triggered ability resolves, the targeted creature is destroyed, even if it's no longer a creature, no longer under your control, or no longer has toughness less than Stone Giant's power at that time."
+        },
+        "model": "magic.ruling",
+        "pk": 306
+    },
+    {
+        "fields": {
+            "date": "2011-01-01",
+            "text": "The second ability destroys each creature that's tapped at the time it resolves, including creatures you control. If Sunblast Angel has become tapped by the time its ability resolves, it will be destroyed too."
+        },
+        "model": "magic.ruling",
+        "pk": 307
+    },
+    {
+        "fields": {
+            "date": "2007-02-01",
+            "text": "When the third ability resolves, you must change the target if able. If you can't choose a legal target for the spell when this ability resolves, that spell's target doesn't change."
+        },
+        "model": "magic.ruling",
+        "pk": 308
+    },
+    {
+        "fields": {
+            "date": "2007-02-01",
+            "text": "If a spell targets multiple things, you can't target it with Torchling's third ability, even if all but one of those targets has become illegal."
+        },
+        "model": "magic.ruling",
+        "pk": 309
+    },
+    {
+        "fields": {
+            "date": "2007-02-01",
+            "text": "If a spell has multiple targets, but it's targeting Torchling with all of them (such as Seeds of Strength targeting Torchling three times), you can target that spell with Torchling's third ability. In that case, you change all of those targets to the same new target, as long as it meets each of the spell's targeting conditions."
+        },
+        "model": "magic.ruling",
+        "pk": 310
+    },
+    {
+        "fields": {
+            "date": "2006-07-15",
+            "text": "Vanish into Memory cares about the creature's power just before it left the battlefield and its toughness just after it returns to the battlefield. For example, if you target a Vigean Hydropon with two +1/+1 counters on it, you'll draw two cards, then when the Hydropon returns to the battlefield with five +1/+1 counters on it, you'll discard five cards."
+        },
+        "model": "magic.ruling",
+        "pk": 311
+    },
+    {
+        "fields": {
+            "date": "2006-07-15",
+            "text": "If the creature exiled with Vanish into Memory never returns to the battlefield (because it was a token creature, for example), you don't discard any cards"
+        },
+        "model": "magic.ruling",
+        "pk": 312
+    },
+    {
+        "fields": {
+            "date": "2006-07-15",
+            "text": "If the creature exiled with Vanish into Memory isn't a creature card (for example, it was an animated Gruul War Plow), that card will still be returned to the battlefield, but not as a creature. Since the card returned to the battlefield has no toughness, you discard no cards."
+        },
+        "model": "magic.ruling",
+        "pk": 313
+    },
+    {
+        "fields": {
+            "date": "2011-01-01",
+            "text": "The first ability can target any permanent you own, including those another player controls."
+        },
+        "model": "magic.ruling",
+        "pk": 314
+    },
+    {
+        "fields": {
+            "date": "2011-01-01",
+            "text": "If the first ability exiles a token, that token will cease to exist. It won't return to the battlefield."
+        },
+        "model": "magic.ruling",
+        "pk": 315
+    },
+    {
+        "fields": {
+            "date": "2011-01-01",
+            "text": "A permanent exiled by the first ability will return to the battlefield under your control at the beginning of the next end step even if you no longer control Venser at that time."
+        },
+        "model": "magic.ruling",
+        "pk": 316
+    },
+    {
+        "fields": {
+            "date": "2011-01-01",
+            "text": "Venser's second ability doesn't lock in what it applies to. That's because the effect states a true thing about creatures, but doesn't actually change the characteristics of those creatures. As a result, all creatures are unblockable that turn, including creatures you don't control, creatures that weren't on the battlefield at the time the ability resolved, and creatures that have lost all abilities."
+        },
+        "model": "magic.ruling",
+        "pk": 317
+    },
+    {
+        "fields": {
+            "date": "2011-01-01",
+            "text": "Venser's last ability creates an emblem with a triggered ability. The emblem is the source of the triggered ability. Because emblems are colorless, you can target permanents with protection from white or from blue, for example, with the triggered ability."
+        },
+        "model": "magic.ruling",
+        "pk": 318
+    },
+    {
+        "fields": {
+            "date": "2011-01-01",
+            "text": "Whenever you cast a spell, the emblem's ability triggers and goes on the stack on top of it. It will resolve before the spell does."
+        },
+        "model": "magic.ruling",
+        "pk": 319
+    },
+    {
+        "fields": {
+            "date": "2011-01-01",
+            "text": "If you control more than one such emblem, each one's ability will trigger separately whenever you cast a spell."
+        },
+        "model": "magic.ruling",
+        "pk": 320
+    },
+    {
+        "fields": {
+            "date": "2004-10-04",
+            "text": "You can't choose zero targets. You must choose between 1 and 6 targets."
+        },
+        "model": "magic.ruling",
+        "pk": 321
+    },
+    {
+        "fields": {
+            "date": "2007-02-01",
+            "text": "You may return this creature itself to its owner's hand. If you control no other creatures, you must return it."
+        },
+        "model": "magic.ruling",
+        "pk": 322
+    },
+    {
+        "fields": {
+            "date": "2007-02-01",
+            "text": "The ability doesn't target what you return. You don't choose what to return until the ability resolves. No one can respond to the choice."
+        },
+        "model": "magic.ruling",
+        "pk": 323
+    },
+    {
+        "fields": {
+            "date": "2009-10-01",
+            "text": "When figuring a creature's power and toughness, apply effects in a series of sublayers in the following order: (a) effects from characteristic-defining abilities; (b) effects that set power and/or toughness to a specific number or value; (c) effects that modify power and/or toughness but don't set power and/or toughness to a specific number or value; (d) changes from counters; (e) effects that switch a creature's power and toughness. This means that effects that switch power and toughness are always applied last when determining a creature's power and toughness, even if other power/toughness-changing effects are created later in the turn."
+        },
+        "model": "magic.ruling",
+        "pk": 324
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "The two parts of Alpha Brawl's effect happen sequentially: first the targeted creature deals damage, then the other creatures deal damage. State-based actions aren't checked in the middle, so creatures that are dealt lethal damage by the targeted creature will still deal damage."
+        },
+        "model": "magic.ruling",
+        "pk": 325
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "None of the damage dealt due to Alpha Brawl is combat damage."
+        },
+        "model": "magic.ruling",
+        "pk": 326
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Combat abilities like first strike, double strike, and trample don't apply and will have no impact on Alpha Brawl's effect."
+        },
+        "model": "magic.ruling",
+        "pk": 327
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Abilities like lifelink and deathtouch that care about any kind of damage are taken into account."
+        },
+        "model": "magic.ruling",
+        "pk": 328
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If the targeted creature has infect or wither, the damage it deals will result in -1/-1 counters being put on each creature it deals damage to. The power of those creatures will be reduced when they deal damage back to the targeted creature."
+        },
+        "model": "magic.ruling",
+        "pk": 329
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "The damage dealt by the targeted creature is not divided in any way. For example, if a 3/3 creature is targeted, it will deal 3 damage to each other creature controlled by its controller."
+        },
+        "model": "magic.ruling",
+        "pk": 330
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Altar of the Lost doesn't allow you to cast spells from any other player's graveyard, although you can spend the mana it produces on such spells if something else allows you to."
+        },
+        "model": "magic.ruling",
+        "pk": 331
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "You can spend mana produced by Altar of the Lost to cast any spell with flashback that you cast from a graveyard. You don't have to be using flashback to cast that spell, however, as long as something else is allowing you to cast that spell."
+        },
+        "model": "magic.ruling",
+        "pk": 332
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Archangel's Light isn't put into the graveyard until after its instructions are followed. You won't gain 2 life for it, and it won't be shuffled into your library."
+        },
+        "model": "magic.ruling",
+        "pk": 333
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If you have no cards in your graveyard, you won't gain any life, but you'll still shuffle your library."
+        },
+        "model": "magic.ruling",
+        "pk": 334
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "The triggered ability checks whether the equipped creature as it last existed on the battlefield was a Human. (It doesn't matter what its creature types are in the graveyard.)"
+        },
+        "model": "magic.ruling",
+        "pk": 335
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "In order to activate the ability, you must be able to target a creature with power less than or equal to the number of creatures you control. The comparison is made again when the ability resolves. If the power is greater than the number of creatures you control at that time, the target is illegal and the ability is countered."
+        },
+        "model": "magic.ruling",
+        "pk": 336
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "The control-changing effect lasts indefinitely, even if the power of the creature becomes greater than the number of creatures you control after the ability resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 337
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Blood Feud can target two creatures with the same controller."
+        },
+        "model": "magic.ruling",
+        "pk": 338
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If the creature spell is an illegal target (because it's left the stack, for example) when Bone to Ash tries to resolve, Bone to Ash will be countered and none of its effects will happen. You won't draw a card."
+        },
+        "model": "magic.ruling",
+        "pk": 339
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "A creature spell that can't be countered by spells and abilities is a legal target for Bone to Ash. The creature spell won't be countered when Bone to Ash resolves, but you'll still draw a card."
+        },
+        "model": "magic.ruling",
+        "pk": 340
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Because Break of Day refers to \"those creatures,\" it affects only creatures you control when it resolves. It won't affect creatures that come under your control later in the turn. (Normally, an effect that made creatures you control indestructible would affect creatures that came under your control later in the turn.)"
+        },
+        "model": "magic.ruling",
+        "pk": 341
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Break of Day checks your life total only at the time it resolves. Any creatures that became indestructible will continue to be indestructible that turn even if you gain life."
+        },
+        "model": "magic.ruling",
+        "pk": 342
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Only Burden of Guilt's controller can activate its ability."
+        },
+        "model": "magic.ruling",
+        "pk": 343
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "The creature need only share one creature type with enchanted creature, not necessarily all of them. For example, if the enchanted creature was a Human Soldier, you could put a Human Wizard creature card, a Goblin Soldier creature card, or a Human Soldier Ally creature card onto the battlefield."
+        },
+        "model": "magic.ruling",
+        "pk": 344
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "A creature with power 0 or less assigns no combat damage. (It doesn't assign a negative amount of combat damage.)"
+        },
+        "model": "magic.ruling",
+        "pk": 345
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "In most cases, attacking creatures will already be tapped. They still won't untap during their controller's next untap step."
+        },
+        "model": "magic.ruling",
+        "pk": 346
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Clinging Mists doesn't track the controller of the attacking creatures. If one of them changes controller before its previous controller's next untap step, it won't untap during its new controller's next untap step."
+        },
+        "model": "magic.ruling",
+        "pk": 347
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "You cast the card in your hand as part of the resolution of Counterlash. Timing restrictions based on the card's type (such as creature or sorcery) are ignored. Other restrictions are not (such as \"Cast [this card] only during combat\")."
+        },
+        "model": "magic.ruling",
+        "pk": 348
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If you cast a card \"without paying its mana cost,\" you can't pay any alternative costs. You can pay additional costs, such as kicker costs. If the card has mandatory additional costs, you must pay those."
+        },
+        "model": "magic.ruling",
+        "pk": 349
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If the card has {X} in its mana cost, you must choose 0 as its value."
+        },
+        "model": "magic.ruling",
+        "pk": 350
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Curse of Bloodletting works with any damage, not just combat damage. It also doesn't matter who controls the source of the damage that's being dealt."
+        },
+        "model": "magic.ruling",
+        "pk": 351
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "The source of the damage doesn't change. A spell that deals damage will specify the source of the damage, often the spell itself. An ability that deals damage will also specify the source of the damage, although the ability itself will never be that source. Often the source of the ability is also the source of the damage."
+        },
+        "model": "magic.ruling",
+        "pk": 352
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If more than one Curse of Bloodletting enchants the same player, damage dealt to that player will double for each one (two of them will end up multiplying the damage by four, three of them by eight, and four of them by sixteen)."
+        },
+        "model": "magic.ruling",
+        "pk": 353
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If multiple effects modify how damage will be dealt to the enchanted player, that player chooses the order to apply the effects. For example, Mending Hands says, \"Prevent the next 4 damage that would be dealt to target creature or player this turn.\" Suppose a spell would deal 5 damage to enchanted player and that player has cast Mending Hands targeting him or herself. The enchanted player can either (a) prevent 4 damage first and then let Curse of Bloodletting's effect double the remaining 1 damage, taking 2 damage, or (b) double the damage to 10 and then prevent 4 damage, taking 6 damage."
+        },
+        "model": "magic.ruling",
+        "pk": 354
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If the enchanted player controls a planeswalker and noncombat damage is being dealt to the player from a source controlled by an opponent, the enchanted player will choose whether to apply Curse of Bloodletting or the planeswalker redirection effect first. If the player chooses to apply the planeswalker redirection effect first, and the opponent chooses to redirect the damage to the planeswalker, then Curse of Bloodletting won't double the damage."
+        },
+        "model": "magic.ruling",
+        "pk": 355
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "When the triggered ability resolves, it creates a copy of that spell for each other player. The active player creates his or her copy and may choose new targets first (if that player isn't the enchanted player), then each other player (except the enchanted player) creates his or her copy and may choose new targets in turn order. The last player who creates his or her copy controls the copy that will resolve first."
+        },
+        "model": "magic.ruling",
+        "pk": 356
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "All the copies are created on the stack, so none of them are cast. Abilities that trigger when a player casts a spell won't trigger. The copies will then resolve as normal, after players get a chance to cast spells and activate abilities."
+        },
+        "model": "magic.ruling",
+        "pk": 357
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Each copy will have the same targets as the spell it's copying unless its controller chooses new ones. That player may change any number of the targets, including all of them or none of them. If, for one of the targets, that player can't choose a new legal target, then it remains unchanged (even if the current target is illegal)."
+        },
+        "model": "magic.ruling",
+        "pk": 358
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If the original spell is modal (that is, it says \"Choose one --\" or the like), each copy will have the same mode(s). You can't choose different ones."
+        },
+        "model": "magic.ruling",
+        "pk": 359
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If the original spell has an X whose value was determined as it was cast, each copy has the same value of X."
+        },
+        "model": "magic.ruling",
+        "pk": 360
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "You can't choose to pay any additional costs for the copy. However, effects based on any additional costs that were paid for the original spell are copied as though those same costs were paid for the copy too. For example, if the enchanted player sacrifices a 3/3 creature to cast Fling, each copy of Fling will also deal 3 damage."
+        },
+        "model": "magic.ruling",
+        "pk": 361
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Curse of Exhaustion will look at the entire turn to see if the enchanted player has cast a spell yet that turn, even if Curse of Exhaustion wasn't on the battlefield when that spell was cast."
+        },
+        "model": "magic.ruling",
+        "pk": 362
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "The Curse card you put onto the battlefield must have a different name than each other Curse enchanting the enchanted player when the triggered ability resolves. If multiple of these abilities trigger, the Curse card you put onto the battlefield when the first resolves may impact your choices for each subsequent one."
+        },
+        "model": "magic.ruling",
+        "pk": 363
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "The number of Curses attached to the player is counted when the ability resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 364
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If the target creature is attacking, the defending player must assign at least one blocker to it during the declare blockers step if that player controls any creatures that could block it."
+        },
+        "model": "magic.ruling",
+        "pk": 365
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Check the creature as it last existed on the battlefield to determine if it was a Human. If it was, use its toughness as it last existed on the battlefield to determine how much life is gained."
+        },
+        "model": "magic.ruling",
+        "pk": 366
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If the target creature isn't on the battlefield or is otherwise an illegal target when Death's Caress tries to resolve, Death's Caress is countered and none of its effects will happen. You won't gain any life."
+        },
+        "model": "magic.ruling",
+        "pk": 367
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If Death's Caress resolves but the target creature isn't destroyed, perhaps because it's indestructible or it regenerated, you still check if it's a Human. If so, you'll gain life equal to its toughness."
+        },
+        "model": "magic.ruling",
+        "pk": 368
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "You can sacrifice any Human you control, including Deranged Outcast itself."
+        },
+        "model": "magic.ruling",
+        "pk": 369
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Because targets are chosen before costs are paid, you can activate Deranged Outcast's ability targeting itself and then sacrifice Deranged Outcast to pay the cost."
+        },
+        "model": "magic.ruling",
+        "pk": 370
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If Drogskol Reaver deals enough first-strike damage to destroy each creature it's blocking or was blocked by, it won't deal any damage during the regular combat damage step (unless it's attacking and somehow gains trample). Its ability won't trigger a second time that combat."
+        },
+        "model": "magic.ruling",
+        "pk": 371
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "The ability triggers just once for each life-gaining event, no matter how much life was gained."
+        },
+        "model": "magic.ruling",
+        "pk": 372
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If multiple creatures with lifelink you control deal combat damage at the same time, the damage dealt by each of those creatures is a separate life-gaining event and Drogskol Reaver's ability will trigger that many times."
+        },
+        "model": "magic.ruling",
+        "pk": 373
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If a creature with lifelink you control deals damage to multiple creatures, players, and/or planeswalkers at the same time, the ability will trigger just once. The damage dealt by that creature is a single life-gaining event."
+        },
+        "model": "magic.ruling",
+        "pk": 374
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If another player gains control of Dungeon Geists, the creature will no longer be affected by the ability preventing it from untapping, even if you later regain control of Dungeon Geists."
+        },
+        "model": "magic.ruling",
+        "pk": 375
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If you gain control of the creature that's being prevented from untapping, that creature won't untap during your untap step for as long as you control Dungeon Geists."
+        },
+        "model": "magic.ruling",
+        "pk": 376
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "The +1/+1 counter isn't put on the creature in time to increase the amount of combat damage dealt during that combat step."
+        },
+        "model": "magic.ruling",
+        "pk": 377
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If this creature deals combat damage to multiple players simultaneously, perhaps because some combat damage was redirected, its ability will trigger for each of those players."
+        },
+        "model": "magic.ruling",
+        "pk": 378
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Faith's Shield targets a permanent regardless of how much life you have. If that permanent is an illegal target when Faith's Shield tries to resolve, Faith's Shield will be countered and none of its effects will happen. Neither you nor any of your permanents will gain protection from a color."
+        },
+        "model": "magic.ruling",
+        "pk": 379
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "You choose only one color (not one color per player and permanent). You choose the color as Faith's Shield resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 380
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "A player with protection from a color can't be damaged, enchanted (including by Curses), or targeted by anything of that color."
+        },
+        "model": "magic.ruling",
+        "pk": 381
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "The ability checks whether the sacrificed creature as it last existed on the battlefield was a Human. (It doesn't matter what its creature types are in the graveyard.)"
+        },
+        "model": "magic.ruling",
+        "pk": 382
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "You can sacrifice Falkenrath Aristocrat itself to activate its ability."
+        },
+        "model": "magic.ruling",
+        "pk": 383
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "You can sacrifice Falkenrath Torturer itself to activate its ability."
+        },
+        "model": "magic.ruling",
+        "pk": 384
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Farbog Boneflinger's ability is mandatory. If it's the only creature on the battlefield, you must choose it as the target and give it -2/-2 until end of turn."
+        },
+        "model": "magic.ruling",
+        "pk": 385
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "The ability will trigger only once per combat, even if the enchanted creature somehow blocks multiple attacking creatures."
+        },
+        "model": "magic.ruling",
+        "pk": 386
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "You choose whether to sacrifice a nontoken creature and which creature to sacrifice when Feed the Pack's ability resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 387
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Check the sacrificed creature's toughness as it last existed on the battlefield to determine how many Wolves you put onto the battlefield."
+        },
+        "model": "magic.ruling",
+        "pk": 388
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Playing a card exiled with Fiend of the Shadows follows all the normal rules for playing that card. You must pay its costs, and you must follow all timing restrictions, for example."
+        },
+        "model": "magic.ruling",
+        "pk": 389
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "You may only play the card, meaning play it as a land or cast it as a spell. It's not in your hand. You can't discard it, activate its cycling abilities, and so on."
+        },
+        "model": "magic.ruling",
+        "pk": 390
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "As long as the card remains exiled, you may still play it, even if Fiend of the Shadows leaves the battlefield or changes controllers."
+        },
+        "model": "magic.ruling",
+        "pk": 391
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Flayer of the Hatebound's last ability will trigger even if a creature enters the battlefield from your graveyard under another player's control."
+        },
+        "model": "magic.ruling",
+        "pk": 392
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "The creature that entered the battlefield from your graveyard deals damage equal to its current power (including any +1/+1 counters it entered the battlefield with) to the target creature or player. If it's no longer on the battlefield when the ability resolves, its last known existence on the battlefield is checked to determine its power."
+        },
+        "model": "magic.ruling",
+        "pk": 393
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Flayer of the Hatebound is the source of the ability, but it may be another creature that is the source of the damage. If a black creature enters the battlefield from your graveyard, the ability could target a creature with protection from black, although the damage will be prevented. It couldn't target a creature with protection from red."
+        },
+        "model": "magic.ruling",
+        "pk": 394
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Since damage is dealt by the creature, abilities like lifelink and deathtouch are taken into account, even if the creature has left the battlefield by the time it deals damage."
+        },
+        "model": "magic.ruling",
+        "pk": 395
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If you cast a creature card from your graveyard, that card will be put on the stack before entering the battlefield. Flayer of the Hatebound won't trigger."
+        },
+        "model": "magic.ruling",
+        "pk": 396
+    },
+    {
+        "fields": {
+            "date": "2010-08-15",
+            "text": "The sacrificed creature's last known existence on the battlefield is checked to determine its power."
+        },
+        "model": "magic.ruling",
+        "pk": 397
+    },
+    {
+        "fields": {
+            "date": "2010-08-15",
+            "text": "If you sacrifice an attacking or blocking creature during the declare blockers step, it won't deal combat damage. If you wait until the combat damage step, but that creature is dealt lethal damage, it'll be destroyed before you get a chance to sacrifice it."
+        },
+        "model": "magic.ruling",
+        "pk": 398
+    },
+    {
+        "fields": {
+            "date": "2011-09-22",
+            "text": "Players can only respond once Fling has been cast and all its costs have been paid. No one can try and destroy the creature you sacrificed to prevent you from casting Fling."
+        },
+        "model": "magic.ruling",
+        "pk": 399
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Forge Devil's ability is mandatory. If it's the only creature on the battlefield, you'll have to choose it as the target and have it deal 1 damage to itself and 1 damage to you."
+        },
+        "model": "magic.ruling",
+        "pk": 400
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Ghoultree's ability can't reduce the total cost to cast the spell below {G}."
+        },
+        "model": "magic.ruling",
+        "pk": 401
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Although players may respond to Ghoultree once it's been cast, once it's announced, they can't respond before the cost is calculated and paid."
+        },
+        "model": "magic.ruling",
+        "pk": 402
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If a creature card tries to enter the battlefield from a graveyard or library, it stays in its current zone."
+        },
+        "model": "magic.ruling",
+        "pk": 403
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Gravecrawler's ability doesn't change when you could cast it."
+        },
+        "model": "magic.ruling",
+        "pk": 404
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Once you've cast Gravecrawler and it's on the stack, it doesn't matter if you lose control of the other Zombie."
+        },
+        "model": "magic.ruling",
+        "pk": 405
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "You choose the order of the cards you put on top of your library."
+        },
+        "model": "magic.ruling",
+        "pk": 406
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "You can cast Gravepurge with zero targets. If you do, you'll draw a card as the spell resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 407
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If you cast Gravepurge with at least one target and all of those targets become illegal, the spell will be countered and you won't get to draw a card."
+        },
+        "model": "magic.ruling",
+        "pk": 408
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Count the number of creature cards in your graveyard when Grim Flowering resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 409
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "The creature card returned to your hand is chosen at random as the ability resolves. If any player responds to the ability, that player won't yet know what card will be returned."
+        },
+        "model": "magic.ruling",
+        "pk": 410
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Because the ability doesn't target any creature card, any creature card put into the graveyard in response to that ability may be returned to your hand."
+        },
+        "model": "magic.ruling",
+        "pk": 411
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Havengul Lich's activated ability creates a delayed triggered ability that triggers when you cast the creature card. This triggered ability will go on the stack on top of the creature spell and will resolve before the creature spell will."
+        },
+        "model": "magic.ruling",
+        "pk": 412
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If you don't cast the creature card that turn, Havengul Lich won't gain any of its abilities."
+        },
+        "model": "magic.ruling",
+        "pk": 413
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Havengul Lich gains the activated abilities of the card while that card is still a spell on the stack."
+        },
+        "model": "magic.ruling",
+        "pk": 414
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Although players may respond to the activated ability, they can't respond to the paying of its costs. The creature card will already be exiled by the time any player could respond."
+        },
+        "model": "magic.ruling",
+        "pk": 415
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "The Zombie creature token you put onto the battlefield will also get a +1/+1 counter."
+        },
+        "model": "magic.ruling",
+        "pk": 416
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "The creature's controller still decides which player or planeswalker the creature attacks."
+        },
+        "model": "magic.ruling",
+        "pk": 417
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If, during a player's declare attackers step, a creature is tapped, is affected by a spell or ability that says it can't attack, or hasn't been under that player's control continuously since the turn began (and doesn't have haste), then it doesn't attack. If there's a cost associated with having a creature attack, the player isn't forced to pay that cost, so it doesn't have to attack in that case either."
+        },
+        "model": "magic.ruling",
+        "pk": 418
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "This damage is not combat damage and may be redirected to a planeswalker controlled by the defending player."
+        },
+        "model": "magic.ruling",
+        "pk": 419
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If a creature you control attacks a planeswalker, the defending player is the controller of that planeswalker."
+        },
+        "model": "magic.ruling",
+        "pk": 420
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "In some multiplayer variants, creatures you control may attack multiple players and/or planeswalkers. For each attacking creature, Hellrider will deal damage to the corresponding defending player."
+        },
+        "model": "magic.ruling",
+        "pk": 421
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Helvault's first and third abilities are linked. Similarly, Helvault's second and third abilities are linked. Only cards exiled as a result of Helvault's first or second abilities will be returned to the battlefield by its third ability."
+        },
+        "model": "magic.ruling",
+        "pk": 422
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Removing an attacking creature from combat doesn't untap that creature."
+        },
+        "model": "magic.ruling",
+        "pk": 423
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Removing a blocking creature from combat doesn't cause the creature it was blocking to become unblocked. If no other creatures are blocking that attacking creature, it won't assign combat damage (unless it has trample)."
+        },
+        "model": "magic.ruling",
+        "pk": 424
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If there are multiple combat phases in a turn, a creature that's been removed from combat can still attack or block in future combat steps that turn."
+        },
+        "model": "magic.ruling",
+        "pk": 425
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "A creature that's both a Wolf and a Werewolf gets the bonus only once."
+        },
+        "model": "magic.ruling",
+        "pk": 426
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Immerwolf's bonus never applies to itself, even if it somehow becomes a Werewolf creature."
+        },
+        "model": "magic.ruling",
+        "pk": 427
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "A \"non-Human Werewolf\" is a creature that is a Werewolf but is not a Human."
+        },
+        "model": "magic.ruling",
+        "pk": 428
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Regardless of which zone Increasing Confusion is cast from, it puts cards from the top of target player's library into that player's graveyard."
+        },
+        "model": "magic.ruling",
+        "pk": 429
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Increasing Vengeance can target (and copy) any instant or sorcery spell you control, not just one with targets."
+        },
+        "model": "magic.ruling",
+        "pk": 430
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "When Increasing Vengeance resolves, it creates one or two copies of a spell. You control each of the copies. Those copies are created on the stack, so they're not \"cast.\" Abilities that trigger when a player casts a spell won't trigger. The copies will then resolve like normal spells, after players get a chance to cast spells and activate abilities."
+        },
+        "model": "magic.ruling",
+        "pk": 431
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Each of the copies will have the same targets as the spell it's copying unless you choose new ones. You may change any number of the targets, including all of them or none of them. If, for one of the targets, you can't choose a new legal target, then it remains unchanged (even if the current target is illegal). If there are two copies, you may change the targets of each of them to different legal targets."
+        },
+        "model": "magic.ruling",
+        "pk": 432
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If the spell Increasing Vengeance copies is modal (that is, it says \"Choose one --\" or the like), the copies will have the same mode(s). You can't choose different ones."
+        },
+        "model": "magic.ruling",
+        "pk": 433
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If the spell Increasing Vengeance copies has an X whose value was determined as it was cast (like Earthquake does), the copy has the same value of X."
+        },
+        "model": "magic.ruling",
+        "pk": 434
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "You can't choose to pay any additional costs for the copies. However, effects based on any additional costs that were paid for the original spell are copied as though those same costs were paid for the copies too. For example, if you sacrifice a 3/3 creature to cast Fling and then copy it with Increasing Vengeance, the copies of Fling will also deal 3 damage to its target."
+        },
+        "model": "magic.ruling",
+        "pk": 435
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Because Lost in the Woods will trigger once for each creature that attacks you or a planeswalker you control, it's important to specify which trigger is associated with which attacking creature before revealing any cards."
+        },
+        "model": "magic.ruling",
+        "pk": 436
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "The +1/+1 counter isn't put on Markov Blademaster in time to increase the amount of combat damage dealt during that combat step. However, the +1/+1 counter put on Markov Blademaster when first-strike damage is dealt will increase the amount of damage dealt during the regular combat damage step."
+        },
+        "model": "magic.ruling",
+        "pk": 437
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "You may target zero, one, or two creatures with Markov Warlord's enters-the-battlefield triggered ability."
+        },
+        "model": "magic.ruling",
+        "pk": 438
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "The creatures can't block any creatures that turn, not just Markov Warlord."
+        },
+        "model": "magic.ruling",
+        "pk": 439
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Noncombat damage dealt to you by a Human and damage dealt to you by a Human you control will also cause Mikaeus's triggered ability to trigger."
+        },
+        "model": "magic.ruling",
+        "pk": 440
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "The +1/+1 bonus that Mikaeus gives to other non-Human creatures is not a counter and won't prevent the undying ability from working."
+        },
+        "model": "magic.ruling",
+        "pk": 441
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Mikaeus, the Unhallowed and the Innistrad set's Mikaeus, the Lunarch can be on the battlefield at the same time. The \"legend rule\" applies only to legendary permanents that have exactly the same card name."
+        },
+        "model": "magic.ruling",
+        "pk": 442
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Mystic Retrieval can't target itself. It's on the stack when you choose its target."
+        },
+        "model": "magic.ruling",
+        "pk": 443
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Each time a creature dies, check whether Predator Ooze had dealt any damage to it at any time during that turn. If so, Predator Ooze's ability will trigger. It doesn't matter who controlled the creature or whose graveyard it was put into."
+        },
+        "model": "magic.ruling",
+        "pk": 444
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Pyreheart Wolf's first triggered ability also affects creatures that weren't on the battlefield when it resolved but enter the battlefield later that turn. While this normally will have little impact, it could matter if those creatures enter the battlefield attacking or if there are multiple combat phases that turn."
+        },
+        "model": "magic.ruling",
+        "pk": 445
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "When Relentless Skaabs returns to the battlefield because of its undying ability, it's not being cast. You won't exile a creature card from your graveyard."
+        },
+        "model": "magic.ruling",
+        "pk": 446
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Saving Grasp can target any creature you own, even one controlled by another player."
+        },
+        "model": "magic.ruling",
+        "pk": 447
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If the targeted land is an illegal target when Scorch the Fields tries to resolve, it will be countered and none of its effects will happen. No damage will be dealt to any Human."
+        },
+        "model": "magic.ruling",
+        "pk": 448
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Scorch the Fields doesn't target any Humans. You can cast Scorch the Fields even if there aren't any Humans on the battlefield."
+        },
+        "model": "magic.ruling",
+        "pk": 449
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "The copy doesn't have haste (unless the card it's copying has haste) and usually won't be able to attack."
+        },
+        "model": "magic.ruling",
+        "pk": 450
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Secrets of the Dead's triggered ability resolves before the spell you cast from your graveyard does."
+        },
+        "model": "magic.ruling",
+        "pk": 451
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "You can sacrifice any Human you control, including Skirsdag Flayer itself."
+        },
+        "model": "magic.ruling",
+        "pk": 452
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Because targets are chosen before costs are paid, you can activate Skirsdag Flayer's ability targeting itself and then sacrifice Skirsdag Flayer to pay the cost."
+        },
+        "model": "magic.ruling",
+        "pk": 453
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "The emblems are cumulative. If you get two of them, creatures you control will get +2/+0."
+        },
+        "model": "magic.ruling",
+        "pk": 454
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "You can target a token creature with Sorin, Lord of Innistrad's third ability, but it won't return to the battlefield."
+        },
+        "model": "magic.ruling",
+        "pk": 455
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If a creature with undying is destroyed by Sorin, Lord of Innistrad's third ability, the undying ability will trigger, but the creature will already have been returned to the battlefield by Sorin. The undying ability won't do anything when it resolves."
+        },
+        "model": "magic.ruling",
+        "pk": 456
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If Sorin, Lord of Innistrad somehow becomes a creature, it can be chosen as a target of its own third ability. If Sorin, Lord of Innistrad is still on the battlefield when that ability resolves, it will then destroy Sorin and return him to the battlefield under your control."
+        },
+        "model": "magic.ruling",
+        "pk": 457
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Spiteful Shadows causes the enchanted creature to deal damage to its controller. Abilities like lifelink and infect will apply."
+        },
+        "model": "magic.ruling",
+        "pk": 458
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If a creature with first strike deals damage in the first combat damage step, but then loses first strike before regular combat damage, it won't deal combat damage a second time (unless it also has double strike)."
+        },
+        "model": "magic.ruling",
+        "pk": 459
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If Sudden Disappearance's delayed triggered ability is countered or otherwise removed from the stack after triggering, the exiled cards will remain in exile indefinitely. The delayed triggered ability will only trigger once."
+        },
+        "model": "magic.ruling",
+        "pk": 460
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "The ability affects each spell that's not a creature spell, including your own."
+        },
+        "model": "magic.ruling",
+        "pk": 461
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "The ability affects the total cost of each noncreature spell, but it doesn't change that spell's mana cost or converted mana cost."
+        },
+        "model": "magic.ruling",
+        "pk": 462
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "When determining a spell's total cost, effects that increase the cost are applied before effects that reduce the cost."
+        },
+        "model": "magic.ruling",
+        "pk": 463
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If the target player is an illegal target when Thought Scour tries to resolve, it will be countered and none of its effects will happen. You won't draw a card."
+        },
+        "model": "magic.ruling",
+        "pk": 464
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Follow the instructions in the order listed on the card: if you target yourself, you'll put the top two cards of your library into your graveyard and then draw a card."
+        },
+        "model": "magic.ruling",
+        "pk": 465
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "A creature whose toughness is being increased by Thraben Doomsayer's fateful hour ability loses that bonus as soon as its controller has 6 or more life (or as soon as Thraben Doomsayer leaves the battlefield). If damage marked on that creature is greater than or equal to its toughness after the fateful hour ability stops applying, the creature is destroyed and put into its owner's graveyard."
+        },
+        "model": "magic.ruling",
+        "pk": 466
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If Thraben Doomsayer's activated ability resolves while you have 5 or less life, the creature token will be 3/3 as it enters the battlefield."
+        },
+        "model": "magic.ruling",
+        "pk": 467
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If there's only one card in your library when Tower Geist enters the battlefield, you'll look at that card and put it into your hand."
+        },
+        "model": "magic.ruling",
+        "pk": 468
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "You must put a creature card from among the revealed cards into your hand if one is there, even if you'd rather put all the revealed cards into your graveyard."
+        },
+        "model": "magic.ruling",
+        "pk": 469
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Vault of the Archangel's last ability affects only creatures you control when that ability resolves. It won't affect creatures that come under your control later in the turn."
+        },
+        "model": "magic.ruling",
+        "pk": 470
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Multiple instances of deathtouch or lifelink on the same creature are redundant."
+        },
+        "model": "magic.ruling",
+        "pk": 471
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Tapping creatures to attack with them happens just before any required costs to attack with those creatures are paid. If paying such a cost causes your life total to fall below 6, your tapped attackers will have vigilance, but the ability will have no benefit that combat."
+        },
+        "model": "magic.ruling",
+        "pk": 472
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Warden of the Wall still has the ability to tap for mana when it's not your turn."
+        },
+        "model": "magic.ruling",
+        "pk": 473
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Only the equipped creature's controller can activate the abilities it gains from Wolfhunter's Quiver."
+        },
+        "model": "magic.ruling",
+        "pk": 474
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "For each of the activated abilities, the equipped creature is the source of the ability and the damage. For example, if the equipped creature is not an artifact, you could activate either ability targeting a creature with protection from artifacts."
+        },
+        "model": "magic.ruling",
+        "pk": 475
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "You could activate the first ability targeting a Werewolf creature if you wanted to."
+        },
+        "model": "magic.ruling",
+        "pk": 476
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "Creature abilities like deathtouch or lifelink may affect the results of the damage dealt."
+        },
+        "model": "magic.ruling",
+        "pk": 477
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "All Humans are destroyed, not just ones you control."
+        },
+        "model": "magic.ruling",
+        "pk": 478
+    },
+    {
+        "fields": {
+            "date": "2011-01-22",
+            "text": "If a creature card in your graveyard is both a Zombie and a Human, it will be returned to the battlefield tapped, then be destroyed."
+        },
+        "model": "magic.ruling",
+        "pk": 479
+    }
+]
