@@ -20,7 +20,7 @@ python manage.py syncdb
 python manage.py loaddata color manasymbol manacost \
     supertype cardtype subtype \
     set rarity block format \
-    card printing legality
+    ruling card printing legality
 
 # Run server.
 python manage.py runserver
