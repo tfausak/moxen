@@ -92,12 +92,6 @@ class DeckDetailView(DetailView):
     model = Deck
 
 
-class CollectionListView(ListView):
-    """Display a list of all user collections.
-    """
-    model = Collection
-
-
 class CollectionDetailView(DetailView):
     """Display a single collection's details.
     """
