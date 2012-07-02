@@ -9,6 +9,8 @@ included where appropriate. <http://wizards.com/magic/rules>
 from django.conf import settings
 from django.contrib.auth.models import User
 from django.db import models
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 
 
 class Color(models.Model):
@@ -451,3 +453,11 @@ class CollectionPrinting(models.Model):
     def __unicode__(self):
         return u'{0} {1} {2}'.format(self.number, self.printing.set.name,
             self.printing.card.name)
+
+
+@receiver(post_save, sender=User)
+def create_collection(instance=None, created=False, **kwargs):
+    """Create a collection for new users.
+    """
+    if created:
+        Collection(user=instance).save()
