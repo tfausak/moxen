@@ -11,11 +11,15 @@
             <span class="divider">/</span>
         </li>
         <li>
-            <a href="{% url collection_list %}">Collections</a>
+            <a href="{% url profiles_profile_list %}">Users</a>
+            <span class="divider">/</span>
+        </li>
+        <li>
+            <a href="{{ collection.user.get_absolute_url }}">{{ collection.user }}</a>
             <span class="divider">/</span>
         </li>
         <li class="active">
-            <a href="{{ collection.get_absolute_url }}">{{ collection }}</a>
+            <a href="{{ collection.get_absolute_url }}">Collection</a>
         </li>
     </ul>
 {% endblock %}

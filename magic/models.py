@@ -425,7 +425,7 @@ class Collection(models.Model):
 
     @models.permalink
     def get_absolute_url(self):
-        return ('collection_detail', (), {'pk': self.pk})
+        return ('collection_detail', (), {'username': self.user.username})
 
 
 class CollectionCard(models.Model):

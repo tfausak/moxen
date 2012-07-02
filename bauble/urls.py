@@ -5,6 +5,7 @@ from django.conf.urls.defaults import patterns, include, url
 from django.contrib import admin
 from django.contrib.sitemaps import GenericSitemap
 from magic.models import Card, Deck, Printing, Set
+from magic.views import CollectionDetailView
 
 
 admin.autodiscover()
@@ -20,6 +21,8 @@ urlpatterns = patterns('',
     ('^users/edit/', 'profiles.views.edit_profile',
         {'form_class': UserProfileForm}, 'profiles_profile_edit'),
     ('^users/', include('profiles.urls')),
+    url(r'^users/(?P<username>\w+)/collection/$',
+        CollectionDetailView.as_view(), name='collection_detail'),
 
     ('^admin/', include(admin.site.urls)),
     ('^sitemap[.]xml', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': {

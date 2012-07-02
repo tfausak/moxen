@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.shortcuts import render
 from django.views.generic import DetailView, ListView
 from magic.models import Card, Collection, Deck, Printing, Set
@@ -96,3 +97,8 @@ class CollectionDetailView(DetailView):
     """Display a single collection's details.
     """
     model = Collection
+
+    def get_object(self, **_):
+        user = User.objects.get(username=self.kwargs['username'])
+        collection = Collection.objects.get(user=user)
+        return collection

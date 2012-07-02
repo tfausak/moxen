@@ -1,7 +1,6 @@
 from django.conf.urls.defaults import patterns, url
-from magic.views import (CardDetailView, CardListView, CollectionDetailView,
-    DeckDetailView, DeckListView, PrintingDetailView, SearchView,
-    SetDetailView, SetListView)
+from magic.views import (CardDetailView, CardListView, DeckDetailView,
+    DeckListView, PrintingDetailView, SearchView, SetDetailView, SetListView)
 
 
 urlpatterns = patterns('magic.views',
@@ -18,6 +17,4 @@ urlpatterns = patterns('magic.views',
     url('^decks/$', DeckListView.as_view(), name='deck_list'),
     url('^decks/(?P<pk>\d+)/$', DeckDetailView.as_view(),
         name='deck_detail'),
-    url('^collections/(?P<pk>\d+)/$', CollectionDetailView.as_view(),
-        name='collection_detail'),
 )
