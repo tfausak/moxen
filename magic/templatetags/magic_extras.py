@@ -42,12 +42,14 @@ def title(string):
     string = string.title()
 
     # Convert some words back to lower case.
-    pattern = r'\b(a|an|and|into|for|of|s|the|to|vs)\b'
+    words = ['a', 'adiyah', 'an', 'at', 'and', 'into', 'for', 'kanar', 'm',
+        'o', 'of', 're', u'r\xfbf', 's', 'the', 'to', 'vs']
+    pattern = ur'\b({0})\b'.format(u'|'.join(word for word in words))
     replacement = lambda match: match.group(1).lower()
     string = re.sub(pattern, replacement, string, flags=re.IGNORECASE)
 
     # Convert some words to all upper case.
-    pattern = r'(^.|\b[iv]+\b)'
+    pattern = r'(^.|\b(?:[iv]+|dci)\b)'
     replacement = lambda match: match.group(1).upper()
     string = re.sub(pattern, replacement, string, flags=re.IGNORECASE)
 
