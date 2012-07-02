@@ -423,6 +423,10 @@ class Collection(models.Model):
     def __unicode__(self):
         return self.user.username
 
+    @models.permalink
+    def get_absolute_url(self):
+        return ('collection_detail', (), {'pk': self.pk})
+
 
 class CollectionCard(models.Model):
     """A card in a collection.

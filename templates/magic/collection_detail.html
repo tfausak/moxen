@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% load title from magic_extras %}
+
+{% block title %}{{ collection }} &#xb7; {{ site.name }}{% endblock %}
+
+{% block breadcrumbs %}
+    <ul class="breadcrumb">
+        <li>
+            <a href="{% url index %}">Home</a>
+            <span class="divider">/</span>
+        </li>
+        <li>
+            <a href="{% url collection_list %}">Collections</a>
+            <span class="divider">/</span>
+        </li>
+        <li class="active">
+            <a href="{{ collection.get_absolute_url }}">{{ collection }}</a>
+        </li>
+    </ul>
+{% endblock %}
+
+{% block header %}
+    <div class="page-header">
+        <h1>{{ collection }} <small>Collection</small></h1>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Card</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for collection_card in collection.collectioncard_set.all %}
+                <tr>
+                    <td>{{ collection_card.number }}</td>
+                    <td>
+                        <a href="{{ collection_card.card.get_absolute_url }}">{{ collection_card.card|title }}</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Printing</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for collection_printing in collection.collectionprinting_set.all %}
+                <tr>
+                    <td>{{ collection_printing.number }}</td>
+                    <td>
+                        <a href="{{ collection_printing.printing.get_absolute_url }}">{{ collection_printing.printing|title }}</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
