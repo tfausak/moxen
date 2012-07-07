@@ -200,6 +200,9 @@ def scrape(set_):
         print printing
 
     # Images
+    path = 'static/img/cards/{0}'.format(set_.slug)
+    if not os.path.isdir(path):
+        os.mkdir(path)
     url = 'http://gatherer.wizards.com/Handlers/Image.ashx'
     parameters = {'type': 'card'}
     for multiverse_id, printing in printings.items():
