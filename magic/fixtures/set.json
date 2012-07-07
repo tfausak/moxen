@@ -478,6 +478,15 @@
     },
     {
         "fields": {
+            "name": "magic 2013",
+            "release_date": "2012-07-13",
+            "slug": "m13"
+        },
+        "model": "magic.set",
+        "pk": 109
+    },
+    {
+        "fields": {
             "name": "magic: the gathering-commander",
             "release_date": "2011-06-17",
             "slug": "cmd"
