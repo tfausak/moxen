@@ -3,7 +3,6 @@ from collections import defaultdict
 from django.template.defaultfilters import slugify
 from magic.models import (Card, CardType, Color, ManaCost, ManaSymbol,
     Printing, Rarity, Ruling, Set, SubType, SuperType)
-from magic.models import Printing, Rarity, Ruling
 from magic.templatetags.magic_extras import title
 from time import sleep
 from urllib import urlencode, urlretrieve
