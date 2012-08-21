@@ -31,6 +31,7 @@ class UserRegistrationForm(RegistrationFormUniqueEmail):
         blacklist = (
             'activate',
             'create',
+            'delete',
             'edit',
             'login',
             'logout',

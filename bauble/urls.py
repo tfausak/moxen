@@ -13,6 +13,8 @@ urlpatterns = patterns('',
     ('', include('magic.urls')),
 
     url('^users/settings/$', 'bauble.views.profile', name='profile'),
+    url('^users/delete/$', 'bauble.views.delete_account',
+        name='delete_account'),
     ('^users/register/$', 'registration.views.register',
         {'form_class': UserRegistrationForm}, 'registration_register'),
     ('^users/', include('registration.urls')),
