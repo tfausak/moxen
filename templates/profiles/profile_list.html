@@ -23,9 +23,11 @@
 {% block content %}
     <ul>
         {% for profile in object_list %}
-            <li>
-                <a href="{% url profiles_profile_detail profile.user.username %}">{{ profile }}</a>
-            </li>
+            {% if profile.user.is_active %}
+                <li>
+                    <a href="{% url profiles_profile_detail profile.user.username %}">{{ profile }}</a>
+                </li>
+            {% endif %}
         {% endfor %}
     </ul>
 {% endblock %}
