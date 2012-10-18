@@ -730,6 +730,15 @@
     },
     {
         "fields": {
+            "name": "return to ravnica",
+            "release_date": "2012-10-05",
+            "slug": "rtr"
+        },
+        "model": "magic.set",
+        "pk": 110
+    },
+    {
+        "fields": {
             "name": "revised edition",
             "release_date": "1994-04-01",
             "slug": "3e"
