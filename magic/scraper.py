@@ -198,7 +198,22 @@ def scrape(set_):
 
         print printing
 
-    # Images
+    # Expansion symbols
+    path = 'static/img/sets/{0}'.format(set_.slug)
+    if not os.path.isdir(path):
+        ps.mkdir(path)
+    url = 'http://gatherer.wizards.com/Handlers/Image.ashx'
+    parameters = {'set': set_.slug, 'size': 'large', 'type': 'symbol'}
+    for rarity in Rarity.objects.all():
+        path = 'static/img/sets/{0}/{1}.gif'.format(set_.slug, rarity.slug)
+        if not os.path.isfile(path):
+          parameters['rarity'] = rarity.slug
+          full_url = '{0}?{1}'.format(url, urlencode(parameters))
+          print full_url
+          urlretrieve(full_url, path)
+          sleep(1)
+
+    # Card images
     path = 'static/img/cards/{0}'.format(set_.slug)
     if not os.path.isdir(path):
         os.mkdir(path)
