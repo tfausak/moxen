@@ -197,8 +197,8 @@ class Card(models.Model):
     # Creatures have power and toughness (208.1).
     power = models.CharField(blank=True, max_length=3)
     toughness = models.CharField(blank=True, max_length=3)
-    converted_power = models.PositiveIntegerField(blank=True, default=0)
-    converted_toughness = models.PositiveIntegerField(blank=True, default=0)
+    converted_power = models.IntegerField(blank=True, default=0)
+    converted_toughness = models.IntegerField(blank=True, default=0)
 
     # Planeswalkers have loyalty (209.1).
     loyalty = models.PositiveIntegerField(blank=True, default=0)
