@@ -281,15 +281,6 @@
     {
         "fields": {
             "card": 1335,
-            "format": 29,
-            "status": "r"
-        },
-        "model": "magic.legality",
-        "pk": 102
-    },
-    {
-        "fields": {
-            "card": 1335,
             "format": 17,
             "status": "b"
         },
@@ -2680,15 +2671,6 @@
         },
         "model": "magic.legality",
         "pk": 325
-    },
-    {
-        "fields": {
-            "card": 11291,
-            "format": 14,
-            "status": "b"
-        },
-        "model": "magic.legality",
-        "pk": 167
     },
     {
         "fields": {
