@@ -134,7 +134,8 @@ def scrape(set_):
             value = tag_text(row.find('div', 'value'))
             card[key] = value
 
-        tag = dom.find('div', id='ctl00_ctl00_ctl00_MainContent_SubContent_SubContent_rulingsContainer')
+        tag = dom.find('div', id='ctl00_ctl00_ctl00_'
+            'MainContent_SubContent_SubContent_rulingsContainer')
         card['rulings'] = []
         if tag:
             rows = tag.findAll('tr') or []
@@ -207,11 +208,11 @@ def scrape(set_):
     for rarity in Rarity.objects.all():
         path = 'static/img/sets/{0}/{1}.gif'.format(set_.slug, rarity.slug)
         if not os.path.isfile(path):
-          parameters['rarity'] = rarity.slug
-          full_url = '{0}?{1}'.format(url, urlencode(parameters))
-          print full_url
-          urlretrieve(full_url, path)
-          sleep(1)
+            parameters['rarity'] = rarity.slug
+            full_url = '{0}?{1}'.format(url, urlencode(parameters))
+            print full_url
+            urlretrieve(full_url, path)
+            sleep(1)
 
     # Card images
     path = 'static/img/cards/{0}'.format(set_.slug)

@@ -41,6 +41,14 @@
     },
     {
         "fields": {
+            "name": "phenomenon",
+            "slug": "phenomenon"
+        },
+        "model": "magic.cardtype",
+        "pk": 12
+    },
+    {
+        "fields": {
             "name": "plane",
             "slug": "plane"
         },
@@ -86,13 +94,5 @@
         },
         "model": "magic.cardtype",
         "pk": 11
-    },
-    {
-        "fields": {
-            "name": "phenomenon",
-            "slug": "phenomenon"
-        },
-        "model": "magic.cardtype",
-        "pk": 12
     }
 ]

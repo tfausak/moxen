@@ -153,6 +153,14 @@
     },
     {
         "fields": {
+            "name": "azgol",
+            "slug": "azgol"
+        },
+        "model": "magic.subtype",
+        "pk": 290
+    },
+    {
+        "fields": {
             "name": "badger",
             "slug": "badger"
         },
@@ -206,6 +214,14 @@
         },
         "model": "magic.subtype",
         "pk": 26
+    },
+    {
+        "fields": {
+            "name": "belenon",
+            "slug": "belenon"
+        },
+        "model": "magic.subtype",
+        "pk": 291
     },
     {
         "fields": {
@@ -617,11 +633,27 @@
     },
     {
         "fields": {
+            "name": "ergamon",
+            "slug": "ergamon"
+        },
+        "model": "magic.subtype",
+        "pk": 292
+    },
+    {
+        "fields": {
             "name": "eye",
             "slug": "eye"
         },
         "model": "magic.subtype",
         "pk": 78
+    },
+    {
+        "fields": {
+            "name": "fabacin",
+            "slug": "fabacin"
+        },
+        "model": "magic.subtype",
+        "pk": 293
     },
     {
         "fields": {
@@ -710,6 +742,14 @@
         },
         "model": "magic.subtype",
         "pk": 89
+    },
+    {
+        "fields": {
+            "name": "gate",
+            "slug": "gate"
+        },
+        "model": "magic.subtype",
+        "pk": 294
     },
     {
         "fields": {
@@ -929,6 +969,14 @@
     },
     {
         "fields": {
+            "name": "innistrad",
+            "slug": "innistrad"
+        },
+        "model": "magic.subtype",
+        "pk": 295
+    },
+    {
+        "fields": {
             "name": "insect",
             "slug": "insect"
         },
@@ -1025,6 +1073,14 @@
     },
     {
         "fields": {
+            "name": "kephalai",
+            "slug": "kephalai"
+        },
+        "model": "magic.subtype",
+        "pk": 296
+    },
+    {
+        "fields": {
             "name": "kinshala",
             "slug": "kinshala"
         },
@@ -1065,6 +1121,14 @@
     },
     {
         "fields": {
+            "name": "kolbahan",
+            "slug": "kolbahan"
+        },
+        "model": "magic.subtype",
+        "pk": 297
+    },
+    {
+        "fields": {
             "name": "kor",
             "slug": "kor"
         },
@@ -1086,6 +1150,14 @@
         },
         "model": "magic.subtype",
         "pk": 136
+    },
+    {
+        "fields": {
+            "name": "kyneth",
+            "slug": "kyneth"
+        },
+        "model": "magic.subtype",
+        "pk": 298
     },
     {
         "fields": {
@@ -1281,6 +1353,14 @@
     },
     {
         "fields": {
+            "name": "mongseng",
+            "slug": "mongseng"
+        },
+        "model": "magic.subtype",
+        "pk": 299
+    },
+    {
+        "fields": {
             "name": "monk",
             "slug": "monk"
         },
@@ -1350,6 +1430,14 @@
         },
         "model": "magic.subtype",
         "pk": 169
+    },
+    {
+        "fields": {
+            "name": "new phyrexia",
+            "slug": "new phyrexia"
+        },
+        "model": "magic.subtype",
+        "pk": 300
     },
     {
         "fields": {
@@ -1638,6 +1726,14 @@
         },
         "model": "magic.subtype",
         "pk": 205
+    },
+    {
+        "fields": {
+            "name": "regatha",
+            "slug": "regatha"
+        },
+        "model": "magic.subtype",
+        "pk": 301
     },
     {
         "fields": {
@@ -2017,6 +2113,14 @@
     },
     {
         "fields": {
+            "name": "tamiyo",
+            "slug": "tamiyo"
+        },
+        "model": "magic.subtype",
+        "pk": 302
+    },
+    {
+        "fields": {
             "name": "tetravite",
             "slug": "tetravite"
         },
@@ -2054,6 +2158,14 @@
         },
         "model": "magic.subtype",
         "pk": 257
+    },
+    {
+        "fields": {
+            "name": "tibalt",
+            "slug": "tibalt"
+        },
+        "model": "magic.subtype",
+        "pk": 303
     },
     {
         "fields": {
@@ -2177,6 +2289,22 @@
     },
     {
         "fields": {
+            "name": "vraska",
+            "slug": "vraska"
+        },
+        "model": "magic.subtype",
+        "pk": 304
+    },
+    {
+        "fields": {
+            "name": "vryn",
+            "slug": "vryn"
+        },
+        "model": "magic.subtype",
+        "pk": 305
+    },
+    {
+        "fields": {
             "name": "wall",
             "slug": "wall"
         },
@@ -2281,6 +2409,14 @@
     },
     {
         "fields": {
+            "name": "xerex",
+            "slug": "xerex"
+        },
+        "model": "magic.subtype",
+        "pk": 306
+    },
+    {
+        "fields": {
             "name": "yeti",
             "slug": "yeti"
         },
@@ -2310,141 +2446,5 @@
         },
         "model": "magic.subtype",
         "pk": 289
-    },
-    {
-        "fields": {
-            "name": "azgol",
-            "slug": "azgol"
-        },
-        "model": "magic.subtype",
-        "pk": 290
-    },
-    {
-        "fields": {
-            "name": "belenon",
-            "slug": "belenon"
-        },
-        "model": "magic.subtype",
-        "pk": 291
-    },
-    {
-        "fields": {
-            "name": "ergamon",
-            "slug": "ergamon"
-        },
-        "model": "magic.subtype",
-        "pk": 292
-    },
-    {
-        "fields": {
-            "name": "fabacin",
-            "slug": "fabacin"
-        },
-        "model": "magic.subtype",
-        "pk": 293
-    },
-    {
-        "fields": {
-            "name": "gate",
-            "slug": "gate"
-        },
-        "model": "magic.subtype",
-        "pk": 294
-    },
-    {
-        "fields": {
-            "name": "innistrad",
-            "slug": "innistrad"
-        },
-        "model": "magic.subtype",
-        "pk": 295
-    },
-    {
-        "fields": {
-            "name": "kephalai",
-            "slug": "kephalai"
-        },
-        "model": "magic.subtype",
-        "pk": 296
-    },
-    {
-        "fields": {
-            "name": "kolbahan",
-            "slug": "kolbahan"
-        },
-        "model": "magic.subtype",
-        "pk": 297
-    },
-    {
-        "fields": {
-            "name": "kyneth",
-            "slug": "kyneth"
-        },
-        "model": "magic.subtype",
-        "pk": 298
-    },
-    {
-        "fields": {
-            "name": "mongseng",
-            "slug": "mongseng"
-        },
-        "model": "magic.subtype",
-        "pk": 299
-    },
-    {
-        "fields": {
-            "name": "new phyrexia",
-            "slug": "new phyrexia"
-        },
-        "model": "magic.subtype",
-        "pk": 300
-    },
-    {
-        "fields": {
-            "name": "regatha",
-            "slug": "regatha"
-        },
-        "model": "magic.subtype",
-        "pk": 301
-    },
-    {
-        "fields": {
-            "name": "tamiyo",
-            "slug": "tamiyo"
-        },
-        "model": "magic.subtype",
-        "pk": 302
-    },
-    {
-        "fields": {
-            "name": "tibalt",
-            "slug": "tibalt"
-        },
-        "model": "magic.subtype",
-        "pk": 303
-    },
-    {
-        "fields": {
-            "name": "vraska",
-            "slug": "vraska"
-        },
-        "model": "magic.subtype",
-        "pk": 304
-    },
-    {
-        "fields": {
-            "name": "vryn",
-            "slug": "vryn"
-        },
-        "model": "magic.subtype",
-        "pk": 305
-    },
-    {
-        "fields": {
-            "name": "xerex",
-            "slug": "xerex"
-        },
-        "model": "magic.subtype",
-        "pk": 306
     }
 ]

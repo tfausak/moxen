@@ -16,9 +16,9 @@ urlpatterns = patterns('',
     url('^users/delete/$', 'bauble.views.delete_account',
         name='delete_account'),
     ('^users/register/$', 'registration.views.register', {
-            'backend': 'registration.backends.default.DefaultBackend',
-            'form_class': UserRegistrationForm,
-        }, 'registration_register'),
+        'backend': 'registration.backends.default.DefaultBackend',
+        'form_class': UserRegistrationForm,
+    }, 'registration_register'),
     ('^users/', include('registration.backends.default.urls')),
     ('^users/create/', 'profiles.views.create_profile',
         {'form_class': UserProfileForm}, 'profiles_profile_create'),
@@ -30,12 +30,12 @@ urlpatterns = patterns('',
 
     ('^admin/', include(admin.site.urls)),
     ('^sitemap[.]xml', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': {
-            'cards': GenericSitemap({'queryset': Card.objects.all()}),
-            'decks': GenericSitemap({'queryset': Deck.objects.all()}),
-            'printings': GenericSitemap({'queryset': Printing.objects.all()}),
-            'sets': GenericSitemap({'queryset': Set.objects.all()}),
-            'users': GenericSitemap({'queryset': UserProfile.objects.all()}),
-        }}, 'sitemap'),
+        'cards': GenericSitemap({'queryset': Card.objects.all()}),
+        'decks': GenericSitemap({'queryset': Deck.objects.all()}),
+        'printings': GenericSitemap({'queryset': Printing.objects.all()}),
+        'sets': GenericSitemap({'queryset': Set.objects.all()}),
+        'users': GenericSitemap({'queryset': UserProfile.objects.all()}),
+    }}, 'sitemap'),
 )
 
 if settings.DEBUG:
