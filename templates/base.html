@@ -106,7 +106,7 @@
 
             <div class="footer">
                 <p class="pull-right">
-                    {% if debug %}
+                    {% if debug or request.user.is_staff %}
                         <a href="{% url admin:index %}">Admin</a>
                         <span> &#xb7; </span>
                     {% endif %}
