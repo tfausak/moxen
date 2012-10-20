@@ -1434,7 +1434,7 @@
     {
         "fields": {
             "name": "new phyrexia",
-            "slug": "new phyrexia"
+            "slug": "new-phyrexia"
         },
         "model": "magic.subtype",
         "pk": 300
