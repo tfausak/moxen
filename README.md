@@ -33,12 +33,14 @@ either with the scraper or manually, you should repopulate all the
 fixtures to keep them current.
 
 ```sh
-fixtures=( Block Card CardType Color Format Legality ManaCost ManaSymbol Printing Rarity Ruling Set SubType SuperType )
-for fixture in ${fixtures[@]}
+fixtures=( Block Card CardType Color Format Legality ManaCost ManaSymbol
+  Printing Rarity Ruling Set SubType SuperType )
+time for fixture in ${fixtures[@]}
 do
     python manage.py dumpdata magic.$fixture |
     python -m json.tool |
-    sed 's/ $//' > magic/fixtures/$(echo $fixture | tr '[A-Z]' '[a-z]').json
+    sed 's/ $//' > \
+        magic/fixtures/$(echo $fixture | tr '[:upper:]' '[:lower:]').json
 done
 ```
 
@@ -48,7 +50,7 @@ done
 -   [Django][] 1.4
 -   [BeautifulSoup][] 3.2
 -   [django-profiles][] 0.2
--   [django-registration][] 0.7
+-   [django-registration][] 0.8
 
 [build status]: <https://secure.travis-ci.org/tfausak/bauble.png> "Travis CI build status"
 [travis ci]: <http://travis-ci.org/tfausak/bauble> "Travis CI"
