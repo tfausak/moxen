@@ -86,5 +86,13 @@
         },
         "model": "magic.cardtype",
         "pk": 11
+    },
+    {
+        "fields": {
+            "name": "phenomenon",
+            "slug": "phenomenon"
+        },
+        "model": "magic.cardtype",
+        "pk": 12
     }
 ]
