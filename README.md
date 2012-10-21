@@ -35,7 +35,7 @@ fixtures to keep them current.
 ```sh
 fixtures=( Block Card CardType Color Format Legality ManaCost ManaSymbol
   Printing Rarity Ruling Set SubType SuperType )
-time for fixture in ${fixtures[@]}
+for fixture in ${fixtures[@]}
 do
     python manage.py dumpdata magic.$fixture |
     python -m json.tool |
