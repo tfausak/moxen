@@ -190,8 +190,9 @@ def scrape(set_):
 
         # look for rulings
         for ruling in data['rulings']:
-            tokens = [int(token) for token in ruling['date'].split('/')]
-            ruling['date'] = datetime.date(tokens[2], tokens[0], tokens[1])
+            if not isinstance(ruling['date'], datetime.date):
+                tokens = [int(token) for token in ruling['date'].split('/')]
+                ruling['date'] = datetime.date(tokens[2], tokens[0], tokens[1])
             ruling, _ = Ruling.objects.get_or_create(**ruling)
             card.rulings.add(ruling)
         if data['rulings']:
@@ -202,7 +203,7 @@ def scrape(set_):
     # Expansion symbols
     path = 'static/img/sets/{0}'.format(set_.slug)
     if not os.path.isdir(path):
-        ps.mkdir(path)
+        os.mkdir(path)
     url = 'http://gatherer.wizards.com/Handlers/Image.ashx'
     parameters = {'set': set_.slug, 'size': 'large', 'type': 'symbol'}
     for rarity in Rarity.objects.all():
