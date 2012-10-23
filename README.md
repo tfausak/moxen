@@ -34,7 +34,7 @@ fixtures to keep them current.
 
 ```sh
 fixtures=( Block Card CardType Color Format Legality ManaCost ManaSymbol
-  Printing Rarity Ruling Set SubType SuperType )
+    Printing Rarity Ruling Set SubType SuperType )
 for fixture in ${fixtures[@]}
 do
     python manage.py dumpdata magic.$fixture |
