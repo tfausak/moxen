@@ -178,9 +178,16 @@ def scrape(set_):
         cards[data['multiverse_id']] = card
 
         # find existing printing or create shell
-        printing, _ = Printing.objects.get_or_create(card=card, set=set_,
-            rarity=Rarity.objects.get(slug=data['rarity'].lower()),
-            number=data['number'])
+        kwargs = {'card': card, 'set': set_,
+          'rarity': Rarity.objects.get(slug=data['rarity'].lower())}
+        if data['number']:
+            kwargs['number'] = data['number']
+        try:
+            printing, _ = Printing.objects.get_or_create(**kwargs)
+        except Printing.MultipleObjectsReturned:
+            print 'Skipping {0} -- too many printings'.format(card)
+            continue
+
         # populate printing values
         printing.artist = data['artist'].lower()
         printing.flavor_text = data['Flavor Text:']
