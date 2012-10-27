@@ -180,6 +180,7 @@ class Card(models.Model):
     # Every Magic card has a unique name (201.2). An elemental from
     # Unhinged has the longest name at 141 characters.
     name = models.CharField(max_length=141, unique=True)
+    ascii_name = models.CharField(max_length=141, unique=True)
     slug = models.SlugField(max_length=141, unique=True)
 
     # The rules text can be found in the text box (207.1).
