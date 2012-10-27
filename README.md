@@ -46,9 +46,9 @@ done
 
 ## Requirements
 
--   [Python][] 2.7
--   [Django][] 1.4
--   [BeautifulSoup][] 3.2
+-   [Python][] 2.7.2
+-   [Django][] 1.4.2
+-   [BeautifulSoup][] 4.1.3
 -   [django-profiles][] 0.2
 -   [django-registration][] 0.8
 

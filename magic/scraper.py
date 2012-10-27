@@ -1,4 +1,4 @@
-from BeautifulSoup import BeautifulSoup
+from bs4 import BeautifulSoup
 from collections import defaultdict
 from django.template.defaultfilters import slugify
 from magic.models import (Card, CardType, Color, ManaCost, ManaSymbol,
