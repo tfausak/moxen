@@ -1,4 +1,5 @@
 from django.contrib.auth.models import User
+from django.db.models import Q
 from django.shortcuts import render
 from django.views.generic import DetailView, ListView
 from magic.models import Card, Collection, Deck, Printing, Set
@@ -28,7 +29,10 @@ class SearchView(CardListView):
     """
     def get_queryset(self):
         self.query = self.request.GET.get('query')
-        return Card.objects.filter(name__icontains=self.query)
+        return Card.objects.filter(
+            Q(ascii_name__icontains=self.query) |
+            Q(name__icontains=self.query)
+        )
 
 
 class SetListView(ListView):
