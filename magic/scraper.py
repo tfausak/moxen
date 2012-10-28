@@ -273,6 +273,7 @@ def _normalize_card(card):
     match = re.search(r'\((.*)\)', card['name'])
     if match:
         card['name'] = match.group(1)
+    card['ascii_name'] = card['name']
     card['slug'] = slugify(card['name'])
 
     # Mana cost
@@ -352,11 +353,11 @@ def _normalize_card(card):
 def _store_card(data):
     """Store a single card.
     """
-    card, _ = Card.objects.get_or_create(name=data['name'], slug=data['slug'])
-    for key in ('rules_text', 'mana_cost', 'super_types', 'card_types',
-            'sub_types', 'power', 'toughness', 'loyalty', 'hand_modifier',
-            'life_modifier', 'colors', 'converted_power',
-            'converted_toughness'):
+    card, _ = Card.objects.get_or_create(name=data['name'])
+    for key in ('ascii_name', 'card_types', 'colors', 'converted_power',
+            'converted_toughness', 'hand_modifier', 'life_modifier', 'loyalty',
+            'mana_cost', 'power', 'rules_text', 'slug', 'sub_types',
+            'super_types', 'toughness'):
         setattr(card, key, data[key])
     card.save()
     return card
