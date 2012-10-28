@@ -1,4 +1,5 @@
 from django.core.management.base import BaseCommand
+from django.db.models import Q
 from magic.models import Set
 from magic.scraper import scrape
 
@@ -13,12 +14,9 @@ class Command(BaseCommand):
         for arg in args:
             arg = arg.lower()
             try:
-                set_ = Set.objects.get(slug=arg)
+                set_ = Set.objects.get(Q(slug=arg) | Q(name=arg)
             except Set.DoesNotExist:
-                try:
-                    set_ = Set.objects.get(name=arg)
-                except Set.DoesNotExist:
-                    continue
+                continue
 
             print set_.name
             scrape(set_)
