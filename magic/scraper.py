@@ -5,6 +5,7 @@ from magic.models import (Card, CardType, Color, ManaCost, ManaSymbol,
     Printing, Rarity, Ruling, Set, SubType, SuperType)
 from magic.templatetags.magic_extras import title
 from time import sleep
+from unidecode import unidecode
 from urllib import urlencode, urlretrieve
 from urllib2 import urlopen
 import datetime
@@ -273,8 +274,8 @@ def _normalize_card(card):
     match = re.search(r'\((.*)\)', card['name'])
     if match:
         card['name'] = match.group(1)
-    card['ascii_name'] = card['name']
-    card['slug'] = slugify(card['name'])
+    card['ascii_name'] = unidecode(card['name'])
+    card['slug'] = slugify(card['ascii_name'])
 
     # Mana cost
     card['cost'] = re.findall(MANA_COST, card['cost'])
