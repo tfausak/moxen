@@ -162,7 +162,7 @@ def scrape(set_):
     printings = {}
     for data in checklist:
         # fix keys
-        data['cost'] = data['Cost:']
+        data['cost'] = data.get('Cost:', '')
         data['hand_life'] = data.get('Hand/Life:', '')
         data['loyalty'] = data.get('Loyalty:', '')
         data['pow_tgh'] = data.get('Pow/Tgh:', '')
