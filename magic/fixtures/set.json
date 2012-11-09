@@ -1,990 +1,1100 @@
 [
     {
         "fields": {
+            "code": "arb",
             "name": "alara reborn",
             "release_date": "2009-04-30",
-            "slug": "arb"
+            "slug": "alara-reborn"
         },
         "model": "magic.set",
         "pk": 1
     },
     {
         "fields": {
+            "code": "al",
             "name": "alliances",
             "release_date": "1996-06-10",
-            "slug": "al"
+            "slug": "alliances"
         },
         "model": "magic.set",
         "pk": 2
     },
     {
         "fields": {
+            "code": "aq",
             "name": "antiquities",
             "release_date": "1994-03-01",
-            "slug": "aq"
+            "slug": "antiquities"
         },
         "model": "magic.set",
         "pk": 3
     },
     {
         "fields": {
+            "code": "ap",
             "name": "apocalypse",
             "release_date": "2001-06-04",
-            "slug": "ap"
+            "slug": "apocalypse"
         },
         "model": "magic.set",
         "pk": 4
     },
     {
         "fields": {
+            "code": "an",
             "name": "arabian nights",
             "release_date": "1993-12-01",
-            "slug": "an"
+            "slug": "arabian-nights"
         },
         "model": "magic.set",
         "pk": 5
     },
     {
         "fields": {
+            "code": "arc",
             "name": "archenemy",
             "release_date": "2010-07-18",
-            "slug": "arc"
+            "slug": "archenemy"
         },
         "model": "magic.set",
         "pk": 6
     },
     {
         "fields": {
+            "code": "avr",
             "name": "avacyn restored",
             "release_date": "2012-05-04",
-            "slug": "avr"
+            "slug": "avacyn-restored"
         },
         "model": "magic.set",
         "pk": 108
     },
     {
         "fields": {
+            "code": "br",
             "name": "battle royale box set",
             "release_date": "1999-11-12",
-            "slug": "br"
+            "slug": "battle-royale-box-set"
         },
         "model": "magic.set",
         "pk": 7
     },
     {
         "fields": {
+            "code": "bd",
             "name": "beatdown box set",
             "release_date": "2000-12-01",
-            "slug": "bd"
+            "slug": "beatdown-box-set"
         },
         "model": "magic.set",
         "pk": 8
     },
     {
         "fields": {
+            "code": "bok",
             "name": "betrayers of kamigawa",
             "release_date": "2005-02-04",
-            "slug": "bok"
+            "slug": "betrayers-of-kamigawa"
         },
         "model": "magic.set",
         "pk": 9
     },
     {
         "fields": {
+            "code": "chk",
             "name": "champions of kamigawa",
             "release_date": "2004-10-01",
-            "slug": "chk"
+            "slug": "champions-of-kamigawa"
         },
         "model": "magic.set",
         "pk": 10
     },
     {
         "fields": {
+            "code": "ch",
             "name": "chronicles",
             "release_date": "1995-07-01",
-            "slug": "ch"
+            "slug": "chronicles"
         },
         "model": "magic.set",
         "pk": 11
     },
     {
         "fields": {
+            "code": "6e",
             "name": "classic sixth edition",
             "release_date": "1999-04-28",
-            "slug": "6e"
+            "slug": "classic-sixth-edition"
         },
         "model": "magic.set",
         "pk": 12
     },
     {
         "fields": {
+            "code": "csp",
             "name": "coldsnap",
             "release_date": "2006-07-21",
-            "slug": "csp"
+            "slug": "coldsnap"
         },
         "model": "magic.set",
         "pk": 13
     },
     {
         "fields": {
+            "code": "con",
             "name": "conflux",
             "release_date": "2009-02-06",
-            "slug": "con"
+            "slug": "conflux"
         },
         "model": "magic.set",
         "pk": 14
     },
     {
         "fields": {
+            "code": "dka",
             "name": "dark ascension",
             "release_date": "2012-02-03",
-            "slug": "dka"
+            "slug": "dark-ascension"
         },
         "model": "magic.set",
         "pk": 15
     },
     {
         "fields": {
+            "code": "dst",
             "name": "darksteel",
             "release_date": "2004-02-06",
-            "slug": "dst"
+            "slug": "darksteel"
         },
         "model": "magic.set",
         "pk": 16
     },
     {
         "fields": {
+            "code": "dis",
             "name": "dissension",
             "release_date": "2006-05-05",
-            "slug": "dis"
+            "slug": "dissension"
         },
         "model": "magic.set",
         "pk": 17
     },
     {
         "fields": {
+            "code": "ddh",
             "name": "duel decks: ajani vs. nicol bolas",
             "release_date": "2011-09-02",
-            "slug": "ddh"
+            "slug": "duel-decks-ajani-vs-nicol-bolas"
         },
         "model": "magic.set",
         "pk": 18
     },
     {
         "fields": {
+            "code": "ddc",
             "name": "duel decks: divine vs. demonic",
             "release_date": "2009-04-10",
-            "slug": "ddc"
+            "slug": "duel-decks-divine-vs-demonic"
         },
         "model": "magic.set",
         "pk": 19
     },
     {
         "fields": {
+            "code": "ddf",
             "name": "duel decks: elspeth vs. tezzeret",
             "release_date": "2010-09-03",
-            "slug": "ddf"
+            "slug": "duel-decks-elspeth-vs-tezzeret"
         },
         "model": "magic.set",
         "pk": 20
     },
     {
         "fields": {
+            "code": "evg",
             "name": "duel decks: elves vs. goblins",
             "release_date": "2007-11-16",
-            "slug": "evg"
+            "slug": "duel-decks-elves-vs-goblins"
         },
         "model": "magic.set",
         "pk": 21
     },
     {
         "fields": {
+            "code": "ddd",
             "name": "duel decks: garruk vs. liliana",
             "release_date": "2009-10-30",
-            "slug": "ddd"
+            "slug": "duel-decks-garruk-vs-liliana"
         },
         "model": "magic.set",
         "pk": 22
     },
     {
         "fields": {
+            "code": "dd2",
             "name": "duel decks: jace vs. chandra",
             "release_date": "2008-11-07",
-            "slug": "dd2"
+            "slug": "duel-decks-jace-vs-chandra"
         },
         "model": "magic.set",
         "pk": 23
     },
     {
         "fields": {
+            "code": "ddg",
             "name": "duel decks: knights vs. dragons",
             "release_date": "2011-04-01",
-            "slug": "ddg"
+            "slug": "duel-decks-knights-vs-dragons"
         },
         "model": "magic.set",
         "pk": 24
     },
     {
         "fields": {
+            "code": "dde",
             "name": "duel decks: phyrexia vs. the coalition",
             "release_date": "2010-03-19",
-            "slug": "dde"
+            "slug": "duel-decks-phyrexia-vs-the-coalition"
         },
         "model": "magic.set",
         "pk": 25
     },
     {
         "fields": {
+            "code": "ddi",
             "name": "duel decks: venser vs. koth",
             "release_date": "2012-03-30",
-            "slug": "ddi"
+            "slug": "duel-decks-venser-vs-koth"
         },
         "model": "magic.set",
         "pk": 107
     },
     {
         "fields": {
+            "code": "8ed",
             "name": "eighth edition",
             "release_date": "2003-07-28",
-            "slug": "8ed"
+            "slug": "eighth-edition"
         },
         "model": "magic.set",
         "pk": 26
     },
     {
         "fields": {
+            "code": "eve",
             "name": "eventide",
             "release_date": "2008-07-25",
-            "slug": "eve"
+            "slug": "eventide"
         },
         "model": "magic.set",
         "pk": 27
     },
     {
         "fields": {
+            "code": "ex",
             "name": "exodus",
             "release_date": "1998-06-15",
-            "slug": "ex"
+            "slug": "exodus"
         },
         "model": "magic.set",
         "pk": 28
     },
     {
         "fields": {
+            "code": "fe",
             "name": "fallen empires",
             "release_date": "1994-11-01",
-            "slug": "fe"
+            "slug": "fallen-empires"
         },
         "model": "magic.set",
         "pk": 29
     },
     {
         "fields": {
+            "code": "5dn",
             "name": "fifth dawn",
             "release_date": "2004-06-04",
-            "slug": "5dn"
+            "slug": "fifth-dawn"
         },
         "model": "magic.set",
         "pk": 30
     },
     {
         "fields": {
+            "code": "5e",
             "name": "fifth edition",
             "release_date": "1997-03-24",
-            "slug": "5e"
+            "slug": "fifth-edition"
         },
         "model": "magic.set",
         "pk": 31
     },
     {
         "fields": {
+            "code": "4e",
             "name": "fourth edition",
             "release_date": "1995-04-01",
-            "slug": "4e"
+            "slug": "fourth-edition"
         },
         "model": "magic.set",
         "pk": 32
     },
     {
         "fields": {
+            "code": "drb",
             "name": "from the vault: dragons",
             "release_date": "2008-08-29",
-            "slug": "drb"
+            "slug": "from-the-vault-dragons"
         },
         "model": "magic.set",
         "pk": 33
     },
     {
         "fields": {
+            "code": "v09",
             "name": "from the vault: exiled",
             "release_date": "2009-08-28",
-            "slug": "v09"
+            "slug": "from-the-vault-exiled"
         },
         "model": "magic.set",
         "pk": 34
     },
     {
         "fields": {
+            "code": "v11",
             "name": "from the vault: legends",
             "release_date": "2011-08-26",
-            "slug": "v11"
+            "slug": "from-the-vault-legends"
         },
         "model": "magic.set",
         "pk": 35
     },
     {
         "fields": {
+            "code": "v10",
             "name": "from the vault: relics",
             "release_date": "2010-08-27",
-            "slug": "v10"
+            "slug": "from-the-vault-relics"
         },
         "model": "magic.set",
         "pk": 36
     },
     {
         "fields": {
+            "code": "fut",
             "name": "future sight",
             "release_date": "2007-05-04",
-            "slug": "fut"
+            "slug": "future-sight"
         },
         "model": "magic.set",
         "pk": 37
     },
     {
         "fields": {
+            "code": "gpt",
             "name": "guildpact",
             "release_date": "2006-02-03",
-            "slug": "gpt"
+            "slug": "guildpact"
         },
         "model": "magic.set",
         "pk": 38
     },
     {
         "fields": {
+            "code": "hm",
             "name": "homelands",
             "release_date": "1995-10-01",
-            "slug": "hm"
+            "slug": "homelands"
         },
         "model": "magic.set",
         "pk": 39
     },
     {
         "fields": {
+            "code": "ia",
             "name": "ice age",
             "release_date": "1995-06-01",
-            "slug": "ia"
+            "slug": "ice-age"
         },
         "model": "magic.set",
         "pk": 40
     },
     {
         "fields": {
+            "code": "isd",
             "name": "innistrad",
             "release_date": "2011-09-30",
-            "slug": "isd"
+            "slug": "innistrad"
         },
         "model": "magic.set",
         "pk": 41
     },
     {
         "fields": {
+            "code": "in",
             "name": "invasion",
             "release_date": "2000-10-02",
-            "slug": "in"
+            "slug": "invasion"
         },
         "model": "magic.set",
         "pk": 42
     },
     {
         "fields": {
+            "code": "jud",
             "name": "judgment",
             "release_date": "2002-05-27",
-            "slug": "jud"
+            "slug": "judgment"
         },
         "model": "magic.set",
         "pk": 43
     },
     {
         "fields": {
+            "code": "le",
             "name": "legends",
             "release_date": "1994-06-01",
-            "slug": "le"
+            "slug": "legends"
         },
         "model": "magic.set",
         "pk": 44
     },
     {
         "fields": {
+            "code": "lgn",
             "name": "legions",
             "release_date": "2003-02-03",
-            "slug": "lgn"
+            "slug": "legions"
         },
         "model": "magic.set",
         "pk": 45
     },
     {
         "fields": {
+            "code": "1e",
             "name": "limited edition alpha",
             "release_date": "1993-08-05",
-            "slug": "1e"
+            "slug": "limited-edition-alpha"
         },
         "model": "magic.set",
         "pk": 46
     },
     {
         "fields": {
+            "code": "2e",
             "name": "limited edition beta",
             "release_date": "1993-10-01",
-            "slug": "2e"
+            "slug": "limited-edition-beta"
         },
         "model": "magic.set",
         "pk": 47
     },
     {
         "fields": {
+            "code": "lrw",
             "name": "lorwyn",
             "release_date": "2007-10-12",
-            "slug": "lrw"
+            "slug": "lorwyn"
         },
         "model": "magic.set",
         "pk": 48
     },
     {
         "fields": {
+            "code": "m10",
             "name": "magic 2010",
             "release_date": "2009-07-17",
-            "slug": "m10"
+            "slug": "magic-2010"
         },
         "model": "magic.set",
         "pk": 49
     },
     {
         "fields": {
+            "code": "m11",
             "name": "magic 2011",
             "release_date": "2010-07-16",
-            "slug": "m11"
+            "slug": "magic-2011"
         },
         "model": "magic.set",
         "pk": 50
     },
     {
         "fields": {
+            "code": "m12",
             "name": "magic 2012",
             "release_date": "2011-07-15",
-            "slug": "m12"
+            "slug": "magic-2012"
         },
         "model": "magic.set",
         "pk": 51
     },
     {
         "fields": {
+            "code": "m13",
             "name": "magic 2013",
             "release_date": "2012-07-13",
-            "slug": "m13"
+            "slug": "magic-2013"
         },
         "model": "magic.set",
         "pk": 109
     },
     {
         "fields": {
+            "code": "cmd",
             "name": "magic: the gathering-commander",
             "release_date": "2011-06-17",
-            "slug": "cmd"
+            "slug": "magic-the-gathering-commander"
         },
         "model": "magic.set",
         "pk": 52
     },
     {
         "fields": {
+            "code": "med",
             "name": "masters edition",
             "release_date": "2007-09-10",
-            "slug": "med"
+            "slug": "masters-edition"
         },
         "model": "magic.set",
         "pk": 53
     },
     {
         "fields": {
+            "code": "me2",
             "name": "masters edition ii",
             "release_date": "2008-09-22",
-            "slug": "me2"
+            "slug": "masters-edition-ii"
         },
         "model": "magic.set",
         "pk": 54
     },
     {
         "fields": {
+            "code": "me3",
             "name": "masters edition iii",
             "release_date": "2009-09-07",
-            "slug": "me3"
+            "slug": "masters-edition-iii"
         },
         "model": "magic.set",
         "pk": 55
     },
     {
         "fields": {
+            "code": "me4",
             "name": "masters edition iv",
             "release_date": "2011-01-10",
-            "slug": "me4"
+            "slug": "masters-edition-iv"
         },
         "model": "magic.set",
         "pk": 56
     },
     {
         "fields": {
+            "code": "mm",
             "name": "mercadian masques",
             "release_date": "1999-10-04",
-            "slug": "mm"
+            "slug": "mercadian-masques"
         },
         "model": "magic.set",
         "pk": 57
     },
     {
         "fields": {
+            "code": "mi",
             "name": "mirage",
             "release_date": "1996-10-07",
-            "slug": "mi"
+            "slug": "mirage"
         },
         "model": "magic.set",
         "pk": 58
     },
     {
         "fields": {
+            "code": "mrd",
             "name": "mirrodin",
             "release_date": "2003-10-03",
-            "slug": "mrd"
+            "slug": "mirrodin"
         },
         "model": "magic.set",
         "pk": 59
     },
     {
         "fields": {
+            "code": "mbs",
             "name": "mirrodin besieged",
             "release_date": "2011-02-04",
-            "slug": "mbs"
+            "slug": "mirrodin-besieged"
         },
         "model": "magic.set",
         "pk": 60
     },
     {
         "fields": {
+            "code": "mor",
             "name": "morningtide",
             "release_date": "2008-02-01",
-            "slug": "mor"
+            "slug": "morningtide"
         },
         "model": "magic.set",
         "pk": 61
     },
     {
         "fields": {
+            "code": "ne",
             "name": "nemesis",
             "release_date": "2000-02-14",
-            "slug": "ne"
+            "slug": "nemesis"
         },
         "model": "magic.set",
         "pk": 62
     },
     {
         "fields": {
+            "code": "nph",
             "name": "new phyrexia",
             "release_date": "2011-05-13",
-            "slug": "nph"
+            "slug": "new-phyrexia"
         },
         "model": "magic.set",
         "pk": 63
     },
     {
         "fields": {
+            "code": "9ed",
             "name": "ninth edition",
             "release_date": "2005-07-29",
-            "slug": "9ed"
+            "slug": "ninth-edition"
         },
         "model": "magic.set",
         "pk": 64
     },
     {
         "fields": {
+            "code": "od",
             "name": "odyssey",
             "release_date": "2001-10-01",
-            "slug": "od"
+            "slug": "odyssey"
         },
         "model": "magic.set",
         "pk": 65
     },
     {
         "fields": {
+            "code": "ons",
             "name": "onslaught",
             "release_date": "2002-10-07",
-            "slug": "ons"
+            "slug": "onslaught"
         },
         "model": "magic.set",
         "pk": 66
     },
     {
         "fields": {
+            "code": "plc",
             "name": "planar chaos",
             "release_date": "2007-02-02",
-            "slug": "plc"
+            "slug": "planar-chaos"
         },
         "model": "magic.set",
         "pk": 67
     },
     {
         "fields": {
+            "code": "hop",
             "name": "planechase",
             "release_date": "2009-09-04",
-            "slug": "hop"
+            "slug": "planechase"
         },
         "model": "magic.set",
         "pk": 68
     },
     {
         "fields": {
+            "code": "ps",
             "name": "planeshift",
             "release_date": "2001-02-05",
-            "slug": "ps"
+            "slug": "planeshift"
         },
         "model": "magic.set",
         "pk": 69
     },
     {
         "fields": {
+            "code": "po",
             "name": "portal",
             "release_date": "1997-06-01",
-            "slug": "po"
+            "slug": "portal"
         },
         "model": "magic.set",
         "pk": 70
     },
     {
         "fields": {
+            "code": "p2",
             "name": "portal second age",
             "release_date": "1998-06-01",
-            "slug": "p2"
+            "slug": "portal-second-age"
         },
         "model": "magic.set",
         "pk": 71
     },
     {
         "fields": {
+            "code": "pk",
             "name": "portal three kingdoms",
             "release_date": "1999-05-01",
-            "slug": "pk"
+            "slug": "portal-three-kingdoms"
         },
         "model": "magic.set",
         "pk": 72
     },
     {
         "fields": {
+            "code": "pd2",
             "name": "premium deck series: fire and lightning",
             "release_date": "2010-11-19",
-            "slug": "pd2"
+            "slug": "premium-deck-series-fire-and-lightning"
         },
         "model": "magic.set",
         "pk": 73
     },
     {
         "fields": {
+            "code": "pd3",
             "name": "premium deck series: graveborn",
             "release_date": "2011-11-18",
-            "slug": "pd3"
+            "slug": "premium-deck-series-graveborn"
         },
         "model": "magic.set",
         "pk": 74
     },
     {
         "fields": {
+            "code": "h09",
             "name": "premium deck series: slivers",
             "release_date": "2009-11-20",
-            "slug": "h09"
+            "slug": "premium-deck-series-slivers"
         },
         "model": "magic.set",
         "pk": 75
     },
     {
         "fields": {
+            "code": "ppr",
             "name": "promo set for gatherer",
             "release_date": null,
-            "slug": "ppr"
+            "slug": "promo-set-for-gatherer"
         },
         "model": "magic.set",
         "pk": 76
     },
     {
         "fields": {
+            "code": "pr",
             "name": "prophecy",
             "release_date": "2000-06-05",
-            "slug": "pr"
+            "slug": "prophecy"
         },
         "model": "magic.set",
         "pk": 77
     },
     {
         "fields": {
+            "code": "rav",
             "name": "ravnica: city of guilds",
             "release_date": "2005-10-07",
-            "slug": "rav"
+            "slug": "ravnica-city-of-guilds"
         },
         "model": "magic.set",
         "pk": 78
     },
     {
         "fields": {
+            "code": "rtr",
             "name": "return to ravnica",
             "release_date": "2012-10-05",
-            "slug": "rtr"
+            "slug": "return-to-ravnica"
         },
         "model": "magic.set",
         "pk": 110
     },
     {
         "fields": {
+            "code": "3e",
             "name": "revised edition",
             "release_date": "1994-04-01",
-            "slug": "3e"
+            "slug": "revised-edition"
         },
         "model": "magic.set",
         "pk": 79
     },
     {
         "fields": {
+            "code": "roe",
             "name": "rise of the eldrazi",
             "release_date": "2010-04-23",
-            "slug": "roe"
+            "slug": "rise-of-the-eldrazi"
         },
         "model": "magic.set",
         "pk": 80
     },
     {
         "fields": {
+            "code": "sok",
             "name": "saviors of kamigawa",
             "release_date": "2005-06-03",
-            "slug": "sok"
+            "slug": "saviors-of-kamigawa"
         },
         "model": "magic.set",
         "pk": 81
     },
     {
         "fields": {
+            "code": "som",
             "name": "scars of mirrodin",
             "release_date": "2010-01-01",
-            "slug": "som"
+            "slug": "scars-of-mirrodin"
         },
         "model": "magic.set",
         "pk": 82
     },
     {
         "fields": {
+            "code": "scg",
             "name": "scourge",
             "release_date": "2003-05-26",
-            "slug": "scg"
+            "slug": "scourge"
         },
         "model": "magic.set",
         "pk": 83
     },
     {
         "fields": {
+            "code": "7e",
             "name": "seventh edition",
             "release_date": "2001-04-11",
-            "slug": "7e"
+            "slug": "seventh-edition"
         },
         "model": "magic.set",
         "pk": 84
     },
     {
         "fields": {
+            "code": "shm",
             "name": "shadowmoor",
             "release_date": "2008-05-02",
-            "slug": "shm"
+            "slug": "shadowmoor"
         },
         "model": "magic.set",
         "pk": 85
     },
     {
         "fields": {
+            "code": "ala",
             "name": "shards of alara",
             "release_date": "2008-10-03",
-            "slug": "ala"
+            "slug": "shards-of-alara"
         },
         "model": "magic.set",
         "pk": 86
     },
     {
         "fields": {
+            "code": "p3",
             "name": "starter 1999",
             "release_date": "1999-08-27",
-            "slug": "p3"
+            "slug": "starter-1999"
         },
         "model": "magic.set",
         "pk": 87
     },
     {
         "fields": {
+            "code": "p4",
             "name": "starter 2000",
             "release_date": "2000-04-24",
-            "slug": "p4"
+            "slug": "starter-2000"
         },
         "model": "magic.set",
         "pk": 88
     },
     {
         "fields": {
+            "code": "st",
             "name": "stronghold",
             "release_date": "1998-03-02",
-            "slug": "st"
+            "slug": "stronghold"
         },
         "model": "magic.set",
         "pk": 89
     },
     {
         "fields": {
+            "code": "te",
             "name": "tempest",
             "release_date": "1997-10-13",
-            "slug": "te"
+            "slug": "tempest"
         },
         "model": "magic.set",
         "pk": 90
     },
     {
         "fields": {
+            "code": "10e",
             "name": "tenth edition",
             "release_date": "2007-07-14",
-            "slug": "10e"
+            "slug": "tenth-edition"
         },
         "model": "magic.set",
         "pk": 91
     },
     {
         "fields": {
+            "code": "dk",
             "name": "the dark",
             "release_date": "1994-08-01",
-            "slug": "dk"
+            "slug": "the-dark"
         },
         "model": "magic.set",
         "pk": 92
     },
     {
         "fields": {
+            "code": "tsp",
             "name": "time spiral",
             "release_date": "2006-10-06",
-            "slug": "tsp"
+            "slug": "time-spiral"
         },
         "model": "magic.set",
         "pk": 93
     },
     {
         "fields": {
+            "code": "tsb",
             "name": "time spiral \"timeshifted\"",
             "release_date": "2006-10-06",
-            "slug": "tsb"
+            "slug": "time-spiral-timeshifted"
         },
         "model": "magic.set",
         "pk": 94
     },
     {
         "fields": {
+            "code": "tor",
             "name": "torment",
             "release_date": "2002-02-04",
-            "slug": "tor"
+            "slug": "torment"
         },
         "model": "magic.set",
         "pk": 95
     },
     {
         "fields": {
+            "code": "ug",
             "name": "unglued",
             "release_date": "1998-08-17",
-            "slug": "ug"
+            "slug": "unglued"
         },
         "model": "magic.set",
         "pk": 96
     },
     {
         "fields": {
+            "code": "unh",
             "name": "unhinged",
             "release_date": "2004-11-19",
-            "slug": "unh"
+            "slug": "unhinged"
         },
         "model": "magic.set",
         "pk": 97
     },
     {
         "fields": {
+            "code": "2u",
             "name": "unlimited edition",
             "release_date": "1993-12-01",
-            "slug": "2u"
+            "slug": "unlimited-edition"
         },
         "model": "magic.set",
         "pk": 98
     },
     {
         "fields": {
+            "code": "cg",
             "name": "urza's destiny",
             "release_date": "1999-06-07",
-            "slug": "cg"
+            "slug": "urzas-destiny"
         },
         "model": "magic.set",
         "pk": 99
     },
     {
         "fields": {
+            "code": "gu",
             "name": "urza's legacy",
             "release_date": "1999-02-15",
-            "slug": "gu"
+            "slug": "urzas-legacy"
         },
         "model": "magic.set",
         "pk": 100
     },
     {
         "fields": {
+            "code": "uz",
             "name": "urza's saga",
             "release_date": "1998-10-12",
-            "slug": "uz"
+            "slug": "urzas-saga"
         },
         "model": "magic.set",
         "pk": 101
     },
     {
         "fields": {
+            "code": "van",
             "name": "vanguard",
             "release_date": null,
-            "slug": "van"
+            "slug": "vanguard"
         },
         "model": "magic.set",
         "pk": 102
     },
     {
         "fields": {
+            "code": "vi",
             "name": "visions",
             "release_date": "1997-02-03",
-            "slug": "vi"
+            "slug": "visions"
         },
         "model": "magic.set",
         "pk": 103
     },
     {
         "fields": {
+            "code": "wl",
             "name": "weatherlight",
             "release_date": "1997-06-09",
-            "slug": "wl"
+            "slug": "weatherlight"
         },
         "model": "magic.set",
         "pk": 104
     },
     {
         "fields": {
+            "code": "wwk",
             "name": "worldwake",
             "release_date": "2010-02-05",
-            "slug": "wwk"
+            "slug": "worldwake"
         },
         "model": "magic.set",
         "pk": 105
     },
     {
         "fields": {
+            "code": "zen",
             "name": "zendikar",
             "release_date": "2009-10-02",
-            "slug": "zen"
+            "slug": "zendikar"
         },
         "model": "magic.set",
         "pk": 106

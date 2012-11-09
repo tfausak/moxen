@@ -123,7 +123,8 @@ class Set(models.Model):
     Sets are defined in 206.1.
     """
     name = models.CharField(max_length=39, unique=True)
-    slug = models.SlugField(max_length=3, unique=True)
+    slug = models.SlugField(max_length=39, unique=True)
+    code = models.SlugField(max_length=3, unique=True)
     release_date = models.DateField(blank=True, null=True)
 
     class Meta:
