@@ -213,7 +213,7 @@ def scrape(set_):
     if not os.path.isdir(path):
         os.mkdir(path)
     url = 'http://gatherer.wizards.com/Handlers/Image.ashx'
-    parameters = {'set': set_.slug, 'size': 'large', 'type': 'symbol'}
+    parameters = {'set': set_.code, 'size': 'large', 'type': 'symbol'}
     for rarity in Rarity.objects.all():
         path = 'static/img/sets/{0}/{1}.gif'.format(set_.slug, rarity.slug)
         if not os.path.isfile(path):

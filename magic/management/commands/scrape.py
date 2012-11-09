@@ -14,7 +14,7 @@ class Command(BaseCommand):
         for arg in args:
             arg = arg.lower()
             try:
-                set_ = Set.objects.get(Q(slug=arg) | Q(name=arg)
+                set_ = Set.objects.get(Q(code=arg) | Q(name=arg) | Q(slug=arg))
             except Set.DoesNotExist:
                 continue
 
