@@ -46,9 +46,9 @@ done
 
 ## Requirements
 
--   [Python][] 2.7.2
--   [Django][] 1.4.2
--   [BeautifulSoup][] 4.1.3
+-   [Python][] 2.7
+-   [Django][] 1.4
+-   [BeautifulSoup][] 4.1
 -   [django-profiles][] 0.2
 -   [django-registration][] 0.8
 
@@ -57,6 +57,6 @@ done
 [magic: the gathering]: <http://wizards.com/magic> "Magic: the Gathering"
 [python]: <http://python.org/> "Python"
 [django]: <https://www.djangoproject.com/> "Django"
-[beautifulsoup]: <http://www.crummy.com/software/BeautifulSoup> "BeautifulSoup"
+[beautifulsoup]: <http://www.crummy.com/software/BeautifulSoup> "Beautiful Soup"
 [django-profiles]: <https://bitbucket.org/ubernostrum/django-profiles> "django-profiles"
 [django-registration]: <https://bitbucket.org/ubernostrum/django-registration> "django-registration"
