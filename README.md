@@ -13,7 +13,7 @@ cd bauble
 pip install -r requirements.txt
 
 # Run tests.
-python manage.py test bauble magic
+python manage.py test
 
 # Fill database.
 python manage.py syncdb

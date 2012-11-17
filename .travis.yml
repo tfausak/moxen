@@ -1,2 +1,2 @@
 language: python
-script: python manage.py test bauble magic
+script: python manage.py test

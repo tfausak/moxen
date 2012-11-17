@@ -30,6 +30,7 @@ SITE_ID = 1
 STATIC_ROOT = './static/'
 STATIC_URL = '/static/'
 TEMPLATE_DEBUG = DEBUG
+TEST_RUNNER = 'bauble.testrunner.TestRunner'
 
 INSTALLED_APPS = (
     'django.contrib.admin',
