@@ -1,3 +1,4 @@
+# pylint: disable=W0621,R0914,E1103,R0912,R0915
 from bs4 import BeautifulSoup
 from collections import defaultdict
 from django.template.defaultfilters import slugify
