@@ -1,1 +1,0 @@
-Activate account on {{ site.name }}

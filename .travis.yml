@@ -1,2 +1,3 @@
+install: pip install -r requirements/development.txt --use-mirrors
 language: python
-script: python manage.py test
+script: fab test

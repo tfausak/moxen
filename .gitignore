@@ -1,10 +1,9 @@
-*.pyc
+*.db
+*.py[co]
 *.sublime-*
 .DS_Store
-.Python
 bin/
-db.sq3
-db.sq3-journal
+build/
 include/
 lib/
-Scripts/
+share/

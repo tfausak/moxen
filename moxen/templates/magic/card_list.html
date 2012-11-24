@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% load title from magic_extras %}
+
+{% block title %}Cards &#xb7; {{ site.name }}{% endblock %}
+
+{% block breadcrumbs %}
+    <ul class="breadcrumb">
+        <li>
+            <a href="{% url index %}">Home</a>
+            <span class="divider">/</span>
+        </li>
+        <li class="active">
+            <a href="{% url card_list %}">Cards</a>
+        </li>
+    </ul>
+{% endblock %}
+
+{% block header %}
+    <div class="page-header">
+        <h1>Cards</h1>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="card-list row">
+        {% for card in object_list %}
+            <div class="span3">
+                <a class="card {% for color in card.colors.all %} color-{{ color.slug }} {% endfor %}" href="{{ card.get_absolute_url }}">
+                    {# Mana cost #}
+                    <div class="mana-cost pull-right">
+                        {% for mana_symbol in card.mana_symbols %}
+                            <span class="badge badge-color mana-symbol {% for color in mana_symbol.colors.all %} color-{{ color.slug }} {% endfor %}">
+                                {% if mana_symbol.name|length == 1 %}
+                                    <span>{{ mana_symbol|upper }}</span>
+                                {% else %}
+                                    <sup>{{ mana_symbol.name.0|upper }}</sup>
+                                    <span class="divider">/</span>
+                                    <sub>{{ mana_symbol.name.2|upper }}</sub>
+                                {% endif %}
+                            </span>
+                        {% endfor %}
+                    </div>
+
+                    {# Name #}
+                    <div class="name">{{ card|title }}</div>
+
+                    {# Power, toughness, loyalty, hand-, and life-modifiers #}
+                    {% if card.power and card.toughness %}
+                        <div class="power-toughness pull-right">
+                            <span class="power">{{ card.power }}</span>
+                            <span class="divider">/</span>
+                            <span class="toughness">{{ card.toughness }}</span>
+                        </div>
+                    {% endif %}
+                    {% if card.loyalty %}
+                        <div class="loyalty pull-right">{{ card.loyalty }}</div>
+                    {% endif %}
+                    {% if card.hand_modifier and card.life_modifier %}
+                        <div class="hand-modifier-life-modifier pull-right">
+                            <span class="hand-modifier">{{ card.hand_modifier }}</span>
+                            <span class="divider">/</span>
+                            <span class="life-modifier">{{ card.life_modifier }}</span>
+                        </div>
+                    {% endif %}
+
+                    {# Type #}
+                    <div class="type">{{ card.type|title }}</div>
+
+                    {# Rules text #}
+                    <div class="rules-text">{{ card.rules_text }}</div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+
+    {% if is_paginated %}
+        {% load paginator from moxen_extras %}
+        {% paginator %}
+    {% endif %}
+{% endblock %}

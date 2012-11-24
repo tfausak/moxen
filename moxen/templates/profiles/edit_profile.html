@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Edit Profile &#xb7; {{ site.name }}{% endblock %}
+
+{% block breadcrumbs %}
+{% endblock %}
+
+{% block header %}
+    <div class="page-header">
+        <h1>Edit Profile</h1>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <form class="form-horizontal" method="post">
+        {% csrf_token %}
+
+        {% for field in form.visible_fields %}
+            <div class="control-group {% if field.errors %}error{% endif %}">
+                <label class="control-label" for="{{ field.html_name }}">{{ field.label }}</label>
+                <div class="controls">
+                    <input {% if forloop.first %}autofocus{% endif %} id="{{ field.html_name }}" name="{{ field.html_name }}" type="text" value="{{ field.value }}">
+                    <span class="help-inline">
+                        {% for error in field.errors %}
+                            <div>{{ error }}</div>
+                        {% endfor %}
+                    </span>
+                </div>
+            </div>
+        {% endfor %}
+
+        <div class="form-actions">
+            <input class="btn" type="submit" value="Edit Profile">
+        </div>
+    </form>
+
+    <ul>
+        <li>
+            <a href="{% url profiles_profile_detail username=user.username %}">View Profile</a>
+        </li>
+        <li>
+            <a href="{% url auth_password_change %}">Change Password</a>
+        </li>
+        <li>
+            <a href="{% url delete_user %}">Delete Account</a>
+        </li>
+        <li>
+            <a href="{% url auth_logout %}">Log Out</a>
+        </li>
+    </ul>
+{% endblock %}
