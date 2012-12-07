@@ -1,4 +1,5 @@
 *.db
+*.db-journal
 *.py[co]
 *.sublime-*
 .DS_Store
