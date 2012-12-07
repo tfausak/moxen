@@ -55,7 +55,8 @@ def runserver():
 
 @task
 def setup():
-    local('python manage.py syncdb')
+    local('python manage.py syncdb --all')
+    local('python manage.py migrate --fake')
     local('python manage.py loaddata color manasymbol manacost supertype '
         'cardtype subtype set rarity block format ruling card printing '
         'legality')
