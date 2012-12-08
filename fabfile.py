@@ -63,8 +63,13 @@ def setup():
 
 
 @task
-def test():
+def lint():
     local('pep8 . --config=.pep8')
     local('pylint *.py --rcfile=.pylintrc')
     local('pylint moxen --rcfile=.pylintrc')
+
+
+@task
+def test():
+    lint()
     local('python manage.py test')
