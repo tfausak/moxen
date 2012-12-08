@@ -1,9 +1,9 @@
-"""Models for describing Magic: The Gathering cards.
+"""Models for describing Magic: the Gathering cards.
 
 Also includes models for describing associated metadata, like
 printings and tournament restrictions.
 
-References to the Magic: The Gathering comprehensive rules are
+References to the Magic: the Gathering comprehensive rules are
 included where appropriate. <http://wizards.com/magic/rules>
 """
 # pylint: disable=E1101,R0903,W0232
@@ -166,7 +166,7 @@ class Ruling(models.Model):
 
 
 class Card(models.Model):
-    """A Magic: The Gathering card.
+    """A Magic: the Gathering card.
 
     The parts of a card are given in 200.1. Multi-card cards
     (double-faced, flip, and split) are explained in 711, 708, and
