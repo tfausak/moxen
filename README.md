@@ -2,6 +2,10 @@
 
 A [Magic: the Gathering][] card database.
 
+This project is more or less stuck in development hell. It will
+probably never be finished. It's a pretty sweet production-ready
+Django application, though!
+
 ## Setup
 
 ### Development
