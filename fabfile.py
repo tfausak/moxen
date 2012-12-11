@@ -10,11 +10,7 @@ def bootstrap():
         'cloudamqp': 'lemur',
         'heroku-postgresql': 'dev',
         'memcache': '5mb',
-        'newrelic': 'standard',
-        'pgbackups': 'auto-month',
-        'scheduler': 'standard',
         'sendgrid': 'starter',
-        'sentry': 'developer',
     }
 
     configs = {
