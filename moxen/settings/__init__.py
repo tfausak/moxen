@@ -144,7 +144,6 @@ setup_loader()
 WSGI_APPLICATION = 'wsgi.application'
 
 # Compressor
-COMPRESS_ENABLED = True
 COMPRESS_OUTPUT_DIR = 'cache'
 COMPRESS_CSS_FILTERS = [
     'compressor.filters.template.TemplateFilter',
