@@ -16,7 +16,7 @@ cd moxen
 pip install -r requirements/development.txt  # You should use virtualenv.
 fab test  # Optional, but recommended.
 fab setup  # Might take a while.
-fab runserver
+fab server
 # http://localhost:8000/
 ```
 
