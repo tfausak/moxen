@@ -2,7 +2,7 @@
 
 {% load title from magic_extras %}
 
-{% block title %}{{ printing|title }} &#xb7; {{ site.name }}{% endblock %}
+{% block title %}{{ printing|title }} &#xb7; {{ block.super }}{% endblock %}
 
 {% block breadcrumbs %}
     <ul class="breadcrumb">
