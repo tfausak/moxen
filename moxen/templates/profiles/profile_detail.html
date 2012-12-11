@@ -31,6 +31,11 @@
 
         <dt>Last name</dt>
         <dd>{{ profile.user.last_name }}</dd>
+
+        <dt>Collection</dt>
+        <dd>
+            <a href="{{ profile.user.collection.get_absolute_url }}">{{ profile.user.collection.cards.all|length }} card{{ profile.user.collection.cards.all|pluralize }}, {{ profile.user.collection.cards.all|length }} printing{{ profile.user.collection.cards.all|pluralize }}</a>
+        </dd>
     </dl>
 
     {% if profile.user == user %}
