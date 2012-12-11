@@ -38,6 +38,11 @@ def bootstrap():
 
 
 @task
+def console():
+    local('python manage.py shell')
+
+
+@task
 def deploy():
     local('git push heroku master')
     local('{.run} syncdb --noinput'.format(env))
@@ -47,7 +52,7 @@ def deploy():
 
 
 @task
-def runserver():
+def server():
     local('python manage.py syncdb --noinput')
     local('python manage.py migrate --noinput')
     local('python manage.py runserver')
