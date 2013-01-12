@@ -12,9 +12,10 @@ Django application, though!
 
 ```sh
 git clone https://github.com/tfausak/moxen
+virtualenv moxen
 cd moxen
-pip install -r requirements/development.txt  # You should use virtualenv.
-fab test  # Optional, but recommended.
+source bin/activate
+pip install -r requirements/development.txt
 fab setup  # Might take a while.
 fab server
 # http://localhost:8000/
