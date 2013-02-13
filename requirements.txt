@@ -1,3 +1,6 @@
 -r requirements/production.txt
 
-# pylibmc
+# This is a hack to let Heroku know this project uses pylibmc. Without it,
+# Heroku won't know to make libmemcached available and building pylibmc will
+# fail. See <http://stackoverflow.com/a/11587142/1274282> for more details.
+#pylibmc
