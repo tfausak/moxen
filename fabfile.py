@@ -35,7 +35,7 @@ def bootstrap():
 
 @task
 def console():
-    local('python manage.py shell')
+    local('python manage.py debugsqlshell')
 
 
 @task
