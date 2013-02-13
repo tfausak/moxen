@@ -4,7 +4,6 @@ from . import _SITE_NAME
 from memcacheify import memcacheify
 from os import environ
 from postgresify import postgresify
-from S3 import CallingFormat
 
 # Email
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -41,7 +40,7 @@ INSTALLED_APPS += (
 )
 STATICFILES_STORAGE = DEFAULT_FILE_STORAGE = \
     'storages.backends.s3boto.S3BotoStorage'
-AWS_CALLING_FORMAT = CallingFormat.SUBDOMAIN
+AWS_CALLING_FORMAT = 2  # S3.CallingFormat.SUBDOMAIN
 AWS_ACCESS_KEY_ID = environ.get('AWS_ACCESS_KEY_ID', '')
 AWS_SECRET_ACCESS_KEY = environ.get('AWS_SECRET_ACCESS_KEY', '')
 AWS_STORAGE_BUCKET_NAME = environ.get('AWS_STORAGE_BUCKET_NAME', '')
