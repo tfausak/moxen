@@ -3,6 +3,7 @@
 *.py[co]
 *.sublime-*
 .DS_Store
+.Python
 bin/
 build/
 include/
